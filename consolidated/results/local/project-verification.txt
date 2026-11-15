@@ -22,3 +22,6 @@ Restricted adjoint congruence claim to Hermitian-part preservation and refined t
 Metadata: Q. Pang, J. Richmond, Rachh-Greengard 2016; two-dimensional Stokes formulation now cited appropriately.
 Five review solutions accepted; no broad new experiments were required.
 Final report: 40 pages; all 12 references on one page; clean build and visual checks of modified math/benchmark/bibliography pages.
+Removed the right-hand "Consolidated report" header text; title remains on left. Rebuilt at 40 pages.
+C.3: removed the verification-and-responsibility sentence and the related closing claim, retaining original team ideas/direction and neutral automated-check scope.
+C.3: deleted the remaining automated-checks paragraph; the section now closes with the human team's original ideas and research direction.

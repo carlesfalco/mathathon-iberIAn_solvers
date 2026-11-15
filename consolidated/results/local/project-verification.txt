@@ -1,0 +1,24 @@
+Report title: Efficient Factorisations for PDE Problems, 37 pages.
+Team: iberIAn_solvers. Problem 29: Simplifying Numerical PDE Algorithms.
+Track: Computation/Applied Mathematics.
+Section 2: explicit S_l and Pi_N definitions, N=8 sparse-stage diagram, manufactured forcings, strengthened closing motivation.
+Python FFT checks: PASS at N=8,16,32,64; closed-form forcing error at most 4.54e-14.
+LaTeX: no unresolved references and no Overfull/Underfull warnings; pages 6-9 visually checked.
+Other checks and full-run scope are unchanged: full twelve research suites not rerun.
+Appendix C.3 revised: extensive Codex/Claude/open-model research assistance and human team direction/selection/review stated; page 36 visually checked.
+C.3: removed the detailed Codex/Kimi and provenance-limit paragraphs at the team's request; retained broad AI/human roles and automated-check scope.
+C.3 updated to explicitly state that all report text was written by AI; human direction and verification retained.
+Appendix B.1 added: ten-problem dial/physics line-count reuse table and short Rust driver counts; all ten saved showcase statuses verified PASS.
+Report is now 39 pages; Appendix B table pages were visually checked and LaTeX has no unresolved references or layout warnings.
+C.2/C.3 revised to remove name-specific and section-specific attribution pointers.
+C.3 now lists AI activities affirmatively, including Kimi K3.1 Pro code/TikZ/drafting/editing/visual review.
+C.3 closes with team ownership of original ideas, verification of all content, and ultimate responsibility.
+Rendered page 38 visually checked; PDF remains 39 pages with clean references and layout.
+Appendix B.1 status paragraph replaced with full/quick reproduction commands and output-overwrite guidance from unified.showcase.reproduce.
+Page 37 visually checked; 39-page report remains clean.
+Astra follow-up: corrected pointwise -> absolute/relative spectral norm conversions and scalar remainder/separation-rank distinction.
+Clarified forward original-entry cID construction, middle least-squares alignment, cross-skeleton dimensions/nonsingularity, source-band induction, QR residual, storage convention, and sampling access models.
+Restricted adjoint congruence claim to Hermitian-part preservation and refined timing/metric evidence boundaries.
+Metadata: Q. Pang, J. Richmond, Rachh-Greengard 2016; two-dimensional Stokes formulation now cited appropriately.
+Five review solutions accepted; no broad new experiments were required.
+Final report: 40 pages; all 12 references on one page; clean build and visual checks of modified math/benchmark/bibliography pages.

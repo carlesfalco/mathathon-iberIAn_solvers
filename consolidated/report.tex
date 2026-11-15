@@ -59,7 +59,7 @@ We next organize hierarchical fast methods around five explicit choices---partit
 \tableofcontents
 \clearpage
 
-% SECTION 1: source adapted from section1-motivation.tex.
+% SECTION 1: integrated into this self-contained consolidated source.
 \section{Motivation: PDEs and Green-function integrals}
 \label{sec:motivation}
 
@@ -336,7 +336,7 @@ The broader design objective is therefore
 \end{equation}
 If $M=O(\log N)$ and each stage costs $O(N)$, application costs $O(N\log N)$. Existence, accuracy, construction cost, and stability must be established separately. For oscillatory operators without exact Fourier symmetry, butterfly factorization supplies one such route; for direct solves, elimination adds further stability questions.
 
-% SECTION 3: condensed from section3/latex/sections/framework.tex.
+% SECTION 3: the common framework is integrated into this consolidated source.
 \section{A common language for structured factorizations}
 \label{sec:framework}
 
@@ -446,7 +446,7 @@ where $n_\ell$ counts boxes, $c_\ell$ partners per box, and $r_\ell$ summary siz
 The butterfly row of Table~\ref{tab:algorithm-map} now needs an analytic justification: why should complementary blocks of an oscillatory kernel be short, and why does the complementary width product control their residual phase? Section~\ref{sec:butterfly} derives that mechanism before Section~\ref{sec:numerical-evidence} turns it into global factors and cost budgets.
 
 
-% SECTION 4: source adapted from section4-butterfly.tex.
+% SECTION 4: integrated into this self-contained consolidated source.
 \section{The butterfly factorization for oscillatory integral operators}
 \label{sec:butterfly}
 
@@ -1179,7 +1179,7 @@ During the event project, the team material brought together (i) Green-function 
 The classical mathematics remains classical. The expository framework is not claimed to be without precedent, and problem-specific mechanisms such as proxy surfaces, adjoint elimination, interpolative bases, and directional geometry have substantial prior art. The potentially useful project contributions are the coordinated explanation, the explicitly constructed target-only alternative and its implementation, the particular comparisons and controls, and reusable teaching/reference code. No exhaustive literature-priority determination is asserted for the alternative construction.
 
 \subsection{Source and section map}
-The report uses \path{section1-motivation.tex} for Section~1, the supplied PDF-only FFT draft for Section~2, \path{section3/latex/sections/} for the framework and broader experiment material, and \path{section4-butterfly.tex} for Section~4. The principal Section~5 source is \path{martin-stuff/partialMartinReport_modified.tex}, especially its two original invariants, downward-QR target-only construction, and IDBF extension; \path{martin-stuff/additionalContext/} supplies the implementations reproduced in \path{examples/target-only/}. Section~5 combines this material with sparse-factor budgets, DFT structure, phase-based demonstrations, and selected package diagnostics. Section~6 is the consolidated synthesis. The older multi-file Section~3 and Martin reports are retained as source material only; \path{report.tex} here is the single official-source candidate and contains no \verb|\input|, \verb|\include|, or external bibliography file.
+This single file integrates the six report sections: Green-function motivation, the supplied PDF-only FFT draft, the common framework and broader experiment material, the centered-phase butterfly derivation, the two-invariant and target-only constructions, and the final synthesis. The Section~5 implementations are reproduced in \path{examples/target-only/}; that section combines the original two invariants, downward-QR target-only construction, and IDBF extension with sparse-factor budgets, DFT structure, phase-based demonstrations, and selected package diagnostics. The standalone section drafts and older multi-file reports were source material for this snapshot and are not required to build it. This \path{report.tex} is self-contained and contains no \verb|\input|, \verb|\include|, or external bibliography file.
 
 \subsection{AI tools and checking}
 The supplied Section~2 PDF explicitly records OpenAI Codex assistance with reading, drafting and editing, LaTeX, numerical checks, compilation, and visual review; its equations were supported by displayed algebra, independent dense constructions, and citations. Kimi (Moonshot AI) assisted this consolidation by inspecting and reorganizing the sources, drafting connective text, reconstructing the executable FFT verification script, running the listed local checks and compilation, and preparing this single-file report. Independent parallel AI reviewers were also asked to check narrative placement, mathematical consistency, and claim boundaries; their findings are reviewed rather than accepted automatically.

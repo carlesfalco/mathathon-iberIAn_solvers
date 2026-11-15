@@ -1,9 +1,0 @@
-Validated 12 compressed, 5 FFT, and 1 exact DFT-butterfly records.
-{
-  "python": "3.12.14",
-  "rustc": "rustc 1.93.1 (01f6ddf75 2026-02-11) (built from a source tarball)",
-  "kernel": "Linux-7.0.0-31-generic-x86_64-with-glibc2.43"
-}
-log/Laplace, I + K         storage=0.0767 error=2.77e-07 speedup=11.76x breakeven~1560 applies
-Gaussian covariance        storage=0.0576 error=2.82e-07 speedup=12.65x breakeven~1619 applies
-exponential screening      storage=0.0361 error=1.04e-15 speedup=14.69x breakeven~1559 applies

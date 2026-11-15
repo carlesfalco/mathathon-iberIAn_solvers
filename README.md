@@ -2,47 +2,33 @@
 
 Supplementary code, numerical experiments, figures, data, and verification results for Team iberIAn_solvers' work on **Problem 29: Simplifying PDE Algorithms**.
 
-Report and slide LaTeX sources are included in this repository. The **Final Report** chat remains the authoritative report-editing workflow. Compiled PDFs already in the repository are retained as reference documents.
+The current numerical package is in [`consolidated/`](consolidated/). The current slide deck is [`presentation.pdf`](presentation.pdf), with [`presentation.tex`](presentation.tex) included as its LaTeX source snapshot. The **Final Report** chat remains authoritative for the report and final slide wording; the report source and PDF in `consolidated/` are repository snapshots. See [`SUBMISSION.md`](SUBMISSION.md) for the package boundary and release checklist.
 
-## Main demonstrations
+## Consolidated package
 
 | Path | Contents |
 |---|---|
-| [`butterfly-demo/`](butterfly-demo/) | Minimal Python butterfly implementation for DFT and non-DFT oscillatory kernels, tests, accuracy/timing data, and comparison figures |
-| [`consolidated/examples/`](consolidated/examples/) | Teaching implementations for the periodic FFT solver and phase-based butterfly construction |
-| [`consolidated/python/`](consolidated/python/) | Larger Python experiment package |
+| [`consolidated/examples/`](consolidated/examples/) | Periodic FFT and phase-butterfly teaching implementations, plus target-only QR/IDBF comparisons |
+| [`consolidated/python/`](consolidated/python/) | Larger Python experiment package and problem-specific research suites |
 | [`consolidated/rust/`](consolidated/rust/) | Rust apply benchmarks, DFT invariants, and reference-core prototype |
-| [`section3/python/`](section3/python/) | Python implementations and experiments for the common-block-strategy package |
-| [`section3/rust/`](section3/rust/) | Rust implementations and numerical results for that package |
+| [`consolidated/figures/`](consolidated/figures/) | Figures generated from the included numerical data |
+| [`consolidated/results/`](consolidated/results/) | Raw results, local verification receipts, and historical package evidence |
 
-## Figures and results
+The older standalone section files, `section3/`, and the duplicate root butterfly demo have been removed. Their retained implementations and evidence are organized under `consolidated/`.
 
-- `butterfly-demo/results/`: accuracy and scaling CSV files, comparison plots, and a measured-results guide.
-- `consolidated/figures/` and `consolidated/results/`: consolidated figures and local/package verification receipts.
-- `section3/figures/` and `section3/results/`: generated figures, raw numerical evidence, and audit notes.
-- `section3/python/unified/explore/`: problem-specific experiments and saved outputs.
-
-## Run the small butterfly checks
+## Reproduce the core checks
 
 ```bash
-cd butterfly-demo
-python3 test_butterfly.py
-OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 compare.py
-```
-
-The comparison script uses an FFT reference for the DFT test and explicit dense kernel evaluation for the non-DFT test. Absolute timings depend on the machine; they are teaching measurements rather than production benchmarks.
-
-## Verify the larger packages
-
-```bash
-# Check paths, included evidence, and recorded results for section3
-python3 section3/scripts/verify_package.py
-
-# From consolidated/, reproduce the core numerical checks
 cd consolidated
 scripts/check_local.sh
 ```
 
-The consolidated wrapper runs the small FFT and butterfly checks, Python core/showcase tests, and Rust unit/integration checks. It does not rerun the full twelve longer research suites. See the package READMEs for details and for which measurements are historical rather than regenerated.
+The wrapper runs the FFT and framework examples, butterfly checks and figure regeneration, target-only comparisons, Python core/showcase tests, and Rust unit/integration and saved-data checks. It does **not** rerun the full twelve longer research suites.
+
+For individual examples, historical-versus-local measurement scope, parameters, and result locations, see [`consolidated/README.md`](consolidated/README.md). To check the consolidated report structure, assets, and saved receipts without rerunning the numerical suite:
+
+```bash
+python3 consolidated/scripts/verify_project.py
+```
 
 Session records, attachments, LaTeX intermediates, caches, build directories, and local archives are excluded by `.gitignore`.

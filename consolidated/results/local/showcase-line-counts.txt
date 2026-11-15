@@ -1,0 +1,12 @@
+Saved showcase metadata verified: 10 models, all status PASS.
+Laplace: dial=14, physics=38
+DFT: dial=19, physics=8
+FIO: dial=9, physics=8
+Helmholtz: dial=76, physics=41
+Stokes: dial=85, physics=94
+Yukawa: dial=32, physics=44
+Heat / backward Euler: dial=77, physics=66
+Fractional: dial=31, physics=47
+Lippmann--Schwinger: dial=31, physics=71
+Spherical harmonics: dial=49, physics=71
+Rust raw line counts: laplace 12, gaussian 11, screened 11, fft 38, dft_as_butterfly 55.

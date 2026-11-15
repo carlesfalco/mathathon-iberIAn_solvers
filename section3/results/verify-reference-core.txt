@@ -1,1 +1,0 @@
-Reference core: 72 exact + 17 documented tolerance-boundary differences; 11 achieved errors < 1e-8; LU max residual 1.72e-15; three timings retained.

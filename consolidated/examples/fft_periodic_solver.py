@@ -82,6 +82,8 @@ def main() -> None:
     max_unitary = 0.0
     max_stage = 0.0
     max_recursive = 0.0
+    max_forcing_definition = 0.0
+    assert np.array_equal(bit_reversed(8), np.array([0, 4, 2, 6, 1, 5, 3, 7]))
     rng = np.random.default_rng(20261115)
     for n in (8, 16, 32, 64):
         j = np.arange(n)
@@ -91,6 +93,11 @@ def main() -> None:
         lam = symbol(n)
         exact = np.cos(2 * np.pi * x) + 0.2 * np.sin(4 * np.pi * x)
         forcing = a @ exact
+        # Same forcing in the symbol formula stated in Section 2 of the report.
+        forcing_from_symbol = (lam[1] * np.cos(2 * np.pi * x)
+                               + 0.2 * lam[2] * np.sin(4 * np.pi * x))
+        forcing_definition_error = relative(forcing, forcing_from_symbol)
+        max_forcing_definition = max(max_forcing_definition, forcing_definition_error)
         fft_solution = np.fft.ifft(np.fft.fft(forcing) / lam)
         dense_solution = np.linalg.solve(a, forcing)
         z = rng.normal(size=n) + 1j * rng.normal(size=n)
@@ -109,6 +116,7 @@ def main() -> None:
             "unitary_error": unitary_error,
             "sparse_stage_error": stage_error,
             "recursive_fft_error": recursive_error,
+            "manufactured_forcing_error": forcing_definition_error,
         }
         factor_rows.append(row)
         print(
@@ -146,6 +154,8 @@ def main() -> None:
         "max_unitary_error": max_unitary,
         "max_sparse_stage_error": max_stage,
         "max_recursive_fft_error": max_recursive,
+        "max_manufactured_forcing_error": max_forcing_definition,
+        "bit_reversal_8": bit_reversed(8).tolist(),
         "discretisation_error_ratios": ratios,
         "python": platform.python_version(),
         "numpy": np.__version__,
@@ -155,6 +165,7 @@ def main() -> None:
     assert max_unitary < 1e-12
     assert max_stage < 1e-12
     assert max_recursive < 1e-12
+    assert max_forcing_definition < 1e-12
     print(json.dumps(checks, indent=2))
 
 

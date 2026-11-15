@@ -1,0 +1,29 @@
+Correctness against one exact complementary-low-rank matrix
+N=  16, r=4: mutual error 8.402e-16; source+M versus exact K 1.186e-15; target-only versus exact K 1.560e-15
+N=  64, r=4: mutual error 1.472e-15; source+M versus exact K 1.732e-15; target-only versus exact K 1.771e-15
+
+Timing with one BLAS thread, median of repeated batches
+
+N=  16, r=4; rank budget: [1, 2, 4, 2, 1]
+shared setup (excluded from branch timings): middle seed 0.287 ms; upper target factors 0.415 ms
+unshared construction, median: source+M 0.345 ms; target QR descent 0.205 ms; ratio 1.679x
+full setup with the literal-SVD seed: source+M 1.046 ms; target-only 0.907 ms; ratio 1.154x
+application, median: source+M 10.46 us; target-only 10.12 us; ratio 1.033x
+structural complex entries: source+M 736; target-only 672; mutual relative error 6.616e-16
+batch sizes (source build, target build, source apply, target apply): 176, 10000, 10000, 10000
+
+N=  64, r=4; rank budget: [1, 2, 4, 4, 4, 2, 1]
+shared setup (excluded from branch timings): middle seed 1.151 ms; upper target factors 1.812 ms
+unshared construction, median: source+M 2.066 ms; target QR descent 1.220 ms; ratio 1.693x
+full setup with the literal-SVD seed: source+M 5.029 ms; target-only 4.182 ms; ratio 1.202x
+application, median: source+M 22.36 us; target-only 22.01 us; ratio 1.016x
+structural complex entries: source+M 7040; target-only 6784; mutual relative error 1.063e-15
+batch sizes (source build, target build, source apply, target apply): 38, 10000, 10000, 10000
+
+N= 256, r=4; rank budget: [1, 2, 4, 4, 4, 4, 4, 2, 1]
+shared setup (excluded from branch timings): middle seed 9.476 ms; upper target factors 11.038 ms
+unshared construction, median: source+M 12.119 ms; target QR descent 6.843 ms; ratio 1.771x
+full setup with the literal-SVD seed: source+M 32.633 ms; target-only 27.357 ms; ratio 1.193x
+application, median: source+M 69.39 us; target-only 69.28 us; ratio 1.002x
+structural complex entries: source+M 44544; target-only 43520; mutual relative error 1.503e-15
+batch sizes (source build, target build, source apply, target apply): 6, 3938, 3408, 3938

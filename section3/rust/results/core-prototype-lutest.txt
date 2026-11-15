@@ -1,5 +1,0 @@
-lutest n=6: relres 7.416e-17
-lutest n=17: relres 3.333e-16
-lutest n=27: relres 5.313e-16
-lutest n=35: relres 8.748e-16
-lutest n=60: relres 1.724e-15

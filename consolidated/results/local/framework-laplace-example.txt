@@ -1,0 +1,1 @@
+N=512, weak proxy recursive solve; independent kernel residual=9.412014e-10

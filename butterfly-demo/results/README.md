@@ -8,13 +8,13 @@ Timings use one BLAS thread and an explicit warm-up for the dense path.
 
 | N | relative L2 error | butterfly (s) | FFT (s) | dense matvec (s) | pairs |
 |---:|---:|---:|---:|---:|---:|
-| 16 | 6.399e-06 | 1.073e-03 | 3.025e-06 | 6.763e-06 | 80 |
-| 32 | 7.816e-06 | 2.481e-03 | 3.013e-06 | 1.784e-05 | 192 |
-| 64 | 4.919e-06 | 5.811e-03 | 3.191e-06 | 8.255e-05 | 448 |
-| 128 | 5.063e-06 | 1.328e-02 | 3.520e-06 | 2.661e-04 | 1024 |
-| 256 | 5.711e-06 | 2.967e-02 | 3.938e-06 | 1.271e-03 | 2304 |
-| 512 | 4.813e-06 | 6.585e-02 | 5.142e-06 | not run | 5120 |
-| 1024 | 5.518e-06 | 1.448e-01 | 7.378e-06 | not run | 11264 |
+| 16 | 6.399e-06 | 1.077e-03 | 3.041e-06 | 6.893e-06 | 80 |
+| 32 | 7.816e-06 | 2.561e-03 | 3.151e-06 | 1.696e-05 | 192 |
+| 64 | 4.919e-06 | 5.867e-03 | 3.175e-06 | 6.483e-05 | 448 |
+| 128 | 5.063e-06 | 1.335e-02 | 3.555e-06 | 2.674e-04 | 1024 |
+| 256 | 5.711e-06 | 3.015e-02 | 4.044e-06 | 1.250e-03 | 2304 |
+| 512 | 4.813e-06 | 6.669e-02 | 5.224e-06 | not run | 5120 |
+| 1024 | 5.518e-06 | 1.461e-01 | 7.378e-06 | not run | 11264 |
 
 The FFT is much faster in wall time because it is an optimised specialised
 implementation of this exact transform. The useful check here is scaling:

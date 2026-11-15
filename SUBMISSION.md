@@ -38,10 +38,10 @@ The repository URL and full commit hash requested by the organizers belong in th
 
 ## Current release blockers
 
-- [ ] Review and approve the integrated six-part report before release.
-- [x] Compile and structurally verify `consolidated/report.tex`: the 25-page PDF and `python3 consolidated/scripts/verify_project.py` check now pass. Team review is still required before release.
-- [ ] Produce the single-file root `report.tex`; the existing `section3/latex/report.tex` uses `\input` and is not release-compliant.
-- [ ] Compile and inspect root `report.pdf` from the final source.
+- [ ] Review and approve the complete report before release.
+- [x] Produce the self-contained root `report.tex` and compile `report.pdf`; the current 14-page version merges Sections 1, 2, and 4 and has no unresolved references or layout warnings.
+- [ ] Integrate the remaining sections into the root report and rebuild the PDF from the resulting source.
+- [ ] Complete the team's mathematical and editorial review of the root report.
 - [ ] Finish the current slide placeholders and export root `slides.pdf`.
 - [ ] Reconcile or remove alternative draft reports/decks so reviewers cannot mistake them for the official submission.
 - [ ] Confirm the track designation and complete team/repository metadata.

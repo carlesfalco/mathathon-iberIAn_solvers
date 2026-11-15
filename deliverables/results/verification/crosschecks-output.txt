@@ -1,0 +1,23 @@
+== A. DFT as butterfly (bit-reversed via permuted kernel), eps = 1e-10
+   n=  256 nnz=   4608 2nlog2n+2n=   4608 equal=True max_rank=1 err_vs_fft=2.6e-14
+   n=  512 nnz=  10240 2nlog2n+2n=  10240 equal=True max_rank=1 err_vs_fft=5.2e-14
+   n= 1024 nnz=  22528 2nlog2n+2n=  22528 equal=True max_rank=1 err_vs_fft=1.0e-13
+   n= 2048 nnz=  49152 2nlog2n+2n=  49152 equal=True max_rank=1 err_vs_fft=2.0e-13
+== B. E12 R1 replication: w = 1/8, D = 2w, eps = 1e-8, 300 points per box
+   lam=     0 rel(0/90/180)=[11, 12, 11] stacked(0/90/180)=[13, 13, 14] stacked/max(rel)=1.17
+   lam=     5 rel(0/90/180)=[12, 12, 12] stacked(0/90/180)=[23, 23, 23] stacked/max(rel)=1.92
+   lam=    80 rel(0/90/180)=[14, 10, 11] stacked(0/90/180)=[16, 20, 16] stacked/max(rel)=1.43
+   lam=   320 rel(0/90/180)=[19, 7, 11] stacked(0/90/180)=[21, 12, 21] stacked/max(rel)=1.11
+== C. E1 storage ratios at N=4096, eps=1e-6 (deck slide 23)
+   Laplace curve              weak/N=    200 strong/N=    276 comp/N=    434 strong/comp= 0.64 weak/comp= 0.46
+   Laplace area               weak/N=    519 strong/N=    784 comp/N=    772 strong/comp= 1.02 weak/comp= 0.67
+   Helmholtz k=1              weak/N=    189 strong/N=    263 comp/N=    420 strong/comp= 0.63 weak/comp= 0.45
+   Helmholtz k=10             weak/N=    216 strong/N=    303 comp/N=    451 strong/comp= 0.67 weak/comp= 0.48
+   Helmholtz k=50             weak/N=    292 strong/N=    367 comp/N=    510 strong/comp= 0.72 weak/comp= 0.57
+   Helmholtz k=150            weak/N=    441 strong/N=    466 comp/N=    589 strong/comp= 0.79 weak/comp= 0.75
+   Helmholtz 10 ppw           weak/N=    624 strong/N=    566 comp/N=    666 strong/comp= 0.85 weak/comp= 0.94
+   DFT (FIO t=0)              weak/N=   2886 strong/N=   1543 comp/N=    629 strong/comp= 2.45 weak/comp= 4.59
+   FIO t=1                    weak/N=   2885 strong/N=   1539 comp/N=    630 strong/comp= 2.44 weak/comp= 4.58
+   FIO t=3                    weak/N=   2890 strong/N=   1544 comp/N=    665 strong/comp= 2.32 weak/comp= 4.34
+   Gauss h=0.5 (area)         weak/N=    256 strong/N=    779 comp/N=    117 strong/comp= 6.67 weak/comp= 2.19
+   Gauss h=0.05 (area)        weak/N=    855 strong/N=    958 comp/N=    753 strong/comp= 1.27 weak/comp= 1.13

@@ -1,0 +1,9 @@
+[package]
+name = "rust-unified-prototype"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "proto"
+path = "src/main.rs"
+

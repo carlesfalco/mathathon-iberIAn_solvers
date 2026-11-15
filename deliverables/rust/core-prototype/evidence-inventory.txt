@@ -1,0 +1,90 @@
+file                          phys  code   cmt   doc  defs  cls
+core/__init__.py                 9     6     1     1     0    0
+core/types.py                   67    26    13     9     2    3
+core/tree.py                   125    78    15    14     9    2
+core/admissibility.py           36     8     9     9     3    3
+core/compress.py                85    30    20    20     6    2
+core/kernels.py                 55    29     6     6     7    0
+drivers/__init__.py              0     0     0     0     0    0
+drivers/rskel.py               212    71    60    56     4    4
+drivers/butterfly_id.py        262   103    62    55    10    5
+TOTAL                          851   351   186   170
+
+--- core/__init__.py
+
+--- core/types.py
+  class IDResult                                     code=  5
+  class Compressor                                   code=  3
+      def __call__(self, box_idx, far_idx, node)     code=  1
+  class Admissibility                                code=  4
+      def near_nodes(self, tree, node)               code=  1
+
+--- core/tree.py
+  class Node                                         code= 14
+      def is_leaf(self)                              code=  2
+      def __repr__(self)                             code=  2
+  class Tree                                         code= 78
+      def __init__(self, points, depth, max_leaf, bbox) code= 39
+      def _coords(self, l)                           code=  5
+      def node(self, level, coord)                   code=  2
+      def leaves(self)                               code=  2
+      def nodes_postorder(self)                      code=  3
+      def neighbors(self, node)                      code= 10
+      def interaction_list(self, node)               code=  7
+
+--- core/admissibility.py
+  class Weak                                         code=  5
+      def near_nodes(self, tree, node)               code=  2
+  class Strong                                       code=  5
+      def near_nodes(self, tree, node)               code=  2
+  class Complementary                                code=  8
+      def pairs(self, row_tree, col_tree, l)         code=  4
+
+--- core/compress.py
+  def interp_decomp(M, eps)                          code= 13  R[...] d[...] np.abs np.arange np.diag np.sum np.zeros piv[...] sla.qr sla.solve_triangular
+  class ExactCompressor                              code=  8
+      def __init__(self, A, eps)                     code=  2
+      def __call__(self, box_idx, far_idx, node)     code=  3
+  class ProxyCompressor                              code= 33
+      def __init__(self, kernel, points, eps, A, n_proxy, radius_factor) code=  5
+      def proxy_points(self, node)                   code=  9
+      def __call__(self, box_idx, far_idx, node)     code= 14
+
+--- core/kernels.py
+  def _dist(X, Y)                                    code=  7  A[...] B[...] np.asarray
+  def laplace2d(X, Y)                                code=  7  K[...] np.errstate np.log
+  def helmholtz2d(k)                                 code=  9  np.zeros out[...] r[...]
+  def _sine_speed(x)                                 code=  2  np.sin
+  def fio1d(t, c)                                    code=  6  np.abs np.asarray np.exp np.outer
+
+--- drivers/__init__.py
+
+--- drivers/rskel.py
+  class LevelStats                                   code=  7
+  class FactorStats                                  code= 10
+  class _Step                                        code= 10
+  class Factorization                                code= 25
+      def solve(self, b)                             code= 17
+  def _lu_factor(M)                                  code=  3  sla.lu_factor
+  def _skeletonize(compressor, W, box, far, node, q_extra) code= 17  W[...] X[...] comp.kernel comp.proxy_points copy.copy far[...] np.ix_ np.union1d np.vstack
+  def rskel_factor(A, tree, admissibility, compressor, overwrite_a, track_modified) code= 65  W[...] active.copy active[...] admissibility.near_nodes box[...] dict[...] levels[...] list[...] mask[...] modified[...] np.array np.concatenate
+
+--- drivers/butterfly_id.py
+  class ButterflyStats                               code=  8
+  class B1Problem                                    code=  5
+  class TreePair                                     code=  4
+  class SVDComparison                                code= 13
+  def interp_matrix(skel, red, T, n)                 code=  7  P[...] np.arange np.zeros
+  def build_trees(x, xi, depth)                      code=  8  np.asarray np.log2
+  class IDButterfly                                  code= 18
+      def apply(self, g)                             code=  6
+      def nnz(self)                                  code=  3
+  def butterfly_id(kernel, x, xi, eps, row_tree, col_tree) code= 61  G.append Gl.tocsr Gl[...] P[...] U.tocsr U[...] W.tocsr W[...] W_blocks.append blocks.append cand[...] dict[...]
+  def b1_problem(N, t)                               code=  4  kernels.fio1d np.arange
+  def exact_apply(kernel, x, xi, g, chunk)           code=  5  np.concatenate x[...]
+  def load_svd_reference()                           code=  8  pathlib.Path
+  def compare_with_svd(N, t, eps, seed)              code= 16  Callable[...] bf.apply ref.butterfly_apply ref.butterfly_factorize time.perf_counter
+
+== distinct external primitives ==
+numpy (20): np.abs np.arange np.array np.asarray np.concatenate np.diag np.errstate np.exp np.flatnonzero np.ix_ np.log np.log2 np.mean np.ones np.outer np.sin np.sum np.union1d np.vstack np.zeros
+scipy (5): sla.lu_factor sla.lu_solve sla.qr sla.solve_triangular sp.lil_matrix

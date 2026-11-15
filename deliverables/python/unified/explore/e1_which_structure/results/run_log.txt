@@ -1,0 +1,95 @@
+Laplace curve          N= 4096 weak:     200N r  17 e5e-07  stro:     276N r   6 e4e-07  comp:     434N r 141 e6e-07  (23s)
+Laplace area           N= 4096 weak:     519N r  52 e1e-06  stro:     784N r   9 e5e-07  comp:     772N r  86 e9e-07  (20s)
+Helmholtz k=1          N= 4096 weak:     189N r  16 e6e-07  stro:     263N r   5 e4e-07  comp:     420N r 141 e7e-07  (58s)
+Helmholtz k=10         N= 4096 weak:     216N r  19 e5e-07  stro:     303N r   7 e3e-07  comp:     451N r 141 e6e-07  (61s)
+Helmholtz k=50         N= 4096 weak:     292N r  27 e4e-07  stro:     367N r  11 e3e-07  comp:     510N r 141 e6e-07  (83s)
+Helmholtz k=150        N= 4096 weak:     441N r  47 e4e-07  stro:     466N r  19 e3e-07  comp:     589N r 141 e6e-07  (89s)
+Helmholtz 10 ppw       N= 4096 weak:     624N r  74 e3e-07  stro:     566N r  27 e3e-07  comp:     666N r 141 e6e-07  (99s)
+DFT (FIO t=0)          N= 4096 weak:    2886N r1045 e7e-08  stro:    1543N r 275 e1e-07  comp:     629N r  18 e4e-07  (128s)
+FIO t=1                N= 4096 weak:    2885N r1044 e9e-08  stro:    1539N r 339 e2e-07  comp:     630N r  22 e5e-07  (98s)
+FIO t=3                N= 4096 weak:    2890N r1038 e2e-07  stro:    1544N r 467 e3e-07  comp:     665N r  29 e7e-07  (92s)
+Gauss h=0.5 (area)     N= 4096 weak:     256N r  19 e5e-07  stro:     779N r  10 e5e-07  comp:     117N r  10 e9e-07  (25s)
+Gauss h=0.05 (area)    N= 4096 weak:     855N r  95 e5e-07  stro:     958N r  21 e3e-09  comp:     753N r 141 e2e-06  (18s)
+Laplace curve          N= 2048 weak:     179N r  16 e4e-07  stro:     251N r   6 e3e-07  comp:     351N r  71 e5e-07  (5s)
+Laplace area           N= 2048 weak:     397N r  38 e8e-07  stro:     626N r   9 e4e-07  comp:     565N r  58 e8e-07  (4s)
+Helmholtz k=1          N= 2048 weak:     170N r  15 e6e-07  stro:     238N r   5 e4e-07  comp:     338N r  71 e6e-07  (10s)
+Helmholtz k=10         N= 2048 weak:     193N r  18 e5e-07  stro:     275N r   7 e3e-07  comp:     371N r  71 e6e-07  (11s)
+Helmholtz k=50         N= 2048 weak:     269N r  27 e4e-07  stro:     339N r  11 e3e-07  comp:     435N r  71 e6e-07  (11s)
+Helmholtz 10 ppw       N= 2048 weak:     407N r  45 e4e-07  stro:     428N r  18 e3e-07  comp:     528N r  71 e6e-07  (10s)
+DFT (FIO t=0)          N= 2048 weak:    1496N r 531 e1e-07  stro:     893N r 145 e2e-07  comp:     548N r  18 e3e-07  (13s)
+FIO t=1                N= 2048 weak:    1493N r 530 e1e-07  stro:     888N r 177 e2e-07  comp:     545N r  22 e5e-07  (14s)
+FIO t=3                N= 2048 weak:    1494N r 525 e2e-07  stro:     889N r 241 e3e-07  comp:     568N r  29 e6e-07  (13s)
+Gauss h=0.5 (area)     N= 2048 weak:     238N r  19 e5e-07  stro:     638N r  10 e4e-07  comp:     185N r  10 e9e-07  (4s)
+Gauss h=0.05 (area)    N= 2048 weak:     599N r  71 e3e-07  stro:     584N r  15 e1e-10  comp:     581N r  52 e5e-07  (4s)
+Laplace curve          N= 1024 weak:     158N r  16 e4e-07  stro:     225N r   6 e3e-07  comp:     279N r  67 e5e-07  (1s)
+Laplace area           N= 1024 weak:     303N r  30 e8e-07  stro:     486N r   9 e3e-07  comp:     533N r  76 e6e-07  (1s)
+Helmholtz k=1          N= 1024 weak:     149N r  14 e6e-07  stro:     213N r   5 e3e-07  comp:     264N r  67 e6e-07  (2s)
+Helmholtz k=10         N= 1024 weak:     171N r  17 e5e-07  stro:     247N r   7 e3e-07  comp:     301N r  67 e6e-07  (2s)
+Helmholtz k=50         N= 1024 weak:     246N r  26 e4e-07  stro:     308N r  11 e3e-07  comp:     380N r  67 e6e-07  (2s)
+Helmholtz 10 ppw       N= 1024 weak:     280N r  30 e4e-07  stro:     330N r  13 e3e-07  comp:     409N r  67 e5e-07  (2s)
+DFT (FIO t=0)          N= 1024 weak:     792N r 273 e8e-08  stro:     547N r  79 e1e-07  comp:     467N r  18 e3e-07  (3s)
+FIO t=1                N= 1024 weak:     789N r 272 e1e-07  stro:     541N r  95 e2e-07  comp:     461N r  22 e4e-07  (3s)
+FIO t=3                N= 1024 weak:     786N r 268 e2e-07  stro:     534N r 127 e3e-07  comp:     473N r  29 e6e-07  (3s)
+Gauss h=0.5 (area)     N= 1024 weak:     220N r  19 e6e-07  stro:     522N r  10 e2e-07  comp:     132N r  13 e2e-06  (1s)
+Gauss h=0.05 (area)    N= 1024 weak:     360N r  47 e2e-07  stro:     344N r  11 e7e-11  comp:     373N r  28 e2e-07  (1s)
+Laplace curve          N=  512 weak:     139N r  15 e4e-07  stro:     191N r   6 e3e-07  comp:     230N r  33 e5e-07  (0s)
+Laplace area           N=  512 weak:     228N r  27 e7e-07  stro:     343N r   9 e3e-07  comp:     335N r  40 e5e-07  (0s)
+Helmholtz k=1          N=  512 weak:     130N r  14 e6e-07  stro:     178N r   5 e4e-07  comp:     215N r  33 e6e-07  (1s)
+Helmholtz k=10         N=  512 weak:     153N r  17 e4e-07  stro:     211N r   7 e3e-07  comp:     250N r  33 e6e-07  (1s)
+Helmholtz 10 ppw       N=  512 weak:     201N r  22 e3e-07  stro:     252N r  10 e3e-07  comp:     304N r  56 e4e-07  (1s)
+DFT (FIO t=0)          N=  512 weak:     428N r 143 e1e-07  stro:     344N r  45 e2e-07  comp:     386N r  18 e2e-07  (1s)
+FIO t=1                N=  512 weak:     426N r 143 e2e-07  stro:     340N r  53 e3e-07  comp:     372N r  21 e5e-07  (1s)
+FIO t=3                N=  512 weak:     418N r 139 e2e-07  stro:     326N r  69 e4e-07  comp:     378N r  28 e5e-07  (1s)
+Gauss h=0.5 (area)     N=  512 weak:     196N r  18 e7e-07  stro:     395N r  10 e9e-08  comp:     188N r  13 e1e-06  (0s)
+Gauss h=0.05 (area)    N=  512 weak:     202N r  30 e1e-07  stro:     207N r   8 e4e-11  comp:     224N r  40 e2e-07  (0s)
+Laplace curve          N=  256 weak:     120N r  14 e3e-07  stro:     156N r   6 e3e-07  comp:     185N r  28 e5e-07  (0s)
+Laplace area           N=  256 weak:     162N r  20 e5e-07  stro:     229N r   8 e2e-07  comp:     263N r  74 e5e-07  (0s)
+Helmholtz k=1          N=  256 weak:     114N r  13 e4e-07  stro:     149N r   5 e3e-07  comp:     176N r  28 e5e-07  (0s)
+Helmholtz k=10         N=  256 weak:     132N r  16 e3e-07  stro:     174N r   7 e2e-07  comp:     207N r  28 e4e-07  (0s)
+Helmholtz 10 ppw       N=  256 weak:     148N r  18 e3e-07  stro:     184N r   8 e2e-07  comp:     221N r  28 e4e-07  (0s)
+DFT (FIO t=0)          N=  256 weak:     236N r  77 e2e-07  stro:     218N r  27 e3e-07  comp:     305N r  18 e9e-08  (0s)
+FIO t=1                N=  256 weak:     237N r  77 e1e-07  stro:     220N r  31 e2e-07  comp:     294N r  21 e3e-07  (0s)
+FIO t=3                N=  256 weak:     225N r  73 e2e-07  stro:     199N r  39 e3e-07  comp:     284N r  26 e4e-07  (0s)
+Gauss h=0.5 (area)     N=  256 weak:     163N r  17 e6e-07  stro:     253N r  10 e2e-07  comp:     138N r  18 e1e-06  (0s)
+Gauss h=0.05 (area)    N=  256 weak:     104N r  14 e1e-07  stro:     132N r   4 e7e-20  comp:     124N r  23 e1e-07  (0s)
+
+best structure / exponents (weak, strong, complementary):
+  Laplace curve          best=weak          weak 1.19  stro 1.20  comp 1.31
+  Laplace area           best=weak          weak 1.42  stro 1.44  comp 1.39
+  Helmholtz k=1          best=weak          weak 1.19  stro 1.21  comp 1.32
+  Helmholtz k=10         best=weak          weak 1.18  stro 1.20  comp 1.28
+  Helmholtz k=50         best=weak          weak 1.12  stro 1.13  comp 1.21
+  Helmholtz k=150        best=weak          weak  -    stro  -    comp  -  
+  Helmholtz 10 ppw       best=strong        weak 1.52  stro 1.40  comp 1.40
+  DFT (FIO t=0)          best=complementary weak 1.90  stro 1.70  comp 1.26
+  FIO t=1                best=complementary weak 1.90  stro 1.70  comp 1.28
+  FIO t=3                best=complementary weak 1.92  stro 1.74  comp 1.30
+  Gauss h=0.5 (area)     best=complementary weak 1.16  stro 1.39  comp 0.95
+  Gauss h=0.05 (area)    best=complementary weak 1.77  stro 1.72  comp 1.66
+
+ordering (max tile rank, butterfly storage/N, weak/strong storage/N):
+  t=0 N=  256 rows=natural cols=natural r=   7 BF=    350N  weak=   236N strong=   218N
+  t=0 N=  256 rows=natural cols=bitrev  r=  16 BF=    682N  weak=   256N strong=   256N
+  t=0 N=  256 rows=bitrev  cols=natural r=  16 BF=    682N  weak=   256N strong=   256N
+  t=0 N=  256 rows=bitrev  cols=bitrev  r=   1 BF=     18N  weak=   186N strong=   117N
+  t=0 N= 4096 rows=natural cols=natural r=   7 BF=    742N  weak=  2886N strong=  1543N
+  t=0 N= 4096 rows=natural cols=bitrev  r=  64 BF=  10922N  weak=  4096N strong=  4096N
+  t=0 N= 4096 rows=bitrev  cols=natural r=  64 BF=  10922N  weak=  4096N strong=  4096N
+  t=0 N= 4096 rows=bitrev  cols=bitrev  r=   1 BF=     26N  weak=  2750N strong=  1228N
+  t=1 N=  256 rows=natural cols=natural r=   8 BF=    342N  weak=   237N strong=   220N
+  t=1 N=  256 rows=natural cols=bitrev  r=  16 BF=    682N  weak=   256N strong=   256N
+  t=1 N=  256 rows=bitrev  cols=natural r=  16 BF=    682N  weak=   256N strong=   256N
+  t=1 N=  256 rows=bitrev  cols=bitrev  r=  16 BF=    611N  weak=   256N strong=   256N
+  t=1 N= 4096 rows=natural cols=natural r=   8 BF=    758N  weak=  2885N strong=  1539N
+  t=1 N= 4096 rows=natural cols=bitrev  r=  64 BF=  10658N  weak=  4096N strong=  4096N
+  t=1 N= 4096 rows=bitrev  cols=natural r=  61 BF=  10538N  weak=  4096N strong=  4096N
+  t=1 N= 4096 rows=bitrev  cols=bitrev  r=  64 BF=  10519N  weak=  4096N strong=  4096N
+  t=3 N=  256 rows=natural cols=natural r=   9 BF=    329N  weak=   225N strong=   199N
+  t=3 N=  256 rows=natural cols=bitrev  r=  16 BF=    641N  weak=   256N strong=   256N
+  t=3 N=  256 rows=bitrev  cols=natural r=  14 BF=    594N  weak=   256N strong=   256N
+  t=3 N=  256 rows=bitrev  cols=bitrev  r=  16 BF=    611N  weak=   256N strong=   256N
+  t=3 N= 4096 rows=natural cols=natural r=  10 BF=    751N  weak=  2890N strong=  1544N
+  t=3 N= 4096 rows=natural cols=bitrev  r=  64 BF=   8782N  weak=  4096N strong=  4096N
+  t=3 N= 4096 rows=bitrev  cols=natural r=  44 BF=   8111N  weak=  4096N strong=  4096N
+  t=3 N= 4096 rows=bitrev  cols=bitrev  r=  64 BF=  10440N  weak=  4096N strong=  4096N
+total 328s

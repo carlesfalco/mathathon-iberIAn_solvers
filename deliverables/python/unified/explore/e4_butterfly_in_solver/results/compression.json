@@ -1,0 +1,828 @@
+{
+ "label": "computed",
+ "eps_target": 1e-06,
+ "geometries": {
+  "opposite_arcs": {
+   "rows": [
+    {
+     "geom": "opposite_arcs",
+     "N": 32,
+     "k": 12.8,
+     "dense": 1024,
+     "svd_rank": 10,
+     "lowrank": {
+      "rank": 10,
+      "storage": 540,
+      "tol": 1e-06,
+      "err": 3.383539529036401e-07
+     },
+     "butterfly": {
+      "rank": 4,
+      "ranks": [
+       1,
+       2,
+       4,
+       4,
+       2,
+       1
+      ],
+      "storage": 1024,
+      "nnz_raw": 1472,
+      "tol": 1e-06,
+      "err": 4.1672370154435834e-16
+     },
+     "ratio_bf_over_lr": 1.8962962962962964,
+     "time": 0.023355375000392087
+    },
+    {
+     "geom": "opposite_arcs",
+     "N": 64,
+     "k": 25.6,
+     "dense": 4096,
+     "svd_rank": 14,
+     "lowrank": {
+      "rank": 14,
+      "storage": 1596,
+      "tol": 1e-06,
+      "err": 2.0050453652653036e-07
+     },
+     "butterfly": {
+      "rank": 4,
+      "ranks": [
+       1,
+       2,
+       4,
+       4,
+       4,
+       2,
+       1
+      ],
+      "storage": 3072,
+      "nnz_raw": 4224,
+      "tol": 1e-06,
+      "err": 3.5265632649112636e-08
+     },
+     "ratio_bf_over_lr": 1.9248120300751879,
+     "time": 0.06187999999929161
+    },
+    {
+     "geom": "opposite_arcs",
+     "N": 128,
+     "k": 51.2,
+     "dense": 16384,
+     "svd_rank": 20,
+     "lowrank": {
+      "rank": 21,
+      "storage": 4935,
+      "tol": 1e-06,
+      "err": 5.464021743815718e-08
+     },
+     "butterfly": {
+      "rank": 4,
+      "ranks": [
+       1,
+       2,
+       4,
+       4,
+       4,
+       4,
+       2,
+       1
+      ],
+      "storage": 8192,
+      "nnz_raw": 11008,
+      "tol": 1e-06,
+      "err": 7.827532020840667e-08
+     },
+     "ratio_bf_over_lr": 1.6599797365754811,
+     "time": 0.09721379199982039
+    },
+    {
+     "geom": "opposite_arcs",
+     "N": 256,
+     "k": 102.4,
+     "dense": 65536,
+     "svd_rank": 31,
+     "lowrank": {
+      "rank": 32,
+      "storage": 15360,
+      "tol": 1e-06,
+      "err": 8.819485808467737e-08
+     },
+     "butterfly": {
+      "rank": 4,
+      "ranks": [
+       1,
+       2,
+       4,
+       4,
+       4,
+       4,
+       4,
+       2,
+       1
+      ],
+      "storage": 20480,
+      "nnz_raw": 27136,
+      "tol": 1e-06,
+      "err": 1.2559221263762677e-07
+     },
+     "ratio_bf_over_lr": 1.3333333333333333,
+     "time": 0.26103820800017274
+    },
+    {
+     "geom": "opposite_arcs",
+     "N": 512,
+     "k": 204.8,
+     "dense": 262144,
+     "svd_rank": 52,
+     "lowrank": {
+      "rank": 52,
+      "storage": 50544,
+      "tol": 1e-06,
+      "err": 2.3400288206117775e-07
+     },
+     "butterfly": {
+      "rank": 4,
+      "ranks": [
+       1,
+       2,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       2,
+       1
+      ],
+      "storage": 49152,
+      "nnz_raw": 64512,
+      "tol": 1e-06,
+      "err": 1.6154616706170678e-07
+     },
+     "ratio_bf_over_lr": 0.9724596391263058,
+     "time": 1.3078532500003348
+    },
+    {
+     "geom": "opposite_arcs",
+     "N": 1024,
+     "k": 409.6,
+     "dense": 1048576,
+     "svd_rank": 92,
+     "lowrank": {
+      "rank": 92,
+      "storage": 179952,
+      "tol": 1e-06,
+      "err": 3.120098703045846e-07
+     },
+     "butterfly": {
+      "rank": 4,
+      "ranks": [
+       1,
+       2,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       2,
+       1
+      ],
+      "storage": 114688,
+      "nnz_raw": 149504,
+      "tol": 1e-06,
+      "err": 2.0408853221734912e-07
+     },
+     "ratio_bf_over_lr": 0.6373255090246288,
+     "time": 3.048924333999821
+    },
+    {
+     "geom": "opposite_arcs",
+     "N": 2048,
+     "k": 819.2,
+     "dense": 4194304,
+     "svd_rank": 170,
+     "lowrank": {
+      "rank": 171,
+      "storage": 671175,
+      "tol": 1e-06,
+      "err": 1.2205735469350384e-07
+     },
+     "butterfly": {
+      "rank": 4,
+      "ranks": [
+       1,
+       2,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       2,
+       1
+      ],
+      "storage": 262144,
+      "nnz_raw": 339968,
+      "tol": 1e-06,
+      "err": 2.3602676081961786e-07
+     },
+     "ratio_bf_over_lr": 0.39057473833202966,
+     "time": 12.028427249999368
+    },
+    {
+     "geom": "opposite_arcs",
+     "N": 4096,
+     "k": 1638.4,
+     "dense": 16777216,
+     "svd_rank": 325,
+     "lowrank": {
+      "rank": 325,
+      "storage": 2556775,
+      "tol": 1e-06,
+      "err": 2.066020598786365e-07
+     },
+     "butterfly": {
+      "rank": 4,
+      "ranks": [
+       1,
+       2,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       2,
+       1
+      ],
+      "storage": 589824,
+      "nnz_raw": 761856,
+      "tol": 1e-06,
+      "err": 2.730659856121126e-07
+     },
+     "ratio_bf_over_lr": 0.23069061610818317,
+     "time": 60.17897554200135
+    }
+   ],
+   "crossover_k": 192.61639588323646,
+   "lowrank_rank_loglog_slope": 0.8406004612576436
+  },
+  "parallel_segments": {
+   "rows": [
+    {
+     "geom": "parallel_segments",
+     "N": 32,
+     "k": 20.106192982974676,
+     "dense": 1024,
+     "svd_rank": 11,
+     "lowrank": {
+      "rank": 11,
+      "storage": 583,
+      "tol": 1e-06,
+      "err": 5.950824284376859e-08
+     },
+     "butterfly": {
+      "rank": 4,
+      "ranks": [
+       1,
+       2,
+       4,
+       4,
+       2,
+       1
+      ],
+      "storage": 1024,
+      "nnz_raw": 1472,
+      "tol": 1e-06,
+      "err": 4.1374472995449286e-16
+     },
+     "ratio_bf_over_lr": 1.7564322469982847,
+     "time": 0.01293449999866425
+    },
+    {
+     "geom": "parallel_segments",
+     "N": 64,
+     "k": 40.21238596594935,
+     "dense": 4096,
+     "svd_rank": 15,
+     "lowrank": {
+      "rank": 15,
+      "storage": 1695,
+      "tol": 1e-06,
+      "err": 1.269326117862322e-07
+     },
+     "butterfly": {
+      "rank": 4,
+      "ranks": [
+       1,
+       2,
+       4,
+       4,
+       4,
+       2,
+       1
+      ],
+      "storage": 3072,
+      "nnz_raw": 4224,
+      "tol": 1e-06,
+      "err": 7.796796881246116e-08
+     },
+     "ratio_bf_over_lr": 1.8123893805309734,
+     "time": 0.03218837500025984
+    },
+    {
+     "geom": "parallel_segments",
+     "N": 128,
+     "k": 80.4247719318987,
+     "dense": 16384,
+     "svd_rank": 21,
+     "lowrank": {
+      "rank": 22,
+      "storage": 5148,
+      "tol": 1e-06,
+      "err": 1.085911550563712e-07
+     },
+     "butterfly": {
+      "rank": 4,
+      "ranks": [
+       1,
+       2,
+       4,
+       4,
+       4,
+       4,
+       2,
+       1
+      ],
+      "storage": 8192,
+      "nnz_raw": 11008,
+      "tol": 1e-06,
+      "err": 1.6703981295403875e-07
+     },
+     "ratio_bf_over_lr": 1.5912975912975913,
+     "time": 0.0764911670012225
+    },
+    {
+     "geom": "parallel_segments",
+     "N": 256,
+     "k": 160.8495438637974,
+     "dense": 65536,
+     "svd_rank": 34,
+     "lowrank": {
+      "rank": 35,
+      "storage": 16695,
+      "tol": 1e-06,
+      "err": 1.0199290001360655e-07
+     },
+     "butterfly": {
+      "rank": 4,
+      "ranks": [
+       1,
+       2,
+       4,
+       4,
+       4,
+       4,
+       4,
+       2,
+       1
+      ],
+      "storage": 20480,
+      "nnz_raw": 27136,
+      "tol": 1e-06,
+      "err": 2.430484170722398e-07
+     },
+     "ratio_bf_over_lr": 1.2267145852051513,
+     "time": 0.2130339590003132
+    },
+    {
+     "geom": "parallel_segments",
+     "N": 512,
+     "k": 321.6990877275948,
+     "dense": 262144,
+     "svd_rank": 57,
+     "lowrank": {
+      "rank": 57,
+      "storage": 55119,
+      "tol": 1e-06,
+      "err": 1.768157083616181e-07
+     },
+     "butterfly": {
+      "rank": 4,
+      "ranks": [
+       1,
+       2,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       2,
+       1
+      ],
+      "storage": 49152,
+      "nnz_raw": 64512,
+      "tol": 1e-06,
+      "err": 3.60171571843293e-07
+     },
+     "ratio_bf_over_lr": 0.8917433190007076,
+     "time": 0.7066703330001474
+    },
+    {
+     "geom": "parallel_segments",
+     "N": 1024,
+     "k": 643.3981754551896,
+     "dense": 1048576,
+     "svd_rank": 101,
+     "lowrank": {
+      "rank": 101,
+      "storage": 196647,
+      "tol": 1e-06,
+      "err": 1.8622235558818069e-07
+     },
+     "butterfly": {
+      "rank": 4,
+      "ranks": [
+       1,
+       2,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       2,
+       1
+      ],
+      "storage": 114688,
+      "nnz_raw": 149504,
+      "tol": 1e-06,
+      "err": 4.355508020246523e-07
+     },
+     "ratio_bf_over_lr": 0.5832176437982781,
+     "time": 2.3793116249999002
+    },
+    {
+     "geom": "parallel_segments",
+     "N": 2048,
+     "k": 1286.7963509103793,
+     "dense": 4194304,
+     "svd_rank": 188,
+     "lowrank": {
+      "rank": 188,
+      "storage": 734704,
+      "tol": 1e-06,
+      "err": 2.3230451173401942e-07
+     },
+     "butterfly": {
+      "rank": 4,
+      "ranks": [
+       1,
+       2,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       2,
+       1
+      ],
+      "storage": 262144,
+      "nnz_raw": 339968,
+      "tol": 1e-06,
+      "err": 5.000359187902555e-07
+     },
+     "ratio_bf_over_lr": 0.3568021951697554,
+     "time": 11.21489612500045
+    },
+    {
+     "geom": "parallel_segments",
+     "N": 4096,
+     "k": 2573.5927018207585,
+     "dense": 16777216,
+     "svd_rank": 359,
+     "lowrank": {
+      "rank": 360,
+      "storage": 2819520,
+      "tol": 1e-06,
+      "err": 1.6389688936120478e-07
+     },
+     "butterfly": {
+      "rank": 4,
+      "ranks": [
+       1,
+       2,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       4,
+       2,
+       1
+      ],
+      "storage": 589824,
+      "nnz_raw": 761856,
+      "tol": 1e-06,
+      "err": 5.60114170035003e-07
+     },
+     "ratio_bf_over_lr": 0.20919305413687436,
+     "time": 55.664774332999514
+    }
+   ],
+   "crossover_k": 250.7834933337859,
+   "lowrank_rank_loglog_slope": 0.8446838996282309
+  },
+  "collinear_segments": {
+   "rows": [
+    {
+     "geom": "collinear_segments",
+     "N": 32,
+     "k": 20.106192982974676,
+     "dense": 1024,
+     "svd_rank": 4,
+     "lowrank": {
+      "rank": 4,
+      "storage": 240,
+      "tol": 1e-06,
+      "err": 1.4648535049098506e-07
+     },
+     "butterfly": {
+      "rank": 3,
+      "ranks": [
+       1,
+       2,
+       3,
+       3,
+       2,
+       1
+      ],
+      "storage": 528,
+      "nnz_raw": 852,
+      "tol": 1e-06,
+      "err": 4.834460052536592e-07
+     },
+     "ratio_bf_over_lr": 2.2,
+     "time": 0.017003917000693036
+    },
+    {
+     "geom": "collinear_segments",
+     "N": 64,
+     "k": 40.21238596594935,
+     "dense": 4096,
+     "svd_rank": 4,
+     "lowrank": {
+      "rank": 4,
+      "storage": 496,
+      "tol": 1e-06,
+      "err": 1.2093926590292206e-07
+     },
+     "butterfly": {
+      "rank": 2,
+      "ranks": [
+       1,
+       2,
+       2,
+       2,
+       2,
+       2,
+       1
+      ],
+      "storage": 1280,
+      "nnz_raw": 2048,
+      "tol": 1e-06,
+      "err": 3.60491452832998e-07
+     },
+     "ratio_bf_over_lr": 2.5806451612903225,
+     "time": 0.027839040998514974
+    },
+    {
+     "geom": "collinear_segments",
+     "N": 128,
+     "k": 80.4247719318987,
+     "dense": 16384,
+     "svd_rank": 4,
+     "lowrank": {
+      "rank": 4,
+      "storage": 1008,
+      "tol": 1e-06,
+      "err": 7.252437386310696e-08
+     },
+     "butterfly": {
+      "rank": 2,
+      "ranks": [
+       1,
+       2,
+       2,
+       2,
+       2,
+       2,
+       2,
+       1
+      ],
+      "storage": 3072,
+      "nnz_raw": 4864,
+      "tol": 1e-06,
+      "err": 7.425236196390263e-08
+     },
+     "ratio_bf_over_lr": 3.0476190476190474,
+     "time": 0.08023683299870754
+    },
+    {
+     "geom": "collinear_segments",
+     "N": 256,
+     "k": 160.8495438637974,
+     "dense": 65536,
+     "svd_rank": 4,
+     "lowrank": {
+      "rank": 4,
+      "storage": 2032,
+      "tol": 1e-06,
+      "err": 1.1487667058377361e-07
+     },
+     "butterfly": {
+      "rank": 2,
+      "ranks": [
+       1,
+       2,
+       2,
+       2,
+       2,
+       2,
+       2,
+       2,
+       1
+      ],
+      "storage": 7168,
+      "nnz_raw": 11264,
+      "tol": 1e-06,
+      "err": 2.641175273873654e-08
+     },
+     "ratio_bf_over_lr": 3.52755905511811,
+     "time": 0.26009241599967936
+    },
+    {
+     "geom": "collinear_segments",
+     "N": 512,
+     "k": 321.6990877275948,
+     "dense": 262144,
+     "svd_rank": 4,
+     "lowrank": {
+      "rank": 4,
+      "storage": 4080,
+      "tol": 1e-06,
+      "err": 1.1119628931163703e-07
+     },
+     "butterfly": {
+      "rank": 2,
+      "ranks": [
+       1,
+       2,
+       2,
+       2,
+       2,
+       2,
+       2,
+       2,
+       2,
+       1
+      ],
+      "storage": 16384,
+      "nnz_raw": 25600,
+      "tol": 1e-06,
+      "err": 5.497275248191212e-09
+     },
+     "ratio_bf_over_lr": 4.015686274509804,
+     "time": 0.9860435829996277
+    },
+    {
+     "geom": "collinear_segments",
+     "N": 1024,
+     "k": 643.3981754551896,
+     "dense": 1048576,
+     "svd_rank": 4,
+     "lowrank": {
+      "rank": 4,
+      "storage": 8176,
+      "tol": 1e-06,
+      "err": 1.7664308017235517e-07
+     },
+     "butterfly": {
+      "rank": 2,
+      "ranks": [
+       1,
+       2,
+       2,
+       2,
+       2,
+       2,
+       2,
+       2,
+       2,
+       2,
+       1
+      ],
+      "storage": 36864,
+      "nnz_raw": 57344,
+      "tol": 1e-06,
+      "err": 2.7145888241899336e-09
+     },
+     "ratio_bf_over_lr": 4.5088062622309195,
+     "time": 3.2582476250008767
+    },
+    {
+     "geom": "collinear_segments",
+     "N": 2048,
+     "k": 1286.7963509103793,
+     "dense": 4194304,
+     "svd_rank": 4,
+     "lowrank": {
+      "rank": 4,
+      "storage": 16368,
+      "tol": 1e-06,
+      "err": 7.791482481224835e-08
+     },
+     "butterfly": {
+      "rank": 2,
+      "ranks": [
+       1,
+       2,
+       2,
+       2,
+       2,
+       2,
+       2,
+       2,
+       2,
+       2,
+       2,
+       1
+      ],
+      "storage": 81920,
+      "nnz_raw": 126976,
+      "tol": 1e-06,
+      "err": 4.897958393644547e-10
+     },
+     "ratio_bf_over_lr": 5.004887585532747,
+     "time": 12.065380583999286
+    },
+    {
+     "geom": "collinear_segments",
+     "N": 4096,
+     "k": 2573.5927018207585,
+     "dense": 16777216,
+     "svd_rank": 4,
+     "lowrank": {
+      "rank": 4,
+      "storage": 32752,
+      "tol": 1e-06,
+      "err": 1.090885153793189e-07
+     },
+     "butterfly": {
+      "rank": 2,
+      "ranks": [
+       1,
+       2,
+       2,
+       2,
+       2,
+       2,
+       2,
+       2,
+       2,
+       2,
+       2,
+       2,
+       1
+      ],
+      "storage": 180224,
+      "nnz_raw": 278528,
+      "tol": 1e-06,
+      "err": 1.5703474710563655e-10
+     },
+     "ratio_bf_over_lr": 5.502686858817782,
+     "time": 56.05356466699959
+    }
+   ],
+   "crossover_k": null,
+   "lowrank_rank_loglog_slope": -1.6700436555343942e-16
+  }
+ }
+}

@@ -1,0 +1,307 @@
+r1 k sweep
+  k=  10.0 weak   exact       eps=1e-08 err=1.01e-10 cond=1.24e+02 skel=2068
+  k=  10.0 weak   proxy       eps=1e-08 err=6.98e-11 cond=4.29e+01 skel=2195
+  k=  10.0 weak   realified   eps=1e-08 err=8.97e-11 cond=9.58e+01 skel=2120
+  k=  10.0 weak   congruent   eps=1e-08 err=8.58e-11 cond=4.06e+01 skel=2086
+  k=  10.0 strong exact       eps=1e-08 err=4.94e-11 cond=6.47e+01 skel=1342
+  k=  10.0 strong proxy       eps=1e-08 err=2.22e-11 cond=3.97e+01 skel=1705
+  k=  10.0 strong realified   eps=1e-08 err=5.00e-11 cond=2.14e+01 skel=1440
+  k=  10.0 strong congruent   eps=1e-08 err=4.85e-11 cond=3.36e+01 skel=1388
+  k=  20.0 weak   exact       eps=1e-08 err=8.05e-11 cond=1.05e+04 skel=2208
+  k=  20.0 weak   proxy       eps=1e-08 err=5.49e-11 cond=5.84e+01 skel=2333
+  k=  20.0 weak   realified   eps=1e-08 err=6.00e-11 cond=4.18e+01 skel=2278
+  k=  20.0 weak   congruent   eps=1e-08 err=7.05e-11 cond=4.32e+01 skel=2241
+  k=  20.0 strong exact       eps=1e-08 err=3.51e-11 cond=4.65e+02 skel=1537
+  k=  20.0 strong proxy       eps=1e-08 err=2.25e-11 cond=3.14e+01 skel=1854
+  k=  20.0 strong realified   eps=1e-08 err=3.21e-11 cond=2.12e+01 skel=1666
+  k=  20.0 strong congruent   eps=1e-08 err=3.20e-11 cond=4.09e+01 skel=1619
+  k=  30.0 weak   exact       eps=1e-08 err=6.67e-11 cond=7.30e+04 skel=2337
+  k=  30.0 weak   proxy       eps=1e-08 err=5.23e-11 cond=4.59e+01 skel=2457
+  k=  30.0 weak   realified   eps=1e-08 err=5.72e-11 cond=5.56e+01 skel=2425
+  k=  30.0 weak   congruent   eps=1e-08 err=5.64e-11 cond=1.18e+02 skel=2394
+  k=  30.0 strong exact       eps=1e-08 err=2.37e-11 cond=1.41e+04 skel=1699
+  k=  30.0 strong proxy       eps=1e-08 err=1.61e-11 cond=5.21e+01 skel=2006
+  k=  30.0 strong realified   eps=1e-08 err=2.97e-11 cond=4.78e+01 skel=1868
+  k=  30.0 strong congruent   eps=1e-08 err=2.82e-11 cond=2.49e+01 skel=1821
+  k=  40.0 weak   exact       eps=1e-08 err=6.18e-11 cond=8.55e+05 skel=2458
+  k=  40.0 weak   proxy       eps=1e-08 err=4.78e-11 cond=4.67e+01 skel=2581
+  k=  40.0 weak   realified   eps=1e-08 err=5.34e-11 cond=4.44e+01 skel=2552
+  k=  40.0 weak   congruent   eps=1e-08 err=4.57e-11 cond=4.32e+01 skel=2522
+  k=  40.0 strong exact       eps=1e-08 err=3.26e-11 cond=1.50e+06 skel=1847
+  k=  40.0 strong proxy       eps=1e-08 err=1.71e-11 cond=5.33e+01 skel=2162
+  k=  40.0 strong realified   eps=1e-08 err=2.29e-11 cond=8.76e+01 skel=2058
+  k=  40.0 strong congruent   eps=1e-08 err=2.35e-11 cond=8.52e+01 skel=2016
+  k=  50.0 weak   exact       eps=1e-08 err=1.76e-09 cond=1.50e+07 skel=2560
+  k=  50.0 weak   proxy       eps=1e-08 err=5.12e-11 cond=5.75e+01 skel=2697
+  k=  50.0 weak   realified   eps=1e-08 err=3.67e-11 cond=6.70e+01 skel=2681
+  k=  50.0 weak   congruent   eps=1e-08 err=4.47e-11 cond=5.59e+01 skel=2649
+  k=  50.0 strong exact       eps=1e-08 err=7.14e-11 cond=4.75e+06 skel=1976
+  k=  50.0 strong proxy       eps=1e-08 err=1.52e-11 cond=6.49e+01 skel=2324
+  k=  50.0 strong realified   eps=1e-08 err=2.28e-11 cond=6.29e+01 skel=2242
+  k=  50.0 strong congruent   eps=1e-08 err=2.23e-11 cond=6.23e+01 skel=2202
+  k=  60.0 weak   exact       eps=1e-08 err=4.28e-09 cond=1.36e+08 skel=2693
+  k=  60.0 weak   proxy       eps=1e-08 err=5.47e-11 cond=9.71e+01 skel=2837
+  k=  60.0 weak   realified   eps=1e-08 err=3.07e-11 cond=5.77e+01 skel=2813
+  k=  60.0 weak   congruent   eps=1e-08 err=3.61e-11 cond=6.28e+01 skel=2783
+  k=  60.0 strong exact       eps=1e-08 err=3.61e-10 cond=3.58e+07 skel=2117
+  k=  60.0 strong proxy       eps=1e-08 err=1.70e-11 cond=3.73e+01 skel=2482
+  k=  60.0 strong realified   eps=1e-08 err=2.05e-11 cond=3.07e+01 skel=2406
+  k=  60.0 strong congruent   eps=1e-08 err=2.29e-11 cond=3.99e+01 skel=2364
+  k=  70.0 weak   exact       eps=1e-08 err=5.86e-07 cond=3.81e+09 skel=2795
+  k=  70.0 weak   proxy       eps=1e-08 err=6.02e-11 cond=5.91e+01 skel=2953
+  k=  70.0 weak   realified   eps=1e-08 err=3.50e-11 cond=9.20e+01 skel=2940
+  k=  70.0 weak   congruent   eps=1e-08 err=3.00e-11 cond=4.85e+01 skel=2915
+  k=  70.0 strong exact       eps=1e-08 err=1.33e-08 cond=2.69e+08 skel=2237
+  k=  70.0 strong proxy       eps=1e-08 err=1.65e-11 cond=5.32e+01 skel=2629
+  k=  70.0 strong realified   eps=1e-08 err=1.70e-11 cond=3.63e+01 skel=2574
+  k=  70.0 strong congruent   eps=1e-08 err=1.96e-11 cond=4.25e+01 skel=2529
+  k=  80.0 weak   exact       eps=1e-08 err=5.73e-05 cond=3.26e+09 skel=2916
+  k=  80.0 weak   proxy       eps=1e-08 err=5.33e-11 cond=7.33e+01 skel=3088
+  k=  80.0 weak   realified   eps=1e-08 err=2.98e-11 cond=5.42e+01 skel=3071
+  k=  80.0 weak   congruent   eps=1e-08 err=3.29e-11 cond=7.23e+01 skel=3046
+  k=  80.0 strong exact       eps=1e-08 err=2.25e-07 cond=4.05e+10 skel=2366
+  k=  80.0 strong proxy       eps=1e-08 err=1.43e-11 cond=4.40e+01 skel=2791
+  k=  80.0 strong realified   eps=1e-08 err=1.53e-11 cond=3.02e+01 skel=2736
+  k=  80.0 strong congruent   eps=1e-08 err=1.90e-11 cond=3.20e+01 skel=2690
+  k=  90.0 weak   exact       eps=1e-08 err=6.41e-05 cond=1.32e+11 skel=3020
+  k=  90.0 weak   proxy       eps=1e-08 err=1.17e-10 cond=5.68e+01 skel=3198
+  k=  90.0 weak   realified   eps=1e-08 err=2.37e-11 cond=3.54e+01 skel=3191
+  k=  90.0 weak   congruent   eps=1e-08 err=2.49e-11 cond=4.64e+01 skel=3165
+  k=  90.0 strong exact       eps=1e-08 err=9.77e-07 cond=2.96e+10 skel=2480
+  k=  90.0 strong proxy       eps=1e-08 err=1.51e-11 cond=4.14e+01 skel=2936
+  k=  90.0 strong realified   eps=1e-08 err=1.47e-11 cond=3.54e+01 skel=2873
+  k=  90.0 strong congruent   eps=1e-08 err=1.29e-11 cond=2.99e+01 skel=2841
+  k= 100.0 weak   exact       eps=1e-08 err=5.77e-05 cond=2.23e+10 skel=3131
+  k= 100.0 weak   proxy       eps=1e-08 err=1.16e-10 cond=5.45e+01 skel=3320
+  k= 100.0 weak   realified   eps=1e-08 err=2.41e-11 cond=8.80e+01 skel=3320
+  k= 100.0 weak   congruent   eps=1e-08 err=2.40e-11 cond=6.17e+01 skel=3294
+  k= 100.0 strong exact       eps=1e-08 err=2.98e-05 cond=2.90e+11 skel=2601
+  k= 100.0 strong proxy       eps=1e-08 err=1.47e-11 cond=1.46e+02 skel=3080
+  k= 100.0 strong realified   eps=1e-08 err=1.63e-11 cond=5.83e+01 skel=3030
+  k= 100.0 strong congruent   eps=1e-08 err=1.51e-11 cond=9.27e+01 skel=2984
+  k= 110.0 weak   exact       eps=1e-08 err=9.85e-05 cond=8.48e+10 skel=3230
+  k= 110.0 weak   proxy       eps=1e-08 err=9.61e-11 cond=7.17e+01 skel=3442
+  k= 110.0 weak   realified   eps=1e-08 err=2.33e-11 cond=1.02e+02 skel=3448
+  k= 110.0 weak   congruent   eps=1e-08 err=2.43e-11 cond=7.83e+01 skel=3421
+  k= 110.0 strong exact       eps=1e-08 err=1.43e-05 cond=3.02e+11 skel=2719
+  k= 110.0 strong proxy       eps=1e-08 err=2.16e-11 cond=1.12e+02 skel=3226
+  k= 110.0 strong realified   eps=1e-08 err=1.45e-11 cond=3.51e+01 skel=3164
+  k= 110.0 strong congruent   eps=1e-08 err=1.41e-11 cond=4.12e+01 skel=3133
+  k= 120.0 weak   exact       eps=1e-08 err=5.17e-04 cond=1.19e+12 skel=3342
+  k= 120.0 weak   proxy       eps=1e-08 err=9.52e-11 cond=6.46e+01 skel=3555
+  k= 120.0 weak   realified   eps=1e-08 err=2.17e-11 cond=1.46e+02 skel=3553
+  k= 120.0 weak   congruent   eps=1e-08 err=2.35e-11 cond=9.00e+01 skel=3527
+  k= 120.0 strong exact       eps=1e-08 err=1.03e-04 cond=1.36e+12 skel=2825
+  k= 120.0 strong proxy       eps=1e-08 err=1.46e-11 cond=8.43e+01 skel=3377
+  k= 120.0 strong realified   eps=1e-08 err=1.21e-11 cond=4.59e+01 skel=3317
+  k= 120.0 strong congruent   eps=1e-08 err=1.21e-11 cond=4.84e+01 skel=3284
+r2 fine k sweep (exact, weak), worst cond per level
+  k=  40.0 weak   exact       eps=1e-08 err=6.18e-11 cond=8.55e+05 skel=2458
+  k=  41.0 weak   exact       eps=1e-08 err=9.16e-11 cond=7.42e+06 skel=2466
+  k=  42.0 weak   exact       eps=1e-08 err=1.62e-10 cond=2.35e+06 skel=2481
+  k=  43.0 weak   exact       eps=1e-08 err=2.22e-10 cond=3.51e+06 skel=2493
+  k=  44.0 weak   exact       eps=1e-08 err=3.71e-10 cond=6.29e+06 skel=2498
+  k=  45.0 weak   exact       eps=1e-08 err=6.03e-10 cond=4.47e+06 skel=2506
+  k=  46.0 weak   exact       eps=1e-08 err=1.39e-09 cond=2.54e+07 skel=2525
+  k=  47.0 weak   exact       eps=1e-08 err=3.02e-09 cond=1.33e+07 skel=2542
+  k=  48.0 weak   exact       eps=1e-08 err=2.61e-09 cond=1.86e+07 skel=2550
+  k=  49.0 weak   exact       eps=1e-08 err=3.23e-10 cond=1.03e+07 skel=2555
+  k=  50.0 weak   exact       eps=1e-08 err=1.76e-09 cond=1.50e+07 skel=2560
+  k=  51.0 weak   exact       eps=1e-08 err=1.67e-09 cond=1.23e+07 skel=2576
+  k=  52.0 weak   exact       eps=1e-08 err=2.91e-09 cond=1.95e+07 skel=2581
+  k=  53.0 weak   exact       eps=1e-08 err=7.70e-09 cond=3.50e+07 skel=2597
+  k=  54.0 weak   exact       eps=1e-08 err=1.35e-07 cond=7.69e+07 skel=2607
+  k=  55.0 weak   exact       eps=1e-08 err=3.89e-08 cond=8.07e+08 skel=2621
+  k=  56.0 weak   exact       eps=1e-08 err=2.74e-08 cond=7.57e+07 skel=2627
+  k=  57.0 weak   exact       eps=1e-08 err=8.76e-09 cond=2.61e+07 skel=2641
+  k=  58.0 weak   exact       eps=1e-08 err=1.78e-08 cond=9.84e+07 skel=2665
+  k=  59.0 weak   exact       eps=1e-08 err=9.17e-09 cond=2.03e+08 skel=2674
+  k=  60.0 weak   exact       eps=1e-08 err=4.28e-09 cond=1.36e+08 skel=2693
+  k=  61.0 weak   exact       eps=1e-08 err=8.33e-08 cond=4.24e+08 skel=2705
+  k=  62.0 weak   exact       eps=1e-08 err=2.57e-07 cond=9.40e+08 skel=2704
+  k=  63.0 weak   exact       eps=1e-08 err=3.49e-07 cond=4.88e+08 skel=2719
+  k=  64.0 weak   exact       eps=1e-08 err=7.55e-07 cond=2.48e+09 skel=2728
+  k=  65.0 weak   exact       eps=1e-08 err=1.98e-07 cond=3.39e+08 skel=2722
+  k=  66.0 weak   exact       eps=1e-08 err=9.54e-07 cond=4.16e+08 skel=2750
+  k=  67.0 weak   exact       eps=1e-08 err=1.45e-07 cond=1.69e+08 skel=2763
+  k=  68.0 weak   exact       eps=1e-08 err=2.58e-07 cond=4.89e+08 skel=2776
+  k=  69.0 weak   exact       eps=1e-08 err=3.14e-07 cond=2.67e+09 skel=2785
+  k=  70.0 weak   exact       eps=1e-08 err=5.86e-07 cond=3.81e+09 skel=2795
+  k=  71.0 weak   exact       eps=1e-08 err=1.69e-07 cond=1.62e+09 skel=2810
+  k=  72.0 weak   exact       eps=1e-08 err=2.57e-06 cond=1.98e+09 skel=2821
+  k=  73.0 weak   exact       eps=1e-08 err=2.95e-07 cond=3.36e+09 skel=2836
+  k=  74.0 weak   exact       eps=1e-08 err=2.24e-06 cond=1.74e+09 skel=2846
+  k=  75.0 weak   exact       eps=1e-08 err=2.46e-06 cond=1.62e+10 skel=2845
+  k=  76.0 weak   exact       eps=1e-08 err=2.12e-06 cond=1.10e+10 skel=2866
+  k=  77.0 weak   exact       eps=1e-08 err=1.09e-06 cond=7.75e+09 skel=2875
+  k=  78.0 weak   exact       eps=1e-08 err=8.05e-07 cond=1.83e+09 skel=2889
+  k=  79.0 weak   exact       eps=1e-08 err=2.13e-06 cond=1.04e+09 skel=2891
+  k=  80.0 weak   exact       eps=1e-08 err=5.73e-05 cond=3.26e+09 skel=2916
+  k=  81.0 weak   exact       eps=1e-08 err=4.51e-04 cond=1.20e+11 skel=2917
+  k=  82.0 weak   exact       eps=1e-08 err=1.37e-05 cond=4.08e+09 skel=2937
+  k=  83.0 weak   exact       eps=1e-08 err=1.82e-06 cond=2.71e+10 skel=2942
+  k=  84.0 weak   exact       eps=1e-08 err=2.71e-06 cond=4.91e+09 skel=2956
+  k=  85.0 weak   exact       eps=1e-08 err=2.62e-06 cond=6.25e+09 skel=2976
+  k=  86.0 weak   exact       eps=1e-08 err=1.51e-06 cond=9.99e+09 skel=2985
+  k=  87.0 weak   exact       eps=1e-08 err=2.35e-06 cond=4.74e+10 skel=2995
+  k=  88.0 weak   exact       eps=1e-08 err=3.44e-06 cond=3.91e+10 skel=3006
+  k=  89.0 weak   exact       eps=1e-08 err=2.45e-05 cond=3.35e+10 skel=3017
+  k=  90.0 weak   exact       eps=1e-08 err=6.41e-05 cond=1.32e+11 skel=3020
+  k=  91.0 weak   exact       eps=1e-08 err=1.79e-05 cond=2.95e+10 skel=3034
+  k=  92.0 weak   exact       eps=1e-08 err=1.96e-05 cond=2.58e+10 skel=3040
+  k=  93.0 weak   exact       eps=1e-08 err=2.31e-05 cond=5.80e+09 skel=3049
+  k=  94.0 weak   exact       eps=1e-08 err=2.31e-05 cond=4.92e+10 skel=3058
+  k=  95.0 weak   exact       eps=1e-08 err=2.31e-05 cond=7.74e+10 skel=3074
+  k=  96.0 weak   exact       eps=1e-08 err=1.01e-05 cond=7.73e+09 skel=3077
+  k=  97.0 weak   exact       eps=1e-08 err=9.09e-06 cond=1.71e+10 skel=3089
+  k=  98.0 weak   exact       eps=1e-08 err=4.36e-05 cond=4.50e+10 skel=3107
+  k=  99.0 weak   exact       eps=1e-08 err=5.94e-06 cond=3.67e+09 skel=3120
+  k= 100.0 weak   exact       eps=1e-08 err=5.77e-05 cond=2.23e+10 skel=3131
+r3 eps sweep at k = 80 (weak)
+  k=  80.0 weak   exact       eps=1e-06 err=2.12e-07 cond=3.78e+08 skel=2498
+  k=  80.0 weak   proxy       eps=1e-06 err=6.08e-09 cond=3.02e+01 skel=2652
+  k=  80.0 weak   realified   eps=1e-06 err=3.36e-09 cond=7.10e+01 skel=2642
+  k=  80.0 weak   congruent   eps=1e-06 err=3.56e-09 cond=1.12e+02 skel=2623
+  k=  80.0 weak   exact       eps=1e-08 err=5.73e-05 cond=3.26e+09 skel=2916
+  k=  80.0 weak   proxy       eps=1e-08 err=5.33e-11 cond=7.33e+01 skel=3088
+  k=  80.0 weak   realified   eps=1e-08 err=2.98e-11 cond=5.42e+01 skel=3071
+  k=  80.0 weak   congruent   eps=1e-08 err=3.29e-11 cond=7.23e+01 skel=3046
+  k=  80.0 weak   exact       eps=1e-10 err=7.02e-05 cond=7.56e+09 skel=3284
+  k=  80.0 weak   proxy       eps=1e-10 err=6.90e-13 cond=6.27e+01 skel=3472
+  k=  80.0 weak   realified   eps=1e-10 err=2.28e-13 cond=1.07e+02 skel=3457
+  k=  80.0 weak   congruent   eps=1e-10 err=2.58e-13 cond=6.84e+01 skel=3426
+  k=  80.0 weak   exact       eps=1e-12 err=2.59e-04 cond=8.85e+10 skel=3635
+  k=  80.0 weak   proxy       eps=1e-12 err=1.22e-14 cond=1.50e+02 skel=3823
+  k=  80.0 weak   realified   eps=1e-12 err=3.92e-15 cond=5.33e+01 skel=3802
+  k=  80.0 weak   congruent   eps=1e-12 err=4.27e-15 cond=4.79e+01 skel=3758
+r4 per-box localisation + Hermitian-part mechanism
+  k=20/weak/exact            L4 k*hw=  1.6 cond=2.5e+01 minHerm(X)=+0.997 minHerm(W_BB)=+0.998 ||W_BB-I||=3.1e-02 ImT=0.03
+  k=20/weak/exact            L3 k*hw=  3.1 cond=1.5e+02 minHerm(X)=+0.087 minHerm(W_BB)=+0.038 ||W_BB-I||=9.6e-01 ImT=0.08
+  k=20/weak/exact            L2 k*hw=  6.2 cond=2.2e+02 minHerm(X)=-0.857 minHerm(W_BB)=+0.014 ||W_BB-I||=9.9e-01 ImT=0.24
+  k=20/weak/exact            L1 k*hw= 12.5 cond=1.7e+04 minHerm(X)=-1.484 minHerm(W_BB)=-0.150 ||W_BB-I||=1.2e+00 ImT=0.43
+  k=20/weak/proxy            L4 k*hw=  1.6 cond=3.3e+01 minHerm(X)=+0.998 minHerm(W_BB)=+0.998 ||W_BB-I||=3.1e-02 ImT=0.00
+  k=20/weak/proxy            L3 k*hw=  3.1 cond=1.3e+02 minHerm(X)=+0.092 minHerm(W_BB)=+0.031 ||W_BB-I||=9.7e-01 ImT=0.01
+  k=20/weak/proxy            L2 k*hw=  6.2 cond=2.3e+02 minHerm(X)=+0.041 minHerm(W_BB)=+0.017 ||W_BB-I||=9.8e-01 ImT=0.02
+  k=20/weak/proxy            L1 k*hw= 12.5 cond=3.1e+02 minHerm(X)=+0.034 minHerm(W_BB)=+0.011 ||W_BB-I||=9.9e-01 ImT=0.03
+  k=20/weak/realified        L4 k*hw=  1.6 cond=4.6e+01 minHerm(X)=+0.998 minHerm(W_BB)=+0.998 ||W_BB-I||=3.1e-02 ImT=0.00
+  k=20/weak/realified        L3 k*hw=  3.1 cond=6.7e+01 minHerm(X)=+0.103 minHerm(W_BB)=+0.022 ||W_BB-I||=9.8e-01 ImT=0.00
+  k=20/weak/realified        L2 k*hw=  6.2 cond=1.4e+02 minHerm(X)=+0.071 minHerm(W_BB)=+0.023 ||W_BB-I||=9.8e-01 ImT=0.00
+  k=20/weak/realified        L1 k*hw= 12.5 cond=1.8e+02 minHerm(X)=+0.058 minHerm(W_BB)=+0.013 ||W_BB-I||=9.9e-01 ImT=0.00
+  k=20/strong/exact          L4 k*hw=  1.6 cond=3.7e+01 minHerm(X)=+0.631 minHerm(W_BB)=+0.998 ||W_BB-I||=3.1e-02 ImT=0.05
+  k=20/strong/exact          L3 k*hw=  3.1 cond=5.9e+01 minHerm(X)=-2.861 minHerm(W_BB)=+0.027 ||W_BB-I||=9.7e-01 ImT=0.23
+  k=20/strong/exact          L2 k*hw=  6.2 cond=1.1e+03 minHerm(X)=-0.894 minHerm(W_BB)=-0.162 ||W_BB-I||=1.2e+00 ImT=0.51
+  k=20/strong/proxy          L4 k*hw=  1.6 cond=3.3e+01 minHerm(X)=+0.998 minHerm(W_BB)=+0.998 ||W_BB-I||=3.1e-02 ImT=0.00
+  k=20/strong/proxy          L3 k*hw=  3.1 cond=7.6e+01 minHerm(X)=+0.074 minHerm(W_BB)=+0.030 ||W_BB-I||=9.7e-01 ImT=0.00
+  k=20/strong/proxy          L2 k*hw=  6.2 cond=1.1e+02 minHerm(X)=+0.041 minHerm(W_BB)=+0.021 ||W_BB-I||=9.8e-01 ImT=0.01
+  k=20/strong/realified      L4 k*hw=  1.6 cond=3.6e+01 minHerm(X)=+0.998 minHerm(W_BB)=+0.998 ||W_BB-I||=3.1e-02 ImT=0.00
+  k=20/strong/realified      L3 k*hw=  3.1 cond=5.9e+01 minHerm(X)=+0.106 minHerm(W_BB)=+0.028 ||W_BB-I||=9.7e-01 ImT=0.00
+  k=20/strong/realified      L2 k*hw=  6.2 cond=9.6e+01 minHerm(X)=+0.048 minHerm(W_BB)=+0.020 ||W_BB-I||=9.8e-01 ImT=0.00
+  k=80/weak/exact            L4 k*hw=  6.2 cond=4.3e+01 minHerm(X)=+0.908 minHerm(W_BB)=+0.998 ||W_BB-I||=1.3e-02 ImT=0.07
+  k=80/weak/exact            L3 k*hw= 12.5 cond=1.1e+02 minHerm(X)=-2.628 minHerm(W_BB)=+0.018 ||W_BB-I||=9.9e-01 ImT=0.19
+  k=80/weak/exact            L2 k*hw= 24.9 cond=1.1e+05 minHerm(X)=-3.405 minHerm(W_BB)=-0.308 ||W_BB-I||=1.5e+00 ImT=0.48
+  k=80/weak/exact            L1 k*hw= 49.8 cond=2.5e+10 minHerm(X)=-59.668 minHerm(W_BB)=-1336.316 ||W_BB-I||=2.1e+03 ImT=0.60
+  k=80/weak/proxy            L4 k*hw=  6.2 cond=2.7e+01 minHerm(X)=+0.999 minHerm(W_BB)=+0.998 ||W_BB-I||=1.3e-02 ImT=0.01
+  k=80/weak/proxy            L3 k*hw= 12.5 cond=2.0e+02 minHerm(X)=+0.094 minHerm(W_BB)=+0.037 ||W_BB-I||=9.6e-01 ImT=0.02
+  k=80/weak/proxy            L2 k*hw= 24.9 cond=1.8e+02 minHerm(X)=+0.066 minHerm(W_BB)=+0.021 ||W_BB-I||=9.8e-01 ImT=0.06
+  k=80/weak/proxy            L1 k*hw= 49.8 cond=2.1e+02 minHerm(X)=+0.072 minHerm(W_BB)=+0.013 ||W_BB-I||=9.9e-01 ImT=0.12
+  k=80/weak/realified        L4 k*hw=  6.2 cond=4.0e+01 minHerm(X)=+0.999 minHerm(W_BB)=+0.998 ||W_BB-I||=1.3e-02 ImT=0.00
+  k=80/weak/realified        L3 k*hw= 12.5 cond=7.7e+01 minHerm(X)=+0.138 minHerm(W_BB)=+0.025 ||W_BB-I||=9.8e-01 ImT=0.00
+  k=80/weak/realified        L2 k*hw= 24.9 cond=1.9e+02 minHerm(X)=+0.065 minHerm(W_BB)=+0.021 ||W_BB-I||=9.8e-01 ImT=0.00
+  k=80/weak/realified        L1 k*hw= 49.8 cond=9.7e+01 minHerm(X)=+0.062 minHerm(W_BB)=+0.009 ||W_BB-I||=9.9e-01 ImT=0.00
+  k=80/strong/exact          L4 k*hw=  6.2 cond=3.3e+01 minHerm(X)=-0.320 minHerm(W_BB)=+0.998 ||W_BB-I||=1.3e-02 ImT=0.11
+  k=80/strong/exact          L3 k*hw= 12.5 cond=1.3e+05 minHerm(X)=-3.026 minHerm(W_BB)=-0.018 ||W_BB-I||=1.1e+00 ImT=0.47
+  k=80/strong/exact          L2 k*hw= 24.9 cond=1.7e+11 minHerm(X)=-968.444 minHerm(W_BB)=-1223.078 ||W_BB-I||=4.0e+03 ImT=0.63
+  k=80/strong/proxy          L4 k*hw=  6.2 cond=3.1e+01 minHerm(X)=+0.999 minHerm(W_BB)=+0.998 ||W_BB-I||=1.3e-02 ImT=0.00
+  k=80/strong/proxy          L3 k*hw= 12.5 cond=7.1e+01 minHerm(X)=+0.129 minHerm(W_BB)=+0.032 ||W_BB-I||=9.7e-01 ImT=0.01
+  k=80/strong/proxy          L2 k*hw= 24.9 cond=1.2e+02 minHerm(X)=+0.101 minHerm(W_BB)=+0.021 ||W_BB-I||=9.8e-01 ImT=0.03
+  k=80/strong/realified      L4 k*hw=  6.2 cond=3.7e+01 minHerm(X)=+0.999 minHerm(W_BB)=+0.998 ||W_BB-I||=1.3e-02 ImT=0.00
+  k=80/strong/realified      L3 k*hw= 12.5 cond=8.0e+01 minHerm(X)=+0.111 minHerm(W_BB)=+0.027 ||W_BB-I||=9.7e-01 ImT=0.00
+  k=80/strong/realified      L2 k*hw= 24.9 cond=8.2e+01 minHerm(X)=+0.086 minHerm(W_BB)=+0.022 ||W_BB-I||=9.8e-01 ImT=0.00
+  k=100/weak/exact           L4 k*hw=  7.8 cond=4.8e+01 minHerm(X)=+0.990 minHerm(W_BB)=+0.998 ||W_BB-I||=1.2e-02 ImT=0.06
+  k=100/weak/exact           L3 k*hw= 15.6 cond=1.7e+02 minHerm(X)=-1.543 minHerm(W_BB)=+0.020 ||W_BB-I||=9.8e-01 ImT=0.18
+  k=100/weak/exact           L2 k*hw= 31.1 cond=3.0e+06 minHerm(X)=-3.671 minHerm(W_BB)=-0.613 ||W_BB-I||=2.6e+00 ImT=0.47
+  k=100/weak/exact           L1 k*hw= 62.3 cond=7.1e+10 minHerm(X)=-937.889 minHerm(W_BB)=-12612.216 ||W_BB-I||=2.8e+04 ImT=0.64
+  k=100/weak/proxy           L4 k*hw=  7.8 cond=2.1e+01 minHerm(X)=+0.999 minHerm(W_BB)=+0.998 ||W_BB-I||=1.2e-02 ImT=0.01
+  k=100/weak/proxy           L3 k*hw= 15.6 cond=1.3e+02 minHerm(X)=+0.113 minHerm(W_BB)=+0.048 ||W_BB-I||=9.5e-01 ImT=0.03
+  k=100/weak/proxy           L2 k*hw= 31.1 cond=2.1e+02 minHerm(X)=+0.070 minHerm(W_BB)=+0.026 ||W_BB-I||=9.7e-01 ImT=0.07
+  k=100/weak/proxy           L1 k*hw= 62.3 cond=1.2e+02 minHerm(X)=+0.124 minHerm(W_BB)=+0.007 ||W_BB-I||=1.0e+00 ImT=0.15
+  k=100/weak/realified       L4 k*hw=  7.8 cond=4.2e+01 minHerm(X)=+0.999 minHerm(W_BB)=+0.998 ||W_BB-I||=1.2e-02 ImT=0.00
+  k=100/weak/realified       L3 k*hw= 15.6 cond=1.0e+02 minHerm(X)=+0.106 minHerm(W_BB)=+0.024 ||W_BB-I||=9.8e-01 ImT=0.00
+  k=100/weak/realified       L2 k*hw= 31.1 cond=1.7e+02 minHerm(X)=+0.090 minHerm(W_BB)=+0.023 ||W_BB-I||=9.8e-01 ImT=0.00
+  k=100/weak/realified       L1 k*hw= 62.3 cond=2.3e+02 minHerm(X)=+0.051 minHerm(W_BB)=+0.009 ||W_BB-I||=9.9e-01 ImT=0.00
+  k=100/strong/exact         L4 k*hw=  7.8 cond=2.6e+01 minHerm(X)=-5.837 minHerm(W_BB)=+0.998 ||W_BB-I||=1.2e-02 ImT=0.11
+  k=100/strong/exact         L3 k*hw= 15.6 cond=1.8e+05 minHerm(X)=-3.619 minHerm(W_BB)=-0.151 ||W_BB-I||=1.4e+00 ImT=0.50
+  k=100/strong/exact         L2 k*hw= 31.1 cond=1.3e+12 minHerm(X)=-778.941 minHerm(W_BB)=-4961.283 ||W_BB-I||=7.1e+03 ImT=0.63
+  k=100/strong/proxy         L4 k*hw=  7.8 cond=2.9e+01 minHerm(X)=+0.999 minHerm(W_BB)=+0.998 ||W_BB-I||=1.2e-02 ImT=0.01
+  k=100/strong/proxy         L3 k*hw= 15.6 cond=1.1e+02 minHerm(X)=+0.120 minHerm(W_BB)=+0.035 ||W_BB-I||=9.7e-01 ImT=0.01
+  k=100/strong/proxy         L2 k*hw= 31.1 cond=3.8e+02 minHerm(X)=+0.059 minHerm(W_BB)=+0.021 ||W_BB-I||=9.8e-01 ImT=0.05
+  k=100/strong/realified     L4 k*hw=  7.8 cond=3.2e+01 minHerm(X)=+0.999 minHerm(W_BB)=+0.998 ||W_BB-I||=1.2e-02 ImT=0.00
+  k=100/strong/realified     L3 k*hw= 15.6 cond=8.1e+01 minHerm(X)=+0.076 minHerm(W_BB)=+0.031 ||W_BB-I||=9.7e-01 ImT=0.00
+  k=100/strong/realified     L2 k*hw= 31.1 cond=1.7e+02 minHerm(X)=+0.061 minHerm(W_BB)=+0.027 ||W_BB-I||=9.7e-01 ImT=0.00
+  realified: min over boxes of lmin Herm(X_RR) - lmin Herm(W_BB) = 5.72e-05 (theory: >= 0)
+r5 leaf-level subspaces
+      k comp         ImT conjgap  offcurve minHerm(PiTAPi) minHerm(PiTPi) sin<exact,proxy> (medians over leaves; Herm mins are minima)
+     10 exact       0.02    0.06   5.2e-09          +0.992         +0.993             0.05
+     10 proxy       0.00    0.00   3.8e-10          +0.997         +1.000             0.05
+     10 realified   0.00    0.00   3.0e-09          +0.997         +1.000             0.05
+     20 exact       0.03    0.07   3.1e-09          +0.995         +0.996             0.04
+     20 proxy       0.00    0.01   4.0e-10          +0.998         +1.000             0.04
+     20 realified   0.00    0.00   1.6e-09          +0.998         +1.000             0.04
+     40 exact       0.04    0.11   3.5e-09          +0.990         +0.991             0.06
+     40 proxy       0.01    0.02   1.3e-09          +0.998         +1.000             0.06
+     40 realified   0.00    0.00   1.7e-09          +0.998         +1.000             0.06
+     80 exact       0.06    0.15   6.8e-09          +0.987         +0.988             0.06
+     80 proxy       0.01    0.03   1.3e-09          +0.999         +0.999             0.06
+     80 realified   0.00    0.00   1.1e-09          +0.999         +1.000             0.06
+    100 exact       0.06    0.16   8.7e-09          +0.992         +0.992             0.05
+    100 proxy       0.01    0.03   1.8e-09          +0.999         +1.000             0.05
+    100 realified   0.00    0.00   1.4e-09          +0.999         +1.000             0.05
+r6 fixes
+  k=  80.0 weak   exact       eps=1e-08 err=5.73e-05 cond=3.26e+09 skel=2916
+  k=  80.0 weak   proxy       eps=1e-08 err=5.33e-11 cond=7.33e+01 skel=3088
+  k=  80.0 weak   realified   eps=1e-08 err=2.98e-11 cond=5.42e+01 skel=3071
+  k=  80.0 weak   congruent   eps=1e-08 err=3.29e-11 cond=7.23e+01 skel=3046
+  k=  80.0 weak   hybrid      eps=1e-08 err=2.04e-11 cond=6.77e+01 skel=3097
+  k=  80.0 weak   oversample8 eps=1e-08 err=1.51e-02 cond=4.94e+12 skel=3697
+  k=  80.0 weak   srrqr       eps=1e-08 err=6.01e-07 cond=1.09e+09 skel=2919
+  k=  80.0 weak   abstol      eps=1e-08 err=1.24e-07 cond=4.82e+08 skel=2448
+  k=  80.0 strong exact       eps=1e-08 err=2.25e-07 cond=4.05e+10 skel=2366
+  k=  80.0 strong proxy       eps=1e-08 err=1.43e-11 cond=4.40e+01 skel=2791
+  k=  80.0 strong realified   eps=1e-08 err=1.53e-11 cond=3.02e+01 skel=2736
+  k=  80.0 strong congruent   eps=1e-08 err=1.90e-11 cond=3.20e+01 skel=2690
+  k=  80.0 strong hybrid      eps=1e-08 err=1.26e-11 cond=4.12e+01 skel=2770
+  k=  80.0 strong oversample8 eps=1e-08 err=1.57e-06 cond=4.44e+10 skel=3240
+  k=  80.0 strong srrqr       eps=1e-08 err=1.73e-07 cond=9.40e+09 skel=2369
+  k=  80.0 strong abstol      eps=1e-08 err=2.10e-08 cond=7.72e+08 skel=1966
+  k= 100.0 weak   exact       eps=1e-08 err=5.77e-05 cond=2.23e+10 skel=3131
+  k= 100.0 weak   proxy       eps=1e-08 err=1.16e-10 cond=5.45e+01 skel=3320
+  k= 100.0 weak   realified   eps=1e-08 err=2.41e-11 cond=8.80e+01 skel=3320
+  k= 100.0 weak   congruent   eps=1e-08 err=2.40e-11 cond=6.17e+01 skel=3294
+  k= 100.0 weak   hybrid      eps=1e-08 err=1.85e-11 cond=5.56e+01 skel=3341
+  k= 100.0 weak   oversample8 eps=1e-08 err=2.17e+00 cond=2.30e+15 skel=3917
+  k= 100.0 weak   srrqr       eps=1e-08 err=2.01e-05 cond=2.13e+10 skel=3140
+  k= 100.0 weak   abstol      eps=1e-08 err=1.61e-05 cond=1.15e+09 skel=2670
+  k= 100.0 strong exact       eps=1e-08 err=2.98e-05 cond=2.90e+11 skel=2601
+  k= 100.0 strong proxy       eps=1e-08 err=1.47e-11 cond=1.46e+02 skel=3080
+  k= 100.0 strong realified   eps=1e-08 err=1.63e-11 cond=5.83e+01 skel=3030
+  k= 100.0 strong congruent   eps=1e-08 err=1.51e-11 cond=9.27e+01 skel=2984
+  k= 100.0 strong hybrid      eps=1e-08 err=1.36e-11 cond=7.88e+01 skel=3077
+  k= 100.0 strong oversample8 eps=1e-08 err=7.27e-04 cond=2.51e+12 skel=3454
+  k= 100.0 strong srrqr       eps=1e-08 err=5.58e-05 cond=2.53e+11 skel=2603
+  k= 100.0 strong abstol      eps=1e-08 err=3.90e-08 cond=5.29e+08 skel=2202
+  k= 120.0 weak   exact       eps=1e-08 err=5.17e-04 cond=1.19e+12 skel=3342
+  k= 120.0 weak   proxy       eps=1e-08 err=9.52e-11 cond=6.46e+01 skel=3555
+  k= 120.0 weak   realified   eps=1e-08 err=2.17e-11 cond=1.46e+02 skel=3553
+  k= 120.0 weak   congruent   eps=1e-08 err=2.35e-11 cond=9.00e+01 skel=3527
+  k= 120.0 weak   hybrid      eps=1e-08 err=1.55e-11 cond=7.03e+01 skel=3579
+  k= 120.0 weak   oversample8 eps=1e-08 err=2.49e+01 cond=1.47e+15 skel=4120
+  k= 120.0 weak   srrqr       eps=1e-08 err=6.23e-04 cond=1.02e+11 skel=3348
+  k= 120.0 weak   abstol      eps=1e-08 err=1.48e-06 cond=8.32e+09 skel=2863
+  k= 120.0 strong exact       eps=1e-08 err=1.03e-04 cond=1.36e+12 skel=2825
+  k= 120.0 strong proxy       eps=1e-08 err=1.46e-11 cond=8.43e+01 skel=3377
+  k= 120.0 strong realified   eps=1e-08 err=1.21e-11 cond=4.59e+01 skel=3317
+  k= 120.0 strong congruent   eps=1e-08 err=1.21e-11 cond=4.84e+01 skel=3284
+  k= 120.0 strong hybrid      eps=1e-08 err=1.01e-11 cond=1.75e+02 skel=3370
+  k= 120.0 strong oversample8 eps=1e-08 err=8.60e-03 cond=2.00e+14 skel=3660
+  k= 120.0 strong srrqr       eps=1e-08 err=1.89e-03 cond=3.94e+12 skel=2822
+  k= 120.0 strong abstol      eps=1e-08 err=1.54e-06 cond=2.73e+09 skel=2416

@@ -1,0 +1,38 @@
+[quick] laplace-curve ...
+    PASS  (1.0 s)
+[quick] helmholtz-starfish ...
+    PASS  (1.2 s)
+[quick] dft-as-butterfly ...
+    PASS  (1.5 s)
+[quick] fio-1d ...
+    PASS  (3.2 s)
+[quick] stokes-particles ...
+    PASS  (0.7 s)
+[quick] yukawa-bvp ...
+    PASS  (3.9 s)
+[quick] heat-rothe ...
+    PASS  (6.0 s)
+[quick] fractional-exit-time ...
+    PASS  (1.1 s)
+[quick] lippmann-schwinger-disk ...
+    PASS  (0.2 s)
+[quick] spherical-harmonics ...
+    PASS  (5.7 s)
+
+model                   | matched result (reference)                             | solver-dial lines | physics-setup lines | error vs analytic / invariant      | fast vs dense       | time fast / dense (s) | status
+------------------------+--------------------------------------------------------+-------------------+---------------------+------------------------------------+---------------------+-----------------------+-------
+laplace-curve           | harmonic u from 3 exterior sources (Kress 1999)        | 14                | 38                  | 3.8e-11 (dense 4.1e-16, tol 1e-09) | 2.2e-10 (tol 1e-08) | 0.2 / 0.5             | PASS  
+helmholtz-starfish      | outgoing H0 field of an interior source (Colton-Kress) | 76                | 41                  | 1.4e-04 (dense 1.4e-04, tol 1e-03) | 1.7e-08 (tol 1e-06) | 0.3 / 0.1             | PASS  
+dft-as-butterfly        | FFT identity + Cooley-Tukey entry count                | 19                | 8                   | 9.5e-14 (dense 6.7e-14, tol 1e-12) | 1.1e-13 (tol 1e-12) | 1.4 / 0.1             | PASS  
+fio-1d                  | tile rank bounded in N (Candès-Demanet-Ying)           | 9                 | 8                   | rank 10→10 (dense —, tol 2e+00)    | 2.9e-09 (tol 1e-07) | 2.6 / 0.1             | PASS  
+stokes-particles        | Jeffery 1922 ellipse rotation + circle mobility        | 85                | 94                  | 5.4e-15 (dense 2.5e-16, tol 1e-09) | 3.4e-14 (tol 1e-10) | 0.3 / 0.1             | PASS  
+yukawa-bvp              | sum of screened point charges K0(κr)/2π                | 32                | 44                  | 3.1e-08 (dense 3.1e-08, tol 2e-07) | 8.1e-13 (tol 1e-06) | 0.6 / 0.5             | PASS  
+heat-rothe              | exact backward-Euler point-source solution             | 77                | 66                  | 2.3e-06 (dense 2.3e-06, tol 1e-05) | 3.1e-10 (tol 1e-06) | 2.6 / 2.9             | PASS  
+fractional-exit-time    | Getoor 1961 fractional exit time (semicircle at s = ½) | 31                | 47                  | 6.8e-04 (dense 6.8e-04, tol 5e-03) | 8.6e-10 (tol 1e-06) | 0.2 / 0.5             | PASS  
+lippmann-schwinger-disk | Mie / Bessel series for a disk                         | 31                | 71                  | 8.9e-03 (dense 8.9e-03, tol 5e-02) | 4.3e-11 (tol 1e-06) | 0.1 / 0.0             | PASS  
+spherical-harmonics     | Rayleigh plane-wave expansion + Parseval               | 49                | 71                  | 1.5e-11 (dense 8.8e-14, tol 1e-08) | 1.5e-11 (tol 1e-08) | 5.7 / 0.0             | PASS  
+
+"Matched" means one of three things, named per model: exact solution = a closed-form solution of the continuous problem, so agreement is limited by the discretization and the tolerance is the documented discretization level, not ε; invariant = an identity that must hold (FFT identity and entry count, Parseval, Rayleigh expansion); published behaviour = a qualitative or scaling result (bounded tile rank). No row reproduces a table from a paper number for number.
+
+All checks passed.
+Total wall time: 24.5 s (quick)

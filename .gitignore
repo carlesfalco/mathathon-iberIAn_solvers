@@ -1,0 +1,45 @@
+# Open Math OS session state and private working records
+.scratch/
+.ultramath/
+attachments/
+
+# Local exports; submit the tracked source tree instead
+*.zip
+
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# Rust build output
+target/
+
+# LaTeX intermediate files (keep source and submitted PDFs)
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.xdv
+
+# Editor and operating-system files
+.DS_Store
+*~

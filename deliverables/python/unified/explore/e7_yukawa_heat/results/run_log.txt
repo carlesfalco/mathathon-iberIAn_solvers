@@ -1,0 +1,296 @@
+r1 rank model
+  r1 kappa=   0.001 done
+  r1 kappa= 0.00215 done
+  r1 kappa= 0.00464 done
+  r1 kappa=    0.01 done
+  r1 kappa=  0.0215 done
+  r1 kappa=  0.0464 done
+  r1 kappa=     0.1 done
+  r1 kappa=   0.215 done
+  r1 kappa=   0.464 done
+  r1 kappa=       1 done
+  r1 kappa=    2.15 done
+  r1 kappa=    4.64 done
+  r1 kappa=      10 done
+  r1 kappa=    21.5 done
+  r1 kappa=    46.4 done
+  r1 kappa=     100 done
+  r1 kappa=     215 done
+  r1 kappa=     464 done
+  r1 kappa=   1e+03 done
+  r1 kappa=2.15e+03 done
+  r1 kappa=4.64e+03 done
+  r1 kappa=   1e+04 done
+r2 kappa sweep
+  Y2-DLP k=   0.001 weak/exact-rel     err=3.0e-10 skel= 2059 flops=6.41e+06 an=1.3e-10
+  Y2-DLP k=   0.001 weak/exact-abs     err=2.9e-08 skel= 1678 flops=5.20e+06 an=2.2e-08
+  Y2-DLP k=   0.001 weak/proxy-rel     err=1.4e-07 skel= 2695 flops=6.06e+06 an=2.2e-07
+  Y2-DLP k=   0.001 weak/abs+trunc     err=2.9e-08 skel= 1678 flops=5.20e+06 an=2.2e-08
+  Y2-DLP k=   0.001 weak/proxy+trunc   err=1.4e-07 skel= 2695 flops=6.06e+06 an=2.2e-07
+  Y2-DLP k=   0.001 strong/exact-rel   err=1.7e-10 skel= 1970 flops=4.97e+07 an=8.7e-11
+  Y2-DLP k=   0.001 strong/exact-abs   err=1.5e-08 skel= 1594 flops=4.57e+07 an=6.6e-08
+  Y2-DLP k=   0.001 strong/proxy-rel   err=9.4e-09 skel= 2762 flops=5.95e+07 an=3.7e-09
+  Y2-DLP k=   0.001 strong/abs+trunc   err=1.5e-08 skel= 1594 flops=4.57e+07 an=6.6e-08
+  Y1-SLP k=   0.001 weak/exact-rel     err=1.2e-09 skel= 3657 flops=9.61e+06 an=nan
+  Y1-SLP k=   0.001 weak/proxy-rel     err=5.1e-10 skel= 4074 flops=1.14e+07 an=nan
+  Y1-SLP k=   0.001 strong/exact-rel   err=1.0e-09 skel= 1902 flops=4.83e+07 an=nan
+  Y1-SLP k=   0.001 strong/proxy-rel   err=8.5e-11 skel= 2775 flops=6.00e+07 an=nan
+  Y2-DLP k=    0.01 weak/exact-rel     err=3.0e-10 skel= 2059 flops=6.41e+06 an=1.3e-10
+  Y2-DLP k=    0.01 weak/exact-abs     err=2.9e-08 skel= 1678 flops=5.20e+06 an=2.1e-08
+  Y2-DLP k=    0.01 weak/proxy-rel     err=1.3e-07 skel= 2748 flops=6.17e+06 an=2.6e-07
+  Y2-DLP k=    0.01 weak/abs+trunc     err=2.9e-08 skel= 1678 flops=5.20e+06 an=2.1e-08
+  Y2-DLP k=    0.01 weak/proxy+trunc   err=1.3e-07 skel= 2748 flops=6.17e+06 an=2.6e-07
+  Y2-DLP k=    0.01 strong/exact-rel   err=1.7e-10 skel= 1970 flops=4.97e+07 an=8.5e-11
+  Y2-DLP k=    0.01 strong/exact-abs   err=1.5e-08 skel= 1594 flops=4.57e+07 an=6.8e-08
+  Y2-DLP k=    0.01 strong/proxy-rel   err=1.0e-08 skel= 2816 flops=6.04e+07 an=2.6e-09
+  Y2-DLP k=    0.01 strong/abs+trunc   err=1.5e-08 skel= 1594 flops=4.57e+07 an=6.8e-08
+  Y1-SLP k=    0.01 weak/exact-rel     err=8.3e-10 skel= 3728 flops=9.94e+06 an=nan
+  Y1-SLP k=    0.01 weak/proxy-rel     err=3.3e-10 skel= 4123 flops=1.16e+07 an=nan
+  Y1-SLP k=    0.01 strong/exact-rel   err=6.0e-10 skel= 1941 flops=4.88e+07 an=nan
+  Y1-SLP k=    0.01 strong/proxy-rel   err=3.9e-11 skel= 2839 flops=6.15e+07 an=nan
+  Y2-DLP k=     0.1 weak/exact-rel     err=2.7e-10 skel= 2061 flops=6.44e+06 an=1.3e-10
+  Y2-DLP k=     0.1 weak/exact-abs     err=3.0e-08 skel= 1676 flops=5.17e+06 an=2.6e-08
+  Y2-DLP k=     0.1 weak/proxy-rel     err=1.1e-07 skel= 2823 flops=6.34e+06 an=1.1e-07
+  Y2-DLP k=     0.1 weak/abs+trunc     err=3.0e-08 skel= 1676 flops=5.17e+06 an=2.6e-08
+  Y2-DLP k=     0.1 weak/proxy+trunc   err=1.1e-07 skel= 2823 flops=6.34e+06 an=1.1e-07
+  Y2-DLP k=     0.1 strong/exact-rel   err=1.8e-10 skel= 1966 flops=4.97e+07 an=9.5e-11
+  Y2-DLP k=     0.1 strong/exact-abs   err=1.5e-08 skel= 1594 flops=4.57e+07 an=6.0e-08
+  Y2-DLP k=     0.1 strong/proxy-rel   err=9.8e-10 skel= 2898 flops=6.21e+07 an=2.6e-10
+  Y2-DLP k=     0.1 strong/abs+trunc   err=1.5e-08 skel= 1594 flops=4.57e+07 an=6.0e-08
+  Y1-SLP k=     0.1 weak/exact-rel     err=4.0e-10 skel= 3837 flops=1.05e+07 an=nan
+  Y1-SLP k=     0.1 weak/proxy-rel     err=1.8e-10 skel= 4207 flops=1.23e+07 an=nan
+  Y1-SLP k=     0.1 strong/exact-rel   err=3.5e-10 skel= 2017 flops=4.98e+07 an=nan
+  Y1-SLP k=     0.1 strong/proxy-rel   err=2.9e-11 skel= 2918 flops=6.32e+07 an=nan
+  Y2-DLP k=       1 weak/exact-rel     err=2.0e-10 skel= 2480 flops=7.26e+06 an=1.5e-10
+  Y2-DLP k=       1 weak/exact-abs     err=2.7e-08 skel= 1775 flops=5.29e+06 an=2.0e-08
+  Y2-DLP k=       1 weak/proxy-rel     err=1.2e-08 skel= 2970 flops=7.11e+06 an=5.7e-09
+  Y2-DLP k=       1 weak/abs+trunc     err=2.7e-08 skel= 1775 flops=5.29e+06 an=2.0e-08
+  Y2-DLP k=       1 weak/proxy+trunc   err=1.2e-08 skel= 2970 flops=7.11e+06 an=5.7e-09
+  Y2-DLP k=       1 strong/exact-rel   err=1.3e-10 skel= 1989 flops=4.99e+07 an=2.4e-10
+  Y2-DLP k=       1 strong/exact-abs   err=1.1e-08 skel= 1576 flops=4.55e+07 an=8.6e-09
+  Y2-DLP k=       1 strong/proxy-rel   err=7.7e-10 skel= 3035 flops=6.51e+07 an=2.1e-10
+  Y2-DLP k=       1 strong/abs+trunc   err=1.1e-08 skel= 1576 flops=4.55e+07 an=8.6e-09
+  Y1-SLP k=       1 weak/exact-rel     err=1.5e-10 skel= 4051 flops=1.14e+07 an=nan
+  Y1-SLP k=       1 weak/proxy-rel     err=1.0e-10 skel= 4326 flops=1.33e+07 an=nan
+  Y1-SLP k=       1 strong/exact-rel   err=5.7e-11 skel= 2174 flops=5.15e+07 an=nan
+  Y1-SLP k=       1 strong/proxy-rel   err=7.4e-12 skel= 3082 flops=6.71e+07 an=nan
+  Y2-DLP k=       3 weak/exact-rel     err=1.8e-10 skel= 2827 flops=7.77e+06 an=1.5e-09
+  Y2-DLP k=       3 weak/exact-abs     err=1.9e-08 skel= 2000 flops=5.44e+06 an=2.5e-08
+  Y2-DLP k=       3 weak/proxy-rel     err=2.9e-09 skel= 3129 flops=8.35e+06 an=1.2e-09
+  Y2-DLP k=       3 weak/abs+trunc     err=1.9e-08 skel= 2000 flops=5.44e+06 an=2.5e-08
+  Y2-DLP k=       3 weak/proxy+trunc   err=2.9e-09 skel= 3129 flops=8.35e+06 an=1.2e-09
+  Y2-DLP k=       3 strong/exact-rel   err=5.8e-11 skel= 2086 flops=5.09e+07 an=1.4e-09
+  Y2-DLP k=       3 strong/exact-abs   err=1.2e-08 skel= 1536 flops=4.51e+07 an=2.4e-08
+  Y2-DLP k=       3 strong/proxy-rel   err=3.2e-11 skel= 3158 flops=6.84e+07 an=1.4e-09
+  Y2-DLP k=       3 strong/abs+trunc   err=1.2e-08 skel= 1536 flops=4.51e+07 an=2.4e-08
+  Y1-SLP k=       3 weak/exact-rel     err=1.0e-10 skel= 4111 flops=1.15e+07 an=nan
+  Y1-SLP k=       3 weak/proxy-rel     err=6.7e-11 skel= 4394 flops=1.33e+07 an=nan
+  Y1-SLP k=       3 strong/exact-rel   err=2.0e-11 skel= 2269 flops=5.30e+07 an=nan
+  Y1-SLP k=       3 strong/proxy-rel   err=2.9e-12 skel= 3212 flops=7.12e+07 an=nan
+  Y2-DLP k=      10 weak/exact-rel     err=1.3e-10 skel= 3274 flops=8.38e+06 an=1.8e-08
+  Y2-DLP k=      10 weak/exact-abs     err=2.0e-08 skel= 2260 flops=5.46e+06 an=8.8e-09
+  Y2-DLP k=      10 weak/proxy-rel     err=1.5e-09 skel= 3525 flops=1.02e+07 an=1.7e-08
+  Y2-DLP k=      10 weak/abs+trunc     err=2.0e-08 skel= 2260 flops=5.46e+06 an=8.8e-09
+  Y2-DLP k=      10 weak/proxy+trunc   err=1.5e-09 skel= 3525 flops=1.02e+07 an=1.7e-08
+  Y2-DLP k=      10 strong/exact-rel   err=1.7e-11 skel= 2191 flops=5.21e+07 an=1.8e-08
+  Y2-DLP k=      10 strong/exact-abs   err=2.9e-08 skel= 1362 flops=4.41e+07 an=4.5e-08
+  Y2-DLP k=      10 strong/proxy-rel   err=2.2e-12 skel= 3409 flops=7.60e+07 an=1.8e-08
+  Y2-DLP k=      10 strong/abs+trunc   err=2.9e-08 skel= 1362 flops=4.41e+07 an=4.5e-08
+  Y1-SLP k=      10 weak/exact-rel     err=5.3e-11 skel= 4150 flops=1.07e+07 an=nan
+  Y1-SLP k=      10 weak/proxy-rel     err=4.2e-11 skel= 4437 flops=1.24e+07 an=nan
+  Y1-SLP k=      10 strong/exact-rel   err=3.0e-12 skel= 2390 flops=5.44e+07 an=nan
+  Y1-SLP k=      10 strong/proxy-rel   err=5.4e-13 skel= 3461 flops=7.89e+07 an=nan
+  Y2-DLP k=      30 weak/exact-rel     err=9.5e-11 skel= 3455 flops=7.13e+06 an=1.7e-07
+  Y2-DLP k=      30 weak/exact-abs     err=1.9e-08 skel= 2357 flops=4.97e+06 an=1.7e-07
+  Y2-DLP k=      30 weak/proxy-rel     err=2.8e-10 skel= 3960 flops=8.60e+06 an=1.7e-07
+  Y2-DLP k=      30 weak/abs+trunc     err=1.9e-08 skel= 2357 flops=4.97e+06 an=1.7e-07
+  Y2-DLP k=      30 weak/proxy+trunc   err=2.8e-10 skel= 3960 flops=8.60e+06 an=1.7e-07
+  Y2-DLP k=      30 strong/exact-rel   err=1.9e-12 skel= 2221 flops=5.17e+07 an=1.7e-07
+  Y2-DLP k=      30 strong/exact-abs   err=1.3e-08 skel=  993 flops=4.30e+07 an=1.7e-07
+  Y2-DLP k=      30 strong/proxy-rel   err=6.7e-14 skel= 3752 flops=8.76e+07 an=1.7e-07
+  Y2-DLP k=      30 strong/abs+trunc   err=1.3e-08 skel=  993 flops=4.30e+07 an=1.7e-07
+  Y1-SLP k=      30 weak/exact-rel     err=3.8e-11 skel= 3993 flops=8.43e+06 an=nan
+  Y1-SLP k=      30 weak/proxy-rel     err=3.5e-11 skel= 4330 flops=9.39e+06 an=nan
+  Y1-SLP k=      30 strong/exact-rel   err=2.3e-13 skel= 2369 flops=5.33e+07 an=nan
+  Y1-SLP k=      30 strong/proxy-rel   err=4.4e-14 skel= 3796 flops=9.10e+07 an=nan
+  Y2-DLP k=     100 weak/exact-rel     err=2.6e-11 skel= 3303 flops=6.29e+06 an=2.0e-06
+  Y2-DLP k=     100 weak/exact-abs     err=9.0e-09 skel= 2217 flops=4.79e+06 an=2.0e-06
+  Y2-DLP k=     100 weak/proxy-rel     err=2.4e-11 skel= 3982 flops=7.56e+06 an=2.0e-06
+  Y2-DLP k=     100 weak/abs+trunc     err=9.0e-09 skel= 2217 flops=4.79e+06 an=2.0e-06
+  Y2-DLP k=     100 weak/proxy+trunc   err=2.4e-11 skel= 3982 flops=7.56e+06 an=2.0e-06
+  Y2-DLP k=     100 strong/exact-rel   err=6.6e-15 skel= 1869 flops=4.78e+07 an=2.0e-06
+  Y2-DLP k=     100 strong/exact-abs   err=2.9e-09 skel=  302 flops=4.04e+07 an=2.0e-06
+  Y2-DLP k=     100 strong/proxy-rel   err=1.8e-15 skel= 4058 flops=9.53e+07 an=2.0e-06
+  Y2-DLP k=     100 strong/abs+trunc   err=2.9e-09 skel=  302 flops=4.04e+07 an=2.0e-06
+  Y1-SLP k=     100 weak/exact-rel     err=7.3e-12 skel= 3524 flops=6.75e+06 an=nan
+  Y1-SLP k=     100 weak/proxy-rel     err=7.7e-12 skel= 3829 flops=7.28e+06 an=nan
+  Y1-SLP k=     100 strong/exact-rel   err=1.3e-15 skel= 1966 flops=4.87e+07 an=nan
+  Y1-SLP k=     100 strong/proxy-rel   err=1.5e-15 skel= 4086 flops=9.59e+07 an=nan
+  Y2-DLP k=     300 weak/exact-rel     err=5.7e-12 skel= 2628 flops=5.22e+06 an=1.8e-05
+  Y2-DLP k=     300 weak/exact-abs     err=3.4e-09 skel= 1819 flops=4.50e+06 an=1.8e-05
+  Y2-DLP k=     300 weak/proxy-rel     err=6.0e-12 skel= 2835 flops=5.45e+06 an=1.8e-05
+  Y2-DLP k=     300 weak/abs+trunc     err=3.4e-09 skel= 1819 flops=4.50e+06 an=1.8e-05
+  Y2-DLP k=     300 weak/proxy+trunc   err=6.0e-12 skel= 2835 flops=5.45e+06 an=1.8e-05
+  Y2-DLP k=     300 strong/exact-rel   err=7.2e-16 skel= 1353 flops=4.47e+07 an=1.8e-05
+  Y2-DLP k=     300 strong/exact-abs   err=3.5e-14 skel=  365 flops=3.90e+07 an=1.8e-05
+  Y2-DLP k=     300 strong/proxy-rel   err=9.6e-16 skel= 3906 flops=8.58e+07 an=1.8e-05
+  Y2-DLP k=     300 strong/abs+trunc   err=3.5e-14 skel=  365 flops=3.90e+07 an=1.8e-05
+  Y1-SLP k=     300 weak/exact-rel     err=1.3e-12 skel= 2737 flops=5.37e+06 an=nan
+  Y1-SLP k=     300 weak/proxy-rel     err=1.3e-12 skel= 2752 flops=5.38e+06 an=nan
+  Y1-SLP k=     300 strong/exact-rel   err=6.5e-16 skel= 1417 flops=4.50e+07 an=nan
+  Y1-SLP k=     300 strong/proxy-rel   err=9.1e-16 skel= 3778 flops=8.13e+07 an=nan
+  Y2-DLP k=   1e+03 weak/exact-rel     err=5.6e-13 skel= 1732 flops=4.46e+06 an=1.8e-04
+  Y2-DLP k=   1e+03 weak/exact-abs     err=7.2e-10 skel= 1090 flops=4.22e+06 an=1.8e-04
+  Y2-DLP k=   1e+03 weak/proxy-rel     err=5.6e-13 skel= 1732 flops=4.46e+06 an=1.8e-04
+  Y2-DLP k=   1e+03 weak/abs+trunc     err=7.2e-10 skel= 1090 flops=4.22e+06 an=1.8e-04
+  Y2-DLP k=   1e+03 weak/proxy+trunc   err=5.6e-13 skel= 1732 flops=4.46e+06 an=1.8e-04
+  Y2-DLP k=   1e+03 strong/exact-rel   BREAKDOWN ValueError: array must not contain infs or NaNs
+  Y2-DLP k=   1e+03 strong/exact-abs   err=2.0e-16 skel=  365 flops=3.90e+07 an=1.8e-04
+  Y2-DLP k=   1e+03 strong/proxy-rel   err=4.0e-16 skel= 2277 flops=5.54e+07 an=1.8e-04
+  Y2-DLP k=   1e+03 strong/abs+trunc   err=2.0e-16 skel=  365 flops=3.90e+07 an=1.8e-04
+  Y1-SLP k=   1e+03 weak/exact-rel     err=5.0e-14 skel= 1746 flops=4.46e+06 an=nan
+  Y1-SLP k=   1e+03 weak/proxy-rel     err=5.0e-14 skel= 1746 flops=4.46e+06 an=nan
+  Y1-SLP k=   1e+03 strong/exact-rel   err=2.4e-16 skel=  872 flops=4.21e+07 an=nan
+  Y1-SLP k=   1e+03 strong/proxy-rel   err=3.6e-16 skel= 2221 flops=5.44e+07 an=nan
+  Y2-DLP k=   3e+03 weak/exact-rel     err=1.2e-13 skel= 1072 flops=4.22e+06 an=8.1e-04
+  Y2-DLP k=   3e+03 weak/exact-abs     err=1.7e-10 skel=  538 flops=4.15e+06 an=8.1e-04
+  Y2-DLP k=   3e+03 weak/proxy-rel     err=1.2e-13 skel= 1072 flops=4.22e+06 an=8.1e-04
+  Y2-DLP k=   3e+03 weak/abs+trunc     err=1.7e-10 skel=  538 flops=4.15e+06 an=8.1e-04
+  Y2-DLP k=   3e+03 weak/proxy+trunc   err=1.2e-13 skel= 1072 flops=4.22e+06 an=8.1e-04
+  Y2-DLP k=   3e+03 strong/exact-rel   BREAKDOWN ValueError: array must not contain infs or NaNs
+  Y2-DLP k=   3e+03 strong/exact-abs   err=1.2e-16 skel=  365 flops=3.90e+07 an=8.1e-04
+  Y2-DLP k=   3e+03 strong/proxy-rel   BREAKDOWN ValueError: array must not contain infs or NaNs
+  Y2-DLP k=   3e+03 strong/abs+trunc   err=1.2e-16 skel=  365 flops=3.90e+07 an=8.1e-04
+  Y1-SLP k=   3e+03 weak/exact-rel     err=8.1e-16 skel= 1062 flops=4.22e+06 an=nan
+  Y1-SLP k=   3e+03 weak/proxy-rel     err=8.1e-16 skel= 1062 flops=4.22e+06 an=nan
+  Y1-SLP k=   3e+03 strong/exact-rel   BREAKDOWN ValueError: array must not contain infs or NaNs
+  Y1-SLP k=   3e+03 strong/proxy-rel   BREAKDOWN ValueError: array must not contain infs or NaNs
+  Y2-DLP k=   1e+04 weak/exact-rel     err=1.1e-16 skel=  516 flops=4.15e+06 an=nan
+  Y2-DLP k=   1e+04 weak/exact-abs     err=2.3e-10 skel=   22 flops=4.14e+06 an=nan
+  Y2-DLP k=   1e+04 weak/proxy-rel     err=1.1e-16 skel=  516 flops=4.15e+06 an=nan
+  Y2-DLP k=   1e+04 weak/abs+trunc     err=2.3e-10 skel=   22 flops=4.14e+06 an=nan
+  Y2-DLP k=   1e+04 weak/proxy+trunc   err=1.1e-16 skel=  516 flops=4.15e+06 an=nan
+  Y2-DLP k=   1e+04 strong/exact-rel   err=3.2e-17 skel=  365 flops=3.90e+07 an=nan
+  Y2-DLP k=   1e+04 strong/exact-abs   err=3.2e-17 skel=  365 flops=3.90e+07 an=nan
+  Y2-DLP k=   1e+04 strong/proxy-rel   err=7.5e-17 skel=  319 flops=4.04e+07 an=nan
+  Y2-DLP k=   1e+04 strong/abs+trunc   err=3.2e-17 skel=  365 flops=3.90e+07 an=nan
+  Y1-SLP k=   1e+04 weak/exact-rel     err=4.2e-17 skel=  528 flops=4.15e+06 an=nan
+  Y1-SLP k=   1e+04 weak/proxy-rel     err=4.2e-17 skel=  528 flops=4.15e+06 an=nan
+  Y1-SLP k=   1e+04 strong/exact-rel   err=2.1e-17 skel=  365 flops=3.90e+07 an=nan
+  Y1-SLP k=   1e+04 strong/proxy-rel   err=5.6e-17 skel=  325 flops=4.04e+07 an=nan
+r3 quadrature limit
+  r3 N=512 k=      1 kh= 0.018 analytic err fast=5.5e-05 dense=5.5e-05
+  r3 N=512 k=      3 kh= 0.053 analytic err fast=4.3e-05 dense=4.3e-05
+  r3 N=512 k=     10 kh= 0.176 analytic err fast=8.9e-06 dense=8.9e-06
+  r3 N=512 k=     30 kh= 0.528 analytic err fast=8.7e-05 dense=8.7e-05
+  r3 N=512 k=    100 kh= 1.761 analytic err fast=9.3e-04 dense=9.3e-04
+  r3 N=512 k=    300 kh= 5.284 analytic err fast=2.1e-03 dense=2.1e-03
+  r3 N=512 k=  1e+03 kh=17.612 analytic err fast=3.1e-01 dense=3.1e-01
+  r3 N=512 k=  3e+03 kh=52.835 analytic err fast=1.2e+00 dense=1.2e+00
+  r3 N=1024 k=      1 kh= 0.009 analytic err fast=1.2e-08 dense=1.1e-08
+  r3 N=1024 k=      3 kh= 0.026 analytic err fast=9.0e-08 dense=9.1e-08
+  r3 N=1024 k=     10 kh= 0.088 analytic err fast=1.1e-06 dense=1.1e-06
+  r3 N=1024 k=     30 kh= 0.264 analytic err fast=1.1e-05 dense=1.1e-05
+  r3 N=1024 k=    100 kh= 0.881 analytic err fast=1.2e-04 dense=1.2e-04
+  r3 N=1024 k=    300 kh= 2.642 analytic err fast=9.8e-04 dense=9.8e-04
+  r3 N=1024 k=  1e+03 kh= 8.806 analytic err fast=2.5e-03 dense=2.5e-03
+  r3 N=1024 k=  3e+03 kh=26.418 analytic err fast=1.6e-01 dense=1.6e-01
+  r3 N=2048 k=      1 kh= 0.004 analytic err fast=1.6e-08 dense=1.1e-09
+  r3 N=2048 k=      3 kh= 0.013 analytic err fast=1.3e-08 dense=1.1e-08
+  r3 N=2048 k=     10 kh= 0.044 analytic err fast=1.5e-07 dense=1.4e-07
+  r3 N=2048 k=     30 kh= 0.132 analytic err fast=1.4e-06 dense=1.4e-06
+  r3 N=2048 k=    100 kh= 0.440 analytic err fast=1.6e-05 dense=1.6e-05
+  r3 N=2048 k=    300 kh= 1.321 analytic err fast=1.4e-04 dense=1.4e-04
+  r3 N=2048 k=  1e+03 kh= 4.403 analytic err fast=1.1e-03 dense=1.1e-03
+  r3 N=2048 k=  3e+03 kh=13.209 analytic err fast=2.3e-03 dense=2.3e-03
+  r3 N=4096 k=      1 kh= 0.002 analytic err fast=8.6e-09 dense=1.4e-10
+  r3 N=4096 k=      3 kh= 0.007 analytic err fast=2.4e-08 dense=1.4e-09
+  r3 N=4096 k=     10 kh= 0.022 analytic err fast=4.5e-08 dense=1.8e-08
+  r3 N=4096 k=     30 kh= 0.066 analytic err fast=1.7e-07 dense=1.7e-07
+  r3 N=4096 k=    100 kh= 0.220 analytic err fast=2.0e-06 dense=2.0e-06
+  r3 N=4096 k=    300 kh= 0.660 analytic err fast=1.8e-05 dense=1.8e-05
+  r3 N=4096 k=  1e+03 kh= 2.201 analytic err fast=1.8e-04 dense=1.8e-04
+  r3 N=4096 k=  3e+03 kh= 6.604 analytic err fast=8.1e-04 dense=8.1e-04
+r4 scaling
+  r4 N=1024 k=     1 weak/exact-rel   err=3.5e-10 flops=2.92e+06 store=6.97e+04 t=0.05
+  r4 N=1024 k=     1 weak/proxy-rel   err=5.0e-09 flops=2.84e+06 store=7.38e+04 t=0.10
+  r4 N=1024 k=     1 weak/abs+trunc   err=9.9e-09 flops=1.61e+06 store=5.34e+04 t=0.03
+  r4 N=1024 k=     1 strong/exact-rel err=2.4e-10 flops=8.29e+06 store=1.28e+05 t=0.03
+  r4 N=1024 k=     1 strong/proxy-rel err=2.1e-10 flops=1.66e+07 store=1.79e+05 t=0.10
+  r4 N=1024 k=     1 strong/abs+trunc err=1.0e-08 flops=5.88e+06 store=1.11e+05 t=0.03
+  r4 N=1024 k=    30 weak/exact-rel   err=1.3e-10 flops=1.56e+06 store=6.59e+04 t=0.04
+  r4 N=1024 k=    30 weak/proxy-rel   err=1.1e-10 flops=2.25e+06 store=8.10e+04 t=0.17
+  r4 N=1024 k=    30 weak/abs+trunc   err=7.6e-09 flops=7.29e+05 store=4.62e+04 t=0.02
+  r4 N=1024 k=    30 strong/exact-rel err=3.6e-13 flops=8.64e+06 store=1.32e+05 t=0.05
+  r4 N=1024 k=    30 strong/proxy-rel err=5.8e-14 flops=3.16e+07 store=2.43e+05 t=0.17
+  r4 N=1024 k=    30 strong/abs+trunc err=5.9e-09 flops=3.01e+06 store=7.71e+04 t=0.02
+  r4 N=1024 k=   300 weak/exact-rel   err=1.1e-12 flops=3.94e+05 store=3.32e+04 t=0.04
+  r4 N=1024 k=   300 weak/proxy-rel   err=1.1e-12 flops=3.94e+05 store=3.32e+04 t=0.11
+  r4 N=1024 k=   300 weak/abs+trunc   err=9.0e-10 flops=3.06e+05 store=2.70e+04 t=0.01
+  r4 N=1024 k=   300 strong/exact-rel err=2.7e-16 flops=3.05e+06 store=7.85e+04 t=0.03
+  r4 N=1024 k=   300 strong/proxy-rel err=3.7e-16 flops=1.13e+07 store=1.55e+05 t=0.10
+  r4 N=1024 k=   300 strong/abs+trunc err=2.2e-16 flops=2.43e+06 store=6.55e+04 t=0.01
+  r4 N=2048 k=     1 weak/exact-rel   err=1.9e-10 flops=4.94e+06 store=1.41e+05 t=0.12
+  r4 N=2048 k=     1 weak/proxy-rel   err=6.7e-09 flops=4.69e+06 store=1.45e+05 t=0.13
+  r4 N=2048 k=     1 weak/abs+trunc   err=1.6e-08 flops=3.34e+06 store=1.17e+05 t=0.14
+  r4 N=2048 k=     1 strong/exact-rel err=1.6e-10 flops=2.72e+07 store=3.35e+05 t=0.13
+  r4 N=2048 k=     1 strong/proxy-rel err=9.0e-10 flops=3.68e+07 store=3.95e+05 t=0.16
+  r4 N=2048 k=     1 strong/abs+trunc err=9.0e-09 flops=2.42e+07 store=3.12e+05 t=0.07
+  r4 N=2048 k=    30 weak/exact-rel   err=1.3e-10 flops=3.92e+06 store=1.49e+05 t=0.08
+  r4 N=2048 k=    30 weak/proxy-rel   err=6.7e-11 flops=4.96e+06 store=1.71e+05 t=0.28
+  r4 N=2048 k=    30 weak/abs+trunc   err=1.3e-08 flops=2.69e+06 store=1.18e+05 t=0.04
+  r4 N=2048 k=    30 strong/exact-rel err=5.6e-13 flops=2.77e+07 store=3.40e+05 t=0.09
+  r4 N=2048 k=    30 strong/proxy-rel err=5.0e-14 flops=5.50e+07 store=4.74e+05 t=0.27
+  r4 N=2048 k=    30 strong/abs+trunc err=5.8e-09 flops=2.12e+07 store=2.78e+05 t=0.03
+  r4 N=2048 k=   300 weak/exact-rel   err=3.4e-12 flops=2.40e+06 store=1.07e+05 t=0.12
+  r4 N=2048 k=   300 weak/proxy-rel   err=3.4e-12 flops=2.40e+06 store=1.07e+05 t=0.14
+  r4 N=2048 k=   300 weak/abs+trunc   err=7.0e-10 flops=2.22e+06 store=9.58e+04 t=0.02
+  r4 N=2048 k=   300 strong/exact-rel err=4.0e-16 flops=2.15e+07 store=2.82e+05 t=0.06
+  r4 N=2048 k=   300 strong/proxy-rel err=6.9e-16 flops=3.88e+07 store=4.12e+05 t=0.16
+  r4 N=2048 k=   300 strong/abs+trunc err=2.9e-16 flops=1.95e+07 store=2.62e+05 t=0.01
+  r4 N=4096 k=     1 weak/exact-rel   err=2.1e-10 flops=7.26e+06 store=2.41e+05 t=0.23
+  r4 N=4096 k=     1 weak/proxy-rel   err=1.1e-08 flops=7.11e+06 store=2.60e+05 t=0.27
+  r4 N=4096 k=     1 weak/abs+trunc   err=2.3e-08 flops=5.29e+06 store=2.03e+05 t=0.27
+  r4 N=4096 k=     1 strong/exact-rel err=1.4e-10 flops=4.99e+07 store=6.26e+05 t=0.41
+  r4 N=4096 k=     1 strong/proxy-rel err=4.5e-10 flops=6.51e+07 store=7.42e+05 t=0.30
+  r4 N=4096 k=     1 strong/abs+trunc err=1.4e-08 flops=4.55e+07 store=5.89e+05 t=0.33
+  r4 N=4096 k=    30 weak/exact-rel   err=8.5e-11 flops=7.13e+06 store=2.83e+05 t=0.29
+  r4 N=4096 k=    30 weak/proxy-rel   err=2.5e-10 flops=8.60e+06 store=3.16e+05 t=0.79
+  r4 N=4096 k=    30 weak/abs+trunc   err=1.4e-08 flops=4.97e+06 store=2.21e+05 t=0.19
+  r4 N=4096 k=    30 strong/exact-rel err=1.7e-12 flops=5.17e+07 store=6.47e+05 t=0.44
+  r4 N=4096 k=    30 strong/proxy-rel err=8.2e-14 flops=8.76e+07 store=8.54e+05 t=0.75
+  r4 N=4096 k=    30 strong/abs+trunc err=1.1e-08 flops=4.30e+07 store=5.58e+05 t=0.19
+  r4 N=4096 k=   300 weak/exact-rel   err=7.0e-12 flops=5.22e+06 store=2.33e+05 t=0.47
+  r4 N=4096 k=   300 weak/proxy-rel   err=6.8e-12 flops=5.45e+06 store=2.42e+05 t=0.39
+  r4 N=4096 k=   300 weak/abs+trunc   err=3.0e-09 flops=4.50e+06 store=1.98e+05 t=0.06
+  r4 N=4096 k=   300 strong/exact-rel err=7.1e-16 flops=4.47e+07 store=5.77e+05 t=0.47
+  r4 N=4096 k=   300 strong/proxy-rel err=9.4e-16 flops=8.58e+07 store=8.75e+05 t=0.52
+  r4 N=4096 k=   300 strong/abs+trunc err=4.2e-14 flops=3.90e+07 store=5.17e+05 t=0.04
+  r4 N=8192 k=     1 weak/exact-rel   err=1.7e-10 flops=1.17e+07 store=4.30e+05 t=1.24
+  r4 N=8192 k=     1 weak/proxy-rel   err=1.4e-08 flops=1.21e+07 store=4.93e+05 t=0.64
+  r4 N=8192 k=     1 weak/abs+trunc   err=2.5e-08 flops=9.31e+06 store=3.71e+05 t=1.23
+  r4 N=8192 k=     1 strong/exact-rel err=1.4e-10 flops=9.38e+07 store=1.19e+06 t=0.85
+  r4 N=8192 k=     1 strong/proxy-rel err=8.0e-10 flops=1.22e+08 store=1.44e+06 t=0.68
+  r4 N=8192 k=     1 strong/abs+trunc err=3.2e-08 flops=8.79e+07 store=1.14e+06 t=1.20
+  r4 N=8192 k=    30 weak/exact-rel   err=7.5e-11 flops=1.33e+07 store=5.42e+05 t=1.27
+  r4 N=8192 k=    30 weak/proxy-rel   err=8.9e-10 flops=1.49e+07 store=5.79e+05 t=1.23
+  r4 N=8192 k=    30 weak/abs+trunc   err=2.6e-08 flops=9.34e+06 store=4.14e+05 t=0.43
+  r4 N=8192 k=    30 strong/exact-rel err=6.2e-12 flops=9.87e+07 store=1.25e+06 t=1.55
+  r4 N=8192 k=    30 strong/proxy-rel err=7.2e-14 flops=1.49e+08 store=1.59e+06 t=1.12
+  r4 N=8192 k=    30 strong/abs+trunc err=1.6e-08 flops=8.62e+07 store=1.11e+06 t=0.41
+  r4 N=8192 k=   300 weak/exact-rel   err=1.1e-11 flops=1.14e+07 store=5.05e+05 t=1.15
+  r4 N=8192 k=   300 weak/proxy-rel   err=6.4e-12 flops=1.37e+07 store=5.76e+05 t=0.88
+  r4 N=8192 k=   300 weak/abs+trunc   err=6.0e-09 flops=9.15e+06 store=4.09e+05 t=0.13
+  r4 N=8192 k=   300 strong/exact-rel err=1.3e-15 flops=9.18e+07 store=1.18e+06 t=0.93
+  r4 N=8192 k=   300 strong/proxy-rel err=1.3e-15 flops=1.67e+08 store=1.74e+06 t=1.07
+  r4 N=8192 k=   300 strong/abs+trunc err=1.1e-09 flops=7.94e+07 store=1.04e+06 t=0.21
+r5 heat
+  r5 dt=1e-02 kappa=  10.0 fast-vs-exact=3.2e-07 dense-vs-exact=3.2e-07 maxprinciple=True factor=0.04s march=6.13s
+  r5 dt=1e-03 kappa=  31.6 fast-vs-exact=1.2e-06 dense-vs-exact=1.2e-06 maxprinciple=True factor=0.02s march=4.78s
+  r5 dt=1e-04 kappa= 100.0 fast-vs-exact=1.2e-05 dense-vs-exact=1.2e-05 maxprinciple=True factor=0.01s march=4.10s
+  r5 dt=1e-05 kappa= 316.2 fast-vs-exact=4.2e-04 dense-vs-exact=4.2e-04 maxprinciple=True factor=0.01s march=3.85s
+  r5 conv steps=4 dt=1.0e-02 err vs continuous=5.81e-03 (point-source formula alone 4.38e-02)
+  r5 conv steps=8 dt=5.0e-03 err vs continuous=3.19e-03 (point-source formula alone 2.17e-02)
+  r5 conv steps=16 dt=2.5e-03 err vs continuous=1.68e-03 (point-source formula alone 1.08e-02)
+  r5 conv steps=32 dt=1.3e-03 err vs continuous=8.59e-04 (point-source formula alone 5.39e-03)
+exit 0 took 725 s

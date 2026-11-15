@@ -1,0 +1,8 @@
+N = 1024, L = 10
+ranks per stage      : [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]
+nnz                  : 22528
+2 N log2 N + 2 N     : 22528
+nonzeros that are 1  : 13311
+relative error vs FFT: 1.83e-16
+
+OK: the DFT's complementary tiles are rank one, with exact FFT-storage factors.

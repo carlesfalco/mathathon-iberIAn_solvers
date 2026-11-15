@@ -1,25 +1,14 @@
-# Consolidated release status
+# Release coordination
 
-This file records the remaining release work for the project in this directory. The main source and verification status are in `README.md` and Appendix A of `report.tex`.
+This directory supplies code, figures, data, and verification evidence. It is not the editable report package.
 
-## Complete in this consolidation
+The final report and slides are maintained in the **Final Report** chat. Before submission:
 
-- [x] Six-part report assembled into one `report.tex` with inline appendices and references.
-- [x] `report.pdf` compiled from that source; references and layout warnings checked.
-- [x] Original section drafts left unchanged as source material.
-- [x] Small FFT and butterfly computations rerun and their outputs saved.
-- [x] Python core/showcase and Rust unit/integration checks rerun.
-- [x] Historical numerical measurements identified separately from fresh runs.
-- [x] Event contribution, source provenance, AI assistance, and limitations included in the report.
-
-## Still required before submission
-
-- [ ] Add team identity, public repository URL, and full commit hash only in the title block; confirm the final track declaration.
-- [ ] Finish `slides.pdf` for at most 20 minutes of presentation plus Q&A; remove all old `TO BE COMPLETED` placeholders.
-- [ ] Ensure every claim on the final slides appears in this report.
-- [ ] Reconcile the AI-use appendix with any missing tool/team disclosures and complete the team's mathematical review.
-- [ ] Decide whether any of the longer twelve research suites need fresh end-to-end runs; the current local wrapper does not claim them.
-- [ ] Review the final PDF visually after the title-block change and rebuild from the exact release source.
-- [ ] Publish the accessible release repository and submit the full hash of the intended version.
+1. Link numerical claims in the final report to the relevant implementations and saved parameter ranges here.
+2. Distinguish freshly rerun computations from historical receipts.
+3. Decide which longer research suites need fresh end-to-end runs; `scripts/check_local.sh` does not claim them.
+4. Run the appropriate Python and Rust checks after any code change.
+5. Keep session records, build output, and LaTeX sources out of this supplementary repository.
+6. Publish the exact release commit and supply its full hash to the report workstream.
 
 No Lean project or Lean-verified claim is currently included.

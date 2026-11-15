@@ -1,6 +1,6 @@
 # A common block strategy — main deliverables
 
-A self-contained package for the reports, eight-minute talk, and the Python/Rust implementations of a shared hierarchical block framework.
+Reference PDFs plus Python/Rust implementations, figures, data, and verification results for a shared hierarchical block framework. LaTeX sources are intentionally not tracked.
 
 ## Start here
 
@@ -9,7 +9,6 @@ A self-contained package for the reports, eight-minute talk, and the Python/Rust
 | **Readable report with derivations** | **[main.pdf](main.pdf)** — 31-page self-contained exposition, algorithm map, twelve problem-oriented experiments and reproduction appendices |
 | **Eight-minute slides** | **[slides.pdf](slides.pdf)** — pages 1–10 core talk, pages 11–13 backup |
 | **Plain-language speaker notes** | **[speaker-notes.md](latex/speaker-notes.md)** — 7–7.5 minutes of script + pauses/silence |
-| **Editable LaTeX source** | [`latex/report.tex`](latex/report.tex), [`latex/slides.tex`](latex/slides.tex), [`latex/sections/`](latex/sections/) |
 | **Python implementation** | [`python/README.md`](python/README.md) — core, recursive solver, butterfly, showcase, twelve experiments and saved results |
 | **Rust implementation** | [`rust/README.md`](rust/README.md) — lean QR/apply crate, exact DFT butterfly, separate reference-core prototype |
 | **Experiment/verification annex** | [`results/README.md`](results/README.md) — raw checks, audit trail and measured performance logs |
@@ -32,9 +31,6 @@ That is the organizing explanation; it is not a claim that one preset program de
 From this directory, dependencies installed:
 
 ```bash
-# Compile report and slides and regenerate their plots
-scripts/build_documents.sh
-
 # Python: no editable install is necessary for the wrappers
 scripts/check_python.sh
 

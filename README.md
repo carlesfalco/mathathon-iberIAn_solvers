@@ -1,59 +1,48 @@
-# Simplify Numerical PDE Algorithms
+# Numerical PDE demonstrations and figures
 
-Working repository for the Mathathon problem on making fast numerical-PDE algorithms easier to understand and, where possible, simpler while remaining effective. The current narrative develops PDE and Green-function motivation, the FFT, structured factorisations, butterfly algorithms, numerical linear algebra, and limitations.
+Supplementary code, numerical experiments, figures, data, and verification results for Team iberIAn_solvers' work on **Problem 29: Simplifying PDE Algorithms**.
 
-> **Draft status:** this is a working repository, not a final submission. The current slide source still contains marked placeholders.
->
-> **Current report:** [`report.tex`](report.tex) and [`report.pdf`](report.pdf) identify Team iberIAn_solvers and Problem 29, and merge Sections 1, 2, and 4 into one self-contained 14-page document. The remaining sections will be added in later versions.
+LaTeX sources are intentionally **not tracked** in this repository. The official report is maintained separately in the **Final Report** chat. Compiled PDFs already in the repository are retained as reference documents.
 
-## Repository map
+## Main demonstrations
 
-| Path | Role |
+| Path | Contents |
 |---|---|
-| `report.tex` / `report.pdf` | Current self-contained interim report: Sections 1, 2, and 4 |
-| `section1-motivation.tex` / `.pdf` | Standalone Section 1 draft: PDEs and Green-function integrals |
-| `section4-butterfly.tex` / `.pdf` | Standalone Section 4 draft: oscillatory integrals and butterfly factorisation |
-| `presentation.tex` / `.pdf` | Working 20-minute presentation; unfinished sections are explicitly marked |
-| `butterfly-demo/` | Minimal Python butterfly/FFT demonstration, tests, and generated comparisons |
-| `section3/` | Standalone common-block-strategy report, slides, implementations, and evidence (formerly `deliverables/`) |
-| `consolidated/report.tex` | **Work-in-progress** integrated single-file report source; not the final report |
-| `consolidated/examples/` | Teaching examples used by the integrated report |
-| `consolidated/python/` / `rust/` | Supporting implementations and experiments copied for integration checks |
-| `consolidated/results/` | Local and previously recorded verification results |
-| `SUBMISSION.md` | Final repository layout, release blockers, and submission checklist |
+| [`butterfly-demo/`](butterfly-demo/) | Minimal Python butterfly implementation for DFT and non-DFT oscillatory kernels, tests, accuracy/timing data, and comparison figures |
+| [`consolidated/examples/`](consolidated/examples/) | Teaching implementations for the periodic FFT solver and phase-based butterfly construction |
+| [`consolidated/python/`](consolidated/python/) | Larger Python experiment package |
+| [`consolidated/rust/`](consolidated/rust/) | Rust apply benchmarks, DFT invariants, and reference-core prototype |
+| [`section3/python/`](section3/python/) | Python implementations and experiments for the common-block-strategy package |
+| [`section3/rust/`](section3/rust/) | Rust implementations and numerical results for that package |
 
-The current report entry point is **one self-contained `report.tex`** at the repository root, accompanied by `report.pdf`. The source and PDF both contain only Sections 1, 2, and 4 at present; the official `slides.pdf` is still pending. The older `section3/latex/report.tex` is not that file: it uses `\input` and therefore does not satisfy the report-source requirement in its present form.
+## Figures and results
 
-Session records, attachments, LaTeX intermediates, caches, build directories, and local ZIP exports are excluded by `.gitignore`. In particular, `.scratch/`, `.ultramath/`, and `attachments/` are working materials rather than submission content. The tracked directories, not `sec3.zip`, are the source of truth.
+- `butterfly-demo/results/`: accuracy and scaling CSV files, comparison plots, and a measured-results guide.
+- `consolidated/figures/` and `consolidated/results/`: consolidated figures and local/package verification receipts.
+- `section3/figures/` and `section3/results/`: generated figures, raw numerical evidence, and audit notes.
+- `section3/python/unified/explore/`: problem-specific experiments and saved outputs.
 
-## Verification
-
-Check the existing supplementary package without rebuilding its documents:
-
-```bash
-python3 section3/scripts/verify_package.py
-```
-
-This checker verifies required paths, local links, selected result data, PDF page counts, and recorded test receipts. It **does not rerun the full Python or Rust test suites** and does not validate the root report.
-
-Build the current root report without placing LaTeX intermediates in the repository:
-
-```bash
-mkdir -p .scratch/report-build
-latexmk -pdf -interaction=nonstopmode -halt-on-error \
-  -outdir=.scratch/report-build report.tex
-cp .scratch/report-build/report.pdf report.pdf
-```
-
-The compiled report was also checked for resolved references/citations, valid figure paths, and overfull/underfull boxes. Run the small butterfly demonstration's tests with:
+## Run the small butterfly checks
 
 ```bash
 cd butterfly-demo
 python3 test_butterfly.py
+OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 compare.py
 ```
 
-See `section3/README.md` for the larger implementations' reproduction commands. All numerical and performance claims in the final report must identify their supporting computation and parameter range.
+The comparison script uses an FFT reference for the DFT test and explicit dense kernel evaluation for the non-DFT test. Absolute timings depend on the machine; they are teaching measurements rather than production benchmarks.
 
-## Before release
+## Verify the larger packages
 
-Follow `SUBMISSION.md`. At minimum, finish the report and slides, remove placeholders, flatten the report into one `.tex` file, state how every main claim is supported, document AI use and event work, run the relevant checks, and commit the exact version intended for judging.
+```bash
+# Check paths, included evidence, and recorded results for section3
+python3 section3/scripts/verify_package.py
+
+# From consolidated/, reproduce the core numerical checks
+cd consolidated
+scripts/check_local.sh
+```
+
+The consolidated wrapper runs the small FFT and butterfly checks, Python core/showcase tests, and Rust unit/integration checks. It does not rerun the full twelve longer research suites. See the package READMEs for details and for which measurements are historical rather than regenerated.
+
+Session records, attachments, LaTeX intermediates, caches, build directories, and local archives are excluded by `.gitignore`.

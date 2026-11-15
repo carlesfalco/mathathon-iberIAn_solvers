@@ -894,7 +894,24 @@ Other problem-study numbers & Recorded computations with methods and ranges summ
 \end{longtable}
 
 \subsection{Receipts and boundaries}
-Locally generated logs are under \path{results/local/}. Historical receipts supplied with the larger package are preserved under \path{results/package/}; their existence is not, by itself, evidence that a suite was rerun in this environment. The Rust benchmark table is explicitly a saved measurement. Full all-parameter physical validation and production wideband-FMM performance were not performed. No Lean project is included and no claim is labelled Lean-verified.
+The following checks were executed locally during consolidation:
+\begin{center}
+\small
+\begin{tabular}{@{}>{\raggedright\arraybackslash}p{0.39\textwidth}>{\raggedright\arraybackslash}p{0.51\textwidth}@{}}
+\toprule
+Check & Observed result\\
+\midrule
+\path{examples/fft_periodic_solver.py} & Passed at $N=8,16,32,64$, with PDE errors at $N=16,32,64,128$; numerical values are in Table~\ref{tab:fft-algebra} and \path{fft_checks.json}.\\
+Butterfly unit tests & Four tests passed in $0.048$ seconds; DFT, fixed-$q$, and non-DFT comparisons regenerated successfully.\\
+Python core tests & $126$ passed in $54.31$ seconds.\\
+Python showcase tests & $24$ passed in $8.01$ seconds.\\
+Rust unit/integration checks & $7+14=21$ passed; no failures.\\
+Saved Rust numerical artifacts & Validated $12$ compressed, five FFT, and one exact DFT-butterfly record.\\
+Reference-core golden controls & $72$ exact matches and $17$ documented tolerance-boundary count differences; all $11$ measured errors were $<10^{-8}$ and maximum LU unit residual was $1.72\times10^{-15}$.\\
+\bottomrule
+\end{tabular}
+\end{center}
+The test collector found $264$ Python tests in total; this is a collection count, not a claim that all longer research tests ran. The full twelve research suites were not rerun end-to-end during consolidation. Locally generated logs are under \path{results/local/}. Historical receipts supplied with the larger package are preserved under \path{results/package/}; their existence is not, by itself, evidence that a suite was rerun in this environment. The Rust benchmark table is explicitly a saved measurement. Full all-parameter physical validation and production wideband-FMM performance were not performed. No Lean project is included and no claim is labelled Lean-verified.
 
 \section{Experiment evidence map}
 \label{app:experiment-map}

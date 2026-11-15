@@ -35,3 +35,5 @@ warning: field `n` is never read
 776 |     n: usize,
     |     ^
 
+warning: `rust-unified-prototype` (bin "proto") generated 4 warnings
+    Finished `release` profile [optimized] target(s) in 1.71s

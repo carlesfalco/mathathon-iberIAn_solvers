@@ -68,9 +68,9 @@
     }
   },
   "bench_rows": [
-    "BENCH rust p1 strong exact N=512: factor 0.013 s, solve 0.0001 s, root 157, relres 9.93e-10",
-    "BENCH rust p1 strong exact N=1024: factor 0.061 s, solve 0.0001 s, root 160, relres 1.21e-9",
-    "BENCH rust butterfly build N=512: 0.071 s, nnz 312235, ranks [1, 2, 4, 8, 10, 10, 8, 4, 2, 1]"
+    "BENCH rust p1 strong exact N=512: factor 0.007 s, solve 0.0000 s, root 157, relres 9.93e-10",
+    "BENCH rust p1 strong exact N=1024: factor 0.027 s, solve 0.0001 s, root 160, relres 1.21e-9",
+    "BENCH rust butterfly build N=512: 0.066 s, nnz 312235, ranks [1, 2, 4, 8, 10, 10, 8, 4, 2, 1]"
   ],
   "note": "The exit-1 check documents rank-boundary differences; it is not a build failure. Parity is judged by achieved residuals, not exact count portability."
 }

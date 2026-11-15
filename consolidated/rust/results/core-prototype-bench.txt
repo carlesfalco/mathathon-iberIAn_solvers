@@ -1,6 +1,6 @@
-BENCH rust p1 strong exact N=512: factor 0.013 s, solve 0.0001 s, root 157, relres 9.93e-10
-BENCH rust p1 strong exact N=1024: factor 0.061 s, solve 0.0001 s, root 160, relres 1.21e-9
-BENCH rust butterfly build N=512: 0.071 s, nnz 312235, ranks [1, 2, 4, 8, 10, 10, 8, 4, 2, 1]
+BENCH rust p1 strong exact N=512: factor 0.007 s, solve 0.0000 s, root 157, relres 9.93e-10
+BENCH rust p1 strong exact N=1024: factor 0.027 s, solve 0.0001 s, root 160, relres 1.21e-9
+BENCH rust butterfly build N=512: 0.066 s, nnz 312235, ranks [1, 2, 4, 8, 10, 10, 8, 4, 2, 1]
 MISMATCH p1_weak_exact_skelmax: got 34 22 15 9 | python 36 21 15 9
 MISMATCH p1_weak_exact_skeltotal: got 131 205 254 256 | python 135 207 254 256
 MISMATCH p1_weak_exact_eliminated: got 74 49 2 0 | python 72 47 2 0
@@ -18,4 +18,4 @@ MISMATCH p1_strong_proxy_eliminated: got 0 47 0 0 | python 0 45 0 0
 MISMATCH p1_strong_proxy_root: got 209 | python 211
 MISMATCH bf_N128_t1_e1e-08_nnz_G: got 256 512 1024 9188 6544 1792 512 | python 256 512 1024 9214 6648 1792 512
 MISMATCH bf_N128_t1_e1e-08_nnz: got 20084 | python 20214
-golden checks: 72 passed, 17 failed, 0.221 s total
+golden checks: 72 passed, 17 failed, 0.136 s total

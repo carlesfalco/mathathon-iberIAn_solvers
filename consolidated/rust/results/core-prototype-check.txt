@@ -104,4 +104,4 @@ MISMATCH p1_strong_proxy_eliminated: got 0 47 0 0 | python 0 45 0 0
 MISMATCH p1_strong_proxy_root: got 209 | python 211
 MISMATCH bf_N128_t1_e1e-08_nnz_G: got 256 512 1024 9188 6544 1792 512 | python 256 512 1024 9214 6648 1792 512
 MISMATCH bf_N128_t1_e1e-08_nnz: got 20084 | python 20214
-golden checks: 72 passed, 17 failed, 0.055 s total
+golden checks: 72 passed, 17 failed, 0.025 s total

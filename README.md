@@ -3,6 +3,8 @@
 Working repository for the Mathathon problem on making fast numerical-PDE algorithms easier to understand and, where possible, simpler while remaining effective. The current narrative develops PDE and Green-function motivation, the FFT, structured factorisations, butterfly algorithms, numerical linear algebra, and limitations.
 
 > **Draft status:** this is a working repository, not a final submission. The global report is still under integration and review, and the current slide source contains marked placeholders. The official report should not be finalized until the team requests it.
+>
+> **Consolidated candidate:** [`consolidated/`](consolidated/) now contains a single-file report and compiled PDF, reproducible examples, and the supplementary package. See its README and release checklist for verified status and remaining work.
 
 ## Repository map
 

@@ -39,7 +39,7 @@ The repository URL and full commit hash requested by the organizers belong in th
 ## Current release blockers
 
 - [ ] Review and approve the integrated six-part report before release.
-- [ ] Resolve remaining integration issues in `consolidated/report.tex`, including its currently failed LaTeX build, before promoting it to the official root files.
+- [x] Compile and structurally verify `consolidated/report.tex`: the 25-page PDF and `python3 consolidated/scripts/verify_project.py` check now pass. Team review is still required before release.
 - [ ] Produce the single-file root `report.tex`; the existing `section3/latex/report.tex` uses `\input` and is not release-compliant.
 - [ ] Compile and inspect root `report.pdf` from the final source.
 - [ ] Finish the current slide placeholders and export root `slides.pdf`.
@@ -48,7 +48,7 @@ The repository URL and full commit hash requested by the organizers belong in th
 
 ## Verification and release
 
-1. Run `python3 section3/scripts/verify_package.py` for the supplementary package.
+1. Run `python3 section3/scripts/verify_package.py` for the standalone supplementary package and `python3 consolidated/scripts/verify_project.py` for the integrated candidate.
 2. Run the relevant Python and Rust test suites rather than relying only on their saved receipts; record any tests not rerun.
 3. Build the final report and slides from a clean checkout and inspect the PDFs, logs, references, and figures.
 4. Search the official sources for placeholders, unresolved comments, broken references, and unsupported claims.

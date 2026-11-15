@@ -1,0 +1,37 @@
+   Compiling rust-unified-prototype v0.1.0 (/workspace/nucleus/work/projects/p-cdbc609a1092457084f911067a5109c6/repo/consolidated/rust/core-prototype/rust)
+warning: method `add_at` is never used
+   --> core-prototype/rust/src/main.rs:141:8
+    |
+127 | impl<T: Scalar> Mat<T> {
+    | ---------------------- method in this implementation
+...
+141 |     fn add_at(&mut self, i: usize, j: usize, v: T) {
+    |        ^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: method `name` is never used
+   --> core-prototype/rust/src/main.rs:594:8
+    |
+587 | impl Adm {
+    | -------- method in this implementation
+...
+594 |     fn name(&self) -> &'static str {
+    |        ^^^^
+
+warning: method `eps` is never used
+   --> core-prototype/rust/src/main.rs:685:8
+    |
+684 | impl<T: Scalar> Comp<T> {
+    | ----------------------- method in this implementation
+685 |     fn eps(&self) -> f64 {
+    |        ^^^
+
+warning: field `n` is never read
+   --> core-prototype/rust/src/main.rs:776:5
+    |
+775 | struct Factor<T> {
+    |        ------ field in this struct
+776 |     n: usize,
+    |     ^
+

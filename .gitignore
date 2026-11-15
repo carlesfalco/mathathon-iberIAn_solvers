@@ -1,5 +1,7 @@
 # Open Math OS session state and private working records
 .scratch/
+.skill/
+.trash/
 .ultramath/
 attachments/
 

@@ -1,0 +1,161 @@
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /workspace/nucleus/work/projects/p-befcaeaca153431a8193cd243c6df00c/repo/rust-unified/core-prototype/rust/Cargo.toml
+workspace: /workspace/nucleus/work/projects/p-befcaeaca153431a8193cd243c6df00c/repo/rust-unified/Cargo.toml
+warning: method `add_at` is never used
+   --> core-prototype/rust/src/main.rs:141:8
+    |
+127 | impl<T: Scalar> Mat<T> {
+    | ---------------------- method in this implementation
+...
+141 |     fn add_at(&mut self, i: usize, j: usize, v: T) {
+    |        ^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: method `name` is never used
+   --> core-prototype/rust/src/main.rs:594:8
+    |
+587 | impl Adm {
+    | -------- method in this implementation
+...
+594 |     fn name(&self) -> &'static str {
+    |        ^^^^
+
+warning: method `eps` is never used
+   --> core-prototype/rust/src/main.rs:685:8
+    |
+684 | impl<T: Scalar> Comp<T> {
+    | ----------------------- method in this implementation
+685 |     fn eps(&self) -> f64 {
+    |        ^^^
+
+warning: field `n` is never read
+   --> core-prototype/rust/src/main.rs:776:5
+    |
+775 | struct Factor<T> {
+    |        ------ field in this struct
+776 |     n: usize,
+    |     ^
+
+warning: `rust-unified-prototype` (bin "proto" test) generated 4 warnings
+    Finished `release` profile [optimized] target(s) in 0.02s
+     Running unittests src/main.rs (.scratch/cargo-target/release/deps/proto-0d2a7c6fd3539022)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (.scratch/cargo-target/release/deps/unified_rs-97b301f995e57df3)
+
+running 7 tests
+test dft_butterfly::smoke::naive_matches_radix2 ... ok
+test fft::tests::parseval ... ok
+test fft::tests::fft_matches_dense ... ok
+test hmatrix::tests::zero_matrix_is_free ... ok
+test hmatrix::tests::separable_rank_one_is_reconstructed ... ok
+test hmatrix::tests::dense_diagonal_is_preserved ... ok
+test hmatrix::tests::smooth_log_kernel_meets_tolerance ... ok
+
+test result: ok. 7 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/dft_butterfly_invariants.rs (.scratch/cargo-target/release/deps/dft_butterfly_invariants-a66e54094b5e4544)
+
+running 14 tests
+test bitreversed_boxes_are_residue_classes ... ok
+test bitrev_butterfly_dense_matrix_is_the_dft_matrix ... ok
+test linearity_and_conjugation_symmetry ... ok
+test bitreversed_tiles_are_exactly_rank_one ... ok
+test natural_butterfly_is_exact_but_stores_about_dense ... ok
+test natural_order_tiles_are_not_rank_one ... ok
+test parseval ... ok
+test kernel_entry_count_is_quadratic ... ok
+test partial_permutations_do_not_give_rank_one ... ok
+test radix2_and_mixed_radix_agree ... ok
+test roundtrip ... ok
+test radix2_equals_naive_dft ... ok
+test bitrev_butterfly_is_the_dft ... ok
+test mixed_radix_equals_naive_dft ... ok
+
+test result: ok. 14 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running unittests examples/dft_as_butterfly.rs (.scratch/cargo-target/release/examples/dft_as_butterfly-9755a597088117bd)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests examples/fft.rs (.scratch/cargo-target/release/examples/fft-31c7e02c614f61d5)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests examples/gaussian.rs (.scratch/cargo-target/release/examples/gaussian-e994ac9cdfff7811)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests examples/laplace.rs (.scratch/cargo-target/release/examples/laplace-c15ff64a9b52ad53)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests examples/screened.rs (.scratch/cargo-target/release/examples/screened-0335574a55066b6b)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   /workspace/nucleus/work/projects/p-befcaeaca153431a8193cd243c6df00c/repo/rust-unified/core-prototype/rust/Cargo.toml
+workspace: /workspace/nucleus/work/projects/p-befcaeaca153431a8193cd243c6df00c/repo/rust-unified/Cargo.toml
+warning: method `add_at` is never used
+   --> core-prototype/rust/src/main.rs:141:8
+    |
+127 | impl<T: Scalar> Mat<T> {
+    | ---------------------- method in this implementation
+...
+141 |     fn add_at(&mut self, i: usize, j: usize, v: T) {
+    |        ^^^^^^
+    |
+    = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+
+warning: method `name` is never used
+   --> core-prototype/rust/src/main.rs:594:8
+    |
+587 | impl Adm {
+    | -------- method in this implementation
+...
+594 |     fn name(&self) -> &'static str {
+    |        ^^^^
+
+warning: method `eps` is never used
+   --> core-prototype/rust/src/main.rs:685:8
+    |
+684 | impl<T: Scalar> Comp<T> {
+    | ----------------------- method in this implementation
+685 |     fn eps(&self) -> f64 {
+    |        ^^^
+
+warning: field `n` is never read
+   --> core-prototype/rust/src/main.rs:776:5
+    |
+775 | struct Factor<T> {
+    |        ------ field in this struct
+776 |     n: usize,
+    |     ^
+
+warning: `rust-unified-prototype` (bin "proto") generated 4 warnings
+    Finished `release` profile [optimized] target(s) in 0.01s
+Validated 12 compressed, 5 FFT, and 1 exact DFT-butterfly records.
+{
+  "python": "3.12.14",
+  "rustc": "rustc 1.93.1 (01f6ddf75 2026-02-11) (built from a source tarball)",
+  "kernel": "Linux-7.0.0-31-generic-x86_64-with-glibc2.43"
+}
+log/Laplace, I + K         storage=0.0767 error=2.77e-07 speedup=11.76x breakeven~1560 applies
+Gaussian covariance        storage=0.0576 error=2.82e-07 speedup=12.65x breakeven~1619 applies
+exponential screening      storage=0.0361 error=1.04e-15 speedup=14.69x breakeven~1559 applies
+Reference core: 72 exact + 17 documented tolerance-boundary differences; 11 achieved errors < 1e-8; LU max residual 1.72e-15; three timings retained.

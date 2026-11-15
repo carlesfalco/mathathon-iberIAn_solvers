@@ -1,0 +1,76 @@
+{
+  "exact_golden_keys": 72,
+  "documented_tolerance_boundary_mismatches": 17,
+  "mismatch_keys": [
+    "bf_N128_t1_e1e-08_nnz",
+    "bf_N128_t1_e1e-08_nnz_G",
+    "p1_strong_exact_eliminated",
+    "p1_strong_exact_root",
+    "p1_strong_exact_skelmax",
+    "p1_strong_exact_skeltotal",
+    "p1_strong_proxy_eliminated",
+    "p1_strong_proxy_root",
+    "p1_strong_proxy_skeltotal",
+    "p1_weak_exact_eliminated",
+    "p1_weak_exact_root",
+    "p1_weak_exact_skelmax",
+    "p1_weak_exact_skeltotal",
+    "p1_weak_proxy_eliminated",
+    "p1_weak_proxy_root",
+    "p1_weak_proxy_skelmax",
+    "p1_weak_proxy_skeltotal"
+  ],
+  "max_lu_unit_residual": 1.724e-15,
+  "achieved_errors": {
+    "id_eps1e-10_relres": {
+      "rust": 4.680608e-16,
+      "python": 2.8123e-16
+    },
+    "id_eps0.001_relres": {
+      "rust": 4.680608e-16,
+      "python": 2.8123e-16
+    },
+    "rs1d_weak_relres": {
+      "rust": 8.252108e-16,
+      "python": 6.681036e-16
+    },
+    "rs1d_strong_relres": {
+      "rust": 8.143397e-16,
+      "python": 6.070454e-16
+    },
+    "p1_weak_exact_relres": {
+      "rust": 4.571359e-10,
+      "python": 2.296799e-10
+    },
+    "p1_weak_proxy_relres": {
+      "rust": 5.102423e-10,
+      "python": 2.644475e-10
+    },
+    "p1_strong_exact_relres": {
+      "rust": 2.563989e-10,
+      "python": 2.934906e-10
+    },
+    "p1_strong_proxy_relres": {
+      "rust": 1.297638e-10,
+      "python": 1.061103e-10
+    },
+    "bf_N64_t0_e1e-10_relerr": {
+      "rust": 5.965734e-16,
+      "python": 4.670852e-16
+    },
+    "bf_N64_t3_e1e-08_relerr": {
+      "rust": 1.855822e-10,
+      "python": 1.932091e-10
+    },
+    "bf_N128_t1_e1e-08_relerr": {
+      "rust": 2.088055e-09,
+      "python": 4.86779e-10
+    }
+  },
+  "bench_rows": [
+    "BENCH rust p1 strong exact N=512: factor 0.013 s, solve 0.0001 s, root 157, relres 9.93e-10",
+    "BENCH rust p1 strong exact N=1024: factor 0.061 s, solve 0.0001 s, root 160, relres 1.21e-9",
+    "BENCH rust butterfly build N=512: 0.071 s, nnz 312235, ranks [1, 2, 4, 8, 10, 10, 8, 4, 2, 1]"
+  ],
+  "note": "The exit-1 check documents rank-boundary differences; it is not a build failure. Parity is judged by achieved residuals, not exact count portability."
+}

@@ -1,6 +1,6 @@
 # Mathathon submission checklist
 
-This file separates repository preparation from the later content-release step. The global report is **not yet assembled or approved for compilation**.
+This file separates repository preparation from the later content-release step. The integrated report remains **under review and is not approved as the final submission**.
 
 ## Required final repository layout
 
@@ -38,9 +38,9 @@ The repository URL and full commit hash requested by the organizers belong in th
 
 ## Current release blockers
 
-- [ ] Assemble the six-part global report only when the team requests it.
-- [ ] Integrate and review the standalone section drafts and remaining section material.
-- [ ] Produce the single-file root `report.tex`; the existing `deliverables/latex/report.tex` uses `\input` and is not release-compliant.
+- [ ] Review and approve the integrated six-part report before release.
+- [ ] Resolve remaining integration issues in `consolidated/report.tex`, including its currently failed LaTeX build, before promoting it to the official root files.
+- [ ] Produce the single-file root `report.tex`; the existing `section3/latex/report.tex` uses `\input` and is not release-compliant.
 - [ ] Compile and inspect root `report.pdf` from the final source.
 - [ ] Finish the current slide placeholders and export root `slides.pdf`.
 - [ ] Reconcile or remove alternative draft reports/decks so reviewers cannot mistake them for the official submission.
@@ -48,7 +48,7 @@ The repository URL and full commit hash requested by the organizers belong in th
 
 ## Verification and release
 
-1. Run `python3 deliverables/scripts/verify_package.py` for the supplementary package.
+1. Run `python3 section3/scripts/verify_package.py` for the supplementary package.
 2. Run the relevant Python and Rust test suites rather than relying only on their saved receipts; record any tests not rerun.
 3. Build the final report and slides from a clean checkout and inspect the PDFs, logs, references, and figures.
 4. Search the official sources for placeholders, unresolved comments, broken references, and unsupported claims.

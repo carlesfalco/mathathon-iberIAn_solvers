@@ -1,0 +1,211 @@
+r0 {'runs': False, 'error': 'ValueError: all the input array dimensions except for the concatenation axis must match exactly, but along dimension 1, the array at index 0 has size 80 and the array at index 2 has size 40'}
+r1 circle {'a': 0.3, 'abs_err': 3.3306690738754696e-16, 'solve_err': 1.0490755566989043e-14}
+r1 circle {'a': 1.0, 'abs_err': 1.3877787807814457e-17, 'solve_err': 1.0123561264198646e-14}
+r1 circle {'a': 1.6487212707001282, 'abs_err': 2.0816681711721685e-17, 'solve_err': 1.045626058584761e-14}
+r1 circle {'a': 3.0, 'abs_err': 3.469446951953614e-17, 'solve_err': 1.1819316773770471e-14}
+r1 jeffery {'b': 1.0, 'phi': 0.0, 'abs_err': 0.0, 'solve_err': 7.152432037070514e-15}
+r1 jeffery {'b': 1.0, 'phi': 0.7, 'abs_err': 2.220446049250313e-16, 'solve_err': 8.390209384935588e-15}
+r1 jeffery {'b': 1.0, 'phi': 1.4, 'abs_err': 2.220446049250313e-16, 'solve_err': 8.259438507919494e-15}
+r1 jeffery {'b': 0.5, 'phi': 0.0, 'abs_err': 2.4424906541753444e-15, 'solve_err': 1.7206409113042777e-14}
+r1 jeffery {'b': 0.5, 'phi': 0.7, 'abs_err': 8.881784197001252e-16, 'solve_err': 1.0253077018972092e-14}
+r1 jeffery {'b': 0.5, 'phi': 1.4, 'abs_err': 4.773959005888173e-15, 'solve_err': 1.7800238862405718e-14}
+r1 jeffery {'b': 0.2, 'phi': 0.0, 'abs_err': 8.81239525796218e-16, 'solve_err': 5.942855778778549e-14}
+r1 jeffery {'b': 0.2, 'phi': 0.7, 'abs_err': 5.012656956182582e-14, 'solve_err': 8.604711745196343e-14}
+r1 jeffery {'b': 0.2, 'phi': 1.4, 'abs_err': 6.439293542825908e-15, 'solve_err': 6.387485368293437e-14}
+r1 jeffery {'b': 0.1, 'phi': 0.0, 'abs_err': 8.500145032286355e-16, 'solve_err': 1.3228218009561738e-12}
+r1 jeffery {'b': 0.1, 'phi': 0.7, 'abs_err': 1.5543122344752192e-15, 'solve_err': 1.3009657480454035e-13}
+r1 jeffery {'b': 0.1, 'phi': 1.4, 'abs_err': 2.275957200481571e-14, 'solve_err': 7.453998323239098e-13}
+r2 512 laplace weak exact err 3.5e-12 skel {3: 12.533333333333333, 2: 21.25, 1: 41.75} root 167
+r2 512 laplace weak proxy-sl err 8.9e-12 skel {3: 15.733333333333333, 2: 24.916666666666668, 1: 46.0} root 184
+r2 512 laplace strong exact err 3.1e-12 skel {3: 11.366666666666667, 2: 16.416666666666668, 1: 49.25} root 197
+r2 512 laplace strong proxy-sl err 5.9e-13 skel {3: 15.7, 2: 23.833333333333332, 1: 71.5} root 286
+r2 512 stokes weak exact err 1.0e-11 skel {3: 25.366666666666667, 2: 42.75, 1: 85.25} root 341
+r2 512 stokes weak proxy-sl err 1.2e-11 skel {3: 31.8, 2: 50.416666666666664, 1: 96.5} root 386
+r2 512 stokes strong exact err 7.7e-12 skel {3: 23.6, 2: 33.916666666666664, 1: 101.75} root 407
+r2 512 stokes strong proxy-sl err 1.3e-12 skel {3: 31.733333333333334, 2: 47.75, 1: 143.25} root 573
+r2 1024 laplace weak exact err 5.2e-12 skel {4: 9.136363636363637, 3: 13.166666666666666, 2: 21.333333333333332, 1: 43.0} root 172
+r2 1024 laplace weak proxy-sl err 1.0e-11 skel {4: 13.621212121212121, 3: 18.1, 2: 25.166666666666668, 1: 45.5} root 182
+r2 1024 laplace strong exact err 2.3e-12 skel {4: 8.878787878787879, 3: 11.933333333333334, 2: 16.666666666666668, 1: 50.0} root 200
+r2 1024 laplace strong proxy-sl err 1.3e-12 skel {4: 13.606060606060606, 3: 17.9, 2: 24.166666666666668, 1: 72.5} root 290
+r2 1024 stokes weak exact err 1.3e-11 skel {4: 18.515151515151516, 3: 26.966666666666665, 2: 44.0, 1: 85.25} root 341
+r2 1024 stokes weak proxy-sl err 8.9e-12 skel {4: 27.696969696969695, 3: 37.333333333333336, 2: 51.416666666666664, 1: 96.5} root 386
+r2 1024 stokes strong exact err 7.8e-12 skel {4: 18.106060606060606, 3: 24.866666666666667, 2: 34.416666666666664, 1: 103.25} root 413
+r2 1024 stokes strong proxy-sl err 2.0e-12 skel {4: 27.651515151515152, 3: 36.9, 2: 49.333333333333336, 1: 148.0} root 592
+r2 2048 laplace weak exact err 3.7e-12 skel {4: 9.338235294117647, 3: 13.333333333333334, 2: 21.666666666666668, 1: 42.0} root 168
+r2 2048 laplace weak proxy-sl err 8.4e-12 skel {4: 15.088235294117647, 3: 18.3, 2: 25.0, 1: 44.75} root 179
+r2 2048 laplace strong exact err 2.5e-12 skel {4: 9.014705882352942, 3: 12.0, 2: 16.5, 1: 49.5} root 198
+r2 2048 laplace strong proxy-sl err 2.3e-12 skel {4: 15.088235294117647, 3: 18.133333333333333, 2: 23.333333333333332, 1: 70.0} root 280
+r2 2048 stokes weak exact err 8.9e-12 skel {4: 19.014705882352942, 3: 27.1, 2: 44.333333333333336, 1: 85.75} root 343
+r2 2048 stokes weak proxy-sl err 1.2e-11 skel {4: 31.38235294117647, 3: 38.0, 2: 51.083333333333336, 1: 94.5} root 378
+r2 2048 stokes strong exact err 5.2e-12 skel {4: 18.36764705882353, 3: 25.2, 2: 34.25, 1: 102.75} root 411
+r2 2048 stokes strong proxy-sl err 1.1e-12 skel {4: 31.323529411764707, 3: 37.63333333333333, 2: 48.333333333333336, 1: 145.0} root 580
+r2 4096 laplace weak exact err 2.8e-12 skel {5: 7.347222222222222, 4: 9.544117647058824, 3: 13.466666666666667, 2: 21.833333333333332, 1: 42.0} root 168
+r2 4096 laplace weak proxy-sl err 2.6e-11 skel {5: 14.354166666666666, 4: 15.588235294117647, 3: 17.466666666666665, 2: 24.416666666666668, 1: 42.5} root 170
+r2 4096 laplace strong exact err 1.9e-12 skel {5: 7.305555555555555, 4: 9.294117647058824, 3: 12.1, 2: 16.583333333333332, 1: 49.75} root 199
+r2 4096 laplace strong proxy-sl err 2.1e-12 skel {5: 14.36111111111111, 4: 15.617647058823529, 3: 17.533333333333335, 2: 23.083333333333332, 1: 69.25} root 277
+r2 4096 stokes weak exact err 7.3e-12 skel {5: 15.07638888888889, 4: 19.426470588235293, 3: 27.333333333333332, 2: 44.25, 1: 85.25} root 341
+r2 4096 stokes weak proxy-sl err 1.3e-11 skel {5: 29.805555555555557, 4: 32.63235294117647, 3: 37.6, 2: 49.916666666666664, 1: 92.5} root 370
+r2 4096 stokes strong exact err 6.9e-12 skel {5: 14.958333333333334, 4: 18.86764705882353, 3: 25.233333333333334, 2: 34.416666666666664, 1: 103.25} root 413
+r2 4096 stokes strong proxy-sl err 2.0e-12 skel {5: 29.791666666666668, 4: 32.5735294117647, 3: 37.233333333333334, 2: 47.75, 1: 143.25} root 573
+r2-eps 0.0001 laplace exact err 3.5e-06 {4: 4.411764705882353, 3: 5.9, 2: 9.5, 1: 18.75}
+r2-eps 0.0001 laplace proxy-sl err 3.1e-05 {4: 6.852941176470588, 3: 7.666666666666667, 2: 10.5, 1: 17.25}
+r2-eps 0.0001 stokes exact err 1.4e-05 {4: 9.117647058823529, 3: 13.033333333333333, 2: 20.25, 1: 39.0}
+r2-eps 0.0001 stokes proxy-sl err 1.9e-05 {4: 15.088235294117647, 3: 16.833333333333332, 2: 21.916666666666668, 1: 40.5}
+r2-eps 1e-06 laplace exact err 3.5e-08 {4: 6.029411764705882, 3: 8.6, 2: 13.583333333333334, 1: 27.0}
+r2-eps 1e-06 laplace proxy-sl err 1.9e-07 {4: 9.691176470588236, 3: 11.266666666666667, 2: 15.5, 1: 26.5}
+r2-eps 1e-06 stokes exact err 7.8e-08 {4: 12.426470588235293, 3: 17.7, 2: 28.5, 1: 54.0}
+r2-eps 1e-06 stokes proxy-sl err 2.1e-07 {4: 20.794117647058822, 3: 24.333333333333332, 2: 31.833333333333332, 1: 58.0}
+r2-eps 1e-08 laplace exact err 2.8e-10 {4: 7.8088235294117645, 3: 11.066666666666666, 2: 18.083333333333332, 1: 35.25}
+r2-eps 1e-08 laplace proxy-sl err 1.5e-09 {4: 12.573529411764707, 3: 14.633333333333333, 2: 20.333333333333332, 1: 34.75}
+r2-eps 1e-08 stokes exact err 8.9e-10 {4: 15.823529411764707, 3: 22.266666666666666, 2: 36.666666666666664, 1: 69.75}
+r2-eps 1e-08 stokes proxy-sl err 1.2e-09 {4: 26.13235294117647, 3: 31.033333333333335, 2: 41.583333333333336, 1: 77.25}
+r2-eps 1e-10 laplace exact err 3.7e-12 {4: 9.338235294117647, 3: 13.333333333333334, 2: 21.666666666666668, 1: 42.0}
+r2-eps 1e-10 laplace proxy-sl err 8.4e-12 {4: 15.088235294117647, 3: 18.3, 2: 25.0, 1: 44.75}
+r2-eps 1e-10 stokes exact err 8.9e-12 {4: 19.014705882352942, 3: 27.1, 2: 44.333333333333336, 1: 85.75}
+r2-eps 1e-10 stokes proxy-sl err 1.2e-11 {4: 31.38235294117647, 3: 38.0, 2: 51.083333333333336, 1: 94.5}
+r2-eps 1e-12 laplace exact err 2.6e-14 {4: 11.088235294117647, 3: 15.833333333333334, 2: 25.416666666666668, 1: 50.5}
+r2-eps 1e-12 laplace proxy-sl err 1.1e-13 {4: 17.720588235294116, 3: 21.666666666666668, 2: 29.833333333333332, 1: 52.5}
+r2-eps 1e-12 stokes exact err 1.0e-13 {4: 22.279411764705884, 3: 31.966666666666665, 2: 51.916666666666664, 1: 100.5}
+r2-eps 1e-12 stokes proxy-sl err 8.7e-14 {4: 36.10294117647059, 3: 44.7, 2: 60.666666666666664, 1: 112.5}
+r3 4 laplace weak exact N_dof 512 err 4.0e-12 root 129 factor 0.0s dense 0.0s storage/N^2 0.182
+r3 4 laplace weak proxy-sl N_dof 512 err 7.6e-12 root 159 factor 0.0s dense 0.0s storage/N^2 0.279
+r3 4 laplace strong exact N_dof 512 err 2.1e-12 root 170 factor 0.0s dense 0.0s storage/N^2 0.351
+r3 4 laplace strong proxy-sl N_dof 512 err 1.3e-13 root 275 factor 0.0s dense 0.0s storage/N^2 0.542
+r3 4 stokes weak exact N_dof 1024 err 7.8e-12 root 256 factor 0.1s dense 0.0s storage/N^2 0.185
+r3 4 stokes weak proxy-sl N_dof 1024 err 5.0e-12 root 325 factor 0.1s dense 0.0s storage/N^2 0.281
+r3 4 stokes strong exact N_dof 1024 err 3.6e-12 root 344 factor 0.1s dense 0.0s storage/N^2 0.355
+r3 4 stokes strong proxy-sl N_dof 1024 err 2.1e-13 root 554 factor 0.1s dense 0.0s storage/N^2 0.544
+r3 8 laplace weak exact N_dof 1024 err 7.7e-12 root 157 factor 0.1s dense 0.0s storage/N^2 0.152
+r3 8 laplace weak proxy-sl N_dof 1024 err 1.3e-11 root 198 factor 0.1s dense 0.0s storage/N^2 0.191
+r3 8 laplace strong exact N_dof 1024 err 3.5e-12 root 198 factor 0.1s dense 0.0s storage/N^2 0.264
+r3 8 laplace strong proxy-sl N_dof 1024 err 2.7e-13 root 343 factor 0.1s dense 0.0s storage/N^2 0.407
+r3 8 stokes weak exact N_dof 2048 err 1.4e-11 root 304 factor 0.5s dense 0.1s storage/N^2 0.153
+r3 8 stokes weak proxy-sl N_dof 2048 err 1.3e-11 root 414 factor 0.2s dense 0.1s storage/N^2 0.196
+r3 8 stokes strong exact N_dof 2048 err 6.7e-12 root 397 factor 0.3s dense 0.1s storage/N^2 0.267
+r3 8 stokes strong proxy-sl N_dof 2048 err 7.1e-13 root 681 factor 0.3s dense 0.1s storage/N^2 0.407
+r3 16 laplace weak exact N_dof 2048 err 7.5e-12 root 347 factor 0.2s dense 0.2s storage/N^2 0.076
+r3 16 laplace weak proxy-sl N_dof 2048 err 5.9e-11 root 364 factor 0.1s dense 0.2s storage/N^2 0.088
+r3 16 laplace strong exact N_dof 2048 err 3.0e-12 root 348 factor 0.2s dense 0.2s storage/N^2 0.146
+r3 16 laplace strong proxy-sl N_dof 2048 err 4.7e-13 root 482 factor 0.2s dense 0.2s storage/N^2 0.207
+r3 16 stokes weak exact N_dof 4096 err 1.1e-11 root 688 factor 1.1s dense 0.5s storage/N^2 0.077
+r3 16 stokes weak proxy-sl N_dof 4096 err 2.0e-11 root 783 factor 0.4s dense 0.5s storage/N^2 0.094
+r3 16 stokes strong exact N_dof 4096 err 5.6e-12 root 683 factor 0.7s dense 0.5s storage/N^2 0.146
+r3 16 stokes strong proxy-sl N_dof 4096 err 8.4e-13 root 1002 factor 0.6s dense 0.5s storage/N^2 0.211
+r3 32 laplace weak exact N_dof 4096 err 9.5e-12 root 471 factor 1.3s dense 0.8s storage/N^2 0.053
+r3 32 laplace weak proxy-sl N_dof 4096 err 1.0e-10 root 509 factor 0.3s dense 0.8s storage/N^2 0.061
+r3 32 laplace strong exact N_dof 4096 err 4.1e-12 root 556 factor 0.8s dense 0.8s storage/N^2 0.086
+r3 32 laplace strong proxy-sl N_dof 4096 err 1.6e-12 root 763 factor 0.5s dense 0.8s storage/N^2 0.130
+r3 32 stokes weak exact N_dof 8192 err 1.8e-11 root 930 factor 5.2s dense 3.5s storage/N^2 0.054
+r3 32 stokes weak proxy-sl N_dof 8192 err 3.9e-11 root 1113 factor 1.4s dense 3.5s storage/N^2 0.065
+r3 32 stokes strong exact N_dof 8192 err 7.1e-12 root 1100 factor 5.6s dense 3.5s storage/N^2 0.086
+r3 32 stokes strong proxy-sl N_dof 8192 err 1.8e-12 root 1621 factor 2.2s dense 3.5s storage/N^2 0.134
+r4 {'physics': 'stokes', 'R_over_Rstar': '8.0e-01', 'R': '1.3e+00', 'err_sl': '2.0e-10', 'rowres_sl': '8.4e-12', 'constres_sl': '5.0e-12', 'arearesconst_sl': '8.7e-16', 'err_dl': '1.9e-11', 'rowres_dl': '7.0e-12', 'constres_dl': '1.2e-12', 'arearesconst_dl': '1.4e-15', 'err_both': '1.2e-10', 'rowres_both': '6.5e-12', 'constres_both': '1.2e-12', 'arearesconst_both': '1.1e-15'}
+r4 {'physics': 'stokes', 'R_over_Rstar': '9.0e-01', 'R': '1.5e+00', 'err_sl': '2.3e-10', 'rowres_sl': '1.3e-11', 'constres_sl': '1.0e-11', 'arearesconst_sl': '9.8e-16', 'err_dl': '1.9e-11', 'rowres_dl': '7.0e-12', 'constres_dl': '1.2e-12', 'arearesconst_dl': '1.0e-15', 'err_both': '1.6e-10', 'rowres_both': '6.3e-12', 'constres_both': '1.3e-12', 'arearesconst_both': '1.2e-15'}
+r4 {'physics': 'stokes', 'R_over_Rstar': '9.5e-01', 'R': '1.6e+00', 'err_sl': '2.0e-10', 'rowres_sl': '1.9e-11', 'constres_sl': '2.0e-11', 'arearesconst_sl': '1.7e-15', 'err_dl': '1.9e-11', 'rowres_dl': '7.0e-12', 'constres_dl': '1.2e-12', 'arearesconst_dl': '1.6e-15', 'err_both': '3.2e-10', 'rowres_both': '6.3e-12', 'constres_both': '1.3e-12', 'arearesconst_both': '1.2e-15'}
+r4 {'physics': 'stokes', 'R_over_Rstar': '9.8e-01', 'R': '1.6e+00', 'err_sl': '1.9e-10', 'rowres_sl': '3.6e-11', 'constres_sl': '4.5e-11', 'arearesconst_sl': '1.2e-15', 'err_dl': '1.9e-11', 'rowres_dl': '7.0e-12', 'constres_dl': '1.2e-12', 'arearesconst_dl': '1.2e-15', 'err_both': '2.7e-10', 'rowres_both': '6.3e-12', 'constres_both': '1.3e-12', 'arearesconst_both': '8.6e-16'}
+r4 {'physics': 'stokes', 'R_over_Rstar': '1.0e+00', 'R': '1.6e+00', 'err_sl': '2.1e-10', 'rowres_sl': '5.0e-11', 'constres_sl': '6.3e-11', 'arearesconst_sl': '1.9e-02', 'err_dl': '1.9e-11', 'rowres_dl': '7.0e-12', 'constres_dl': '1.2e-12', 'arearesconst_dl': '9.3e-16', 'err_both': '2.3e-10', 'rowres_both': '6.2e-12', 'constres_both': '1.3e-12', 'arearesconst_both': '1.1e-15'}
+r4 {'physics': 'stokes', 'R_over_Rstar': '1.0e+00', 'R': '1.7e+00', 'err_sl': '2.2e-10', 'rowres_sl': '3.7e-11', 'constres_sl': '4.5e-11', 'arearesconst_sl': '1.2e-15', 'err_dl': '1.9e-11', 'rowres_dl': '7.0e-12', 'constres_dl': '1.2e-12', 'arearesconst_dl': '1.1e-15', 'err_both': '2.0e-10', 'rowres_both': '6.2e-12', 'constres_both': '1.3e-12', 'arearesconst_both': '1.3e-15'}
+r4 {'physics': 'stokes', 'R_over_Rstar': '1.1e+00', 'R': '1.7e+00', 'err_sl': '3.4e-10', 'rowres_sl': '2.0e-11', 'constres_sl': '2.1e-11', 'arearesconst_sl': '9.5e-16', 'err_dl': '1.9e-11', 'rowres_dl': '7.0e-12', 'constres_dl': '1.2e-12', 'arearesconst_dl': '9.5e-16', 'err_both': '3.1e-10', 'rowres_both': '6.2e-12', 'constres_both': '1.3e-12', 'arearesconst_both': '1.3e-15'}
+r4 {'physics': 'stokes', 'R_over_Rstar': '1.1e+00', 'R': '1.8e+00', 'err_sl': '2.8e-10', 'rowres_sl': '1.4e-11', 'constres_sl': '1.1e-11', 'arearesconst_sl': '9.7e-16', 'err_dl': '2.4e-11', 'rowres_dl': '7.0e-12', 'constres_dl': '1.2e-12', 'arearesconst_dl': '1.6e-15', 'err_both': '3.0e-10', 'rowres_both': '6.1e-12', 'constres_both': '1.3e-12', 'arearesconst_both': '1.3e-15'}
+r4 {'physics': 'stokes', 'R_over_Rstar': '1.2e+00', 'R': '2.1e+00', 'err_sl': '2.2e-10', 'rowres_sl': '8.4e-12', 'constres_sl': '5.0e-12', 'arearesconst_sl': '2.0e-15', 'err_dl': '2.7e-11', 'rowres_dl': '7.0e-12', 'constres_dl': '1.2e-12', 'arearesconst_dl': '1.2e-15', 'err_both': '3.5e-10', 'rowres_both': '6.0e-12', 'constres_both': '1.3e-12', 'arearesconst_both': '9.1e-16'}
+r4 {'physics': 'laplace', 'R_over_Rstar': '8.0e-01', 'R': '8.0e-01', 'err_sl': '1.6e-10', 'rowres_sl': '3.0e-14', 'constres_sl': '2.2e-14', 'arearesconst_sl': '1.0e-15', 'err_dl': '1.1e-11', 'rowres_dl': '9.2e-14', 'constres_dl': '2.8e-14', 'arearesconst_dl': '9.3e-16', 'err_both': '7.6e-11', 'rowres_both': '6.8e-14', 'constres_both': '3.2e-14', 'arearesconst_both': '8.5e-16'}
+r4 {'physics': 'laplace', 'R_over_Rstar': '9.0e-01', 'R': '9.0e-01', 'err_sl': '1.4e-10', 'rowres_sl': '8.4e-14', 'constres_sl': '8.3e-14', 'arearesconst_sl': '1.1e-15', 'err_dl': '1.1e-11', 'rowres_dl': '9.2e-14', 'constres_dl': '2.8e-14', 'arearesconst_dl': '1.3e-15', 'err_both': '7.8e-11', 'rowres_both': '6.5e-14', 'constres_both': '3.3e-14', 'arearesconst_both': '1.6e-15'}
+r4 {'physics': 'laplace', 'R_over_Rstar': '9.5e-01', 'R': '9.5e-01', 'err_sl': '1.7e-10', 'rowres_sl': '2.1e-13', 'constres_sl': '2.1e-13', 'arearesconst_sl': '1.7e-15', 'err_dl': '1.1e-11', 'rowres_dl': '9.2e-14', 'constres_dl': '2.8e-14', 'arearesconst_dl': '7.0e-16', 'err_both': '1.1e-10', 'rowres_both': '6.4e-14', 'constres_both': '3.4e-14', 'arearesconst_both': '4.9e-16'}
+r4 {'physics': 'laplace', 'R_over_Rstar': '9.8e-01', 'R': '9.8e-01', 'err_sl': '8.7e-11', 'rowres_sl': '3.6e-13', 'constres_sl': '3.6e-13', 'arearesconst_sl': '1.2e-15', 'err_dl': '1.1e-11', 'rowres_dl': '9.2e-14', 'constres_dl': '2.8e-14', 'arearesconst_dl': '6.7e-16', 'err_both': '1.2e-10', 'rowres_both': '6.3e-14', 'constres_both': '3.4e-14', 'arearesconst_both': '6.2e-16'}
+r4 {'physics': 'laplace', 'R_over_Rstar': '1.0e+00', 'R': '1.0e+00', 'err_sl': '8.8e-11', 'rowres_sl': '4.1e-13', 'constres_sl': '4.1e-13', 'arearesconst_sl': '5.7e-01', 'err_dl': '1.1e-11', 'rowres_dl': '9.2e-14', 'constres_dl': '2.8e-14', 'arearesconst_dl': '9.8e-16', 'err_both': '1.5e-10', 'rowres_both': '6.3e-14', 'constres_both': '3.5e-14', 'arearesconst_both': '8.6e-16'}
+r4 {'physics': 'laplace', 'R_over_Rstar': '1.0e+00', 'R': '1.0e+00', 'err_sl': '9.4e-11', 'rowres_sl': '3.6e-13', 'constres_sl': '3.6e-13', 'arearesconst_sl': '9.5e-16', 'err_dl': '1.1e-11', 'rowres_dl': '9.2e-14', 'constres_dl': '2.8e-14', 'arearesconst_dl': '7.2e-16', 'err_both': '1.4e-10', 'rowres_both': '6.2e-14', 'constres_both': '3.5e-14', 'arearesconst_both': '6.0e-16'}
+r4 {'physics': 'laplace', 'R_over_Rstar': '1.1e+00', 'R': '1.1e+00', 'err_sl': '1.9e-10', 'rowres_sl': '2.2e-13', 'constres_sl': '2.2e-13', 'arearesconst_sl': '8.0e-16', 'err_dl': '1.1e-11', 'rowres_dl': '9.2e-14', 'constres_dl': '2.8e-14', 'arearesconst_dl': '1.6e-15', 'err_both': '1.6e-10', 'rowres_both': '6.2e-14', 'constres_both': '3.5e-14', 'arearesconst_both': '6.9e-16'}
+r4 {'physics': 'laplace', 'R_over_Rstar': '1.1e+00', 'R': '1.1e+00', 'err_sl': '2.2e-10', 'rowres_sl': '9.7e-14', 'constres_sl': '9.6e-14', 'arearesconst_sl': '1.4e-15', 'err_dl': '1.1e-11', 'rowres_dl': '9.2e-14', 'constres_dl': '2.8e-14', 'arearesconst_dl': '1.0e-15', 'err_both': '1.4e-10', 'rowres_both': '6.0e-14', 'constres_both': '3.5e-14', 'arearesconst_both': '9.5e-16'}
+r4 {'physics': 'laplace', 'R_over_Rstar': '1.2e+00', 'R': '1.2e+00', 'err_sl': '2.8e-10', 'rowres_sl': '2.9e-14', 'constres_sl': '2.2e-14', 'arearesconst_sl': '8.5e-16', 'err_dl': '1.1e-11', 'rowres_dl': '9.2e-14', 'constres_dl': '2.8e-14', 'arearesconst_dl': '8.0e-16', 'err_both': '1.9e-10', 'rowres_both': '5.6e-14', 'constres_both': '3.4e-14', 'arearesconst_both': '6.7e-16'}
+r4-ring {'n_proxy': 8, 'radius_factor': 1.5, 'comp': 'proxy-sl', 'err': 1.3841906613974412e-07, 'skel_total': 3842}
+r4-ring {'n_proxy': 8, 'radius_factor': 1.5, 'comp': 'proxy-both', 'err': 3.282510014983539e-08, 'skel_total': 3952}
+r4-ring {'n_proxy': 8, 'radius_factor': 2.5, 'comp': 'proxy-sl', 'err': 7.990121927618019e-11, 'skel_total': 3518}
+r4-ring {'n_proxy': 8, 'radius_factor': 2.5, 'comp': 'proxy-both', 'err': 1.5865334844021488e-10, 'skel_total': 3451}
+r4-ring {'n_proxy': 8, 'radius_factor': 4.0, 'comp': 'proxy-sl', 'err': 5.891977685991454e-11, 'skel_total': 3163}
+r4-ring {'n_proxy': 8, 'radius_factor': 4.0, 'comp': 'proxy-both', 'err': 1.5129956001242192e-10, 'skel_total': 3082}
+r4-ring {'n_proxy': 16, 'radius_factor': 1.5, 'comp': 'proxy-sl', 'err': 2.140523824458265e-09, 'skel_total': 4414}
+r4-ring {'n_proxy': 16, 'radius_factor': 1.5, 'comp': 'proxy-both', 'err': 8.094822175620482e-10, 'skel_total': 4472}
+r4-ring {'n_proxy': 16, 'radius_factor': 2.5, 'comp': 'proxy-sl', 'err': 2.3467688038852393e-11, 'skel_total': 3753}
+r4-ring {'n_proxy': 16, 'radius_factor': 2.5, 'comp': 'proxy-both', 'err': 6.67309896101818e-11, 'skel_total': 3738}
+r4-ring {'n_proxy': 16, 'radius_factor': 4.0, 'comp': 'proxy-sl', 'err': 5.955581786723154e-11, 'skel_total': 3253}
+r4-ring {'n_proxy': 16, 'radius_factor': 4.0, 'comp': 'proxy-both', 'err': 1.314856084719141e-10, 'skel_total': 3286}
+r4-ring {'n_proxy': 24, 'radius_factor': 1.5, 'comp': 'proxy-sl', 'err': 2.4897149210903386e-10, 'skel_total': 4643}
+r4-ring {'n_proxy': 24, 'radius_factor': 1.5, 'comp': 'proxy-both', 'err': 1.5291524383942514e-10, 'skel_total': 4686}
+r4-ring {'n_proxy': 24, 'radius_factor': 2.5, 'comp': 'proxy-sl', 'err': 1.4001313669698202e-11, 'skel_total': 3857}
+r4-ring {'n_proxy': 24, 'radius_factor': 2.5, 'comp': 'proxy-both', 'err': 4.385238529721578e-11, 'skel_total': 3863}
+r4-ring {'n_proxy': 24, 'radius_factor': 4.0, 'comp': 'proxy-sl', 'err': 3.664309800071377e-11, 'skel_total': 3305}
+r4-ring {'n_proxy': 24, 'radius_factor': 4.0, 'comp': 'proxy-both', 'err': 5.3875822652728736e-11, 'skel_total': 3315}
+r4-ring {'n_proxy': 32, 'radius_factor': 1.5, 'comp': 'proxy-sl', 'err': 3.6945931530308757e-11, 'skel_total': 4767}
+r4-ring {'n_proxy': 32, 'radius_factor': 1.5, 'comp': 'proxy-both', 'err': 7.464420929655041e-11, 'skel_total': 4835}
+r4-ring {'n_proxy': 32, 'radius_factor': 2.5, 'comp': 'proxy-sl', 'err': 2.5943478305106998e-11, 'skel_total': 3863}
+r4-ring {'n_proxy': 32, 'radius_factor': 2.5, 'comp': 'proxy-both', 'err': 4.598775139080175e-11, 'skel_total': 3886}
+r4-ring {'n_proxy': 32, 'radius_factor': 4.0, 'comp': 'proxy-sl', 'err': 2.5082971245704596e-11, 'skel_total': 3332}
+r4-ring {'n_proxy': 32, 'radius_factor': 4.0, 'comp': 'proxy-both', 'err': 9.394732701108694e-11, 'skel_total': 3331}
+r4-ring {'n_proxy': 64, 'radius_factor': 1.5, 'comp': 'proxy-sl', 'err': 1.1398766803774785e-11, 'skel_total': 4987}
+r4-ring {'n_proxy': 64, 'radius_factor': 1.5, 'comp': 'proxy-both', 'err': 3.368710522801228e-11, 'skel_total': 5028}
+r4-ring {'n_proxy': 64, 'radius_factor': 2.5, 'comp': 'proxy-sl', 'err': 8.869449249436751e-12, 'skel_total': 3951}
+r4-ring {'n_proxy': 64, 'radius_factor': 2.5, 'comp': 'proxy-both', 'err': 1.7168158643404814e-11, 'skel_total': 3931}
+r4-ring {'n_proxy': 64, 'radius_factor': 4.0, 'comp': 'proxy-sl', 'err': 2.474569927662504e-11, 'skel_total': 3369}
+r4-ring {'n_proxy': 64, 'radius_factor': 4.0, 'comp': 'proxy-both', 'err': 4.184343464621746e-11, 'skel_total': 3350}
+r4b {'physics': 'stokes', 'level': 2, 'R_over_Rstar': '9.0e-01', 'err_sl_weak': '2.7e-12', 'err_sl_strong': '2.3e-13', 'err_dl_weak': '3.5e-12', 'err_dl_strong': '8.9e-14', 'err_both_weak': '6.3e-12', 'err_both_strong': '8.7e-14'}
+r4b {'physics': 'stokes', 'level': 2, 'R_over_Rstar': '9.7e-01', 'err_sl_weak': '5.1e-12', 'err_sl_strong': '3.7e-13', 'err_dl_weak': '4.0e-12', 'err_dl_strong': '1.4e-13', 'err_both_weak': '4.2e-12', 'err_both_strong': '1.3e-13'}
+r4b {'physics': 'stokes', 'level': 2, 'R_over_Rstar': '9.9e-01', 'err_sl_weak': '1.5e-11', 'err_sl_strong': '4.3e-13', 'err_dl_weak': '5.2e-12', 'err_dl_strong': '7.3e-13', 'err_both_weak': '6.6e-12', 'err_both_strong': '1.9e-13'}
+r4b {'physics': 'stokes', 'level': 2, 'R_over_Rstar': '1.0e+00', 'err_sl_weak': '8.1e-10', 'err_sl_strong': '2.9e-12', 'err_dl_weak': '4.1e-11', 'err_dl_strong': '3.0e-12', 'err_both_weak': '2.1e-11', 'err_both_strong': '2.1e-12'}
+r4b {'physics': 'stokes', 'level': 2, 'R_over_Rstar': '1.0e+00', 'err_sl_weak': '1.7e-10', 'err_sl_strong': '1.1e-12', 'err_dl_weak': '1.0e-10', 'err_dl_strong': '4.1e-12', 'err_both_weak': '1.2e-10', 'err_both_strong': '1.8e-12'}
+r4b {'physics': 'stokes', 'level': 2, 'R_over_Rstar': '1.0e+00', 'err_sl_weak': '1.2e-11', 'err_sl_strong': '4.6e-13', 'err_dl_weak': '5.1e-12', 'err_dl_strong': '1.5e-13', 'err_both_weak': '7.4e-12', 'err_both_strong': '9.5e-14'}
+r4b {'physics': 'stokes', 'level': 2, 'R_over_Rstar': '1.1e+00', 'err_sl_weak': '4.9e-12', 'err_sl_strong': '3.8e-13', 'err_dl_weak': '3.7e-12', 'err_dl_strong': '2.6e-13', 'err_both_weak': '5.7e-12', 'err_both_strong': '1.1e-13'}
+r4b {'physics': 'laplace', 'level': 2, 'R_over_Rstar': '9.0e-01', 'err_sl_weak': '2.9e-12', 'err_sl_strong': '2.3e-14', 'err_dl_weak': '1.9e-12', 'err_dl_strong': '2.1e-15', 'err_both_weak': '4.1e-12', 'err_both_strong': '2.2e-15'}
+r4b {'physics': 'laplace', 'level': 2, 'R_over_Rstar': '9.7e-01', 'err_sl_weak': '3.6e-12', 'err_sl_strong': '3.2e-14', 'err_dl_weak': '2.2e-12', 'err_dl_strong': '2.3e-15', 'err_both_weak': '4.9e-12', 'err_both_strong': '2.3e-15'}
+r4b {'physics': 'laplace', 'level': 2, 'R_over_Rstar': '9.9e-01', 'err_sl_weak': '4.0e-12', 'err_sl_strong': '3.4e-14', 'err_dl_weak': '2.4e-12', 'err_dl_strong': '2.3e-15', 'err_both_weak': '5.3e-12', 'err_both_strong': '2.1e-15'}
+r4b {'physics': 'laplace', 'level': 2, 'R_over_Rstar': '1.0e+00', 'err_sl_weak': '4.3e-12', 'err_sl_strong': '3.6e-14', 'err_dl_weak': '2.5e-12', 'err_dl_strong': '2.3e-15', 'err_both_weak': '5.6e-12', 'err_both_strong': '2.3e-15'}
+r4b {'physics': 'laplace', 'level': 2, 'R_over_Rstar': '1.0e+00', 'err_sl_weak': '4.5e-12', 'err_sl_strong': '3.8e-14', 'err_dl_weak': '2.6e-12', 'err_dl_strong': '2.4e-15', 'err_both_weak': '5.9e-12', 'err_both_strong': '2.4e-15'}
+r4b {'physics': 'laplace', 'level': 2, 'R_over_Rstar': '1.0e+00', 'err_sl_weak': '4.9e-12', 'err_sl_strong': '4.1e-14', 'err_dl_weak': '3.0e-12', 'err_dl_strong': '2.4e-15', 'err_both_weak': '6.7e-12', 'err_both_strong': '2.3e-15'}
+r4b {'physics': 'laplace', 'level': 2, 'R_over_Rstar': '1.1e+00', 'err_sl_weak': '5.9e-11', 'err_sl_strong': '2.0e-13', 'err_dl_weak': '4.4e-11', 'err_dl_strong': '2.7e-15', 'err_both_weak': '1.9e-10', 'err_both_strong': '2.1e-14'}
+r5 {'geometry': 'starfish', 'weights': 'smooth', 'rule': 'weak', 'comp': 'proxy-sl', 'err': 8.869449249436751e-12, 'skel_total': 3951}
+r5 {'geometry': 'starfish', 'weights': 'smooth', 'rule': 'weak', 'comp': 'proxy-norigid', 'err': 1.2975676906704913e-11, 'skel_total': 3952}
+r5 {'geometry': 'starfish', 'weights': 'smooth', 'rule': 'strong', 'comp': 'proxy-sl', 'err': 1.978391810958508e-12, 'skel_total': 4116}
+r5 {'geometry': 'starfish', 'weights': 'smooth', 'rule': 'strong', 'comp': 'proxy-norigid', 'err': 1.9811801664833217e-12, 'skel_total': 4116}
+r5 {'geometry': 'starfish', 'weights': 'rough', 'rule': 'weak', 'comp': 'proxy-sl', 'err': 1.4443932710086312e-11, 'skel_total': 4130}
+r5 {'geometry': 'starfish', 'weights': 'rough', 'rule': 'weak', 'comp': 'proxy-norigid', 'err': 9.931032997804638e-12, 'skel_total': 4137}
+r5 {'geometry': 'starfish', 'weights': 'rough', 'rule': 'strong', 'comp': 'proxy-sl', 'err': 1.646463603830811e-12, 'skel_total': 4311}
+r5 {'geometry': 'starfish', 'weights': 'rough', 'rule': 'strong', 'comp': 'proxy-norigid', 'err': 1.6028134779061063e-12, 'skel_total': 4312}
+r5 {'geometry': 'suspension K=8', 'weights': 'smooth', 'rule': 'weak', 'comp': 'proxy-sl', 'err': 9.284291242890182e-12, 'skel_total': 3005}
+r5 {'geometry': 'suspension K=8', 'weights': 'smooth', 'rule': 'weak', 'comp': 'proxy-norigid', 'err': 9.11554944455068e-12, 'skel_total': 2986}
+r5 {'geometry': 'suspension K=8', 'weights': 'smooth', 'rule': 'strong', 'comp': 'proxy-sl', 'err': 9.234977329045577e-13, 'skel_total': 3023}
+r5 {'geometry': 'suspension K=8', 'weights': 'smooth', 'rule': 'strong', 'comp': 'proxy-norigid', 'err': 1.0466811965685683e-12, 'skel_total': 3001}
+r5 {'geometry': 'suspension K=8', 'weights': 'rough', 'rule': 'weak', 'comp': 'proxy-sl', 'err': 1.2611571803262777e-11, 'skel_total': 3112}
+r5 {'geometry': 'suspension K=8', 'weights': 'rough', 'rule': 'weak', 'comp': 'proxy-norigid', 'err': 1.0991951265797021e-11, 'skel_total': 3097}
+r5 {'geometry': 'suspension K=8', 'weights': 'rough', 'rule': 'strong', 'comp': 'proxy-sl', 'err': 9.35493765278405e-13, 'skel_total': 3155}
+r5 {'geometry': 'suspension K=8', 'weights': 'rough', 'rule': 'strong', 'comp': 'proxy-norigid', 'err': 8.725709314027468e-13, 'skel_total': 3035}
+r6-gap {'gap': 0.5, 'h': 0.02454369260617026, 'disc_err': 7.848732406890776e-16, 'weak_err': 1.9966879834776058e-12, 'weak_mob_err': 2.1100366643485953e-13, 'weak_root': 193, 'strong_err': 2.2534190984125256e-13, 'strong_mob_err': 8.555118323510945e-14, 'strong_root': 364, 'cond_A': 3.708182335880527}
+r6-gap {'gap': 0.2, 'h': 0.02454369260617026, 'disc_err': 7.612481553507951e-16, 'weak_err': 6.641811355839397e-12, 'weak_mob_err': 3.989457744893756e-13, 'weak_root': 250, 'strong_err': 2.95800210654672e-13, 'strong_mob_err': 8.310688845993758e-15, 'strong_root': 388, 'cond_A': 6.237688106533022}
+r6-gap {'gap': 0.1, 'h': 0.02454369260617026, 'disc_err': 3.631161983984848e-12, 'weak_err': 8.349352489467682e-12, 'weak_mob_err': 1.6110159902704458e-12, 'weak_root': 277, 'strong_err': 1.7215433225600175e-13, 'strong_mob_err': 4.035176974351163e-14, 'strong_root': 402, 'cond_A': 10.64569233170922}
+r6-gap {'gap': 0.05, 'h': 0.02454369260617026, 'disc_err': 4.811542638643316e-06, 'weak_err': 7.361311329842352e-12, 'weak_mob_err': 1.2185290846616702e-12, 'weak_root': 286, 'strong_err': 2.078162621370373e-13, 'strong_mob_err': 4.922927231880625e-14, 'strong_root': 409, 'cond_A': 21.043326847275566}
+r6-gap {'gap': 0.02, 'h': 0.02454369260617026, 'disc_err': 0.08215576240944426, 'weak_err': 9.79240144112784e-12, 'weak_mob_err': 1.402360706487938e-12, 'weak_root': 287, 'strong_err': 3.686692722925935e-13, 'strong_mob_err': 6.30618396936205e-14, 'strong_root': 416, 'cond_A': 411.3472323447409}
+r6-gap {'gap': 0.01, 'h': 0.02454369260617026, 'disc_err': 0.13197349471136455, 'weak_err': 1.6674610459677027e-11, 'weak_mob_err': 1.0388747054633879e-12, 'weak_root': 284, 'strong_err': 2.2375626543164107e-13, 'strong_mob_err': 3.5581921369408226e-14, 'strong_root': 416, 'cond_A': 44.32975110138331}
+r6-gap {'gap': 0.005, 'h': 0.02454369260617026, 'disc_err': 0.27468418875131523, 'weak_err': 2.7184449474087798e-11, 'weak_mob_err': 3.8069802257441816e-12, 'weak_root': 281, 'strong_err': 2.8322006572701546e-13, 'strong_mob_err': 6.597971047858903e-14, 'strong_root': 417, 'cond_A': 184.5070558307531}
+r6-aspect {'aspect': 1.0, 'dense_jeffery_err': 4.440892098500626e-16, 'weak_err': 5.994435527385711e-13, 'weak_jeffery_err': 1.0436096431476471e-13, 'weak_skel_total': 3312, 'weak_root': 224, 'strong_err': 3.925761934104135e-13, 'strong_jeffery_err': 8.348877145181177e-14, 'strong_skel_total': 3552, 'strong_root': 464}
+r6-aspect {'aspect': 0.3, 'dense_jeffery_err': 3.980760981445015e-16, 'weak_err': 6.964378473481393e-12, 'weak_jeffery_err': 5.947256906278852e-13, 'weak_skel_total': 2613, 'weak_root': 200, 'strong_err': 4.4138454184830155e-12, 'strong_jeffery_err': 4.219208564233571e-12, 'strong_skel_total': 2773, 'strong_root': 362}
+r6-aspect {'aspect': 0.1, 'dense_jeffery_err': 3.501292706853416e-16, 'weak_err': 6.152719834288736e-11, 'weak_jeffery_err': 3.086144430601806e-11, 'weak_skel_total': 2469, 'weak_root': 179, 'strong_err': 2.289213635335079e-11, 'strong_jeffery_err': 8.565212348775512e-12, 'strong_skel_total': 2476, 'strong_root': 316}
+r6-aspect {'aspect': 0.03, 'dense_jeffery_err': 1.6404745931290696e-15, 'weak_err': 5.877420896034027e-09, 'weak_jeffery_err': 1.610672638020558e-11, 'weak_skel_total': 4700, 'weak_root': 189, 'strong_err': 3.6869489240287573e-10, 'strong_jeffery_err': 6.069755994577558e-14, 'strong_skel_total': 4117, 'strong_root': 321}
+r6-aspect {'aspect': 0.01, 'dense_jeffery_err': 2.7337096159852467e-08, 'weak_err': 3.1328001437220016e-07, 'weak_jeffery_err': 2.731962574770021e-08, 'weak_skel_total': 4566, 'weak_root': 187, 'strong_err': 1.3972546351103344e-08, 'strong_jeffery_err': 2.7346498013556586e-08, 'strong_skel_total': 4120, 'strong_root': 321}
+r7 {'K': 24, 'N_dof': 6144, 'fast_vs_dense': 1.084715572254052e-11, 'asym_fast': 1.4867455012338556e-11, 'asym_dense': 8.897330976191318e-16, 'eig_sym_min': -1.3607145634502864, 'eig_sym_max': 1.6056873640394738, 'factor_s': 0.4961800419987412, 'solves_s': 0.5607787500011909, 'dense_multi_rhs_s': 0.7575987080017512, 'eig_forcefree_min': 0.013830597152961364}
+total 155 s
+      155.93 real       148.21 user         6.81 sys
+          3830595584  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+             1518445  page reclaims
+                  95  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                 538  voluntary context switches
+              297434  involuntary context switches
+       1099258274769  instructions retired
+        562389183649  cycles elapsed
+          4111584712  peak memory footprint

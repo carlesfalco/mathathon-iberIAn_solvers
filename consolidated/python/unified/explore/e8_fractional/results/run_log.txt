@@ -1,0 +1,412 @@
+R1 physics: fractional Poisson vs exact solution
+  d=1 s=0.25 N=  256 raw=4.68e-03 corr=5.88e-03 (|x|<.5: 1.68e-03) fast-dense=1.4e-11 fast-exact=5.88e-03 t=0.0s
+  d=1 s=0.25 N=  512 raw=2.79e-03 corr=3.51e-03 (|x|<.5: 8.42e-04) fast-dense=5.5e-11 fast-exact=3.51e-03 t=0.0s
+  d=1 s=0.25 N= 1024 raw=1.66e-03 corr=2.09e-03 (|x|<.5: 4.22e-04) fast-dense=5.5e-11 fast-exact=2.09e-03 t=0.0s
+  d=1 s=0.25 N= 2048 raw=9.89e-04 corr=1.24e-03 (|x|<.5: 2.11e-04) fast-dense=8.0e-11 fast-exact=1.24e-03 t=0.0s
+  d=1 s=0.25 N= 4096 raw=5.88e-04 corr=7.38e-04 (|x|<.5: 1.05e-04) fast-dense=1.0e-10 fast-exact=7.38e-04 t=0.1s
+  d=1 s=0.25 N= 8192 raw=3.50e-04 corr=4.39e-04 (|x|<.5: 5.28e-05) fast-dense=1.6e-10 fast-exact=4.39e-04 t=0.5s
+  d=1 s=0.5 N=  256 raw=1.65e-03 corr=4.65e-03 (|x|<.5: 2.38e-03) fast-dense=1.5e-11 fast-exact=4.65e-03 t=0.0s
+  d=1 s=0.5 N=  512 raw=1.03e-03 corr=2.46e-03 (|x|<.5: 1.19e-03) fast-dense=3.1e-11 fast-exact=2.46e-03 t=0.0s
+  d=1 s=0.5 N= 1024 raw=6.21e-04 corr=1.29e-03 (|x|<.5: 5.98e-04) fast-dense=1.4e-10 fast-exact=1.29e-03 t=0.0s
+  d=1 s=0.5 N= 2048 raw=3.68e-04 corr=6.76e-04 (|x|<.5: 2.99e-04) fast-dense=8.6e-10 fast-exact=6.76e-04 t=0.1s
+  d=1 s=0.5 N= 4096 raw=2.15e-04 corr=3.52e-04 (|x|<.5: 1.50e-04) fast-dense=2.4e-09 fast-exact=3.52e-04 t=0.1s
+  d=1 s=0.5 N= 8192 raw=1.24e-04 corr=1.83e-04 (|x|<.5: 7.48e-05) fast-dense=3.1e-09 fast-exact=1.83e-04 t=0.5s
+  d=1 s=0.75 N=  256 raw=7.01e-02 corr=2.82e-03 (|x|<.5: 1.96e-03) fast-dense=3.9e-11 fast-exact=2.82e-03 t=0.0s
+  d=1 s=0.75 N=  512 raw=4.95e-02 corr=1.43e-03 (|x|<.5: 9.80e-04) fast-dense=8.5e-10 fast-exact=1.43e-03 t=0.0s
+  d=1 s=0.75 N= 1024 raw=3.49e-02 corr=7.21e-04 (|x|<.5: 4.91e-04) fast-dense=4.3e-09 fast-exact=7.21e-04 t=0.0s
+  d=1 s=0.75 N= 2048 raw=2.46e-02 corr=3.62e-04 (|x|<.5: 2.45e-04) fast-dense=5.4e-08 fast-exact=3.63e-04 t=0.1s
+  d=1 s=0.75 N= 4096 raw=1.73e-02 corr=1.82e-04 (|x|<.5: 1.23e-04) fast-dense=2.2e-07 fast-exact=1.82e-04 t=0.1s
+  d=1 s=0.75 N= 8192 raw=1.22e-02 corr=9.13e-05 (|x|<.5: 6.14e-05) fast-dense=2.4e-07 fast-exact=9.15e-05 t=0.3s
+  d=2 s=0.25 N=  253 raw=5.94e-02 corr=4.78e-02 (|x|<.5: 8.50e-04) fast-dense=1.7e-16 fast-exact=4.78e-02 t=0.0s
+  d=2 s=0.25 N=  509 raw=3.96e-02 corr=3.09e-02 (|x|<.5: 1.82e-03) fast-dense=1.6e-16 fast-exact=3.09e-02 t=0.0s
+  d=2 s=0.25 N= 1033 raw=5.55e-02 corr=4.74e-02 (|x|<.5: 4.75e-03) fast-dense=1.5e-16 fast-exact=4.74e-02 t=0.1s
+  d=2 s=0.25 N= 2053 raw=3.35e-02 corr=2.78e-02 (|x|<.5: 2.38e-03) fast-dense=1.5e-12 fast-exact=2.78e-02 t=0.7s
+  d=2 s=0.25 N= 4093 raw=2.34e-02 corr=1.95e-02 (|x|<.5: 9.18e-04) fast-dense=1.4e-12 fast-exact=1.95e-02 t=1.8s
+  d=2 s=0.5 N=  253 raw=1.19e-01 corr=5.95e-02 (|x|<.5: 1.15e-02) fast-dense=2.5e-16 fast-exact=5.95e-02 t=0.0s
+  d=2 s=0.5 N=  509 raw=8.93e-02 corr=4.21e-02 (|x|<.5: 1.11e-02) fast-dense=1.6e-16 fast-exact=4.21e-02 t=0.0s
+  d=2 s=0.5 N= 1033 raw=8.87e-02 corr=5.25e-02 (|x|<.5: 1.44e-02) fast-dense=1.8e-16 fast-exact=5.25e-02 t=0.1s
+  d=2 s=0.5 N= 2053 raw=5.80e-02 corr=3.11e-02 (|x|<.5: 8.34e-03) fast-dense=8.3e-13 fast-exact=3.11e-02 t=0.6s
+  d=2 s=0.5 N= 4093 raw=3.89e-02 corr=1.93e-02 (|x|<.5: 4.29e-03) fast-dense=7.2e-13 fast-exact=1.93e-02 t=1.0s
+  d=2 s=0.5 N= 8197 raw=3.06e-02 corr=1.56e-02 (|x|<.5: 3.72e-03) fast-dense=2.7e-12 fast-exact=1.56e-02 t=5.1s
+  d=2 s=0.75 N=  253 raw=4.47e-01 corr=7.68e-02 (|x|<.5: 3.47e-02) fast-dense=2.7e-16 fast-exact=7.68e-02 t=0.0s
+  d=2 s=0.75 N=  509 raw=3.63e-01 corr=5.97e-02 (|x|<.5: 2.94e-02) fast-dense=4.6e-16 fast-exact=5.97e-02 t=0.0s
+  d=2 s=0.75 N= 1033 raw=3.10e-01 corr=6.11e-02 (|x|<.5: 3.01e-02) fast-dense=5.3e-16 fast-exact=6.11e-02 t=0.1s
+  d=2 s=0.75 N= 2053 raw=2.41e-01 corr=3.78e-02 (|x|<.5: 1.87e-02) fast-dense=1.4e-12 fast-exact=3.78e-02 t=0.4s
+  d=2 s=0.75 N= 4093 raw=1.89e-01 corr=2.20e-02 (|x|<.5: 1.06e-02) fast-dense=1.5e-12 fast-exact=2.20e-02 t=1.9s
+R2 proxy sweep
+  fracpoisson(d=1,s=0.1,N=2048)    weak   exact    err=6.9e-08 skel= 2199 rank={6: 16, 5: 19, 4: 21, 3: 23, 2: 25, 1: 14} rows=260672
+  fracpoisson(d=1,s=0.1,N=2048)    weak   plane    err=1.3e-05 skel= 2078 rank={6: 15, 5: 18, 4: 20, 3: 22, 2: 24, 1: 14} rows=9024
+  fracpoisson(d=1,s=0.1,N=2048)    weak   lifted   err=3.7e-08 skel= 2303 rank={6: 17, 5: 19, 4: 21, 3: 24, 2: 25, 1: 18} rows=25326
+  fracpoisson(d=1,s=0.1,N=2048)    weak   annulus  err=1.4e-07 skel= 2166 rank={6: 16, 5: 18, 4: 20, 3: 23, 2: 25, 1: 16} rows=12764
+  fracpoisson(d=1,s=0.1,N=2048)    strong exact    err=3.0e-10 skel= 1208 rank={6: 10, 5: 10, 4: 10, 3: 11, 2: 7, 1: 0} rows=197924
+  fracpoisson(d=1,s=0.1,N=2048)    strong plane    err=2.7e-02 skel=  818 rank={6: 8, 5: 8, 4: 8, 3: 8, 2: 4, 1: 0} rows=1970
+  fracpoisson(d=1,s=0.1,N=2048)    strong lifted   err=2.7e-11 skel= 1685 rank={6: 13, 5: 14, 4: 14, 3: 14, 2: 14, 1: 0} rows=19114
+  fracpoisson(d=1,s=0.1,N=2048)    strong annulus  err=7.7e-09 skel= 1248 rank={6: 10, 5: 11, 4: 11, 3: 11, 2: 11, 1: 0} rows=6178
+  fracpoisson(d=1,s=0.25,N=2048)   weak   exact    err=3.9e-06 skel= 2141 rank={6: 16, 5: 18, 4: 20, 3: 23, 2: 23, 1: 14} rows=258870
+  fracpoisson(d=1,s=0.25,N=2048)   weak   plane    err=4.1e-05 skel= 2109 rank={6: 16, 5: 18, 4: 20, 3: 22, 2: 24, 1: 14} rows=9144
+  fracpoisson(d=1,s=0.25,N=2048)   weak   lifted   err=2.4e-07 skel= 2270 rank={6: 17, 5: 19, 4: 21, 3: 23, 2: 24, 1: 16} rows=25272
+  fracpoisson(d=1,s=0.25,N=2048)   weak   annulus  err=1.1e-06 skel= 2151 rank={6: 16, 5: 18, 4: 20, 3: 22, 2: 23, 1: 15} rows=12632
+  fracpoisson(d=1,s=0.25,N=2048)   strong exact    err=2.0e-10 skel= 1253 rank={6: 11, 5: 11, 4: 11, 3: 11, 2: 7, 1: 0} rows=199400
+  fracpoisson(d=1,s=0.25,N=2048)   strong plane    err=6.9e-02 skel=  831 rank={6: 8, 5: 8, 4: 8, 3: 8, 2: 4, 1: 0} rows=1994
+  fracpoisson(d=1,s=0.25,N=2048)   strong lifted   err=8.0e-11 skel= 1763 rank={6: 14, 5: 15, 4: 15, 3: 15, 2: 15, 1: 0} rows=19250
+  fracpoisson(d=1,s=0.25,N=2048)   strong annulus  err=3.0e-08 skel= 1262 rank={6: 10, 5: 10, 4: 11, 3: 11, 2: 12, 1: 0} rows=6196
+  fracpoisson(d=1,s=0.5,N=2048)    weak   exact    err=1.5e-04 skel= 2058 rank={6: 15, 5: 18, 4: 20, 3: 21, 2: 22, 1: 13} rows=252608
+  fracpoisson(d=1,s=0.5,N=2048)    weak   plane    err=7.1e-04 skel= 2026 rank={6: 15, 5: 17, 4: 20, 3: 21, 2: 22, 1: 13} rows=8676
+  fracpoisson(d=1,s=0.5,N=2048)    weak   lifted   err=5.6e-05 skel= 2211 rank={6: 17, 5: 18, 4: 20, 3: 21, 2: 22, 1: 14} rows=25114
+  fracpoisson(d=1,s=0.5,N=2048)    weak   annulus  err=5.2e-05 skel= 2063 rank={6: 15, 5: 18, 4: 19, 3: 22, 2: 23, 1: 14} rows=12304
+  fracpoisson(d=1,s=0.5,N=2048)    strong exact    err=5.8e-09 skel= 1296 rank={6: 11, 5: 11, 4: 11, 3: 10, 2: 7, 1: 0} rows=203342
+  fracpoisson(d=1,s=0.5,N=2048)    strong plane    err=1.3e-01 skel=  887 rank={6: 8, 5: 8, 4: 8, 3: 8, 2: 4, 1: 0} rows=2102
+  fracpoisson(d=1,s=0.5,N=2048)    strong lifted   err=8.6e-10 skel= 1805 rank={6: 14, 5: 15, 4: 15, 3: 15, 2: 14, 1: 0} rows=19340
+  fracpoisson(d=1,s=0.5,N=2048)    strong annulus  err=1.0e-06 skel= 1313 rank={6: 10, 5: 11, 4: 11, 3: 11, 2: 11, 1: 0} rows=6302
+  fracpoisson(d=1,s=0.75,N=2048)   weak   exact    err=7.5e-03 skel= 1964 rank={6: 15, 5: 17, 4: 18, 3: 19, 2: 20, 1: 10} rows=250102
+  fracpoisson(d=1,s=0.75,N=2048)   weak   plane    err=5.2e-03 skel= 1879 rank={6: 14, 5: 16, 4: 18, 3: 19, 2: 20, 1: 11} rows=8312
+  fracpoisson(d=1,s=0.75,N=2048)   weak   lifted   err=5.1e-04 skel= 2005 rank={6: 15, 5: 17, 4: 19, 3: 19, 2: 20, 1: 12} rows=24644
+  fracpoisson(d=1,s=0.75,N=2048)   weak   annulus  err=8.9e-03 skel= 1946 rank={6: 15, 5: 16, 4: 18, 3: 19, 2: 20, 1: 11} rows=12030
+  fracpoisson(d=1,s=0.75,N=2048)   strong exact    err=5.2e-07 skel= 1296 rank={6: 11, 5: 11, 4: 11, 3: 10, 2: 7, 1: 0} rows=204310
+  fracpoisson(d=1,s=0.75,N=2048)   strong plane    err=1.6e-01 skel=  900 rank={6: 8, 5: 9, 4: 9, 3: 8, 2: 4, 1: 0} rows=2130
+  fracpoisson(d=1,s=0.75,N=2048)   strong lifted   err=5.4e-08 skel= 1811 rank={6: 14, 5: 15, 4: 15, 3: 15, 2: 14, 1: 0} rows=19362
+  fracpoisson(d=1,s=0.75,N=2048)   strong annulus  err=1.2e-05 skel= 1292 rank={6: 10, 5: 11, 4: 11, 3: 11, 2: 10, 1: 0} rows=6270
+  fracpoisson(d=1,s=0.9,N=2048)    weak   exact    err=1.9e-02 skel= 1770 rank={6: 14, 5: 15, 4: 16, 3: 16, 2: 16, 1: 8} rows=240412
+  fracpoisson(d=1,s=0.9,N=2048)    weak   plane    err=2.9e-02 skel= 1775 rank={6: 14, 5: 15, 4: 16, 3: 16, 2: 16, 1: 8} rows=8158
+  fracpoisson(d=1,s=0.9,N=2048)    weak   lifted   err=4.0e-02 skel= 1891 rank={6: 15, 5: 16, 4: 16, 3: 17, 2: 16, 1: 8} rows=24298
+  fracpoisson(d=1,s=0.9,N=2048)    weak   annulus  err=2.7e-02 skel= 1778 rank={6: 14, 5: 15, 4: 16, 3: 16, 2: 16, 1: 8} rows=11686
+  fracpoisson(d=1,s=0.9,N=2048)    strong exact    err=3.7e-06 skel= 1283 rank={6: 11, 5: 11, 4: 11, 3: 10, 2: 7, 1: 0} rows=203978
+  fracpoisson(d=1,s=0.9,N=2048)    strong plane    err=1.2e-01 skel=  899 rank={6: 9, 5: 9, 4: 8, 3: 8, 2: 4, 1: 0} rows=2128
+  fracpoisson(d=1,s=0.9,N=2048)    strong lifted   err=2.7e-06 skel= 1811 rank={6: 14, 5: 16, 4: 15, 3: 15, 2: 14, 1: 0} rows=19380
+  fracpoisson(d=1,s=0.9,N=2048)    strong annulus  err=2.2e-05 skel= 1258 rank={6: 10, 5: 11, 4: 10, 3: 11, 2: 10, 1: 0} rows=6216
+  fracpoisson(d=2,s=0.1,N=2053)    weak   exact    err=2.1e-09 skel= 6652 rank={4: 16, 3: 49, 2: 152, 1: 205} rows=1222462
+  fracpoisson(d=2,s=0.1,N=2053)    weak   plane    err=2.1e-08 skel= 6729 rank={4: 16, 3: 49, 2: 152, 1: 215} rows=85860
+  fracpoisson(d=2,s=0.1,N=2053)    weak   lifted   err=5.3e-10 skel= 6876 rank={4: 16, 3: 49, 2: 158, 1: 229} rows=289408
+  fracpoisson(d=2,s=0.1,N=2053)    weak   annulus  err=1.6e-09 skel= 6773 rank={4: 16, 3: 49, 2: 153, 1: 220} rows=358350
+  fracpoisson(d=2,s=0.1,N=2053)    strong exact    err=9.7e-12 skel= 5778 rank={4: 16, 3: 49, 2: 68, 1: 0} rows=1124348
+  fracpoisson(d=2,s=0.1,N=2053)    strong plane    err=1.5e-03 skel= 6190 rank={4: 16, 3: 48, 2: 89, 1: 0} rows=59670
+  fracpoisson(d=2,s=0.1,N=2053)    strong lifted   err=1.5e-12 skel= 7500 rank={4: 16, 3: 49, 2: 130, 1: 0} rows=252606
+  fracpoisson(d=2,s=0.1,N=2053)    strong annulus  err=2.4e-11 skel= 6814 rank={4: 16, 3: 49, 2: 100, 1: 0} rows=318706
+  fracpoisson(d=2,s=0.25,N=2053)   weak   exact    err=4.5e-09 skel= 6637 rank={4: 16, 3: 49, 2: 152, 1: 203} rows=1222262
+  fracpoisson(d=2,s=0.25,N=2053)   weak   plane    err=3.8e-08 skel= 6716 rank={4: 16, 3: 49, 2: 152, 1: 212} rows=85856
+  fracpoisson(d=2,s=0.25,N=2053)   weak   lifted   err=3.0e-09 skel= 6848 rank={4: 16, 3: 49, 2: 157, 1: 227} rows=289290
+  fracpoisson(d=2,s=0.25,N=2053)   weak   annulus  err=6.2e-09 skel= 6751 rank={4: 16, 3: 49, 2: 152, 1: 216} rows=358284
+  fracpoisson(d=2,s=0.25,N=2053)   strong exact    err=9.3e-12 skel= 5862 rank={4: 16, 3: 49, 2: 72, 1: 0} rows=1124694
+  fracpoisson(d=2,s=0.25,N=2053)   strong plane    err=2.4e-03 skel= 6236 rank={4: 16, 3: 48, 2: 94, 1: 0} rows=59618
+  fracpoisson(d=2,s=0.25,N=2053)   strong lifted   err=1.5e-12 skel= 7556 rank={4: 16, 3: 49, 2: 134, 1: 0} rows=252810
+  fracpoisson(d=2,s=0.25,N=2053)   strong annulus  err=3.1e-11 skel= 6886 rank={4: 16, 3: 49, 2: 103, 1: 0} rows=318876
+  fracpoisson(d=2,s=0.5,N=2053)    weak   exact    err=2.3e-08 skel= 6590 rank={4: 16, 3: 49, 2: 152, 1: 198} rows=1221668
+  fracpoisson(d=2,s=0.5,N=2053)    weak   plane    err=1.0e-07 skel= 6661 rank={4: 16, 3: 49, 2: 150, 1: 206} rows=85608
+  fracpoisson(d=2,s=0.5,N=2053)    weak   lifted   err=9.4e-09 skel= 6770 rank={4: 16, 3: 49, 2: 152, 1: 217} rows=289054
+  fracpoisson(d=2,s=0.5,N=2053)    weak   annulus  err=3.3e-08 skel= 6693 rank={4: 16, 3: 49, 2: 150, 1: 210} rows=358060
+  fracpoisson(d=2,s=0.5,N=2053)    strong exact    err=1.1e-11 skel= 5920 rank={4: 16, 3: 49, 2: 69, 1: 0} rows=1125490
+  fracpoisson(d=2,s=0.5,N=2053)    strong plane    err=4.2e-03 skel= 6285 rank={4: 16, 3: 48, 2: 96, 1: 0} rows=59020
+  fracpoisson(d=2,s=0.5,N=2053)    strong lifted   err=8.3e-13 skel= 7642 rank={4: 16, 3: 49, 2: 139, 1: 0} rows=253080
+  fracpoisson(d=2,s=0.5,N=2053)    strong annulus  err=3.5e-11 skel= 6958 rank={4: 16, 3: 49, 2: 104, 1: 0} rows=319080
+  fracpoisson(d=2,s=0.75,N=2053)   weak   exact    err=2.7e-07 skel= 6510 rank={4: 16, 3: 49, 2: 147, 1: 191} rows=1220698
+  fracpoisson(d=2,s=0.75,N=2053)   weak   plane    err=2.7e-07 skel= 6573 rank={4: 16, 3: 49, 2: 146, 1: 197} rows=85294
+  fracpoisson(d=2,s=0.75,N=2053)   weak   lifted   err=5.2e-08 skel= 6650 rank={4: 16, 3: 49, 2: 149, 1: 203} rows=288616
+  fracpoisson(d=2,s=0.75,N=2053)   weak   annulus  err=1.1e-07 skel= 6589 rank={4: 16, 3: 49, 2: 146, 1: 199} rows=357716
+  fracpoisson(d=2,s=0.75,N=2053)   strong exact    err=1.2e-10 skel= 5882 rank={4: 16, 3: 49, 2: 66, 1: 0} rows=1125724
+  fracpoisson(d=2,s=0.75,N=2053)   strong plane    err=3.6e-03 skel= 6302 rank={4: 16, 3: 49, 2: 92, 1: 0} rows=59180
+  fracpoisson(d=2,s=0.75,N=2053)   strong lifted   err=1.4e-12 skel= 7708 rank={4: 16, 3: 49, 2: 141, 1: 0} rows=253284
+  fracpoisson(d=2,s=0.75,N=2053)   strong annulus  err=2.8e-11 skel= 7018 rank={4: 16, 3: 49, 2: 107, 1: 0} rows=319266
+  fracpoisson(d=2,s=0.9,N=2053)    weak   exact    err=7.9e-07 skel= 6398 rank={4: 16, 3: 49, 2: 142, 1: 177} rows=1219490
+  fracpoisson(d=2,s=0.9,N=2053)    weak   plane    err=5.4e-07 skel= 6465 rank={4: 16, 3: 49, 2: 142, 1: 184} rows=84898
+  fracpoisson(d=2,s=0.9,N=2053)    weak   lifted   err=2.0e-07 skel= 6527 rank={4: 16, 3: 49, 2: 143, 1: 188} rows=288164
+  fracpoisson(d=2,s=0.9,N=2053)    weak   annulus  err=9.3e-07 skel= 6484 rank={4: 16, 3: 49, 2: 142, 1: 185} rows=357336
+  fracpoisson(d=2,s=0.9,N=2053)    strong exact    err=1.7e-10 skel= 5798 rank={4: 16, 3: 49, 2: 67, 1: 0} rows=1125724
+  fracpoisson(d=2,s=0.9,N=2053)    strong plane    err=1.9e-03 skel= 6238 rank={4: 16, 3: 49, 2: 90, 1: 0} rows=59022
+  fracpoisson(d=2,s=0.9,N=2053)    strong lifted   err=3.1e-13 skel= 7738 rank={4: 16, 3: 49, 2: 141, 1: 0} rows=253388
+  fracpoisson(d=2,s=0.9,N=2053)    strong annulus  err=6.1e-12 skel= 7034 rank={4: 16, 3: 49, 2: 108, 1: 0} rows=319306
+  riesz2k(d=1,s=0.1,N=2048)        weak   exact    err=2.3e-08 skel= 2177 rank={6: 16, 5: 19, 4: 21, 3: 24, 2: 26, 1: 15} rows=259380
+  riesz2k(d=1,s=0.1,N=2048)        weak   plane    err=2.3e-05 skel= 2081 rank={6: 16, 5: 18, 4: 20, 3: 22, 2: 24, 1: 15} rows=8954
+  riesz2k(d=1,s=0.1,N=2048)        weak   lifted   err=9.3e-09 skel= 2343 rank={6: 17, 5: 20, 4: 21, 3: 24, 2: 26, 1: 19} rows=25424
+  riesz2k(d=1,s=0.1,N=2048)        weak   annulus  err=9.4e-08 skel= 2176 rank={6: 16, 5: 18, 4: 20, 3: 23, 2: 25, 1: 17} rows=12766
+  riesz2k(d=1,s=0.1,N=2048)        strong exact    err=1.1e-09 skel= 1129 rank={6: 9, 5: 10, 4: 10, 3: 10, 2: 7, 1: 0} rows=191846
+  riesz2k(d=1,s=0.1,N=2048)        strong plane    err=3.1e-02 skel=  798 rank={6: 8, 5: 7, 4: 8, 3: 8, 2: 4, 1: 0} rows=1936
+  riesz2k(d=1,s=0.1,N=2048)        strong lifted   err=3.0e-10 skel= 1622 rank={6: 13, 5: 13, 4: 14, 3: 14, 2: 14, 1: 0} rows=18998
+  riesz2k(d=1,s=0.1,N=2048)        strong annulus  err=1.5e-08 skel= 1212 rank={6: 10, 5: 10, 4: 11, 3: 11, 2: 11, 1: 0} rows=6108
+  riesz2k(d=1,s=0.25,N=2048)       weak   exact    err=1.2e-08 skel= 2103 rank={6: 16, 5: 18, 4: 21, 3: 22, 2: 25, 1: 15} rows=253510
+  riesz2k(d=1,s=0.25,N=2048)       weak   plane    err=1.5e-05 skel= 2052 rank={6: 15, 5: 17, 4: 20, 3: 22, 2: 25, 1: 15} rows=8856
+  riesz2k(d=1,s=0.25,N=2048)       weak   lifted   err=3.2e-09 skel= 2258 rank={6: 16, 5: 19, 4: 22, 3: 23, 2: 26, 1: 19} rows=25198
+  riesz2k(d=1,s=0.25,N=2048)       weak   annulus  err=2.2e-08 skel= 2172 rank={6: 16, 5: 18, 4: 20, 3: 23, 2: 25, 1: 17} rows=12674
+  riesz2k(d=1,s=0.25,N=2048)       strong exact    err=6.9e-10 skel= 1085 rank={6: 9, 5: 9, 4: 9, 3: 9, 2: 6, 1: 0} rows=190346
+  riesz2k(d=1,s=0.25,N=2048)       strong plane    err=3.2e-02 skel=  792 rank={6: 7, 5: 7, 4: 7, 3: 7, 2: 4, 1: 0} rows=1928
+  riesz2k(d=1,s=0.25,N=2048)       strong lifted   err=4.0e-10 skel= 1498 rank={6: 12, 5: 12, 4: 13, 3: 13, 2: 13, 1: 0} rows=18778
+  riesz2k(d=1,s=0.25,N=2048)       strong annulus  err=6.0e-09 skel= 1155 rank={6: 9, 5: 9, 4: 10, 3: 10, 2: 10, 1: 0} rows=6014
+  riesz2k(d=1,s=0.4,N=2048)        weak   exact    err=1.7e-09 skel= 1960 rank={6: 14, 5: 17, 4: 19, 3: 21, 2: 23, 1: 14} rows=245152
+  riesz2k(d=1,s=0.4,N=2048)        weak   plane    err=6.7e-06 skel= 1931 rank={6: 14, 5: 16, 4: 19, 3: 21, 2: 23, 1: 15} rows=8548
+  riesz2k(d=1,s=0.4,N=2048)        weak   lifted   err=1.2e-09 skel= 2088 rank={6: 15, 5: 17, 4: 20, 3: 22, 2: 24, 1: 18} rows=24808
+  riesz2k(d=1,s=0.4,N=2048)        weak   annulus  err=5.2e-09 skel= 1993 rank={6: 14, 5: 17, 4: 19, 3: 22, 2: 24, 1: 17} rows=12212
+  riesz2k(d=1,s=0.4,N=2048)        strong exact    err=1.4e-09 skel=  912 rank={6: 8, 5: 8, 4: 8, 3: 8, 2: 6, 1: 0} rows=178530
+  riesz2k(d=1,s=0.4,N=2048)        strong plane    err=1.5e-02 skel=  703 rank={6: 6, 5: 6, 4: 7, 3: 7, 2: 4, 1: 0} rows=1762
+  riesz2k(d=1,s=0.4,N=2048)        strong lifted   err=3.3e-10 skel= 1353 rank={6: 10, 5: 11, 4: 11, 3: 12, 2: 12, 1: 0} rows=18510
+  riesz2k(d=1,s=0.4,N=2048)        strong annulus  err=3.8e-09 skel= 1048 rank={6: 8, 5: 9, 4: 9, 3: 9, 2: 9, 1: 0} rows=5826
+  riesz2k(d=2,s=0.1,N=2053)        weak   exact    err=7.0e-07 skel= 6661 rank={4: 16, 3: 49, 2: 154, 1: 204} rows=1222626
+  riesz2k(d=2,s=0.1,N=2053)        weak   plane    err=6.7e-06 skel= 6738 rank={4: 16, 3: 49, 2: 153, 1: 215} rows=85886
+  riesz2k(d=2,s=0.1,N=2053)        weak   lifted   err=2.6e-07 skel= 6899 rank={4: 16, 3: 49, 2: 159, 1: 230} rows=289470
+  riesz2k(d=2,s=0.1,N=2053)        weak   annulus  err=1.3e-06 skel= 6792 rank={4: 16, 3: 49, 2: 153, 1: 222} rows=358412
+  riesz2k(d=2,s=0.1,N=2053)        strong exact    err=6.5e-07 skel= 5690 rank={4: 16, 3: 49, 2: 62, 1: 0} rows=1123084
+  riesz2k(d=2,s=0.1,N=2053)        strong plane    err=4.3e+00 skel= 6206 rank={4: 16, 3: 48, 2: 89, 1: 0} rows=59808
+  riesz2k(d=2,s=0.1,N=2053)        strong lifted   err=9.4e-09 skel= 7420 rank={4: 16, 3: 49, 2: 129, 1: 0} rows=252362
+  riesz2k(d=2,s=0.1,N=2053)        strong annulus  err=4.0e-08 skel= 6790 rank={4: 16, 3: 49, 2: 98, 1: 0} rows=318614
+  riesz2k(d=2,s=0.25,N=2053)       weak   exact    err=5.7e-09 skel= 6641 rank={4: 16, 3: 49, 2: 152, 1: 205} rows=1222274
+  riesz2k(d=2,s=0.25,N=2053)       weak   plane    err=1.4e-07 skel= 6729 rank={4: 16, 3: 49, 2: 152, 1: 214} rows=85840
+  riesz2k(d=2,s=0.25,N=2053)       weak   lifted   err=2.4e-09 skel= 6896 rank={4: 16, 3: 49, 2: 158, 1: 231} rows=289406
+  riesz2k(d=2,s=0.25,N=2053)       weak   annulus  err=1.1e-08 skel= 6773 rank={4: 16, 3: 49, 2: 152, 1: 220} rows=358328
+  riesz2k(d=2,s=0.25,N=2053)       strong exact    err=4.4e-10 skel= 5598 rank={4: 16, 3: 49, 2: 64, 1: 0} rows=1121912
+  riesz2k(d=2,s=0.25,N=2053)       strong plane    err=1.8e-02 skel= 6060 rank={4: 16, 3: 47, 2: 82, 1: 0} rows=60824
+  riesz2k(d=2,s=0.25,N=2053)       strong lifted   err=9.0e-11 skel= 7290 rank={4: 16, 3: 49, 2: 122, 1: 0} rows=251994
+  riesz2k(d=2,s=0.25,N=2053)       strong annulus  err=1.1e-09 skel= 6638 rank={4: 16, 3: 49, 2: 93, 1: 0} rows=318184
+  riesz2k(d=2,s=0.5,N=2053)        weak   exact    err=4.4e-09 skel= 6565 rank={4: 16, 3: 49, 2: 149, 1: 195} rows=1221380
+  riesz2k(d=2,s=0.5,N=2053)        weak   plane    err=8.7e-08 skel= 6649 rank={4: 16, 3: 49, 2: 149, 1: 206} rows=85498
+  riesz2k(d=2,s=0.5,N=2053)        weak   lifted   err=1.3e-09 skel= 6840 rank={4: 16, 3: 49, 2: 153, 1: 226} rows=289182
+  riesz2k(d=2,s=0.5,N=2053)        weak   annulus  err=4.4e-09 skel= 6706 rank={4: 16, 3: 49, 2: 149, 1: 214} rows=358032
+  riesz2k(d=2,s=0.5,N=2053)        strong exact    err=6.0e-10 skel= 5344 rank={4: 16, 3: 47, 2: 55, 1: 0} rows=1117504
+  riesz2k(d=2,s=0.5,N=2053)        strong plane    err=9.6e-03 skel= 5861 rank={4: 16, 3: 44, 2: 74, 1: 0} rows=61702
+  riesz2k(d=2,s=0.5,N=2053)        strong lifted   err=6.1e-11 skel= 7070 rank={4: 16, 3: 49, 2: 111, 1: 0} rows=251274
+  riesz2k(d=2,s=0.5,N=2053)        strong annulus  err=1.2e-09 skel= 6374 rank={4: 16, 3: 49, 2: 82, 1: 0} rows=317418
+  riesz2k(d=2,s=0.75,N=2053)       weak   exact    err=1.5e-09 skel= 6397 rank={4: 16, 3: 49, 2: 141, 1: 178} rows=1219380
+  riesz2k(d=2,s=0.75,N=2053)       weak   plane    err=5.9e-08 skel= 6487 rank={4: 16, 3: 49, 2: 142, 1: 186} rows=84886
+  riesz2k(d=2,s=0.75,N=2053)       weak   lifted   err=7.4e-10 skel= 6694 rank={4: 16, 3: 49, 2: 147, 1: 207} rows=288600
+  riesz2k(d=2,s=0.75,N=2053)       weak   annulus  err=2.5e-09 skel= 6530 rank={4: 16, 3: 49, 2: 143, 1: 192} rows=357360
+  riesz2k(d=2,s=0.75,N=2053)       strong exact    err=6.3e-10 skel= 4916 rank={4: 16, 3: 43, 2: 40, 1: 0} rows=1107248
+  riesz2k(d=2,s=0.75,N=2053)       strong plane    err=1.8e-03 skel= 5606 rank={4: 16, 3: 46, 2: 59, 1: 0} rows=71882
+  riesz2k(d=2,s=0.75,N=2053)       strong lifted   err=5.0e-11 skel= 6766 rank={4: 16, 3: 49, 2: 99, 1: 0} rows=250318
+  riesz2k(d=2,s=0.75,N=2053)       strong annulus  err=9.6e-10 skel= 6027 rank={4: 16, 3: 48, 2: 71, 1: 0} rows=329166
+  riesz2k(d=2,s=0.9,N=2053)        weak   exact    err=2.0e-09 skel= 6151 rank={4: 16, 3: 49, 2: 124, 1: 156} rows=1215858
+  riesz2k(d=2,s=0.9,N=2053)        weak   plane    err=2.8e-08 skel= 6267 rank={4: 16, 3: 49, 2: 128, 1: 166} rows=83914
+  riesz2k(d=2,s=0.9,N=2053)        weak   lifted   err=7.4e-10 skel= 6477 rank={4: 16, 3: 49, 2: 135, 1: 184} rows=287754
+  riesz2k(d=2,s=0.9,N=2053)        weak   annulus  err=1.6e-09 skel= 6283 rank={4: 16, 3: 49, 2: 127, 1: 170} rows=356358
+  riesz2k(d=2,s=0.9,N=2053)        strong exact    err=5.6e-10 skel= 4528 rank={4: 16, 3: 38, 2: 33, 1: 0} rows=1093706
+  riesz2k(d=2,s=0.9,N=2053)        strong plane    err=3.5e-04 skel= 5232 rank={4: 16, 3: 41, 2: 50, 1: 0} rows=71158
+  riesz2k(d=2,s=0.9,N=2053)        strong lifted   err=2.5e-10 skel= 6426 rank={4: 16, 3: 49, 2: 89, 1: 0} rows=249338
+  riesz2k(d=2,s=0.9,N=2053)        strong annulus  err=1.1e-09 skel= 5625 rank={4: 16, 3: 44, 2: 59, 1: 0} rows=342042
+R3 lifted proxy resolution
+  fracpoisson(d=2,s=0.5,N=2053)    strong lifted   err=4.2e-03 skel= 6285 rank={4: 16, 3: 48, 2: 96, 1: 0} rows=59020
+  fracpoisson(d=2,s=0.5,N=2053)    strong lifted   err=1.8e-06 skel= 6831 rank={4: 16, 3: 48, 2: 105, 1: 0} rows=79536
+  fracpoisson(d=2,s=0.5,N=2053)    strong lifted   err=9.4e-09 skel= 7150 rank={4: 16, 3: 49, 2: 114, 1: 0} rows=103618
+  fracpoisson(d=2,s=0.5,N=2053)    strong lifted   err=3.0e-10 skel= 7360 rank={4: 16, 3: 49, 2: 122, 1: 0} rows=129068
+  fracpoisson(d=2,s=0.5,N=2053)    strong lifted   err=2.4e-11 skel= 7526 rank={4: 16, 3: 49, 2: 129, 1: 0} rows=155456
+  fracpoisson(d=2,s=0.5,N=2053)    strong lifted   err=6.9e-13 skel= 7638 rank={4: 16, 3: 49, 2: 138, 1: 0} rows=204466
+  fracpoisson(d=2,s=0.5,N=2053)    strong lifted   err=8.3e-13 skel= 7642 rank={4: 16, 3: 49, 2: 139, 1: 0} rows=253080
+  fracpoisson(d=2,s=0.5,N=2053)    strong lifted   err=1.1e-12 skel= 7646 rank={4: 16, 3: 49, 2: 139, 1: 0} rows=352092
+  fracpoisson(d=2,s=0.5,N=2053)    strong lifted   err=1.3e-13 skel= 8088 rank={4: 16, 3: 49, 2: 162, 1: 0} rows=254598
+  fracpoisson(d=2,s=0.5,N=2053)    strong lifted   err=2.7e-13 skel= 7990 rank={4: 16, 3: 49, 2: 157, 1: 0} rows=254282
+  fracpoisson(d=2,s=0.5,N=2053)    strong lifted   err=8.3e-13 skel= 7642 rank={4: 16, 3: 49, 2: 139, 1: 0} rows=253080
+  fracpoisson(d=2,s=0.5,N=2053)    strong lifted   err=1.1e-12 skel= 7268 rank={4: 16, 3: 49, 2: 117, 1: 0} rows=251766
+  fracpoisson(d=1,s=0.5,N=2048)    strong lifted   err=1.5e-02 skel=  984 rank={6: 9, 5: 9, 4: 9, 3: 9, 2: 6, 1: 0} rows=2512
+  fracpoisson(d=1,s=0.5,N=2048)    strong lifted   err=2.0e-04 skel= 1206 rank={6: 10, 5: 10, 4: 10, 3: 11, 2: 10, 1: 0} rows=3398
+  fracpoisson(d=1,s=0.5,N=2048)    strong lifted   err=4.4e-08 skel= 1432 rank={6: 12, 5: 12, 4: 12, 3: 13, 2: 12, 1: 0} rows=4778
+  fracpoisson(d=1,s=0.5,N=2048)    strong lifted   err=7.6e-10 skel= 1804 rank={6: 14, 5: 15, 4: 15, 3: 15, 2: 14, 1: 0} rows=7438
+  fracpoisson(d=1,s=0.5,N=2048)    strong lifted   err=6.4e-10 skel= 1803 rank={6: 14, 5: 15, 4: 15, 3: 15, 2: 14, 1: 0} rows=11404
+  fracpoisson(d=1,s=0.5,N=2048)    strong lifted   err=8.6e-10 skel= 1805 rank={6: 14, 5: 15, 4: 15, 3: 15, 2: 14, 1: 0} rows=19340
+  riesz2k(d=2,s=0.25,N=2053)       strong lifted   err=1.8e-02 skel= 6060 rank={4: 16, 3: 47, 2: 82, 1: 0} rows=60824
+  riesz2k(d=2,s=0.25,N=2053)       strong lifted   err=3.3e-05 skel= 6538 rank={4: 16, 3: 45, 2: 95, 1: 0} rows=86436
+  riesz2k(d=2,s=0.25,N=2053)       strong lifted   err=4.5e-07 skel= 6868 rank={4: 16, 3: 49, 2: 102, 1: 0} rows=102870
+  riesz2k(d=2,s=0.25,N=2053)       strong lifted   err=7.9e-09 skel= 7066 rank={4: 16, 3: 49, 2: 109, 1: 0} rows=128200
+  riesz2k(d=2,s=0.25,N=2053)       strong lifted   err=3.5e-10 skel= 7222 rank={4: 16, 3: 49, 2: 117, 1: 0} rows=154548
+  riesz2k(d=2,s=0.25,N=2053)       strong lifted   err=9.0e-11 skel= 7290 rank={4: 16, 3: 49, 2: 122, 1: 0} rows=203402
+  riesz2k(d=2,s=0.25,N=2053)       strong lifted   err=9.0e-11 skel= 7290 rank={4: 16, 3: 49, 2: 122, 1: 0} rows=251994
+  riesz2k(d=2,s=0.25,N=2053)       strong lifted   err=8.1e-11 skel= 7300 rank={4: 16, 3: 49, 2: 123, 1: 0} rows=351030
+  riesz2k(d=2,s=0.25,N=2053)       strong lifted   err=1.5e-11 skel= 8036 rank={4: 16, 3: 49, 2: 161, 1: 0} rows=254454
+  riesz2k(d=2,s=0.25,N=2053)       strong lifted   err=3.8e-11 skel= 7840 rank={4: 16, 3: 49, 2: 150, 1: 0} rows=253800
+  riesz2k(d=2,s=0.25,N=2053)       strong lifted   err=9.0e-11 skel= 7290 rank={4: 16, 3: 49, 2: 122, 1: 0} rows=251994
+  riesz2k(d=2,s=0.25,N=2053)       strong lifted   err=1.1e-10 skel= 6850 rank={4: 16, 3: 49, 2: 99, 1: 0} rows=250474
+  riesz2k(d=1,s=0.25,N=2048)       strong lifted   err=1.2e-03 skel=  852 rank={6: 8, 5: 8, 4: 8, 3: 8, 2: 6, 1: 0} rows=2276
+  riesz2k(d=1,s=0.25,N=2048)       strong lifted   err=1.6e-05 skel= 1004 rank={6: 8, 5: 9, 4: 9, 3: 9, 2: 9, 1: 0} rows=3026
+  riesz2k(d=1,s=0.25,N=2048)       strong lifted   err=3.2e-09 skel= 1277 rank={6: 10, 5: 10, 4: 11, 3: 11, 2: 11, 1: 0} rows=4504
+  riesz2k(d=1,s=0.25,N=2048)       strong lifted   err=5.7e-10 skel= 1502 rank={6: 12, 5: 12, 4: 12, 3: 13, 2: 13, 1: 0} rows=6882
+  riesz2k(d=1,s=0.25,N=2048)       strong lifted   err=4.7e-10 skel= 1498 rank={6: 12, 5: 12, 4: 12, 3: 13, 2: 13, 1: 0} rows=10842
+  riesz2k(d=1,s=0.25,N=2048)       strong lifted   err=4.0e-10 skel= 1498 rank={6: 12, 5: 12, 4: 13, 3: 13, 2: 13, 1: 0} rows=18778
+R4 rank vs N
+  fracpoisson(d=1,s=0.5,N=1024)    weak   exact    err=3.0e-06 skel=  975 rank={5: 15, 4: 18, 3: 20, 2: 21, 1: 12} rows=61082
+  fracpoisson(d=1,s=0.5,N=1024)    weak   lifted   err=2.1e-06 skel= 1063 rank={5: 17, 4: 18, 3: 20, 2: 21, 1: 15} rows=12184
+  fracpoisson(d=1,s=0.5,N=1024)    strong exact    err=3.5e-09 skel=  614 rank={5: 11, 4: 11, 3: 11, 2: 7, 1: 0} rows=47076
+  fracpoisson(d=1,s=0.5,N=1024)    strong lifted   err=1.4e-10 skel=  896 rank={5: 14, 4: 15, 3: 15, 2: 15, 1: 0} rows=9254
+  fracpoisson(d=1,s=0.5,N=2048)    weak   exact    err=1.5e-04 skel= 2058 rank={6: 15, 5: 18, 4: 20, 3: 21, 2: 22, 1: 13} rows=252608
+  fracpoisson(d=1,s=0.5,N=2048)    weak   lifted   err=5.6e-05 skel= 2211 rank={6: 17, 5: 18, 4: 20, 3: 21, 2: 22, 1: 14} rows=25114
+  fracpoisson(d=1,s=0.5,N=2048)    strong exact    err=5.8e-09 skel= 1296 rank={6: 11, 5: 11, 4: 11, 3: 10, 2: 7, 1: 0} rows=203342
+  fracpoisson(d=1,s=0.5,N=2048)    strong lifted   err=8.6e-10 skel= 1805 rank={6: 14, 5: 15, 4: 15, 3: 15, 2: 14, 1: 0} rows=19340
+  fracpoisson(d=1,s=0.5,N=4096)    weak   exact    err=1.5e-04 skel= 4244 rank={7: 15, 6: 18, 5: 20, 4: 21, 3: 23, 2: 24, 1: 13} rows=1027544
+  fracpoisson(d=1,s=0.5,N=4096)    weak   lifted   err=6.0e-05 skel= 4527 rank={7: 17, 6: 18, 5: 20, 4: 21, 3: 22, 2: 23, 1: 15} rows=51068
+  fracpoisson(d=1,s=0.5,N=4096)    strong exact    err=2.0e-08 skel= 2673 rank={7: 11, 6: 11, 5: 11, 4: 11, 3: 11, 2: 7, 1: 0} rows=845104
+  fracpoisson(d=1,s=0.5,N=4096)    strong lifted   err=2.4e-09 skel= 3635 rank={7: 14, 6: 15, 5: 15, 4: 15, 3: 15, 2: 14, 1: 0} rows=39582
+  fracpoisson(d=1,s=0.5,N=8192)    weak   exact    err=1.5e-02 skel= 8638 rank={8: 15, 7: 18, 6: 20, 5: 21, 4: 23, 3: 24, 2: 24, 1: 13} rows=4145140
+  fracpoisson(d=1,s=0.5,N=8192)    weak   lifted   err=6.3e-04 skel= 9175 rank={8: 17, 7: 18, 6: 20, 5: 21, 4: 22, 3: 23, 2: 24, 1: 14} rows=103076
+  fracpoisson(d=1,s=0.5,N=8192)    strong exact    err=1.8e-08 skel= 5437 rank={8: 11, 7: 11, 6: 11, 5: 11, 4: 11, 3: 10, 2: 7, 1: 0} rows=3446344
+  fracpoisson(d=1,s=0.5,N=8192)    strong lifted   err=3.1e-09 skel= 7303 rank={8: 14, 7: 15, 6: 15, 5: 15, 4: 15, 3: 15, 2: 13, 1: 0} rows=80144
+  fracpoisson(d=2,s=0.5,N=1033)    weak   exact    err=1.0e-08 skel= 2569 rank={3: 25, 2: 81, 1: 138} rows=156962
+  fracpoisson(d=2,s=0.5,N=1033)    weak   lifted   err=3.0e-09 skel= 2670 rank={3: 25, 2: 81, 1: 156} rows=80582
+  fracpoisson(d=2,s=0.5,N=1033)    strong exact    err=5.5e-12 skel= 2479 rank={3: 25, 2: 59, 1: 0} rows=123416
+  fracpoisson(d=2,s=0.5,N=1033)    strong lifted   err=1.8e-16 skel= 3099 rank={3: 25, 2: 81, 1: 0} rows=60496
+  fracpoisson(d=2,s=0.5,N=2053)    weak   exact    err=2.3e-08 skel= 6590 rank={4: 16, 3: 49, 2: 152, 1: 198} rows=1221668
+  fracpoisson(d=2,s=0.5,N=2053)    weak   lifted   err=9.4e-09 skel= 6770 rank={4: 16, 3: 49, 2: 152, 1: 217} rows=289054
+  fracpoisson(d=2,s=0.5,N=2053)    strong exact    err=1.1e-11 skel= 5920 rank={4: 16, 3: 49, 2: 69, 1: 0} rows=1125490
+  fracpoisson(d=2,s=0.5,N=2053)    strong lifted   err=8.3e-13 skel= 7642 rank={4: 16, 3: 49, 2: 139, 1: 0} rows=253080
+  fracpoisson(d=2,s=0.5,N=4093)    weak   exact    err=9.1e-08 skel=11916 rank={4: 25, 3: 81, 2: 232, 1: 282} rows=2385870
+  fracpoisson(d=2,s=0.5,N=4093)    weak   lifted   err=4.5e-08 skel=12116 rank={4: 25, 3: 84, 2: 235, 1: 296} rows=327464
+  fracpoisson(d=2,s=0.5,N=4093)    strong exact    err=8.1e-11 skel= 9546 rank={4: 25, 3: 77, 2: 90, 1: 0} rows=2159734
+  fracpoisson(d=2,s=0.5,N=4093)    strong lifted   err=7.2e-13 skel=12622 rank={4: 25, 3: 84, 2: 177, 1: 0} rows=255562
+  fracpoisson(d=2,s=0.5,N=8197)    weak   exact    err=5.9e-07 skel=29077 rank={5: 16, 4: 49, 3: 152, 2: 358, 1: 401} rows=18761586
+  fracpoisson(d=2,s=0.5,N=8197)    weak   lifted   err=1.2e-07 skel=29420 rank={5: 16, 4: 49, 3: 153, 2: 359, 1: 410} rows=1153020
+  fracpoisson(d=2,s=0.5,N=8197)    strong exact    err=1.7e-10 skel=22978 rank={5: 16, 4: 49, 3: 105, 2: 95, 1: 0} rows=18122302
+  fracpoisson(d=2,s=0.5,N=8197)    strong lifted   err=2.7e-12 skel=28211 rank={5: 16, 4: 49, 3: 141, 2: 193, 1: 0} rows=1046224
+R5 where it breaks
+  fracpoisson(d=1,s=0.25,N=2048)   weak   lifted   err=4.3e-05 skel= 1819 rank={6: 14, 5: 15, 4: 16, 3: 17, 2: 19, 1: 12} rows=24060
+  fracpoisson(d=1,s=0.25,N=2048)   strong lifted   err=9.2e-09 skel= 1316 rank={6: 10, 5: 12, 4: 12, 3: 12, 2: 12, 1: 0} rows=18452
+  fracpoisson(d=1,s=0.25,N=2048)   weak   lifted   err=2.4e-07 skel= 2270 rank={6: 17, 5: 19, 4: 21, 3: 23, 2: 24, 1: 16} rows=25272
+  fracpoisson(d=1,s=0.25,N=2048)   strong lifted   err=8.0e-11 skel= 1763 rank={6: 14, 5: 15, 4: 15, 3: 15, 2: 15, 1: 0} rows=19250
+  fracpoisson(d=1,s=0.25,N=2048)   weak   lifted   err=1.6e-09 skel= 2739 rank={6: 20, 5: 23, 4: 25, 3: 28, 2: 30, 1: 22} rows=26470
+  fracpoisson(d=1,s=0.25,N=2048)   strong lifted   err=1.1e-13 skel= 2114 rank={6: 16, 5: 17, 4: 18, 3: 18, 2: 18, 1: 0} rows=19868
+  fracpoisson(d=1,s=0.25,N=2048)   weak   lifted   err=8.0e-12 skel= 3138 rank={6: 22, 5: 27, 4: 30, 3: 33, 2: 36, 1: 26} rows=27626
+  fracpoisson(d=1,s=0.25,N=2048)   strong lifted   err=2.6e-14 skel= 2460 rank={6: 19, 5: 20, 4: 21, 3: 21, 2: 22, 1: 0} rows=20482
+  fracpoisson(d=1,s=0.5,N=2048)    weak   lifted   err=2.4e-03 skel= 1656 rank={6: 13, 5: 13, 4: 15, 3: 16, 2: 17, 1: 10} rows=23624
+  fracpoisson(d=1,s=0.5,N=2048)    strong lifted   err=2.0e-07 skel= 1406 rank={6: 11, 5: 12, 4: 12, 3: 12, 2: 11, 1: 0} rows=18626
+  fracpoisson(d=1,s=0.5,N=2048)    weak   lifted   err=5.6e-05 skel= 2211 rank={6: 17, 5: 18, 4: 20, 3: 21, 2: 22, 1: 14} rows=25114
+  fracpoisson(d=1,s=0.5,N=2048)    strong lifted   err=8.6e-10 skel= 1805 rank={6: 14, 5: 15, 4: 15, 3: 15, 2: 14, 1: 0} rows=19340
+  fracpoisson(d=1,s=0.5,N=2048)    weak   lifted   err=3.3e-08 skel= 2601 rank={6: 19, 5: 22, 4: 24, 3: 26, 2: 28, 1: 20} rows=26086
+  fracpoisson(d=1,s=0.5,N=2048)    strong lifted   err=4.0e-12 skel= 2175 rank={6: 17, 5: 18, 4: 18, 3: 19, 2: 19, 1: 0} rows=19980
+  fracpoisson(d=1,s=0.5,N=2048)    weak   lifted   err=9.9e-10 skel= 3067 rank={6: 22, 5: 26, 4: 29, 3: 32, 2: 34, 1: 24} rows=27370
+  fracpoisson(d=1,s=0.5,N=2048)    strong lifted   err=4.1e-13 skel= 2519 rank={6: 19, 5: 21, 4: 21, 3: 22, 2: 22, 1: 0} rows=20592
+  fracpoisson(d=1,s=0.75,N=2048)   weak   lifted   err=3.8e-01 skel= 1508 rank={6: 12, 5: 13, 4: 13, 3: 13, 2: 12, 1: 6} rows=23330
+  fracpoisson(d=1,s=0.75,N=2048)   strong lifted   err=7.8e-06 skel= 1420 rank={6: 11, 5: 13, 4: 12, 3: 12, 2: 11, 1: 0} rows=18674
+  fracpoisson(d=1,s=0.75,N=2048)   weak   lifted   err=5.1e-04 skel= 2005 rank={6: 15, 5: 17, 4: 19, 3: 19, 2: 20, 1: 12} rows=24644
+  fracpoisson(d=1,s=0.75,N=2048)   strong lifted   err=5.4e-08 skel= 1811 rank={6: 14, 5: 15, 4: 15, 3: 15, 2: 14, 1: 0} rows=19362
+  fracpoisson(d=1,s=0.75,N=2048)   weak   lifted   err=7.2e-06 skel= 2467 rank={6: 18, 5: 21, 4: 23, 3: 25, 2: 26, 1: 17} rows=25806
+  fracpoisson(d=1,s=0.75,N=2048)   strong lifted   err=5.4e-10 skel= 2212 rank={6: 17, 5: 18, 4: 19, 3: 19, 2: 17, 1: 0} rows=20070
+  fracpoisson(d=1,s=0.75,N=2048)   weak   lifted   err=1.7e-08 skel= 2916 rank={6: 21, 5: 25, 4: 27, 3: 30, 2: 32, 1: 22} rows=26996
+  fracpoisson(d=1,s=0.75,N=2048)   strong lifted   err=2.8e-11 skel= 2534 rank={6: 19, 5: 21, 4: 22, 3: 22, 2: 21, 1: 0} rows=20626
+  fracpoisson(d=2,s=0.25,N=2053)   weak   lifted   err=8.5e-07 skel= 6307 rank={4: 16, 3: 49, 2: 132, 1: 166} rows=287290
+  fracpoisson(d=2,s=0.25,N=2053)   strong lifted   err=4.4e-10 skel= 6634 rank={4: 16, 3: 49, 2: 92, 1: 0} rows=249818
+  fracpoisson(d=2,s=0.25,N=2053)   weak   lifted   err=3.0e-09 skel= 6848 rank={4: 16, 3: 49, 2: 157, 1: 227} rows=289290
+  fracpoisson(d=2,s=0.25,N=2053)   strong lifted   err=1.5e-12 skel= 7556 rank={4: 16, 3: 49, 2: 134, 1: 0} rows=252810
+  fracpoisson(d=2,s=0.25,N=2053)   weak   lifted   err=1.0e-11 skel= 7233 rank={4: 16, 3: 49, 2: 168, 1: 280} rows=290490
+  fracpoisson(d=2,s=0.25,N=2053)   strong lifted   err=3.7e-15 skel= 8070 rank={4: 16, 3: 49, 2: 160, 1: 0} rows=254526
+  fracpoisson(d=2,s=0.25,N=2053)   weak   lifted   err=6.0e-14 skel= 7466 rank={4: 16, 3: 49, 2: 169, 1: 337} rows=290946
+  fracpoisson(d=2,s=0.25,N=2053)   strong lifted   err=1.7e-15 skel= 8210 rank={4: 16, 3: 49, 2: 168, 1: 0} rows=242858
+  fracpoisson(d=2,s=0.5,N=2053)    weak   lifted   err=2.8e-06 skel= 6211 rank={4: 16, 3: 49, 2: 127, 1: 157} rows=286886
+  fracpoisson(d=2,s=0.5,N=2053)    strong lifted   err=2.2e-10 skel= 6762 rank={4: 16, 3: 49, 2: 98, 1: 0} rows=250196
+  fracpoisson(d=2,s=0.5,N=2053)    weak   lifted   err=9.4e-09 skel= 6770 rank={4: 16, 3: 49, 2: 152, 1: 217} rows=289054
+  fracpoisson(d=2,s=0.5,N=2053)    strong lifted   err=8.3e-13 skel= 7642 rank={4: 16, 3: 49, 2: 139, 1: 0} rows=253080
+  fracpoisson(d=2,s=0.5,N=2053)    weak   lifted   err=3.6e-11 skel= 7180 rank={4: 16, 3: 49, 2: 168, 1: 269} rows=290354
+  fracpoisson(d=2,s=0.5,N=2053)    strong lifted   err=4.8e-15 skel= 8104 rank={4: 16, 3: 49, 2: 162, 1: 0} rows=254634
+  fracpoisson(d=2,s=0.5,N=2053)    weak   lifted   err=2.5e-13 skel= 7429 rank={4: 16, 3: 49, 2: 169, 1: 327} rows=290876
+  fracpoisson(d=2,s=0.5,N=2053)    strong lifted   err=1.8e-16 skel= 8212 rank={4: 16, 3: 49, 2: 169, 1: 0} rows=238800
+  fracpoisson(d=2,s=0.75,N=2053)   weak   lifted   err=3.4e-05 skel= 6073 rank={4: 16, 3: 49, 2: 121, 1: 147} rows=286392
+  fracpoisson(d=2,s=0.75,N=2053)   strong lifted   err=2.1e-10 skel= 6812 rank={4: 16, 3: 49, 2: 100, 1: 0} rows=250318
+  fracpoisson(d=2,s=0.75,N=2053)   weak   lifted   err=5.2e-08 skel= 6650 rank={4: 16, 3: 49, 2: 149, 1: 203} rows=288616
+  fracpoisson(d=2,s=0.75,N=2053)   strong lifted   err=1.4e-12 skel= 7708 rank={4: 16, 3: 49, 2: 141, 1: 0} rows=253284
+  fracpoisson(d=2,s=0.75,N=2053)   weak   lifted   err=1.5e-10 skel= 7095 rank={4: 16, 3: 49, 2: 166, 1: 255} rows=290154
+  fracpoisson(d=2,s=0.75,N=2053)   strong lifted   err=8.3e-15 skel= 8122 rank={4: 16, 3: 49, 2: 164, 1: 0} rows=254710
+  fracpoisson(d=2,s=0.75,N=2053)   weak   lifted   err=8.9e-13 skel= 7371 rank={4: 16, 3: 49, 2: 169, 1: 311} rows=290776
+  fracpoisson(d=2,s=0.75,N=2053)   strong lifted   err=6.0e-16 skel= 8212 rank={4: 16, 3: 49, 2: 169, 1: 0} rows=238800
+  power2k(d=1,p=-1,N=2048)         weak   exact    err=4.0e-15 skel=  252 rank={6: 2, 5: 2, 4: 2, 3: 2, 2: 2, 1: 2} rows=144900
+  power2k(d=1,p=-1,N=2048)         weak   plane    err=4.5e-15 skel=  252 rank={6: 2, 5: 2, 4: 2, 3: 2, 2: 2, 1: 2} rows=4110
+  power2k(d=1,p=-1,N=2048)         weak   lifted   err=5.3e-09 skel= 1265 rank={6: 10, 5: 10, 4: 10, 3: 11, 2: 11, 1: 11} rows=22642
+  power2k(d=1,p=-1,N=2048)         weak   annulus  err=4.0e-15 skel=  252 rank={6: 2, 5: 2, 4: 2, 3: 2, 2: 2, 1: 2} rows=7638
+  power2k(d=1,p=-1,N=2048)         strong exact    err=4.0e-15 skel=  256 rank={6: 2, 5: 2, 4: 2, 3: 2, 2: 2, 1: 0} rows=139932
+  power2k(d=1,p=-1,N=2048)         strong plane    err=4.0e-15 skel=  256 rank={6: 2, 5: 2, 4: 2, 3: 2, 2: 2, 1: 0} rows=952
+  power2k(d=1,p=-1,N=2048)         strong lifted   err=5.1e-09 skel= 1294 rank={6: 10, 5: 10, 4: 11, 3: 10, 2: 11, 1: 0} rows=18420
+  power2k(d=1,p=-1,N=2048)         strong annulus  err=4.4e-15 skel=  256 rank={6: 2, 5: 2, 4: 2, 3: 2, 2: 2, 1: 0} rows=4424
+  power2k(d=1,p=-0.5,N=2048)       weak   exact    err=1.2e-09 skel= 1638 rank={6: 12, 5: 14, 4: 16, 3: 19, 2: 21, 1: 13} rows=224344
+  power2k(d=1,p=-0.5,N=2048)       weak   plane    err=2.7e-06 skel= 1783 rank={6: 13, 5: 15, 4: 17, 3: 19, 2: 21, 1: 13} rows=8110
+  power2k(d=1,p=-0.5,N=2048)       weak   lifted   err=1.9e-09 skel= 1967 rank={6: 14, 5: 17, 4: 18, 3: 20, 2: 21, 1: 17} rows=24500
+  power2k(d=1,p=-0.5,N=2048)       weak   annulus  err=1.2e-09 skel= 1800 rank={6: 13, 5: 15, 4: 17, 3: 19, 2: 21, 1: 15} rows=11810
+  power2k(d=1,p=-0.5,N=2048)       strong exact    err=9.6e-10 skel=  790 rank={6: 6, 5: 7, 4: 7, 3: 7, 2: 6, 1: 0} rows=170574
+  power2k(d=1,p=-0.5,N=2048)       strong plane    err=1.5e-02 skel=  693 rank={6: 6, 5: 6, 4: 6, 3: 6, 2: 4, 1: 0} rows=1746
+  power2k(d=1,p=-0.5,N=2048)       strong lifted   err=8.0e-10 skel= 1305 rank={6: 10, 5: 11, 4: 11, 3: 11, 2: 11, 1: 0} rows=18434
+  power2k(d=1,p=-0.5,N=2048)       strong annulus  err=2.2e-09 skel=  901 rank={6: 7, 5: 7, 4: 7, 3: 8, 2: 8, 1: 0} rows=5568
+  power2k(d=1,p=-0.2,N=2048)       weak   exact    err=1.4e-09 skel= 1767 rank={6: 13, 5: 15, 4: 17, 3: 20, 2: 22, 1: 13} rows=233724
+  power2k(d=1,p=-0.2,N=2048)       weak   plane    err=2.1e-06 skel= 1846 rank={6: 14, 5: 16, 4: 17, 3: 19, 2: 21, 1: 13} rows=8230
+  power2k(d=1,p=-0.2,N=2048)       weak   lifted   err=1.1e-09 skel= 2029 rank={6: 15, 5: 16, 4: 19, 3: 21, 2: 23, 1: 18} rows=24514
+  power2k(d=1,p=-0.2,N=2048)       weak   annulus  err=2.3e-09 skel= 1830 rank={6: 13, 5: 15, 4: 18, 3: 20, 2: 22, 1: 16} rows=11814
+  power2k(d=1,p=-0.2,N=2048)       strong exact    err=5.9e-10 skel=  844 rank={6: 7, 5: 7, 4: 7, 3: 8, 2: 6, 1: 0} rows=175058
+  power2k(d=1,p=-0.2,N=2048)       strong plane    err=9.9e-03 skel=  693 rank={6: 6, 5: 6, 4: 6, 3: 6, 2: 4, 1: 0} rows=1746
+  power2k(d=1,p=-0.2,N=2048)       strong lifted   err=2.2e-10 skel= 1284 rank={6: 10, 5: 10, 4: 10, 3: 10, 2: 11, 1: 0} rows=18400
+  power2k(d=1,p=-0.2,N=2048)       strong annulus  err=2.6e-09 skel=  910 rank={6: 7, 5: 7, 4: 8, 3: 8, 2: 8, 1: 0} rows=5582
+  power2k(d=1,p=0,N=2048)          weak   exact    err=2.5e-09 skel= 1979 rank={6: 14, 5: 17, 4: 20, 3: 22, 2: 23, 1: 15} rows=245458
+  power2k(d=1,p=0,N=2048)          weak   plane    err=2.2e-05 skel= 1915 rank={6: 14, 5: 16, 4: 18, 3: 21, 2: 23, 1: 15} rows=8460
+  power2k(d=1,p=0,N=2048)          weak   lifted   err=1.4e-09 skel= 2095 rank={6: 15, 5: 17, 4: 20, 3: 22, 2: 25, 1: 19} rows=24704
+  power2k(d=1,p=0,N=2048)          weak   annulus  err=1.0e-08 skel= 1967 rank={6: 14, 5: 17, 4: 19, 3: 22, 2: 25, 1: 17} rows=12126
+  power2k(d=1,p=0,N=2048)          strong exact    err=1.9e-09 skel=  965 rank={6: 8, 5: 8, 4: 9, 3: 9, 2: 6, 1: 0} rows=181118
+  power2k(d=1,p=0,N=2048)          strong plane    err=1.6e-02 skel=  708 rank={6: 6, 5: 6, 4: 7, 3: 7, 2: 4, 1: 0} rows=1768
+  power2k(d=1,p=0,N=2048)          strong lifted   err=2.6e-10 skel= 1372 rank={6: 11, 5: 11, 4: 12, 3: 12, 2: 13, 1: 0} rows=18534
+  power2k(d=1,p=0,N=2048)          strong annulus  err=4.2e-09 skel= 1073 rank={6: 8, 5: 9, 4: 9, 3: 10, 2: 10, 1: 0} rows=5860
+  power2k(d=1,p=0.2,N=2048)        weak   exact    err=1.7e-09 skel= 1960 rank={6: 14, 5: 17, 4: 19, 3: 21, 2: 23, 1: 14} rows=245152
+  power2k(d=1,p=0.2,N=2048)        weak   plane    err=6.7e-06 skel= 1931 rank={6: 14, 5: 16, 4: 19, 3: 21, 2: 23, 1: 15} rows=8548
+  power2k(d=1,p=0.2,N=2048)        weak   lifted   err=1.2e-09 skel= 2088 rank={6: 15, 5: 17, 4: 20, 3: 22, 2: 24, 1: 18} rows=24808
+  power2k(d=1,p=0.2,N=2048)        weak   annulus  err=5.2e-09 skel= 1993 rank={6: 14, 5: 17, 4: 19, 3: 22, 2: 24, 1: 17} rows=12212
+  power2k(d=1,p=0.2,N=2048)        strong exact    err=1.4e-09 skel=  912 rank={6: 8, 5: 8, 4: 8, 3: 8, 2: 6, 1: 0} rows=178530
+  power2k(d=1,p=0.2,N=2048)        strong plane    err=1.5e-02 skel=  703 rank={6: 6, 5: 6, 4: 7, 3: 7, 2: 4, 1: 0} rows=1762
+  power2k(d=1,p=0.2,N=2048)        strong lifted   err=3.3e-10 skel= 1353 rank={6: 10, 5: 11, 4: 11, 3: 12, 2: 12, 1: 0} rows=18510
+  power2k(d=1,p=0.2,N=2048)        strong annulus  err=3.8e-09 skel= 1048 rank={6: 8, 5: 9, 4: 9, 3: 9, 2: 9, 1: 0} rows=5826
+  power2k(d=1,p=0.5,N=2048)        weak   exact    err=1.2e-08 skel= 2103 rank={6: 16, 5: 18, 4: 21, 3: 22, 2: 25, 1: 15} rows=253510
+  power2k(d=1,p=0.5,N=2048)        weak   plane    err=1.5e-05 skel= 2052 rank={6: 15, 5: 17, 4: 20, 3: 22, 2: 25, 1: 15} rows=8856
+  power2k(d=1,p=0.5,N=2048)        weak   lifted   err=3.2e-09 skel= 2258 rank={6: 16, 5: 19, 4: 22, 3: 23, 2: 26, 1: 19} rows=25198
+  power2k(d=1,p=0.5,N=2048)        weak   annulus  err=2.2e-08 skel= 2172 rank={6: 16, 5: 18, 4: 20, 3: 23, 2: 25, 1: 17} rows=12674
+  power2k(d=1,p=0.5,N=2048)        strong exact    err=6.9e-10 skel= 1085 rank={6: 9, 5: 9, 4: 9, 3: 9, 2: 6, 1: 0} rows=190346
+  power2k(d=1,p=0.5,N=2048)        strong plane    err=3.2e-02 skel=  792 rank={6: 7, 5: 7, 4: 7, 3: 7, 2: 4, 1: 0} rows=1928
+  power2k(d=1,p=0.5,N=2048)        strong lifted   err=4.0e-10 skel= 1498 rank={6: 12, 5: 12, 4: 13, 3: 13, 2: 13, 1: 0} rows=18778
+  power2k(d=1,p=0.5,N=2048)        strong annulus  err=6.0e-09 skel= 1155 rank={6: 9, 5: 9, 4: 10, 3: 10, 2: 10, 1: 0} rows=6014
+  power2k(d=2,p=-1,N=2053)         weak   exact    err=1.9e-09 skel= 5981 rank={4: 16, 3: 49, 2: 116, 1: 143} rows=1212862
+  power2k(d=2,p=-1,N=2053)         weak   plane    err=2.5e-08 skel= 6158 rank={4: 16, 3: 49, 2: 119, 1: 154} rows=83438
+  power2k(d=2,p=-1,N=2053)         weak   lifted   err=5.6e-09 skel= 6320 rank={4: 16, 3: 49, 2: 126, 1: 169} rows=287076
+  power2k(d=2,p=-1,N=2053)         weak   annulus  err=3.3e-09 skel= 6125 rank={4: 16, 3: 49, 2: 116, 1: 157} rows=355604
+  power2k(d=2,p=-1,N=2053)         strong exact    err=7.7e-10 skel= 4504 rank={4: 16, 3: 39, 2: 30, 1: 0} rows=1093976
+  power2k(d=2,p=-1,N=2053)         strong plane    err=1.3e-02 skel= 5220 rank={4: 16, 3: 43, 2: 48, 1: 0} rows=71524
+  power2k(d=2,p=-1,N=2053)         strong lifted   err=9.1e-09 skel= 6214 rank={4: 16, 3: 49, 2: 81, 1: 0} rows=248676
+  power2k(d=2,p=-1,N=2053)         strong annulus  err=2.1e-09 skel= 5528 rank={4: 16, 3: 43, 2: 56, 1: 0} rows=341740
+  power2k(d=2,p=-0.5,N=2053)       weak   exact    err=1.6e-09 skel= 6054 rank={4: 16, 3: 49, 2: 121, 1: 147} rows=1214430
+  power2k(d=2,p=-0.5,N=2053)       weak   plane    err=2.3e-08 skel= 6234 rank={4: 16, 3: 49, 2: 128, 1: 155} rows=83800
+  power2k(d=2,p=-0.5,N=2053)       weak   lifted   err=2.7e-09 skel= 6393 rank={4: 16, 3: 49, 2: 133, 1: 172} rows=287402
+  power2k(d=2,p=-0.5,N=2053)       weak   annulus  err=2.1e-09 skel= 6193 rank={4: 16, 3: 49, 2: 122, 1: 160} rows=355924
+  power2k(d=2,p=-0.5,N=2053)       strong exact    err=4.4e-10 skel= 4533 rank={4: 16, 3: 38, 2: 31, 1: 0} rows=1094584
+  power2k(d=2,p=-0.5,N=2053)       strong plane    err=2.5e-03 skel= 5236 rank={4: 16, 3: 42, 2: 48, 1: 0} rows=71456
+  power2k(d=2,p=-0.5,N=2053)       strong lifted   err=2.5e-09 skel= 6336 rank={4: 16, 3: 49, 2: 85, 1: 0} rows=249074
+  power2k(d=2,p=-0.5,N=2053)       strong annulus  err=1.4e-09 skel= 5584 rank={4: 16, 3: 44, 2: 56, 1: 0} rows=342050
+  power2k(d=2,p=-0.2,N=2053)       weak   exact    err=1.1e-09 skel= 6029 rank={4: 16, 3: 49, 2: 120, 1: 145} rows=1213698
+  power2k(d=2,p=-0.2,N=2053)       weak   plane    err=3.0e-08 skel= 6153 rank={4: 16, 3: 49, 2: 122, 1: 155} rows=83466
+  power2k(d=2,p=-0.2,N=2053)       weak   lifted   err=1.5e-09 skel= 6339 rank={4: 16, 3: 49, 2: 128, 1: 169} rows=287188
+  power2k(d=2,p=-0.2,N=2053)       weak   annulus  err=1.7e-09 skel= 6166 rank={4: 16, 3: 49, 2: 122, 1: 154} rows=355884
+  power2k(d=2,p=-0.2,N=2053)       strong exact    err=1.0e-09 skel= 4367 rank={4: 16, 3: 36, 2: 29, 1: 0} rows=1088464
+  power2k(d=2,p=-0.2,N=2053)       strong plane    err=3.8e-04 skel= 5062 rank={4: 16, 3: 39, 2: 46, 1: 0} rows=69952
+  power2k(d=2,p=-0.2,N=2053)       strong lifted   err=8.4e-10 skel= 6270 rank={4: 16, 3: 49, 2: 82, 1: 0} rows=248844
+  power2k(d=2,p=-0.2,N=2053)       strong annulus  err=1.2e-09 skel= 5427 rank={4: 16, 3: 42, 2: 53, 1: 0} rows=341282
+  power2k(d=2,p=0,N=2053)          weak   exact    err=3.7e-10 skel= 5317 rank={4: 16, 3: 40, 2: 88, 1: 111} rows=1188122
+  power2k(d=2,p=0,N=2053)          weak   plane    err=3.7e-10 skel= 5382 rank={4: 16, 3: 40, 2: 88, 1: 117} rows=79416
+  power2k(d=2,p=0,N=2053)          weak   lifted   err=6.0e-10 skel= 6429 rank={4: 16, 3: 49, 2: 132, 1: 173} rows=287490
+  power2k(d=2,p=0,N=2053)          weak   annulus  err=2.8e-10 skel= 5377 rank={4: 16, 3: 40, 2: 88, 1: 117} rows=351784
+  power2k(d=2,p=0,N=2053)          strong exact    err=7.2e-11 skel= 3961 rank={4: 16, 3: 24, 2: 30, 1: 0} rows=1065454
+  power2k(d=2,p=0,N=2053)          strong plane    err=4.9e-12 skel= 4804 rank={4: 16, 3: 32, 2: 42, 1: 0} rows=67230
+  power2k(d=2,p=0,N=2053)          strong lifted   err=1.9e-10 skel= 6898 rank={4: 16, 3: 49, 2: 105, 1: 0} rows=250734
+  power2k(d=2,p=0,N=2053)          strong annulus  err=1.9e-11 skel= 4710 rank={4: 16, 3: 32, 2: 40, 1: 0} rows=335306
+  power2k(d=2,p=0.2,N=2053)        weak   exact    err=2.0e-09 skel= 6151 rank={4: 16, 3: 49, 2: 124, 1: 156} rows=1215858
+  power2k(d=2,p=0.2,N=2053)        weak   plane    err=2.8e-08 skel= 6267 rank={4: 16, 3: 49, 2: 128, 1: 166} rows=83914
+  power2k(d=2,p=0.2,N=2053)        weak   lifted   err=7.4e-10 skel= 6477 rank={4: 16, 3: 49, 2: 135, 1: 184} rows=287754
+  power2k(d=2,p=0.2,N=2053)        weak   annulus  err=1.6e-09 skel= 6282 rank={4: 16, 3: 49, 2: 127, 1: 169} rows=356356
+  power2k(d=2,p=0.2,N=2053)        strong exact    err=5.6e-10 skel= 4528 rank={4: 16, 3: 38, 2: 33, 1: 0} rows=1093706
+  power2k(d=2,p=0.2,N=2053)        strong plane    err=3.5e-04 skel= 5232 rank={4: 16, 3: 41, 2: 50, 1: 0} rows=71158
+  power2k(d=2,p=0.2,N=2053)        strong lifted   err=2.5e-10 skel= 6426 rank={4: 16, 3: 49, 2: 89, 1: 0} rows=249338
+  power2k(d=2,p=0.2,N=2053)        strong annulus  err=1.1e-09 skel= 5625 rank={4: 16, 3: 44, 2: 59, 1: 0} rows=342042
+  power2k(d=2,p=0.5,N=2053)        weak   exact    err=1.5e-09 skel= 6397 rank={4: 16, 3: 49, 2: 141, 1: 178} rows=1219380
+  power2k(d=2,p=0.5,N=2053)        weak   plane    err=5.9e-08 skel= 6487 rank={4: 16, 3: 49, 2: 142, 1: 186} rows=84886
+  power2k(d=2,p=0.5,N=2053)        weak   lifted   err=7.4e-10 skel= 6694 rank={4: 16, 3: 49, 2: 147, 1: 207} rows=288600
+  power2k(d=2,p=0.5,N=2053)        weak   annulus  err=2.5e-09 skel= 6530 rank={4: 16, 3: 49, 2: 143, 1: 192} rows=357360
+  power2k(d=2,p=0.5,N=2053)        strong exact    err=6.3e-10 skel= 4916 rank={4: 16, 3: 43, 2: 40, 1: 0} rows=1107248
+  power2k(d=2,p=0.5,N=2053)        strong plane    err=1.8e-03 skel= 5606 rank={4: 16, 3: 46, 2: 59, 1: 0} rows=71882
+  power2k(d=2,p=0.5,N=2053)        strong lifted   err=5.0e-11 skel= 6766 rank={4: 16, 3: 49, 2: 99, 1: 0} rows=250318
+  power2k(d=2,p=0.5,N=2053)        strong annulus  err=9.6e-10 skel= 6027 rank={4: 16, 3: 48, 2: 71, 1: 0} rows=329166
+  fracpoisson(d=1,s=0.02,N=2048)   strong exact    err=4.9e-11 skel= 1207 rank={6: 10, 5: 10, 4: 11, 3: 10, 2: 7, 1: 0} rows=197692
+  fracpoisson(d=1,s=0.02,N=2048)   strong lifted   err=1.0e-11 skel= 1671 rank={6: 13, 5: 14, 4: 14, 3: 14, 2: 14, 1: 0} rows=19086
+  fracpoisson(d=1,s=0.05,N=2048)   strong exact    err=1.1e-10 skel= 1209 rank={6: 10, 5: 10, 4: 11, 3: 10, 2: 7, 1: 0} rows=197946
+  fracpoisson(d=1,s=0.05,N=2048)   strong lifted   err=3.0e-11 skel= 1673 rank={6: 13, 5: 13, 4: 14, 3: 14, 2: 14, 1: 0} rows=19090
+  fracpoisson(d=1,s=0.95,N=2048)   strong exact    err=5.5e-06 skel= 1272 rank={6: 11, 5: 12, 4: 11, 3: 10, 2: 6, 1: 0} rows=203896
+  fracpoisson(d=1,s=0.95,N=2048)   strong lifted   err=6.3e-07 skel= 1795 rank={6: 14, 5: 16, 4: 15, 3: 15, 2: 14, 1: 0} rows=19348
+  fracpoisson(d=1,s=0.98,N=2048)   strong exact    err=1.5e-05 skel= 1259 rank={6: 11, 5: 11, 4: 11, 3: 10, 2: 7, 1: 0} rows=202984
+  fracpoisson(d=1,s=0.98,N=2048)   strong lifted   err=2.1e-06 skel= 1810 rank={6: 15, 5: 16, 4: 15, 3: 15, 2: 14, 1: 0} rows=19390
+  fracpoisson(d=2,s=0.02,N=2053)   strong exact    err=3.4e-12 skel= 5696 rank={4: 16, 3: 49, 2: 65, 1: 0} rows=1123266
+  fracpoisson(d=2,s=0.02,N=2053)   strong lifted   err=4.6e-13 skel= 7428 rank={4: 16, 3: 49, 2: 129, 1: 0} rows=252432
+  fracpoisson(d=2,s=0.05,N=2053)   strong exact    err=8.0e-12 skel= 5718 rank={4: 16, 3: 49, 2: 66, 1: 0} rows=1123374
+  fracpoisson(d=2,s=0.05,N=2053)   strong lifted   err=9.8e-13 skel= 7450 rank={4: 16, 3: 49, 2: 129, 1: 0} rows=252476
+  fracpoisson(d=2,s=0.95,N=2053)   strong exact    err=5.8e-10 skel= 5714 rank={4: 16, 3: 49, 2: 64, 1: 0} rows=1125478
+  fracpoisson(d=2,s=0.95,N=2053)   strong lifted   err=6.2e-14 skel= 7758 rank={4: 16, 3: 49, 2: 142, 1: 0} rows=253434
+  fracpoisson(d=2,s=0.98,N=2053)   strong exact    err=4.6e-10 skel= 5592 rank={4: 16, 3: 49, 2: 65, 1: 0} rows=1124984
+  fracpoisson(d=2,s=0.98,N=2053)   strong lifted   err=1.2e-13 skel= 7758 rank={4: 16, 3: 49, 2: 142, 1: 0} rows=253430
+total 321 s

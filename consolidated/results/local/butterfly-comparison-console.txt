@@ -1,0 +1,7 @@
+N=  16  error=6.399e-06  butterfly=0.0011s  FFT=3.01e-06s
+N=  32  error=7.816e-06  butterfly=0.0025s  FFT=3.01e-06s
+N=  64  error=4.919e-06  butterfly=0.0059s  FFT=3.23e-06s
+N= 128  error=5.063e-06  butterfly=0.0133s  FFT=3.60e-06s
+N= 256  error=5.711e-06  butterfly=0.0299s  FFT=4.09e-06s
+N= 512  error=4.813e-06  butterfly=0.0667s  FFT=5.26e-06s
+N=1024  error=5.518e-06  butterfly=0.1459s  FFT=7.48e-06s

@@ -1,0 +1,27 @@
+N= 8 factor=8.589e-16 solve=2.711e-15 residual=4.566e-16 stage=8.673e-16
+N=16 factor=2.175e-15 solve=1.009e-14 residual=2.358e-15 stage=1.953e-15
+N=32 factor=3.740e-15 solve=5.360e-15 residual=6.885e-15 stage=4.191e-15
+N=64 factor=7.981e-15 solve=2.306e-14 residual=2.988e-14 stage=8.104e-15
+N= 16 discretisation=1.61255322e-02
+N= 32 discretisation=3.98049943e-03
+N= 64 discretisation=9.92013484e-04
+N=128 discretisation=2.47809961e-04
+{
+  "sizes": [
+    8,
+    16,
+    32,
+    64
+  ],
+  "max_unitary_error": 8.968341026516878e-15,
+  "max_sparse_stage_error": 8.104041325288774e-15,
+  "max_recursive_fft_error": 6.997591966871663e-15,
+  "discretisation_error_ratios": [
+    4.051132908862927,
+    4.012545693136509,
+    4.003121910623146
+  ],
+  "python": "3.12.14",
+  "numpy": "2.5.3",
+  "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.43"
+}

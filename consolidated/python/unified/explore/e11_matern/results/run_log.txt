@@ -1,0 +1,343 @@
+=== E11 run quick=False only=['r1', 'r2', 'r3', 'r4', 'r5', 'r6'] pid=36563
+R1 matern-nu0.5-l0.1-s0.01-N2048 cond 8.16e+03  (beta, D) = (2, 3.0)
+  strong exact    bwd 2.8e-11 res 6.4e-09 err 1.5e-08 far(max/med) 7.8e-09/2.2e-09 logdet 4.5e-13 skel 3289 rmax 51 rows 244958 npx 0 t 0.2s
+  strong rand     bwd 5.8e-10 res 1.3e-07 err 2.5e-07 far(max/med) 2.0e-07/2.0e-08 logdet 8.2e-11 skel 3138 rmax 48 rows 3072 npx 0 t 0.2s
+  strong plane1   bwd 4.5e-06 res 1.0e-03 err 5.9e-04 far(max/med) 1.4e-02/3.6e-06 logdet 1.2e-03 skel 3742 rmax 66 rows 35118 npx 64 t 0.2s
+  strong planeM   bwd 3.0e-08 res 6.8e-06 err 1.0e-05 far(max/med) 1.4e-04/4.9e-07 logdet 8.0e-08 skel 4407 rmax 79 rows 34324 npx 64 t 0.2s
+  strong lift1    bwd 1.9e-11 res 4.2e-09 err 5.6e-09 far(max/med) 3.0e-08/4.5e-09 logdet 9.1e-13 skel 5035 rmax 98 rows 50844 npx 236 t 0.3s
+  strong liftM    bwd 3.2e-12 res 7.3e-10 err 3.3e-09 far(max/med) 3.4e-09/5.1e-10 logdet 2.3e-12 skel 5284 rmax 108 rows 88318 npx 236 t 0.4s
+  strong annulus  bwd 3.5e-11 res 8.0e-09 err 7.4e-09 far(max/med) 1.7e-08/4.9e-09 logdet 3.2e-12 skel 4283 rmax 74 rows 100062 npx 512 t 0.4s
+  strong xc       bwd 7.5e-11 res 1.7e-08 err 9.9e-09 far(max/med) 3.8e-08/5.4e-09 logdet 3.2e-12 skel 4273 rmax 74 rows 34140 npx 104 t 0.4s
+  weak   exact    bwd 1.5e-10 res 3.4e-08 err 1.2e-07 far(max/med) 9.1e-09/3.2e-09 logdet 3.1e-10 skel 4137 rmax 147 rows 317152 npx 0 t 0.3s
+  weak   rand     bwd 1.0e-08 res 2.3e-06 err 8.7e-06 far(max/med) 6.2e-07/1.9e-08 logdet 4.0e-07 skel 4046 rmax 144 rows 5040 npx 0 t 0.3s
+  weak   plane1   bwd 1.9e-10 res 4.3e-08 err 9.9e-08 far(max/med) 1.9e-08/6.7e-09 logdet 3.3e-10 skel 4248 rmax 161 rows 38672 npx 64 t 0.2s
+  weak   planeM   bwd 1.5e-10 res 3.5e-08 err 9.8e-08 far(max/med) 1.2e-08/5.9e-09 logdet 1.6e-10 skel 4383 rmax 176 rows 49672 npx 64 t 0.3s
+  weak   lift1    bwd 9.6e-11 res 2.2e-08 err 7.9e-08 far(max/med) 5.0e-09/2.2e-09 logdet 1.4e-10 skel 4566 rmax 194 rows 68312 npx 236 t 0.4s
+  weak   liftM    bwd 9.7e-11 res 2.2e-08 err 7.6e-08 far(max/med) 4.7e-09/1.9e-09 logdet 5.0e-10 skel 4637 rmax 201 rows 108114 npx 236 t 0.5s
+  weak   annulus  bwd 1.2e-10 res 2.8e-08 err 9.6e-08 far(max/med) 7.9e-09/3.8e-09 logdet 4.0e-10 skel 4335 rmax 172 rows 114060 npx 512 t 0.6s
+  weak   xc       bwd 1.5e-10 res 3.4e-08 err 1.1e-07 far(max/med) 7.7e-09/4.5e-09 logdet 1.4e-09 skel 4314 rmax 170 rows 44172 npx 119 t 0.5s
+R1 matern-nu0.7-l0.1-s0.01-N2048 cond 1.07e+04  (beta, D) = (2, 2.6)
+  strong exact    bwd 2.6e-11 res 1.2e-08 err 2.8e-08 far(max/med) 8.1e-09/2.4e-09 logdet 3.1e-11 skel 3308 rmax 52 rows 245290 npx 0 t 0.3s
+  strong rand     bwd 1.6e-09 res 7.2e-07 err 1.1e-06 far(max/med) 8.2e-07/1.8e-08 logdet 3.3e-09 skel 3174 rmax 50 rows 3072 npx 0 t 0.2s
+  strong plane1   bwd 5.3e-06 res 2.4e-03 err 1.4e-03 far(max/med) 1.8e-02/3.5e-06 logdet 4.0e-03 skel 3736 rmax 64 rows 35836 npx 64 t 0.4s
+  strong planeM   bwd 1.5e-08 res 6.7e-06 err 8.9e-06 far(max/med) 7.4e-05/3.9e-07 logdet 8.5e-08 skel 4393 rmax 78 rows 34264 npx 64 t 0.6s
+  strong lift1    bwd 2.9e-11 res 1.3e-08 err 1.4e-08 far(max/med) 5.9e-08/6.7e-09 logdet 9.1e-13 skel 5067 rmax 99 rows 50920 npx 236 t 0.9s
+  strong liftM    bwd 3.2e-12 res 1.4e-09 err 5.2e-09 far(max/med) 2.3e-09/6.7e-10 logdet 9.1e-13 skel 5290 rmax 108 rows 88316 npx 236 t 1.6s
+  strong annulus  bwd 3.4e-11 res 1.5e-08 err 1.5e-08 far(max/med) 1.4e-08/6.0e-09 logdet 9.1e-13 skel 4296 rmax 75 rows 99252 npx 512 t 1.5s
+  strong xc       bwd 7.0e-11 res 3.1e-08 err 1.8e-08 far(max/med) 3.6e-08/6.9e-09 logdet 1.8e-12 skel 4265 rmax 74 rows 34026 npx 105 t 1.3s
+  weak   exact    bwd 1.6e-10 res 7.1e-08 err 2.1e-07 far(max/med) 8.3e-09/3.1e-09 logdet 7.6e-10 skel 4114 rmax 146 rows 316724 npx 0 t 0.3s
+  weak   rand     bwd 1.2e-09 res 5.5e-07 err 2.4e-06 far(max/med) 6.5e-08/1.6e-08 logdet 1.1e-07 skel 4031 rmax 141 rows 5041 npx 0 t 0.3s
+  weak   plane1   bwd 2.1e-10 res 9.2e-08 err 2.2e-07 far(max/med) 1.7e-08/6.2e-09 logdet 1.5e-09 skel 4232 rmax 161 rows 38608 npx 64 t 0.4s
+  weak   planeM   bwd 1.5e-10 res 6.5e-08 err 2.2e-07 far(max/med) 7.7e-09/4.3e-09 logdet 7.1e-10 skel 4363 rmax 174 rows 49578 npx 64 t 0.7s
+  weak   lift1    bwd 1.1e-10 res 5.1e-08 err 1.6e-07 far(max/med) 5.4e-09/2.3e-09 logdet 4.0e-11 skel 4556 rmax 192 rows 68278 npx 236 t 1.2s
+  weak   liftM    bwd 9.7e-11 res 4.3e-08 err 1.5e-07 far(max/med) 4.9e-09/1.8e-09 logdet 1.0e-09 skel 4625 rmax 201 rows 108072 npx 236 t 2.1s
+  weak   annulus  bwd 1.3e-10 res 5.7e-08 err 2.1e-07 far(max/med) 6.8e-09/3.5e-09 logdet 2.3e-09 skel 4320 rmax 170 rows 114010 npx 512 t 1.9s
+  weak   xc       bwd 1.5e-10 res 6.9e-08 err 2.3e-07 far(max/med) 9.0e-09/4.5e-09 logdet 2.6e-10 skel 4297 rmax 168 rows 44032 npx 120 t 1.7s
+R1 matern-nu1.0-l0.1-s0.01-N2048 cond 1.15e+04  (beta, D) = (2, 2.0)
+  strong exact    bwd 2.7e-11 res 2.2e-08 err 6.0e-08 far(max/med) 7.2e-09/2.5e-09 logdet 6.5e-11 skel 3069 rmax 48 rows 239008 npx 0 t 0.3s
+  strong rand     bwd 2.7e-10 res 2.2e-07 err 5.0e-07 far(max/med) 6.7e-08/1.4e-08 logdet 1.1e-09 skel 2970 rmax 45 rows 3072 npx 0 t 0.2s
+  strong plane1   bwd 4.5e-06 res 3.7e-03 err 2.8e-03 far(max/med) 2.3e-02/6.8e-06 logdet 1.4e-02 skel 3591 rmax 59 rows 37914 npx 64 t 0.4s
+  strong planeM   bwd 7.9e-12 res 6.5e-09 err 1.8e-08 far(max/med) 1.1e-08/3.1e-10 logdet 2.7e-12 skel 4191 rmax 71 rows 36124 npx 64 t 0.6s
+  strong lift1    bwd 4.0e-11 res 3.3e-08 err 3.1e-08 far(max/med) 1.2e-07/1.5e-08 logdet 4.5e-12 skel 5081 rmax 100 rows 50952 npx 236 t 1.0s
+  strong liftM    bwd 7.9e-12 res 6.5e-09 err 1.8e-08 far(max/med) 1.1e-08/3.1e-10 logdet 2.7e-12 skel 4191 rmax 71 rows 36124 npx 64 t 0.6s
+  strong annulus  bwd 2.0e-11 res 1.6e-08 err 2.8e-08 far(max/med) 1.1e-08/3.0e-09 logdet 8.2e-12 skel 3973 rmax 66 rows 103594 npx 512 t 1.5s
+  strong xc       bwd 2.3e-11 res 1.9e-08 err 2.9e-08 far(max/med) 1.1e-08/3.3e-09 logdet 1.5e-11 skel 3948 rmax 65 rows 34002 npx 81 t 1.2s
+  weak   exact    bwd 1.5e-10 res 1.2e-07 err 3.5e-07 far(max/med) 6.5e-09/2.9e-09 logdet 1.9e-09 skel 3822 rmax 122 rows 312252 npx 0 t 0.3s
+  weak   rand     bwd 1.9e-08 res 1.6e-05 err 3.8e-05 far(max/med) 1.6e-06/1.4e-08 logdet 1.1e-05 skel 3742 rmax 113 rows 4527 npx 0 t 0.2s
+  weak   plane1   bwd 1.6e-10 res 1.3e-07 err 4.1e-07 far(max/med) 9.9e-09/3.7e-09 logdet 9.0e-10 skel 3957 rmax 137 rows 37488 npx 64 t 0.4s
+  weak   planeM   bwd 1.5e-10 res 1.3e-07 err 4.0e-07 far(max/med) 4.4e-09/2.5e-09 logdet 9.4e-09 skel 4063 rmax 149 rows 48356 npx 64 t 0.6s
+  weak   lift1    bwd 1.0e-10 res 8.3e-08 err 3.3e-07 far(max/med) 4.2e-09/1.8e-09 logdet 4.3e-09 skel 4491 rmax 185 rows 68034 npx 236 t 1.2s
+  weak   liftM    bwd 1.5e-10 res 1.3e-07 err 4.0e-07 far(max/med) 4.4e-09/2.5e-09 logdet 9.4e-09 skel 4063 rmax 149 rows 48356 npx 64 t 0.6s
+  weak   annulus  bwd 1.6e-10 res 1.3e-07 err 4.1e-07 far(max/med) 4.7e-09/2.6e-09 logdet 3.0e-09 skel 4024 rmax 145 rows 112824 npx 512 t 1.8s
+  weak   xc       bwd 1.6e-10 res 1.3e-07 err 3.9e-07 far(max/med) 4.6e-09/2.7e-09 logdet 3.1e-09 skel 4019 rmax 145 rows 39124 npx 96 t 1.5s
+R1 matern-nu1.5-l0.1-s0.01-N2048 cond 1.18e+04  (beta, D) = (3, 3.0)
+  strong exact    bwd 2.3e-11 res 3.0e-08 err 9.2e-08 far(max/med) 1.0e-08/2.8e-09 logdet 1.1e-10 skel 3368 rmax 54 rows 247090 npx 0 t 0.3s
+  strong rand     bwd 4.6e-10 res 6.0e-07 err 1.5e-06 far(max/med) 1.3e-07/1.8e-08 logdet 8.3e-10 skel 3248 rmax 51 rows 3072 npx 0 t 0.3s
+  strong plane1   bwd 1.4e-05 res 1.8e-02 err 1.3e-02 far(max/med) 2.9e-02/1.3e-05 logdet 3.0e-01 skel 3744 rmax 64 rows 35194 npx 64 t 0.2s
+  strong planeM   bwd 3.2e-10 res 4.1e-07 err 4.3e-07 far(max/med) 6.6e-07/3.8e-08 logdet 1.2e-10 skel 4862 rmax 93 rows 42190 npx 64 t 0.2s
+  strong lift1    bwd 4.6e-11 res 6.0e-08 err 1.1e-07 far(max/med) 3.1e-07/2.6e-08 logdet 7.4e-11 skel 5089 rmax 101 rows 50968 npx 236 t 0.3s
+  strong liftM    bwd 7.6e-13 res 9.9e-10 err 4.0e-09 far(max/med) 1.6e-09/3.1e-10 logdet 5.5e-12 skel 5452 rmax 116 rows 126586 npx 236 t 0.5s
+  strong annulus  bwd 1.8e-11 res 2.4e-08 err 3.7e-08 far(max/med) 3.3e-08/1.2e-08 logdet 1.1e-11 skel 4352 rmax 78 rows 97086 npx 512 t 0.5s
+  strong xc       bwd 2.9e-11 res 3.8e-08 err 4.1e-08 far(max/med) 7.0e-08/1.2e-08 logdet 1.8e-12 skel 4343 rmax 78 rows 30062 npx 110 t 0.4s
+  weak   exact    bwd 1.9e-10 res 2.5e-07 err 6.6e-07 far(max/med) 6.6e-09/3.6e-09 logdet 1.5e-08 skel 4076 rmax 142 rows 316458 npx 0 t 0.3s
+  weak   rand     bwd 4.7e-09 res 6.2e-06 err 2.2e-05 far(max/med) 4.5e-07/1.8e-08 logdet 4.4e-06 skel 3990 rmax 139 rows 5039 npx 0 t 0.3s
+  weak   plane1   bwd 2.1e-10 res 2.7e-07 err 7.6e-07 far(max/med) 1.2e-08/4.8e-09 logdet 1.7e-08 skel 4205 rmax 158 rows 38508 npx 64 t 0.2s
+  weak   planeM   bwd 1.4e-10 res 1.8e-07 err 6.4e-07 far(max/med) 6.5e-09/2.5e-09 logdet 3.9e-08 skel 4445 rmax 183 rows 60450 npx 64 t 0.3s
+  weak   lift1    bwd 1.4e-10 res 1.8e-07 err 7.1e-07 far(max/med) 6.2e-09/2.6e-09 logdet 1.5e-08 skel 4537 rmax 193 rows 68168 npx 236 t 0.4s
+  weak   liftM    bwd 1.1e-10 res 1.4e-07 err 6.2e-07 far(max/med) 4.7e-09/1.8e-09 logdet 2.6e-08 skel 4654 rmax 203 rows 147742 npx 236 t 0.7s
+  weak   annulus  bwd 1.7e-10 res 2.2e-07 err 7.3e-07 far(max/med) 7.0e-09/3.6e-09 logdet 2.9e-08 skel 4303 rmax 168 rows 113900 npx 512 t 0.6s
+  weak   xc       bwd 1.9e-10 res 2.5e-07 err 7.6e-07 far(max/med) 8.2e-09/4.0e-09 logdet 7.0e-10 skel 4290 rmax 168 rows 43772 npx 127 t 0.6s
+R1 matern-nu2.5-l0.1-s0.01-N2048 cond 1.20e+04  (beta, D) = (4, 3.0)
+  strong exact    bwd 2.4e-11 res 4.1e-08 err 1.4e-07 far(max/med) 1.1e-08/2.7e-09 logdet 1.2e-09 skel 3438 rmax 55 rows 249314 npx 0 t 0.2s
+  strong rand     bwd 8.2e-10 res 1.4e-06 err 3.3e-06 far(max/med) 2.3e-07/2.4e-08 logdet 2.5e-08 skel 3304 rmax 53 rows 3072 npx 0 t 0.3s
+  strong plane1   bwd 4.2e-04 res 2.1e+00 err 2.7e+00 far(max/med) 3.8e-02/9.7e-06 logdet 6.3e+00 skel 3743 rmax 65 rows 35904 npx 64 t 0.3s
+  strong planeM   bwd 4.0e-12 res 6.8e-09 err 1.7e-08 far(max/med) 1.3e-08/7.5e-09 logdet 2.2e-11 skel 5178 rmax 105 rows 53434 npx 64 t 0.3s
+  strong lift1    bwd 9.2e-11 res 1.6e-07 err 4.4e-07 far(max/med) 6.8e-07/3.7e-08 logdet 4.6e-10 skel 5100 rmax 101 rows 52046 npx 236 t 0.5s
+  strong liftM    bwd 3.8e-13 res 6.5e-10 err 1.6e-09 far(max/med) 4.7e-10/3.0e-10 logdet 1.7e-11 skel 5522 rmax 117 rows 164554 npx 236 t 0.8s
+  strong annulus  bwd 2.2e-11 res 3.8e-08 err 7.0e-08 far(max/med) 9.8e-08/1.4e-08 logdet 3.0e-10 skel 4426 rmax 80 rows 96960 npx 512 t 0.8s
+  strong xc       bwd 2.9e-11 res 5.1e-08 err 6.8e-08 far(max/med) 7.3e-08/1.1e-08 logdet 2.7e-11 skel 4447 rmax 81 rows 29722 npx 113 t 0.7s
+  weak   exact    bwd 2.4e-10 res 4.1e-07 err 1.4e-06 far(max/med) 9.2e-09/3.5e-09 logdet 6.4e-08 skel 4032 rmax 138 rows 315546 npx 0 t 0.3s
+  weak   rand     bwd 5.5e-09 res 9.5e-06 err 2.8e-05 far(max/med) 5.5e-07/1.9e-08 logdet 1.9e-05 skel 3942 rmax 135 rows 5037 npx 0 t 0.3s
+  weak   plane1   bwd 2.4e-10 res 4.1e-07 err 1.3e-06 far(max/med) 8.8e-09/5.0e-09 logdet 7.4e-08 skel 4181 rmax 156 rows 38410 npx 64 t 0.3s
+  weak   planeM   bwd 1.6e-10 res 2.7e-07 err 1.2e-06 far(max/med) 5.1e-09/2.6e-09 logdet 6.0e-08 skel 4499 rmax 188 rows 71288 npx 64 t 0.4s
+  weak   lift1    bwd 1.6e-10 res 2.8e-07 err 1.2e-06 far(max/med) 5.4e-09/2.9e-09 logdet 4.8e-08 skel 4499 rmax 189 rows 68000 npx 236 t 0.6s
+  weak   liftM    bwd 1.7e-10 res 2.9e-07 err 1.1e-06 far(max/med) 5.8e-09/1.7e-09 logdet 8.3e-08 skel 4652 rmax 201 rows 187340 npx 236 t 1.1s
+  weak   annulus  bwd 2.1e-10 res 3.6e-07 err 1.2e-06 far(max/med) 7.8e-09/3.6e-09 logdet 8.6e-08 skel 4292 rmax 168 rows 113796 npx 512 t 1.1s
+  weak   xc       bwd 2.3e-10 res 3.9e-07 err 1.4e-06 far(max/med) 8.1e-09/3.6e-09 logdet 6.6e-09 skel 4287 rmax 168 rows 43506 npx 136 t 0.9s
+R1 k0-nu0.0-l0.1-s0.01-N2048 cond 1.01e+00  (beta, D) = -
+  strong exact    bwd 3.0e-13 res 5.9e-13 err 6.0e-13 far(max/med) 5.4e-09/2.3e-09 logdet 2.2e-12 skel 2139 rmax 28 rows 207526 npx 0 t 0.2s
+  strong rand     bwd 2.2e-12 res 4.4e-12 err 4.4e-12 far(max/med) 3.9e-08/5.9e-09 logdet 2.2e-12 skel 2088 rmax 27 rows 2812 npx 0 t 0.2s
+  strong plane1   bwd 1.4e-12 res 2.9e-12 err 2.9e-12 far(max/med) 1.8e-07/4.9e-11 logdet 1.8e-12 skel 3069 rmax 44 rows 38734 npx 64 t 0.3s
+  strong planeM   bwd 1.4e-12 res 2.9e-12 err 2.9e-12 far(max/med) 1.8e-07/4.9e-11 logdet 1.8e-12 skel 3069 rmax 44 rows 38734 npx 64 t 0.3s
+  strong lift1    bwd 6.4e-15 res 1.3e-14 err 1.3e-14 far(max/med) 6.9e-10/2.0e-10 logdet 5.1e-13 skel 5180 rmax 103 rows 50238 npx 236 t 0.8s
+  strong liftM    bwd 6.4e-15 res 1.3e-14 err 1.3e-14 far(max/med) 6.9e-10/2.0e-10 logdet 5.1e-13 skel 5180 rmax 103 rows 50238 npx 236 t 0.8s
+  strong annulus  bwd 1.4e-12 res 2.9e-12 err 2.9e-12 far(max/med) 1.8e-07/7.2e-11 logdet 1.9e-12 skel 3053 rmax 43 rows 110270 npx 512 t 1.4s
+  strong xc       bwd 7.2e-13 res 1.4e-12 err 1.4e-12 far(max/med) 9.1e-08/3.7e-10 logdet 2.0e-12 skel 3004 rmax 43 rows 36176 npx 53 t 1.1s
+  weak   exact    bwd 1.7e-11 res 3.4e-11 err 3.4e-11 far(max/med) 4.5e-09/2.0e-09 logdet 2.2e-12 skel 3434 rmax 97 rows 303004 npx 0 t 0.3s
+  weak   rand     bwd 1.6e-10 res 3.2e-10 err 3.2e-10 far(max/med) 1.2e-06/1.6e-08 logdet 2.2e-12 skel 3364 rmax 95 rows 4337 npx 0 t 0.3s
+  weak   plane1   bwd 3.9e-10 res 7.8e-10 err 7.9e-10 far(max/med) 2.3e-06/6.7e-07 logdet 4.8e-12 skel 3228 rmax 101 rows 33896 npx 64 t 0.4s
+  weak   planeM   bwd 3.9e-10 res 7.8e-10 err 7.9e-10 far(max/med) 2.3e-06/6.7e-07 logdet 4.8e-12 skel 3228 rmax 101 rows 33896 npx 64 t 0.4s
+  weak   lift1    bwd 1.1e-10 res 2.2e-10 err 2.3e-10 far(max/med) 6.7e-07/5.2e-07 logdet 2.2e-12 skel 4470 rmax 184 rows 67734 npx 236 t 1.0s
+  weak   liftM    bwd 1.1e-10 res 2.2e-10 err 2.3e-10 far(max/med) 6.7e-07/5.2e-07 logdet 2.2e-12 skel 4470 rmax 184 rows 67734 npx 236 t 1.0s
+  weak   annulus  bwd 4.7e-10 res 9.3e-10 err 9.4e-10 far(max/med) 2.4e-06/7.7e-07 logdet 5.4e-12 skel 3218 rmax 101 rows 109110 npx 512 t 1.6s
+  weak   xc       bwd 3.4e-10 res 6.8e-10 err 6.9e-10 far(max/med) 1.6e-06/5.6e-07 logdet 4.4e-12 skel 3229 rmax 102 rows 31732 npx 58 t 1.4s
+R1 rte-nu0.5-l0.1-s0.01-N2048 cond 1.58e+00  (beta, D) = -
+  strong exact    bwd 1.4e-12 res 3.0e-12 err 3.2e-12 far(max/med) 9.6e-09/3.0e-09 logdet 9.0e-13 skel 3473 rmax 53 rows 251642 npx 0 t 0.2s
+  strong rand     bwd 4.0e-11 res 8.7e-11 err 9.3e-11 far(max/med) 3.1e-07/2.4e-08 logdet 9.0e-13 skel 3332 rmax 50 rows 3072 npx 0 t 0.2s
+  strong plane1   bwd 1.1e-06 res 2.3e-06 err 2.3e-06 far(max/med) 1.3e-02/5.0e-05 logdet 1.5e-08 skel 3446 rmax 51 rows 39708 npx 64 t 0.2s
+  strong planeM   bwd 1.1e-06 res 2.3e-06 err 2.3e-06 far(max/med) 1.3e-02/5.0e-05 logdet 1.5e-08 skel 3446 rmax 51 rows 39708 npx 64 t 0.2s
+  strong lift1    bwd 4.4e-11 res 9.4e-11 err 1.0e-10 far(max/med) 4.3e-06/3.7e-09 logdet 5.2e-14 skel 5294 rmax 108 rows 50570 npx 236 t 0.2s
+  strong liftM    bwd 4.4e-11 res 9.4e-11 err 1.0e-10 far(max/med) 4.3e-06/3.7e-09 logdet 5.2e-14 skel 5294 rmax 108 rows 50570 npx 236 t 0.2s
+  strong annulus  bwd 5.0e-11 res 1.1e-10 err 1.2e-10 far(max/med) 3.6e-06/3.3e-08 logdet 3.9e-13 skel 4481 rmax 80 rows 94554 npx 512 t 0.3s
+  strong xc       bwd 2.5e-11 res 5.3e-11 err 5.6e-11 far(max/med) 7.3e-07/6.2e-08 logdet 5.6e-13 skel 4489 rmax 81 rows 31364 npx 124 t 0.2s
+  weak   exact    bwd 9.2e-10 res 2.0e-09 err 2.0e-09 far(max/med) 3.3e-08/1.0e-08 logdet 1.0e-12 skel 4197 rmax 151 rows 317920 npx 0 t 0.3s
+  weak   rand     bwd 1.7e-09 res 3.7e-09 err 3.9e-09 far(max/med) 7.5e-07/5.3e-08 logdet 2.5e-11 skel 4121 rmax 145 rows 5041 npx 0 t 0.3s
+  weak   plane1   bwd 5.3e-09 res 1.1e-08 err 1.2e-08 far(max/med) 1.0e-06/4.6e-07 logdet 4.4e-12 skel 4126 rmax 163 rows 38008 npx 64 t 0.2s
+  weak   planeM   bwd 5.3e-09 res 1.1e-08 err 1.2e-08 far(max/med) 1.0e-06/4.6e-07 logdet 4.4e-12 skel 4126 rmax 163 rows 38008 npx 64 t 0.2s
+  weak   lift1    bwd 8.2e-10 res 1.8e-09 err 1.9e-09 far(max/med) 5.1e-07/2.7e-07 logdet 5.8e-12 skel 4709 rmax 215 rows 68550 npx 236 t 0.3s
+  weak   liftM    bwd 8.2e-10 res 1.8e-09 err 1.9e-09 far(max/med) 5.1e-07/2.7e-07 logdet 5.8e-12 skel 4709 rmax 215 rows 68550 npx 236 t 0.3s
+  weak   annulus  bwd 1.1e-09 res 2.3e-09 err 2.4e-09 far(max/med) 5.5e-07/3.4e-07 logdet 1.4e-11 skel 4373 rmax 186 rows 113830 npx 512 t 0.3s
+  weak   xc       bwd 1.2e-09 res 2.5e-09 err 2.7e-09 far(max/med) 4.8e-07/3.3e-07 logdet 1.3e-11 skel 4367 rmax 185 rows 47572 npx 134 t 0.3s
+R2 nu 0.5 n_lat 0  strong lift1    bwd 4.5e-06 res 1.0e-03 err 5.9e-04 far(max/med) 1.4e-02/3.6e-06 logdet 1.2e-03 skel 3742 rmax 66 rows 35118 npx 64 t 0.2s
+R2 nu 0.5 n_lat 1  strong lift1    bwd 9.1e-08 res 2.1e-05 err 2.4e-05 far(max/med) 2.3e-04/2.8e-07 logdet 4.7e-07 skel 4293 rmax 76 rows 33334 npx 110 t 0.2s
+R2 nu 0.5 n_lat 2  strong lift1    bwd 1.6e-09 res 3.5e-07 err 5.9e-07 far(max/med) 4.4e-06/4.0e-08 logdet 6.0e-10 skel 4637 rmax 85 rows 37110 npx 152 t 0.2s
+R2 nu 0.5 n_lat 4  strong lift1    bwd 1.9e-11 res 4.2e-09 err 5.6e-09 far(max/med) 3.0e-08/4.5e-09 logdet 9.1e-13 skel 5035 rmax 98 rows 50844 npx 236 t 0.3s
+R2 nu 0.5 n_lat 8  strong lift1    bwd 2.3e-11 res 5.1e-09 err 4.4e-09 far(max/med) 7.1e-09/3.4e-09 logdet 9.1e-13 skel 5099 rmax 101 rows 76952 npx 398 t 0.4s
+R2 nu 0.5 n_lat 0  strong liftM    bwd 3.0e-08 res 6.8e-06 err 1.0e-05 far(max/med) 1.4e-04/4.9e-07 logdet 8.0e-08 skel 4407 rmax 79 rows 34324 npx 64 t 0.2s
+R2 nu 0.5 n_lat 1  strong liftM    bwd 1.7e-11 res 3.8e-09 err 5.7e-09 far(max/med) 3.1e-08/6.6e-09 logdet 9.1e-13 skel 5038 rmax 98 rows 47218 npx 110 t 0.3s
+R2 nu 0.5 n_lat 2  strong liftM    bwd 3.8e-12 res 8.6e-10 err 2.8e-09 far(max/med) 2.7e-09/1.1e-09 logdet 1.8e-12 skel 5252 rmax 107 rows 61372 npx 152 t 0.3s
+R2 nu 0.5 n_lat 4  strong liftM    bwd 3.2e-12 res 7.3e-10 err 3.3e-09 far(max/med) 3.4e-09/5.1e-10 logdet 2.3e-12 skel 5284 rmax 108 rows 88318 npx 236 t 0.4s
+R2 nu 0.5 n_lat 8  strong liftM    bwd 2.4e-12 res 5.5e-10 err 2.3e-09 far(max/med) 2.1e-09/2.6e-10 logdet 1.4e-12 skel 5322 rmax 110 rows 140268 npx 398 t 0.6s
+R2 nu 0.7 n_lat 0  strong lift1    bwd 5.3e-06 res 2.4e-03 err 1.4e-03 far(max/med) 1.8e-02/3.5e-06 logdet 4.0e-03 skel 3736 rmax 64 rows 35836 npx 64 t 0.4s
+R2 nu 0.7 n_lat 1  strong lift1    bwd 8.4e-08 res 3.7e-05 err 3.7e-05 far(max/med) 3.8e-04/4.3e-07 logdet 1.8e-06 skel 4304 rmax 76 rows 33358 npx 110 t 0.5s
+R2 nu 0.7 n_lat 2  strong lift1    bwd 1.9e-09 res 8.5e-07 err 1.7e-06 far(max/med) 7.2e-06/6.3e-08 logdet 4.5e-09 skel 4659 rmax 87 rows 37180 npx 152 t 0.6s
+R2 nu 0.7 n_lat 4  strong lift1    bwd 2.9e-11 res 1.3e-08 err 1.4e-08 far(max/med) 5.9e-08/6.7e-09 logdet 9.1e-13 skel 5067 rmax 99 rows 50920 npx 236 t 0.9s
+R2 nu 0.7 n_lat 8  strong lift1    bwd 3.2e-11 res 1.4e-08 err 1.2e-08 far(max/med) 7.8e-09/4.5e-09 logdet 9.1e-13 skel 5117 rmax 102 rows 76988 npx 398 t 1.4s
+R2 nu 0.7 n_lat 0  strong liftM    bwd 1.5e-08 res 6.7e-06 err 8.9e-06 far(max/med) 7.4e-05/3.9e-07 logdet 8.5e-08 skel 4393 rmax 78 rows 34264 npx 64 t 0.6s
+R2 nu 0.7 n_lat 1  strong liftM    bwd 1.6e-11 res 7.1e-09 err 1.1e-08 far(max/med) 3.4e-08/7.8e-09 logdet 9.1e-13 skel 5046 rmax 99 rows 47250 npx 110 t 0.8s
+R2 nu 0.7 n_lat 2  strong liftM    bwd 2.9e-12 res 1.3e-09 err 4.0e-09 far(max/med) 2.5e-09/1.2e-09 logdet 9.1e-13 skel 5266 rmax 108 rows 61394 npx 152 t 1.1s
+R2 nu 0.7 n_lat 4  strong liftM    bwd 3.2e-12 res 1.4e-09 err 5.2e-09 far(max/med) 2.3e-09/6.7e-10 logdet 9.1e-13 skel 5290 rmax 108 rows 88316 npx 236 t 1.7s
+R2 nu 0.7 n_lat 8  strong liftM    bwd 2.6e-12 res 1.2e-09 err 4.9e-09 far(max/med) 2.6e-09/4.1e-10 logdet 1.8e-12 skel 5322 rmax 110 rows 140264 npx 398 t 2.6s
+R2 nu 1.5 n_lat 0  strong lift1    bwd 1.4e-05 res 1.8e-02 err 1.3e-02 far(max/med) 2.9e-02/1.3e-05 logdet 3.0e-01 skel 3744 rmax 64 rows 35194 npx 64 t 0.2s
+R2 nu 1.5 n_lat 1  strong lift1    bwd 1.6e-07 res 2.0e-04 err 2.4e-04 far(max/med) 1.2e-03/3.0e-06 logdet 1.1e-04 skel 4306 rmax 77 rows 33482 npx 110 t 0.2s
+R2 nu 1.5 n_lat 2  strong lift1    bwd 5.1e-09 res 6.6e-06 err 1.2e-05 far(max/med) 2.5e-05/2.0e-07 logdet 3.9e-07 skel 4682 rmax 87 rows 37246 npx 152 t 0.2s
+R2 nu 1.5 n_lat 4  strong lift1    bwd 4.6e-11 res 6.0e-08 err 1.1e-07 far(max/med) 3.1e-07/2.6e-08 logdet 7.4e-11 skel 5089 rmax 101 rows 50968 npx 236 t 0.3s
+R2 nu 1.5 n_lat 8  strong lift1    bwd 4.3e-11 res 5.6e-08 err 5.8e-08 far(max/med) 2.9e-08/1.2e-08 logdet 2.7e-11 skel 5141 rmax 103 rows 77042 npx 398 t 0.4s
+R2 nu 1.5 n_lat 0  strong liftM    bwd 3.2e-10 res 4.1e-07 err 4.3e-07 far(max/med) 6.6e-07/3.8e-08 logdet 1.2e-10 skel 4862 rmax 93 rows 42190 npx 64 t 0.3s
+R2 nu 1.5 n_lat 1  strong liftM    bwd 1.4e-12 res 1.8e-09 err 8.1e-09 far(max/med) 4.0e-09/5.9e-10 logdet 6.4e-12 skel 5352 rmax 111 rows 65802 npx 110 t 0.4s
+R2 nu 1.5 n_lat 2  strong liftM    bwd 9.8e-13 res 1.3e-09 err 3.2e-09 far(max/med) 1.1e-09/6.6e-10 logdet 2.7e-12 skel 5420 rmax 115 rows 86174 npx 152 t 0.4s
+R2 nu 1.5 n_lat 4  strong liftM    bwd 7.6e-13 res 9.9e-10 err 4.0e-09 far(max/med) 1.6e-09/3.1e-10 logdet 5.5e-12 skel 5452 rmax 116 rows 126586 npx 236 t 0.6s
+R2 nu 1.5 n_lat 8  strong liftM    bwd 5.2e-13 res 6.7e-10 err 3.1e-09 far(max/med) 1.3e-09/1.3e-10 logdet 1.8e-12 skel 5470 rmax 117 rows 204380 npx 398 t 0.8s
+R2 nu 2.5 n_lat 0  strong lift1    bwd 4.2e-04 res 2.1e+00 err 2.7e+00 far(max/med) 3.8e-02/9.7e-06 logdet 6.3e+00 skel 3743 rmax 65 rows 35904 npx 64 t 0.3s
+R2 nu 2.5 n_lat 1  strong lift1    bwd 4.0e-07 res 6.9e-04 err 1.0e-03 far(max/med) 2.5e-03/1.1e-05 logdet 1.1e-03 skel 4311 rmax 78 rows 34144 npx 110 t 0.3s
+R2 nu 2.5 n_lat 2  strong lift1    bwd 2.5e-08 res 4.3e-05 err 7.0e-05 far(max/med) 5.8e-05/3.0e-07 logdet 3.9e-06 skel 4692 rmax 88 rows 37616 npx 152 t 0.4s
+R2 nu 2.5 n_lat 4  strong lift1    bwd 9.2e-11 res 1.6e-07 err 4.4e-07 far(max/med) 6.8e-07/3.7e-08 logdet 4.6e-10 skel 5100 rmax 101 rows 52046 npx 236 t 0.5s
+R2 nu 2.5 n_lat 8  strong lift1    bwd 7.2e-11 res 1.2e-07 err 1.9e-07 far(max/med) 9.8e-08/2.9e-08 logdet 9.0e-10 skel 5130 rmax 103 rows 78074 npx 398 t 0.7s
+R2 nu 2.5 n_lat 0  strong liftM    bwd 4.0e-12 res 6.8e-09 err 1.7e-08 far(max/med) 1.3e-08/7.5e-09 logdet 2.2e-11 skel 5178 rmax 105 rows 53434 npx 64 t 0.3s
+R2 nu 2.5 n_lat 1  strong liftM    bwd 4.7e-13 res 8.1e-10 err 2.7e-09 far(max/med) 7.4e-10/4.7e-10 logdet 2.0e-11 skel 5456 rmax 116 rows 83726 npx 110 t 0.6s
+R2 nu 2.5 n_lat 2  strong liftM    bwd 3.4e-13 res 5.9e-10 err 1.4e-09 far(max/med) 7.3e-10/3.9e-10 logdet 1.8e-11 skel 5498 rmax 117 rows 110746 npx 152 t 0.7s
+R2 nu 2.5 n_lat 4  strong liftM    bwd 3.8e-13 res 6.5e-10 err 1.6e-09 far(max/med) 4.7e-10/3.0e-10 logdet 1.7e-11 skel 5522 rmax 117 rows 164554 npx 236 t 0.8s
+R2 nu 2.5 n_lat 8  strong liftM    bwd 1.6e-13 res 2.7e-10 err 9.3e-10 far(max/med) 2.3e-10/1.3e-10 logdet 1.9e-11 skel 5540 rmax 119 rows 268300 npx 398 t 1.2s
+R3 nu 0.5 (reference)  strong exact    bwd 2.8e-11 res 6.4e-09 err 1.5e-08 far(max/med) 7.8e-09/2.2e-09 logdet 4.5e-13 skel 3289 rmax 51 rows 244958 npx 0 t 0.3s
+R3 nu 0.5 equal-rank  strong rand     bwd 1.1e-10 res 2.4e-08 err 5.4e-08 far(max/med) 2.9e-08/7.0e-09 logdet 1.5e-11 skel 3289 rmax 51 rows 3072 npx 0 t 0.2s
+R3 nu 0.5 equal-rank  strong plane1   bwd 3.5e-06 res 7.8e-04 err 3.8e-04 far(max/med) 1.3e-02/2.9e-06 logdet 3.2e-04 skel 3289 rmax 51 rows 36914 npx 64 t 0.2s
+R3 nu 0.5 equal-rank  strong planeM   bwd 7.5e-08 res 1.7e-05 err 2.0e-05 far(max/med) 2.9e-04/3.2e-06 logdet 5.7e-07 skel 3289 rmax 51 rows 47154 npx 64 t 0.2s
+R3 nu 0.5 equal-rank  strong lift1    bwd 6.2e-08 res 1.4e-05 err 2.5e-05 far(max/med) 8.0e-05/1.6e-06 logdet 1.2e-06 skel 3289 rmax 51 rows 64434 npx 236 t 0.3s
+R3 nu 0.5 equal-rank  strong liftM    bwd 1.5e-07 res 3.3e-05 err 5.9e-05 far(max/med) 2.3e-04/5.6e-07 logdet 6.9e-06 skel 3289 rmax 51 rows 102194 npx 236 t 0.4s
+R3 nu 0.5 equal-rank  strong annulus  bwd 6.9e-09 res 1.6e-06 err 2.5e-06 far(max/med) 1.2e-05/2.4e-07 logdet 1.3e-08 skel 3289 rmax 51 rows 108594 npx 512 t 0.5s
+R3 nu 0.5 equal-rank  strong xc       bwd 7.5e-09 res 1.7e-06 err 2.1e-06 far(max/med) 2.1e-05/2.7e-07 logdet 9.1e-09 skel 3289 rmax 51 rows 41906 npx 104 t 0.4s
+R3 nu 0.7 (reference)  strong exact    bwd 2.6e-11 res 1.2e-08 err 2.8e-08 far(max/med) 8.1e-09/2.4e-09 logdet 3.1e-11 skel 3308 rmax 52 rows 245290 npx 0 t 0.3s
+R3 nu 0.7 equal-rank  strong rand     bwd 1.6e-10 res 7.2e-08 err 1.0e-07 far(max/med) 2.7e-08/7.1e-09 logdet 3.9e-10 skel 3308 rmax 52 rows 3072 npx 0 t 0.2s
+R3 nu 0.7 equal-rank  strong plane1   bwd 3.8e-06 res 1.7e-03 err 7.9e-04 far(max/med) 1.8e-02/4.9e-06 logdet 1.2e-03 skel 3308 rmax 52 rows 36412 npx 64 t 0.4s
+R3 nu 0.7 equal-rank  strong planeM   bwd 5.3e-08 res 2.4e-05 err 2.6e-05 far(max/med) 1.9e-04/2.8e-06 logdet 1.2e-06 skel 3308 rmax 52 rows 46652 npx 64 t 0.6s
+R3 nu 0.7 equal-rank  strong lift1    bwd 5.9e-08 res 2.6e-05 err 4.6e-05 far(max/med) 1.6e-04/2.2e-06 logdet 4.4e-06 skel 3308 rmax 52 rows 63932 npx 236 t 0.9s
+R3 nu 0.7 equal-rank  strong liftM    bwd 1.3e-07 res 5.6e-05 err 1.4e-04 far(max/med) 1.7e-04/4.8e-07 logdet 1.8e-05 skel 3308 rmax 52 rows 101692 npx 236 t 1.5s
+R3 nu 0.7 equal-rank  strong annulus  bwd 7.9e-09 res 3.5e-06 err 5.5e-06 far(max/med) 2.7e-05/3.0e-07 logdet 4.2e-08 skel 3308 rmax 52 rows 108092 npx 512 t 1.4s
+R3 nu 0.7 equal-rank  strong xc       bwd 9.7e-09 res 4.3e-06 err 5.6e-06 far(max/med) 6.2e-05/3.2e-07 logdet 5.6e-08 skel 3308 rmax 52 rows 41308 npx 105 t 1.3s
+R3 nu 1.5 (reference)  strong exact    bwd 2.3e-11 res 3.0e-08 err 9.2e-08 far(max/med) 1.0e-08/2.8e-09 logdet 1.1e-10 skel 3368 rmax 54 rows 247090 npx 0 t 0.2s
+R3 nu 1.5 equal-rank  strong rand     bwd 1.2e-10 res 1.5e-07 err 3.9e-07 far(max/med) 2.8e-08/8.8e-09 logdet 8.2e-11 skel 3368 rmax 54 rows 3072 npx 0 t 0.2s
+R3 nu 1.5 equal-rank  strong plane1   bwd 7.4e-06 res 9.6e-03 err 8.0e-03 far(max/med) 3.0e-02/2.3e-05 logdet 5.2e-02 skel 3368 rmax 54 rows 34562 npx 64 t 0.3s
+R3 nu 1.5 equal-rank  strong planeM   bwd 9.5e-08 res 1.2e-04 err 2.8e-04 far(max/med) 4.3e-04/2.1e-06 logdet 1.8e-04 skel 3368 rmax 54 rows 55042 npx 64 t 0.3s
+R3 nu 1.5 equal-rank  strong lift1    bwd 6.5e-08 res 8.5e-05 err 1.6e-04 far(max/med) 2.7e-04/3.7e-06 logdet 4.6e-05 skel 3368 rmax 54 rows 62082 npx 236 t 0.4s
+R3 nu 1.5 equal-rank  strong liftM    bwd 9.8e-08 res 1.3e-04 err 3.8e-04 far(max/med) 3.0e-04/2.0e-06 logdet 2.4e-04 skel 3368 rmax 54 rows 137602 npx 236 t 0.5s
+R3 nu 1.5 equal-rank  strong annulus  bwd 1.4e-08 res 1.8e-05 err 2.5e-05 far(max/med) 5.2e-05/4.6e-07 logdet 8.3e-07 skel 3368 rmax 54 rows 106242 npx 512 t 0.5s
+R3 nu 1.5 equal-rank  strong xc       bwd 1.1e-08 res 1.5e-05 err 2.4e-05 far(max/med) 1.0e-04/4.2e-07 logdet 7.6e-07 skel 3368 rmax 54 rows 39234 npx 110 t 0.4s
+R3 nu 2.5 (reference)  strong exact    bwd 2.4e-11 res 4.1e-08 err 1.4e-07 far(max/med) 1.1e-08/2.7e-09 logdet 1.2e-09 skel 3438 rmax 55 rows 249314 npx 0 t 0.3s
+R3 nu 2.5 equal-rank  strong rand     bwd 8.5e-11 res 1.5e-07 err 4.1e-07 far(max/med) 2.0e-08/9.5e-09 logdet 1.1e-09 skel 3438 rmax 55 rows 3123 npx 0 t 0.2s
+R3 nu 2.5 equal-rank  strong plane1   bwd 6.0e-06 res 1.0e-02 err 2.0e-02 far(max/med) 3.9e-02/3.7e-05 logdet 2.2e-01 skel 3438 rmax 55 rows 30022 npx 64 t 0.2s
+R3 nu 2.5 equal-rank  strong planeM   bwd 7.7e-08 res 1.3e-04 err 3.8e-04 far(max/med) 2.5e-04/2.6e-06 logdet 1.6e-04 skel 3438 rmax 55 rows 60742 npx 64 t 0.3s
+R3 nu 2.5 equal-rank  strong lift1    bwd 1.0e-07 res 1.8e-04 err 3.3e-04 far(max/med) 5.8e-04/7.0e-06 logdet 1.5e-04 skel 3438 rmax 55 rows 57542 npx 236 t 0.5s
+R3 nu 2.5 equal-rank  strong liftM    bwd 5.1e-08 res 8.9e-05 err 2.6e-04 far(max/med) 1.8e-04/2.4e-06 logdet 1.2e-04 skel 3438 rmax 55 rows 170822 npx 236 t 0.7s
+R3 nu 2.5 equal-rank  strong annulus  bwd 2.2e-08 res 3.7e-05 err 6.2e-05 far(max/med) 1.0e-04/9.2e-07 logdet 4.7e-06 skel 3438 rmax 55 rows 101702 npx 512 t 0.8s
+R3 nu 2.5 equal-rank  strong xc       bwd 2.3e-08 res 3.9e-05 err 6.4e-05 far(max/med) 8.6e-05/1.1e-06 logdet 2.9e-06 skel 3438 rmax 55 rows 34406 npx 113 t 0.7s
+R4 nu 0.5 ell 0.03 s2 0.1 cond 1.3e+02  strong exact    bwd 3.4e-12 res 2.6e-11 err 1.4e-10 far(max/med) 0.0e+00/0.0e+00 logdet 1.1e-12 skel 3460 rmax 55 rows 249712 npx 0 t 0.2s mean 1.5e-11
+R4 nu 0.5 ell 0.03 s2 0.1 cond 1.3e+02  strong liftM    bwd 6.1e-13 res 4.7e-12 err 3.4e-11 far(max/med) 0.0e+00/0.0e+00 logdet 1.1e-13 skel 5704 rmax 126 rows 89614 npx 236 t 0.4s mean 1.1e-12
+R4 nu 0.5 ell 0.03 s2 0.1 cond 1.3e+02  strong xc       bwd 1.5e-11 res 1.2e-10 err 7.3e-10 far(max/med) 0.0e+00/0.0e+00 logdet 5.7e-13 skel 4522 rmax 85 rows 31040 npx 125 t 0.4s mean 9.0e-11
+R4 nu 0.5 ell 0.03 s2 0.1 cond 1.3e+02  weak   exact    bwd 8.5e-10 res 6.5e-09 err 1.4e-08 far(max/med) 0.0e+00/0.0e+00 logdet 1.8e-11 skel 4105 rmax 141 rows 317054 npx 0 t 0.3s mean 5.9e-09
+R4 nu 0.5 ell 0.03 s2 0.1 cond 1.3e+02  weak   liftM    bwd 4.8e-10 res 3.7e-09 err 1.2e-08 far(max/med) 0.0e+00/0.0e+00 logdet 1.9e-11 skel 4531 rmax 170 rows 108070 npx 236 t 0.5s mean 2.8e-09
+R4 nu 0.5 ell 0.03 s2 0.0001 cond 1.2e+03  strong exact    bwd 3.3e-12 res 4.7e-11 err 2.2e-10 far(max/med) 0.0e+00/0.0e+00 logdet 2.5e-12 skel 3456 rmax 57 rows 249668 npx 0 t 0.2s mean 3.3e-11
+R4 nu 0.5 ell 0.03 s2 0.0001 cond 1.2e+03  strong liftM    bwd 5.3e-13 res 7.7e-12 err 6.6e-11 far(max/med) 0.0e+00/0.0e+00 logdet 1.8e-12 skel 5704 rmax 126 rows 89614 npx 236 t 0.4s mean 2.7e-12
+R4 nu 0.5 ell 0.03 s2 0.0001 cond 1.2e+03  strong xc       bwd 2.8e-11 res 4.1e-10 err 2.3e-09 far(max/med) 0.0e+00/0.0e+00 logdet 2.5e-12 skel 4524 rmax 85 rows 31046 npx 125 t 0.4s mean 3.5e-10
+R4 nu 0.5 ell 0.03 s2 0.0001 cond 1.2e+03  weak   exact    bwd 5.2e-10 res 7.5e-09 err 1.3e-08 far(max/med) 0.0e+00/0.0e+00 logdet 4.0e-11 skel 4105 rmax 141 rows 317054 npx 0 t 0.3s mean 7.2e-09
+R4 nu 0.5 ell 0.03 s2 0.0001 cond 1.2e+03  weak   liftM    bwd 3.2e-10 res 4.6e-09 err 1.4e-08 far(max/med) 0.0e+00/0.0e+00 logdet 2.0e-11 skel 4531 rmax 170 rows 108070 npx 236 t 0.5s mean 3.8e-09
+R4 nu 0.5 ell 0.1 s2 0.1 cond 1.1e+03  strong exact    bwd 2.9e-11 res 2.7e-09 err 8.3e-09 far(max/med) 0.0e+00/0.0e+00 logdet 1.3e-11 skel 3283 rmax 50 rows 244928 npx 0 t 0.2s mean 1.9e-09
+R4 nu 0.5 ell 0.1 s2 0.1 cond 1.1e+03  strong liftM    bwd 3.2e-12 res 3.0e-10 err 1.5e-09 far(max/med) 0.0e+00/0.0e+00 logdet 5.5e-12 skel 5284 rmax 108 rows 88318 npx 236 t 0.4s mean 8.1e-11
+R4 nu 0.5 ell 0.1 s2 0.1 cond 1.1e+03  strong xc       bwd 8.2e-11 res 7.6e-09 err 6.9e-09 far(max/med) 0.0e+00/0.0e+00 logdet 6.8e-12 skel 4261 rmax 74 rows 34114 npx 104 t 0.4s mean 7.6e-09
+R4 nu 0.5 ell 0.1 s2 0.1 cond 1.1e+03  weak   exact    bwd 1.7e-10 res 1.6e-08 err 4.8e-08 far(max/med) 0.0e+00/0.0e+00 logdet 8.6e-10 skel 4137 rmax 147 rows 317152 npx 0 t 0.3s mean 1.3e-08
+R4 nu 0.5 ell 0.1 s2 0.1 cond 1.1e+03  weak   liftM    bwd 1.0e-10 res 9.6e-09 err 3.9e-08 far(max/med) 0.0e+00/0.0e+00 logdet 6.1e-10 skel 4637 rmax 201 rows 108114 npx 236 t 0.5s mean 6.2e-09
+R4 nu 0.5 ell 0.1 s2 0.0001 cond 3.1e+04  strong exact    bwd 2.4e-11 res 8.2e-09 err 1.6e-08 far(max/med) 0.0e+00/0.0e+00 logdet 1.1e-11 skel 3289 rmax 51 rows 244952 npx 0 t 0.2s mean 6.6e-09
+R4 nu 0.5 ell 0.1 s2 0.0001 cond 3.1e+04  strong liftM    bwd 2.7e-12 res 9.1e-10 err 3.1e-09 far(max/med) 0.0e+00/0.0e+00 logdet 7.7e-12 skel 5284 rmax 108 rows 88318 npx 236 t 0.4s mean 4.2e-10
+R4 nu 0.5 ell 0.1 s2 0.0001 cond 3.1e+04  strong xc       bwd 6.7e-11 res 2.2e-08 err 1.1e-08 far(max/med) 0.0e+00/0.0e+00 logdet 6.8e-12 skel 4269 rmax 74 rows 34136 npx 104 t 0.4s mean 2.2e-08
+R4 nu 0.5 ell 0.1 s2 0.0001 cond 3.1e+04  weak   exact    bwd 1.6e-10 res 5.2e-08 err 1.5e-07 far(max/med) 0.0e+00/0.0e+00 logdet 4.4e-10 skel 4137 rmax 147 rows 317152 npx 0 t 0.3s mean 4.0e-08
+R4 nu 0.5 ell 0.1 s2 0.0001 cond 3.1e+04  weak   liftM    bwd 9.2e-11 res 3.1e-08 err 8.3e-08 far(max/med) 0.0e+00/0.0e+00 logdet 4.0e-10 skel 4637 rmax 201 rows 108114 npx 236 t 0.5s mean 2.1e-08
+R4 nu 0.5 ell 0.3 s2 0.1 cond 5.1e+03  strong exact    bwd 4.6e-11 res 2.8e-08 err 9.8e-08 far(max/med) 0.0e+00/0.0e+00 logdet 3.5e-10 skel 2934 rmax 44 rows 233974 npx 0 t 0.2s mean 1.9e-08
+R4 nu 0.5 ell 0.3 s2 0.1 cond 5.1e+03  strong liftM    bwd 5.9e-12 res 3.6e-09 err 1.7e-08 far(max/med) 0.0e+00/0.0e+00 logdet 6.4e-12 skel 4982 rmax 97 rows 87452 npx 236 t 0.4s mean 2.2e-09
+R4 nu 0.5 ell 0.3 s2 0.1 cond 5.1e+03  strong xc       bwd 4.7e-11 res 2.9e-08 err 4.5e-08 far(max/med) 0.0e+00/0.0e+00 logdet 1.0e-10 skel 3860 rmax 64 rows 39312 npx 88 t 0.3s mean 3.0e-08
+R4 nu 0.5 ell 0.3 s2 0.1 cond 5.1e+03  weak   exact    bwd 1.1e-10 res 6.6e-08 err 2.1e-07 far(max/med) 0.0e+00/0.0e+00 logdet 2.2e-10 skel 3965 rmax 136 rows 314016 npx 0 t 0.3s mean 5.3e-08
+R4 nu 0.5 ell 0.3 s2 0.1 cond 5.1e+03  weak   liftM    bwd 6.1e-11 res 3.8e-08 err 1.5e-07 far(max/med) 0.0e+00/0.0e+00 logdet 3.4e-09 skel 4472 rmax 185 rows 107502 npx 236 t 0.5s mean 2.2e-08
+R4 nu 0.5 ell 0.3 s2 0.0001 cond 4.2e+05  strong exact    bwd 3.4e-11 res 1.6e-07 err 3.0e-07 far(max/med) 0.0e+00/0.0e+00 logdet 1.2e-09 skel 2954 rmax 45 rows 234224 npx 0 t 0.2s mean 1.3e-07
+R4 nu 0.5 ell 0.3 s2 0.0001 cond 4.2e+05  strong liftM    bwd 1.1e-11 res 5.0e-08 err 3.0e-07 far(max/med) 0.0e+00/0.0e+00 logdet 2.5e-11 skel 4988 rmax 98 rows 87472 npx 236 t 0.4s mean 3.8e-08
+R4 nu 0.5 ell 0.3 s2 0.0001 cond 4.2e+05  strong xc       bwd 4.9e-11 res 2.3e-07 err 1.1e-07 far(max/med) 0.0e+00/0.0e+00 logdet 3.1e-10 skel 3878 rmax 65 rows 39330 npx 88 t 0.4s mean 2.2e-07
+R4 nu 0.5 ell 0.3 s2 0.0001 cond 4.2e+05  weak   exact    bwd 7.8e-11 res 3.6e-07 err 1.1e-06 far(max/med) 0.0e+00/0.0e+00 logdet 1.5e-08 skel 3965 rmax 136 rows 314016 npx 0 t 0.2s mean 2.9e-07
+R4 nu 0.5 ell 0.3 s2 0.0001 cond 4.2e+05  weak   liftM    bwd 5.2e-11 res 2.4e-07 err 1.5e-06 far(max/med) 0.0e+00/0.0e+00 logdet 1.7e-08 skel 4472 rmax 185 rows 107502 npx 236 t 0.5s mean 1.6e-07
+R4 nu 0.7 ell 0.03 s2 0.1 cond 1.4e+02  strong exact    bwd 2.3e-12 res 2.2e-11 err 1.1e-10 far(max/med) 0.0e+00/0.0e+00 logdet 6.8e-13 skel 3428 rmax 55 rows 249678 npx 0 t 0.2s mean 1.4e-11
+R4 nu 0.7 ell 0.03 s2 0.1 cond 1.4e+02  strong liftM    bwd 1.2e-13 res 1.2e-12 err 8.0e-12 far(max/med) 0.0e+00/0.0e+00 logdet 2.0e-12 skel 5738 rmax 128 rows 89730 npx 236 t 1.2s mean 4.7e-13
+R4 nu 0.7 ell 0.03 s2 0.1 cond 1.4e+02  strong xc       bwd 1.1e-11 res 1.0e-10 err 6.9e-10 far(max/med) 0.0e+00/0.0e+00 logdet 1.4e-12 skel 4550 rmax 85 rows 31860 npx 124 t 0.9s mean 6.7e-11
+R4 nu 0.7 ell 0.03 s2 0.1 cond 1.4e+02  weak   exact    bwd 6.0e-10 res 5.7e-09 err 1.4e-08 far(max/med) 0.0e+00/0.0e+00 logdet 3.3e-11 skel 4066 rmax 138 rows 316364 npx 0 t 0.2s mean 4.6e-09
+R4 nu 0.7 ell 0.03 s2 0.1 cond 1.4e+02  weak   liftM    bwd 4.7e-10 res 4.5e-09 err 1.3e-08 far(max/med) 0.0e+00/0.0e+00 logdet 2.6e-11 skel 4470 rmax 160 rows 107930 npx 236 t 1.5s mean 3.6e-09
+R4 nu 0.7 ell 0.03 s2 0.0001 cond 5.0e+03  strong exact    bwd 2.3e-12 res 8.3e-11 err 2.1e-10 far(max/med) 0.0e+00/0.0e+00 logdet 4.5e-13 skel 3432 rmax 56 rows 249816 npx 0 t 0.2s mean 7.4e-11
+R4 nu 0.7 ell 0.03 s2 0.0001 cond 5.0e+03  strong liftM    bwd 1.8e-13 res 6.3e-12 err 3.9e-11 far(max/med) 0.0e+00/0.0e+00 logdet 9.1e-13 skel 5738 rmax 128 rows 89732 npx 236 t 1.2s mean 1.8e-12
+R4 nu 0.7 ell 0.03 s2 0.0001 cond 5.0e+03  strong xc       bwd 2.0e-11 res 7.1e-10 err 1.9e-09 far(max/med) 0.0e+00/0.0e+00 logdet 0.0e+00 skel 4552 rmax 85 rows 31862 npx 124 t 0.9s mean 5.9e-10
+R4 nu 0.7 ell 0.03 s2 0.0001 cond 5.0e+03  weak   exact    bwd 2.6e-10 res 9.1e-09 err 1.6e-08 far(max/med) 0.0e+00/0.0e+00 logdet 8.9e-11 skel 4066 rmax 138 rows 316364 npx 0 t 0.2s mean 7.8e-09
+R4 nu 0.7 ell 0.03 s2 0.0001 cond 5.0e+03  weak   liftM    bwd 2.1e-10 res 7.4e-09 err 1.7e-08 far(max/med) 0.0e+00/0.0e+00 logdet 7.3e-12 skel 4470 rmax 160 rows 107930 npx 236 t 1.6s mean 5.8e-09
+R4 nu 0.7 ell 0.1 s2 0.1 cond 1.1e+03  strong exact    bwd 2.8e-11 res 3.5e-09 err 1.1e-08 far(max/med) 0.0e+00/0.0e+00 logdet 5.5e-12 skel 3294 rmax 50 rows 245250 npx 0 t 0.2s mean 2.7e-09
+R4 nu 0.7 ell 0.1 s2 0.1 cond 1.1e+03  strong liftM    bwd 2.3e-12 res 2.8e-10 err 1.1e-09 far(max/med) 0.0e+00/0.0e+00 logdet 0.0e+00 skel 5290 rmax 108 rows 88324 npx 236 t 1.6s mean 1.7e-10
+R4 nu 0.7 ell 0.1 s2 0.1 cond 1.1e+03  strong xc       bwd 6.8e-11 res 8.3e-09 err 7.1e-09 far(max/med) 0.0e+00/0.0e+00 logdet 3.2e-12 skel 4261 rmax 74 rows 34016 npx 105 t 1.2s mean 8.5e-09
+R4 nu 0.7 ell 0.1 s2 0.1 cond 1.1e+03  weak   exact    bwd 2.2e-10 res 2.7e-08 err 6.8e-08 far(max/med) 0.0e+00/0.0e+00 logdet 1.5e-09 skel 4114 rmax 146 rows 316724 npx 0 t 0.3s mean 2.4e-08
+R4 nu 0.7 ell 0.1 s2 0.1 cond 1.1e+03  weak   liftM    bwd 1.1e-10 res 1.3e-08 err 5.4e-08 far(max/med) 0.0e+00/0.0e+00 logdet 1.1e-09 skel 4625 rmax 201 rows 108072 npx 236 t 2.0s mean 8.6e-09
+R4 nu 0.7 ell 0.1 s2 0.0001 cond 1.8e+05  strong exact    bwd 2.1e-11 res 2.8e-08 err 3.8e-08 far(max/med) 0.0e+00/0.0e+00 logdet 3.5e-11 skel 3311 rmax 52 rows 245322 npx 0 t 0.2s mean 2.6e-08
+R4 nu 0.7 ell 0.1 s2 0.0001 cond 1.8e+05  strong liftM    bwd 2.6e-12 res 3.4e-09 err 6.5e-09 far(max/med) 0.0e+00/0.0e+00 logdet 9.1e-13 skel 5290 rmax 108 rows 88316 npx 236 t 1.6s mean 2.2e-09
+R4 nu 0.7 ell 0.1 s2 0.0001 cond 1.8e+05  strong xc       bwd 5.0e-11 res 6.6e-08 err 2.8e-08 far(max/med) 0.0e+00/0.0e+00 logdet 2.7e-12 skel 4273 rmax 74 rows 34054 npx 105 t 1.2s mean 6.4e-08
+R4 nu 0.7 ell 0.1 s2 0.0001 cond 1.8e+05  weak   exact    bwd 1.4e-10 res 1.8e-07 err 3.9e-07 far(max/med) 0.0e+00/0.0e+00 logdet 6.2e-09 skel 4114 rmax 146 rows 316724 npx 0 t 0.2s mean 1.4e-07
+R4 nu 0.7 ell 0.1 s2 0.0001 cond 1.8e+05  weak   liftM    bwd 7.2e-11 res 9.5e-08 err 1.7e-07 far(max/med) 0.0e+00/0.0e+00 logdet 1.1e-08 skel 4625 rmax 201 rows 108072 npx 236 t 2.0s mean 7.3e-08
+R4 nu 0.7 ell 0.3 s2 0.1 cond 5.6e+03  strong exact    bwd 5.8e-11 res 4.7e-08 err 1.6e-07 far(max/med) 0.0e+00/0.0e+00 logdet 6.4e-10 skel 2879 rmax 42 rows 232058 npx 0 t 0.2s mean 3.3e-08
+R4 nu 0.7 ell 0.3 s2 0.1 cond 5.6e+03  strong liftM    bwd 3.7e-12 res 3.0e-09 err 4.6e-09 far(max/med) 0.0e+00/0.0e+00 logdet 2.3e-12 skel 4918 rmax 94 rows 87248 npx 236 t 0.8s mean 3.0e-09
+R4 nu 0.7 ell 0.3 s2 0.1 cond 5.6e+03  strong xc       bwd 6.9e-11 res 5.6e-08 err 6.9e-08 far(max/med) 0.0e+00/0.0e+00 logdet 4.6e-10 skel 3804 rmax 61 rows 39786 npx 85 t 1.1s mean 5.3e-08
+R4 nu 0.7 ell 0.3 s2 0.1 cond 5.6e+03  weak   exact    bwd 1.3e-10 res 1.1e-07 err 3.5e-07 far(max/med) 0.0e+00/0.0e+00 logdet 6.5e-09 skel 3901 rmax 132 rows 312816 npx 0 t 0.2s mean 8.1e-08
+R4 nu 0.7 ell 0.3 s2 0.1 cond 5.6e+03  weak   liftM    bwd 7.1e-11 res 5.7e-08 err 2.4e-07 far(max/med) 0.0e+00/0.0e+00 logdet 1.1e-08 skel 4417 rmax 181 rows 107290 npx 236 t 1.5s mean 2.5e-08
+R4 nu 0.7 ell 0.3 s2 0.0001 cond 2.6e+06  strong exact    bwd 3.5e-11 res 8.7e-07 err 1.9e-06 far(max/med) 0.0e+00/0.0e+00 logdet 3.9e-09 skel 2921 rmax 43 rows 232716 npx 0 t 0.2s mean 8.4e-07
+R4 nu 0.7 ell 0.3 s2 0.0001 cond 2.6e+06  strong liftM    bwd 3.4e-12 res 8.4e-08 err 1.9e-07 far(max/med) 0.0e+00/0.0e+00 logdet 4.0e-11 skel 4922 rmax 95 rows 87258 npx 236 t 0.8s mean 6.7e-08
+R4 nu 0.7 ell 0.3 s2 0.0001 cond 2.6e+06  strong xc       bwd 8.7e-11 res 2.2e-06 err 5.4e-07 far(max/med) 0.0e+00/0.0e+00 logdet 1.1e-09 skel 3832 rmax 63 rows 39834 npx 85 t 1.1s mean 2.2e-06
+R4 nu 0.7 ell 0.3 s2 0.0001 cond 2.6e+06  weak   exact    bwd 6.7e-11 res 1.7e-06 err 4.0e-06 far(max/med) 0.0e+00/0.0e+00 logdet 9.6e-07 skel 3901 rmax 132 rows 312816 npx 0 t 0.3s mean 1.4e-06
+R4 nu 0.7 ell 0.3 s2 0.0001 cond 2.6e+06  weak   liftM    bwd 4.3e-11 res 1.1e-06 err 4.6e-06 far(max/med) 0.0e+00/0.0e+00 logdet 1.2e-07 skel 4417 rmax 181 rows 107290 npx 236 t 1.6s mean 8.7e-07
+R4 nu 1.5 ell 0.03 s2 0.1 cond 1.6e+02  strong exact    bwd 7.1e-13 res 1.1e-11 err 5.2e-11 far(max/med) 0.0e+00/0.0e+00 logdet 1.6e-12 skel 3293 rmax 52 rows 249630 npx 0 t 0.2s mean 7.0e-12
+R4 nu 1.5 ell 0.03 s2 0.1 cond 1.6e+02  strong liftM    bwd 5.8e-14 res 8.7e-13 err 4.5e-12 far(max/med) 0.0e+00/0.0e+00 logdet 0.0e+00 skel 5820 rmax 132 rows 127742 npx 236 t 0.5s mean 2.8e-13
+R4 nu 1.5 ell 0.03 s2 0.1 cond 1.6e+02  strong xc       bwd 4.0e-12 res 6.0e-11 err 2.0e-10 far(max/med) 0.0e+00/0.0e+00 logdet 6.8e-13 skel 4629 rmax 89 rows 31668 npx 131 t 0.4s mean 5.1e-11
+R4 nu 1.5 ell 0.03 s2 0.1 cond 1.6e+02  weak   exact    bwd 2.7e-10 res 4.0e-09 err 1.6e-08 far(max/med) 0.0e+00/0.0e+00 logdet 4.2e-11 skel 4045 rmax 137 rows 315846 npx 0 t 0.2s mean 3.2e-09
+R4 nu 1.5 ell 0.03 s2 0.1 cond 1.6e+02  weak   liftM    bwd 2.7e-10 res 4.0e-09 err 1.6e-08 far(max/med) 0.0e+00/0.0e+00 logdet 1.2e-11 skel 4373 rmax 148 rows 147392 npx 236 t 0.6s mean 2.9e-09
+R4 nu 1.5 ell 0.03 s2 0.0001 cond 6.2e+04  strong exact    bwd 1.2e-12 res 5.5e-10 err 1.1e-09 far(max/med) 0.0e+00/0.0e+00 logdet 9.1e-13 skel 3257 rmax 49 rows 249806 npx 0 t 0.2s mean 7.1e-10
+R4 nu 1.5 ell 0.03 s2 0.0001 cond 6.2e+04  strong liftM    bwd 3.3e-14 res 1.5e-11 err 2.0e-11 far(max/med) 0.0e+00/0.0e+00 logdet 2.7e-12 skel 5820 rmax 132 rows 127742 npx 236 t 0.5s mean 8.4e-12
+R4 nu 1.5 ell 0.03 s2 0.0001 cond 6.2e+04  strong xc       bwd 2.2e-11 res 9.5e-09 err 2.1e-09 far(max/med) 0.0e+00/0.0e+00 logdet 1.4e-12 skel 4631 rmax 89 rows 31664 npx 131 t 0.4s mean 6.5e-09
+R4 nu 1.5 ell 0.03 s2 0.0001 cond 6.2e+04  weak   exact    bwd 1.7e-10 res 7.4e-08 err 9.3e-08 far(max/med) 0.0e+00/0.0e+00 logdet 4.3e-09 skel 4045 rmax 137 rows 315846 npx 0 t 0.2s mean 7.3e-08
+R4 nu 1.5 ell 0.03 s2 0.0001 cond 6.2e+04  weak   liftM    bwd 1.5e-10 res 6.8e-08 err 9.6e-08 far(max/med) 0.0e+00/0.0e+00 logdet 1.1e-09 skel 4373 rmax 148 rows 147392 npx 236 t 0.6s mean 6.3e-08
+R4 nu 1.5 ell 0.1 s2 0.1 cond 1.2e+03  strong exact    bwd 2.4e-11 res 4.2e-09 err 1.7e-08 far(max/med) 0.0e+00/0.0e+00 logdet 7.5e-11 skel 3342 rmax 52 rows 247014 npx 0 t 0.2s mean 2.7e-09
+R4 nu 1.5 ell 0.1 s2 0.1 cond 1.2e+03  strong liftM    bwd 4.6e-13 res 8.1e-11 err 1.7e-10 far(max/med) 0.0e+00/0.0e+00 logdet 3.6e-12 skel 5452 rmax 116 rows 126586 npx 236 t 0.5s mean 6.8e-11
+R4 nu 1.5 ell 0.1 s2 0.1 cond 1.2e+03  strong xc       bwd 3.0e-11 res 5.3e-09 err 8.4e-09 far(max/med) 0.0e+00/0.0e+00 logdet 1.1e-11 skel 4325 rmax 76 rows 30020 npx 110 t 0.4s mean 4.7e-09
+R4 nu 1.5 ell 0.1 s2 0.1 cond 1.2e+03  weak   exact    bwd 2.4e-10 res 4.3e-08 err 1.2e-07 far(max/med) 0.0e+00/0.0e+00 logdet 1.5e-09 skel 4076 rmax 142 rows 316458 npx 0 t 0.2s mean 3.6e-08
+R4 nu 1.5 ell 0.1 s2 0.1 cond 1.2e+03  weak   liftM    bwd 1.2e-10 res 2.1e-08 err 9.6e-08 far(max/med) 0.0e+00/0.0e+00 logdet 2.4e-09 skel 4654 rmax 203 rows 147742 npx 236 t 0.7s mean 1.1e-08
+R4 nu 1.5 ell 0.1 s2 0.0001 cond 1.1e+06  strong exact    bwd 3.1e-11 res 8.0e-07 err 9.9e-07 far(max/med) 0.0e+00/0.0e+00 logdet 1.9e-09 skel 3400 rmax 54 rows 247388 npx 0 t 0.2s mean 9.3e-07
+R4 nu 1.5 ell 0.1 s2 0.0001 cond 1.1e+06  strong liftM    bwd 2.6e-12 res 6.5e-08 err 3.5e-07 far(max/med) 0.0e+00/0.0e+00 logdet 1.6e-11 skel 5454 rmax 116 rows 126596 npx 236 t 0.5s mean 7.6e-08
+R4 nu 1.5 ell 0.1 s2 0.0001 cond 1.1e+06  strong xc       bwd 3.2e-11 res 8.1e-07 err 4.5e-07 far(max/med) 0.0e+00/0.0e+00 logdet 9.6e-11 skel 4367 rmax 78 rows 30092 npx 110 t 0.4s mean 7.9e-07
+R4 nu 1.5 ell 0.1 s2 0.0001 cond 1.1e+06  weak   exact    bwd 1.3e-10 res 3.2e-06 err 1.0e-05 far(max/med) 0.0e+00/0.0e+00 logdet 4.1e-07 skel 4076 rmax 142 rows 316458 npx 0 t 0.3s mean 3.8e-06
+R4 nu 1.5 ell 0.1 s2 0.0001 cond 1.1e+06  weak   liftM    bwd 1.2e-10 res 3.0e-06 err 7.8e-06 far(max/med) 0.0e+00/0.0e+00 logdet 2.6e-06 skel 4654 rmax 203 rows 147742 npx 236 t 0.6s mean 2.7e-06
+R4 nu 1.5 ell 0.3 s2 0.1 cond 6.3e+03  strong exact    bwd 5.9e-11 res 6.3e-08 err 2.7e-07 far(max/med) 0.0e+00/0.0e+00 logdet 4.3e-09 skel 2759 rmax 37 rows 229412 npx 0 t 0.2s mean 3.1e-08
+R4 nu 1.5 ell 0.3 s2 0.1 cond 6.3e+03  strong liftM    bwd 2.0e-12 res 2.1e-09 err 2.2e-09 far(max/med) 0.0e+00/0.0e+00 logdet 1.2e-11 skel 5026 rmax 99 rows 125338 npx 236 t 0.5s mean 2.1e-09
+R4 nu 1.5 ell 0.3 s2 0.1 cond 6.3e+03  strong xc       bwd 1.2e-10 res 1.3e-07 err 1.4e-07 far(max/med) 0.0e+00/0.0e+00 logdet 1.9e-08 skel 3642 rmax 57 rows 41498 npx 80 t 0.4s mean 1.2e-07
+R4 nu 1.5 ell 0.3 s2 0.1 cond 6.3e+03  weak   exact    bwd 2.0e-10 res 2.1e-07 err 7.4e-07 far(max/med) 0.0e+00/0.0e+00 logdet 1.0e-07 skel 3690 rmax 119 rows 307212 npx 0 t 0.2s mean 1.5e-07
+R4 nu 1.5 ell 0.3 s2 0.1 cond 6.3e+03  weak   liftM    bwd 8.2e-11 res 8.8e-08 err 4.4e-07 far(max/med) 0.0e+00/0.0e+00 logdet 1.1e-08 skel 4333 rmax 174 rows 146490 npx 236 t 0.6s mean 2.9e-08
+R4 nu 1.5 ell 0.3 s2 0.0001 cond 6.3e+06  strong exact    bwd 3.9e-11 res 2.0e-05 err 3.6e-05 far(max/med) 0.0e+00/0.0e+00 logdet 2.0e-06 skel 2864 rmax 43 rows 230016 npx 0 t 0.2s mean 1.9e-05
+R4 nu 1.5 ell 0.3 s2 0.0001 cond 6.3e+06  strong liftM    bwd 1.7e-12 res 8.4e-07 err 1.5e-06 far(max/med) 0.0e+00/0.0e+00 logdet 7.6e-10 skel 5026 rmax 99 rows 125338 npx 236 t 0.5s mean 8.7e-07
+R4 nu 1.5 ell 0.3 s2 0.0001 cond 6.3e+06  strong xc       bwd 8.1e-11 res 4.1e-05 err 2.3e-05 far(max/med) 0.0e+00/0.0e+00 logdet 4.1e-07 skel 3698 rmax 60 rows 41616 npx 80 t 0.4s mean 3.8e-05
+R4 nu 1.5 ell 0.3 s2 0.0001 cond 6.3e+06  weak   exact    bwd 8.2e-11 res 4.2e-05 err 1.3e-04 far(max/med) 0.0e+00/0.0e+00 logdet 2.6e-05 skel 3690 rmax 119 rows 307212 npx 0 t 0.2s mean 3.6e-05
+R4 nu 1.5 ell 0.3 s2 0.0001 cond 6.3e+06  weak   liftM    bwd 6.0e-11 res 3.0e-05 err 1.0e-04 far(max/med) 0.0e+00/0.0e+00 logdet 3.9e-05 skel 4333 rmax 174 rows 146490 npx 236 t 0.6s mean 2.4e-05
+R4 nu 2.5 ell 0.03 s2 0.1 cond 1.6e+02  strong exact    bwd 3.4e-13 res 6.1e-12 err 2.5e-11 far(max/med) 0.0e+00/0.0e+00 logdet 2.3e-13 skel 3129 rmax 50 rows 249762 npx 0 t 0.2s mean 5.3e-12
+R4 nu 2.5 ell 0.03 s2 0.1 cond 1.6e+02  strong liftM    bwd 5.3e-14 res 9.6e-13 err 4.8e-12 far(max/med) 0.0e+00/0.0e+00 logdet 1.4e-12 skel 5814 rmax 131 rows 165494 npx 236 t 0.8s mean 2.5e-13
+R4 nu 2.5 ell 0.03 s2 0.1 cond 1.6e+02  strong xc       bwd 2.9e-12 res 5.2e-11 err 4.2e-11 far(max/med) 0.0e+00/0.0e+00 logdet 6.8e-13 skel 4723 rmax 91 rows 32584 npx 138 t 0.7s mean 5.8e-11
+R4 nu 2.5 ell 0.03 s2 0.1 cond 1.6e+02  weak   exact    bwd 4.5e-10 res 8.1e-09 err 2.6e-08 far(max/med) 0.0e+00/0.0e+00 logdet 1.0e-10 skel 4077 rmax 140 rows 316002 npx 0 t 0.2s mean 7.2e-09
+R4 nu 2.5 ell 0.03 s2 0.1 cond 1.6e+02  weak   liftM    bwd 4.1e-10 res 7.3e-09 err 2.4e-08 far(max/med) 0.0e+00/0.0e+00 logdet 3.2e-11 skel 4324 rmax 143 rows 186958 npx 236 t 1.0s mean 6.1e-09
+R4 nu 2.5 ell 0.03 s2 0.0001 cond 1.2e+05  strong exact    bwd 3.1e-13 res 4.2e-10 err 1.1e-09 far(max/med) 0.0e+00/0.0e+00 logdet 8.2e-12 skel 3122 rmax 50 rows 250084 npx 0 t 0.2s mean 4.7e-10
+R4 nu 2.5 ell 0.03 s2 0.0001 cond 1.2e+05  strong liftM    bwd 3.0e-14 res 4.2e-11 err 9.7e-11 far(max/med) 0.0e+00/0.0e+00 logdet 2.7e-12 skel 5818 rmax 132 rows 165512 npx 236 t 0.8s mean 3.7e-11
+R4 nu 2.5 ell 0.03 s2 0.0001 cond 1.2e+05  strong xc       bwd 6.8e-12 res 9.3e-09 err 7.2e-10 far(max/med) 0.0e+00/0.0e+00 logdet 0.0e+00 skel 4737 rmax 91 rows 32612 npx 138 t 0.7s mean 1.1e-08
+R4 nu 2.5 ell 0.03 s2 0.0001 cond 1.2e+05  weak   exact    bwd 3.8e-10 res 5.3e-07 err 4.2e-07 far(max/med) 0.0e+00/0.0e+00 logdet 4.8e-08 skel 4077 rmax 140 rows 316002 npx 0 t 0.2s mean 5.0e-07
+R4 nu 2.5 ell 0.03 s2 0.0001 cond 1.2e+05  weak   liftM    bwd 2.1e-10 res 2.9e-07 err 5.4e-07 far(max/med) 0.0e+00/0.0e+00 logdet 3.4e-08 skel 4324 rmax 143 rows 186958 npx 236 t 1.0s mean 3.9e-07
+R4 nu 2.5 ell 0.1 s2 0.1 cond 1.2e+03  strong exact    bwd 2.4e-11 res 4.7e-09 err 2.0e-08 far(max/med) 0.0e+00/0.0e+00 logdet 4.5e-11 skel 3400 rmax 53 rows 249220 npx 0 t 0.2s mean 3.2e-09
+R4 nu 2.5 ell 0.1 s2 0.1 cond 1.2e+03  strong liftM    bwd 3.8e-13 res 7.4e-11 err 2.1e-10 far(max/med) 0.0e+00/0.0e+00 logdet 2.3e-12 skel 5522 rmax 117 rows 164554 npx 236 t 0.8s mean 6.0e-11
+R4 nu 2.5 ell 0.1 s2 0.1 cond 1.2e+03  strong xc       bwd 2.9e-11 res 5.7e-09 err 8.6e-09 far(max/med) 0.0e+00/0.0e+00 logdet 2.4e-10 skel 4429 rmax 80 rows 29682 npx 113 t 0.7s mean 5.8e-09
+R4 nu 2.5 ell 0.1 s2 0.1 cond 1.2e+03  weak   exact    bwd 2.6e-10 res 5.0e-08 err 1.8e-07 far(max/med) 0.0e+00/0.0e+00 logdet 3.2e-08 skel 4032 rmax 138 rows 315546 npx 0 t 0.3s mean 3.9e-08
+R4 nu 2.5 ell 0.1 s2 0.1 cond 1.2e+03  weak   liftM    bwd 1.9e-10 res 3.6e-08 err 1.5e-07 far(max/med) 0.0e+00/0.0e+00 logdet 8.7e-11 skel 4652 rmax 201 rows 187340 npx 236 t 1.1s mean 1.9e-08
+R4 nu 2.5 ell 0.1 s2 0.0001 cond 1.2e+06  strong exact    bwd 2.5e-11 res 2.2e-06 err 4.5e-06 far(max/med) 0.0e+00/0.0e+00 logdet 3.6e-08 skel 3471 rmax 58 rows 249434 npx 0 t 0.2s mean 2.9e-06
+R4 nu 2.5 ell 0.1 s2 0.0001 cond 1.2e+06  strong liftM    bwd 6.3e-13 res 5.6e-08 err 2.4e-07 far(max/med) 0.0e+00/0.0e+00 logdet 2.0e-11 skel 5522 rmax 117 rows 164554 npx 236 t 0.8s mean 3.4e-08
+R4 nu 2.5 ell 0.1 s2 0.0001 cond 1.2e+06  strong xc       bwd 3.9e-11 res 3.4e-06 err 2.8e-06 far(max/med) 0.0e+00/0.0e+00 logdet 3.2e-09 skel 4471 rmax 81 rows 29760 npx 113 t 0.8s mean 3.5e-06
+R4 nu 2.5 ell 0.1 s2 0.0001 cond 1.2e+06  weak   exact    bwd 2.4e-10 res 2.1e-05 err 4.8e-05 far(max/med) 0.0e+00/0.0e+00 logdet 5.6e-06 skel 4032 rmax 138 rows 315546 npx 0 t 0.3s mean 2.4e-05
+R4 nu 2.5 ell 0.1 s2 0.0001 cond 1.2e+06  weak   liftM    bwd 1.4e-10 res 1.2e-05 err 4.4e-05 far(max/med) 0.0e+00/0.0e+00 logdet 1.5e-05 skel 4652 rmax 201 rows 187340 npx 236 t 1.1s mean 1.2e-05
+R4 nu 2.5 ell 0.3 s2 0.1 cond 6.6e+03  strong exact    bwd 7.9e-11 res 9.2e-08 err 4.1e-07 far(max/med) 0.0e+00/0.0e+00 logdet 5.4e-08 skel 2648 rmax 35 rows 224940 npx 0 t 0.2s mean 4.6e-08
+R4 nu 2.5 ell 0.3 s2 0.1 cond 6.6e+03  strong liftM    bwd 2.4e-12 res 2.8e-09 err 3.5e-09 far(max/med) 0.0e+00/0.0e+00 logdet 7.5e-11 skel 5060 rmax 100 rows 163184 npx 236 t 0.9s mean 3.0e-09
+R4 nu 2.5 ell 0.3 s2 0.1 cond 6.6e+03  strong xc       bwd 1.2e-10 res 1.4e-07 err 2.5e-07 far(max/med) 0.0e+00/0.0e+00 logdet 9.8e-08 skel 3487 rmax 56 rows 39992 npx 75 t 0.6s mean 1.4e-07
+R4 nu 2.5 ell 0.3 s2 0.1 cond 6.6e+03  weak   exact    bwd 2.2e-10 res 2.6e-07 err 1.2e-06 far(max/med) 0.0e+00/0.0e+00 logdet 2.6e-08 skel 3301 rmax 98 rows 294496 npx 0 t 0.2s mean 1.2e-07
+R4 nu 2.5 ell 0.3 s2 0.1 cond 6.6e+03  weak   liftM    bwd 7.3e-11 res 8.5e-08 err 4.5e-07 far(max/med) 0.0e+00/0.0e+00 logdet 5.6e-07 skel 4201 rmax 163 rows 185602 npx 236 t 1.1s mean 2.2e-08
+R4 nu 2.5 ell 0.3 s2 0.0001 cond 6.6e+06  strong exact    bwd 5.7e-11 res 5.7e-05 err 1.3e-04 far(max/med) 0.0e+00/0.0e+00 logdet 1.3e-05 skel 2716 rmax 39 rows 225144 npx 0 t 0.2s mean 4.8e-05
+R4 nu 2.5 ell 0.3 s2 0.0001 cond 6.6e+06  strong liftM    bwd 1.6e-12 res 1.6e-06 err 1.6e-06 far(max/med) 0.0e+00/0.0e+00 logdet 2.9e-09 skel 5060 rmax 100 rows 163184 npx 236 t 0.8s mean 1.6e-06
+R4 nu 2.5 ell 0.3 s2 0.0001 cond 6.6e+06  strong xc       bwd 1.1e-10 res 1.1e-04 err 7.4e-05 far(max/med) 0.0e+00/0.0e+00 logdet 7.0e-06 skel 3497 rmax 56 rows 40010 npx 75 t 0.7s mean 1.2e-04
+R4 nu 2.5 ell 0.3 s2 0.0001 cond 6.6e+06  weak   exact    bwd 1.2e-10 res 1.2e-04 err 4.1e-04 far(max/med) 0.0e+00/0.0e+00 logdet 2.6e-04 skel 3301 rmax 98 rows 294496 npx 0 t 0.2s mean 9.1e-05
+R4 nu 2.5 ell 0.3 s2 0.0001 cond 6.6e+06  weak   liftM    bwd 5.8e-11 res 5.8e-05 err 2.4e-04 far(max/med) 0.0e+00/0.0e+00 logdet 1.3e-04 skel 4201 rmax 163 rows 185602 npx 236 t 1.0s mean 3.8e-05
+R5 nu 0.7 N 2048 dense 0.4s  strong exact    bwd 2.6e-11 res 1.2e-08 err 2.8e-08 far(max/med) 0.0e+00/0.0e+00 logdet 3.1e-11 skel 3308 rmax 52 rows 245290 npx 0 t 0.2s mean 1.0e-08
+R5 nu 0.7 N 2048 dense 0.4s  strong liftM    bwd 3.2e-12 res 1.4e-09 err 5.2e-09 far(max/med) 0.0e+00/0.0e+00 logdet 9.1e-13 skel 5290 rmax 108 rows 88316 npx 236 t 1.6s mean 1.1e-09
+R5 nu 0.7 N 2048 dense 0.4s  strong xc       bwd 7.0e-11 res 3.1e-08 err 1.8e-08 far(max/med) 0.0e+00/0.0e+00 logdet 1.8e-12 skel 4265 rmax 74 rows 34026 npx 105 t 1.2s mean 3.2e-08
+R5 nu 0.7 N 4096 dense 1.1s  strong exact    bwd 2.7e-11 res 2.9e-08 err 8.5e-08 far(max/med) 0.0e+00/0.0e+00 logdet 2.8e-10 skel 8339 rmax 68 rows 2434498 npx 0 t 1.0s mean 2.4e-08
+R5 nu 0.7 N 4096 dense 1.1s  strong liftM    bwd 4.6e-12 res 5.0e-09 err 1.6e-08 far(max/med) 0.0e+00/0.0e+00 logdet 0.0e+00 skel 12161 rmax 134 rows 375908 npx 236 t 4.2s mean 3.5e-09
+R5 nu 0.7 N 4096 dense 1.1s  strong xc       bwd 4.5e-11 res 4.9e-08 err 5.4e-08 far(max/med) 0.0e+00/0.0e+00 logdet 7.3e-12 skel 9986 rmax 91 rows 113114 npx 105 t 2.4s mean 5.2e-08
+R5 nu 0.7 N 8192 dense 4.7s  strong exact    bwd 3.3e-11 res 9.7e-08 err 2.3e-07 far(max/med) 0.0e+00/0.0e+00 logdet 1.4e-09 skel 12521 rmax 79 rows 4520496 npx 0 t 3.4s mean 8.4e-08
+R5 nu 0.7 N 8192 dense 4.7s  strong liftM    bwd 5.3e-12 res 1.6e-08 err 5.7e-08 far(max/med) 0.0e+00/0.0e+00 logdet 5.5e-11 skel 18841 rmax 155 rows 425052 npx 236 t 8.0s mean 1.1e-08
+R5 nu 0.7 N 8192 dense 4.7s  strong xc       bwd 5.7e-11 res 1.7e-07 err 1.2e-07 far(max/med) 0.0e+00/0.0e+00 logdet 9.8e-11 skel 15067 rmax 106 rows 199480 npx 105 t 3.6s mean 1.7e-07
+R5 nu 1.5 N 2048 dense 0.2s  strong exact    bwd 2.3e-11 res 3.0e-08 err 9.2e-08 far(max/med) 0.0e+00/0.0e+00 logdet 1.1e-10 skel 3368 rmax 54 rows 247090 npx 0 t 0.2s mean 2.8e-08
+R5 nu 1.5 N 2048 dense 0.2s  strong liftM    bwd 7.6e-13 res 9.9e-10 err 4.0e-09 far(max/med) 0.0e+00/0.0e+00 logdet 5.5e-12 skel 5452 rmax 116 rows 126586 npx 236 t 0.5s mean 6.5e-10
+R5 nu 1.5 N 2048 dense 0.2s  strong xc       bwd 2.9e-11 res 3.8e-08 err 4.1e-08 far(max/med) 0.0e+00/0.0e+00 logdet 1.8e-12 skel 4343 rmax 78 rows 30062 npx 110 t 0.4s mean 3.6e-08
+R5 nu 1.5 N 4096 dense 0.8s  strong exact    bwd 2.9e-11 res 8.3e-08 err 2.8e-07 far(max/med) 0.0e+00/0.0e+00 logdet 1.4e-09 skel 8398 rmax 69 rows 2437312 npx 0 t 0.9s mean 6.9e-08
+R5 nu 1.5 N 4096 dense 0.8s  strong liftM    bwd 5.3e-12 res 1.5e-08 err 6.8e-08 far(max/med) 0.0e+00/0.0e+00 logdet 2.9e-11 skel 12431 rmax 143 rows 528342 npx 236 t 1.6s mean 9.0e-09
+R5 nu 1.5 N 4096 dense 0.8s  strong xc       bwd 5.5e-11 res 1.6e-07 err 1.5e-07 far(max/med) 0.0e+00/0.0e+00 logdet 1.3e-11 skel 10083 rmax 90 rows 109868 npx 110 t 1.0s mean 1.7e-07
+R5 nu 1.5 N 8192 dense 3.9s  strong exact    bwd 3.5e-11 res 2.4e-07 err 7.1e-07 far(max/med) 0.0e+00/0.0e+00 logdet 2.8e-08 skel 12438 rmax 78 rows 4517052 npx 0 t 3.5s mean 1.8e-07
+R5 nu 1.5 N 8192 dense 3.9s  strong liftM    bwd 3.8e-12 res 2.6e-08 err 8.1e-08 far(max/med) 0.0e+00/0.0e+00 logdet 1.1e-10 skel 19385 rmax 160 rows 586696 npx 236 t 4.2s mean 1.8e-08
+R5 nu 1.5 N 8192 dense 3.9s  strong xc       bwd 6.9e-11 res 4.7e-07 err 4.1e-07 far(max/med) 0.0e+00/0.0e+00 logdet 4.0e-09 skel 14932 rmax 104 rows 202598 npx 110 t 1.8s mean 4.8e-07
+R6 ell 0.03: loglik dense -604.857168 liftM -604.857168 xc -604.857168
+R6 ell 0.05: loglik dense 114.111853 liftM 114.111853 xc 114.111853
+R6 ell 0.08: loglik dense 688.762923 liftM 688.762922 xc 688.762922
+R6 ell 0.12: loglik dense 1059.501522 liftM 1059.501522 xc 1059.501522
+R6 ell 0.18: loglik dense 1317.513156 liftM 1317.513156 xc 1317.513153
+R6 ell 0.27: loglik dense 1488.693019 liftM 1488.693019 xc 1488.693035
+R6 ell 0.4: loglik dense 1596.420402 liftM 1596.420401 xc 1596.420371
+R6 ell 0.6: loglik dense 1662.458461 liftM 1662.458460 xc 1662.458489
+R6 ell 0.9: loglik dense 1684.301361 liftM 1684.301361 xc 1684.301320
+=== total 359s
+=== E11 run quick=False only=['l'] pid=72790
+L lines: dial 89 (lifted-multi path 43) {'MaternProxy (dial 4: geometry)': 52, 'StackedKernel.__call__ (dial 4: kernel orders)': 17, 'multi_orders + lift_order (dial 4)': 6, '_pairdist (lifted points)': 7, 'logdet (algebra read-out)': 7}; physics 60 {'radial_rK': 4, 'matern_cov': 6, 'kappa_of': 2, 'test_function': 3, 'GPProblem': 9, 'gp_problem': 14, 'posterior_mean': 4, 'log_marginal_likelihood': 2, 'StackedKernel.main/block (kernel formulas)': 16}
+=== total 0s

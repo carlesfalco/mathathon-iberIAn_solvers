@@ -1,0 +1,19 @@
+{
+  "core": {
+    "core/__init__.py": "0286323edc95745b741899759212cfb603928b22ed43a18185ac11739d2330f4",
+    "core/admissibility.py": "49d169b820e264662e23ee27823d91953ea7f2b74cf49ff6d72130164cde36bf",
+    "core/compress.py": "b0d7f3d993c94a12ba0892832b3194e8381888ccb1737bce3f61d7fd29484458",
+    "core/kernels.py": "023032b87cdf48e091625c9ce5a0507f80fba9d300945c347e0c186a7f78d444",
+    "core/tree.py": "2fd82ed8da310f9a61964ef5d71d350348f6a8b944bd486f098e22aba5cc55c4",
+    "core/types.py": "361ee1cbc3a64282e09ab18fda4ec66280bfd0661279f8e3fe9c98948dba3dcb"
+  },
+  "drivers": {
+    "drivers/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "drivers/butterfly_id.py": "0d2ee65305a9031ba76b392c612164f33a004e466e8f41f3917eb5f33cedb121",
+    "drivers/rskel.py": "764f74c09aedd63de51717e59a77c2dceb234ad22c3a920ceb0421083aa72b49"
+  },
+  "source_root": "updated/unified",
+  "paths_from": "python-unified",
+  "core_bytes_unchanged": true,
+  "driver_reference_loader_only_changed": true
+}

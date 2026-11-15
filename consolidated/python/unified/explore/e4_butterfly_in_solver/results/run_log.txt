@@ -1,0 +1,92 @@
+[a] opposite_arcs      N=   32 k=   12.8  LR rank   10 store       540 err 3.4e-07 | BF max rank   4 store     1,024 err 4.2e-16 | BF/LR 1.90  (0.0s)
+[a] opposite_arcs      N=   64 k=   25.6  LR rank   14 store     1,596 err 2.0e-07 | BF max rank   4 store     3,072 err 3.5e-08 | BF/LR 1.92  (0.1s)
+[a] opposite_arcs      N=  128 k=   51.2  LR rank   21 store     4,935 err 5.5e-08 | BF max rank   4 store     8,192 err 7.8e-08 | BF/LR 1.66  (0.1s)
+[a] opposite_arcs      N=  256 k=  102.4  LR rank   32 store    15,360 err 8.8e-08 | BF max rank   4 store    20,480 err 1.3e-07 | BF/LR 1.33  (0.3s)
+[a] opposite_arcs      N=  512 k=  204.8  LR rank   52 store    50,544 err 2.3e-07 | BF max rank   4 store    49,152 err 1.6e-07 | BF/LR 0.97  (1.3s)
+[a] opposite_arcs      N= 1024 k=  409.6  LR rank   92 store   179,952 err 3.1e-07 | BF max rank   4 store   114,688 err 2.0e-07 | BF/LR 0.64  (3.0s)
+[a] opposite_arcs      N= 2048 k=  819.2  LR rank  171 store   671,175 err 1.2e-07 | BF max rank   4 store   262,144 err 2.4e-07 | BF/LR 0.39  (12.0s)
+[a] opposite_arcs      N= 4096 k= 1638.4  LR rank  325 store 2,556,775 err 2.1e-07 | BF max rank   4 store   589,824 err 2.7e-07 | BF/LR 0.23  (60.2s)
+[a] parallel_segments  N=   32 k=   20.1  LR rank   11 store       583 err 6.0e-08 | BF max rank   4 store     1,024 err 4.1e-16 | BF/LR 1.76  (0.0s)
+[a] parallel_segments  N=   64 k=   40.2  LR rank   15 store     1,695 err 1.3e-07 | BF max rank   4 store     3,072 err 7.8e-08 | BF/LR 1.81  (0.0s)
+[a] parallel_segments  N=  128 k=   80.4  LR rank   22 store     5,148 err 1.1e-07 | BF max rank   4 store     8,192 err 1.7e-07 | BF/LR 1.59  (0.1s)
+[a] parallel_segments  N=  256 k=  160.8  LR rank   35 store    16,695 err 1.0e-07 | BF max rank   4 store    20,480 err 2.4e-07 | BF/LR 1.23  (0.2s)
+[a] parallel_segments  N=  512 k=  321.7  LR rank   57 store    55,119 err 1.8e-07 | BF max rank   4 store    49,152 err 3.6e-07 | BF/LR 0.89  (0.7s)
+[a] parallel_segments  N= 1024 k=  643.4  LR rank  101 store   196,647 err 1.9e-07 | BF max rank   4 store   114,688 err 4.4e-07 | BF/LR 0.58  (2.4s)
+[a] parallel_segments  N= 2048 k= 1286.8  LR rank  188 store   734,704 err 2.3e-07 | BF max rank   4 store   262,144 err 5.0e-07 | BF/LR 0.36  (11.2s)
+[a] parallel_segments  N= 4096 k= 2573.6  LR rank  360 store 2,819,520 err 1.6e-07 | BF max rank   4 store   589,824 err 5.6e-07 | BF/LR 0.21  (55.7s)
+[a] collinear_segments N=   32 k=   20.1  LR rank    4 store       240 err 1.5e-07 | BF max rank   3 store       528 err 4.8e-07 | BF/LR 2.20  (0.0s)
+[a] collinear_segments N=   64 k=   40.2  LR rank    4 store       496 err 1.2e-07 | BF max rank   2 store     1,280 err 3.6e-07 | BF/LR 2.58  (0.0s)
+[a] collinear_segments N=  128 k=   80.4  LR rank    4 store     1,008 err 7.3e-08 | BF max rank   2 store     3,072 err 7.4e-08 | BF/LR 3.05  (0.1s)
+[a] collinear_segments N=  256 k=  160.8  LR rank    4 store     2,032 err 1.1e-07 | BF max rank   2 store     7,168 err 2.6e-08 | BF/LR 3.53  (0.3s)
+[a] collinear_segments N=  512 k=  321.7  LR rank    4 store     4,080 err 1.1e-07 | BF max rank   2 store    16,384 err 5.5e-09 | BF/LR 4.02  (1.0s)
+[a] collinear_segments N= 1024 k=  643.4  LR rank    4 store     8,176 err 1.8e-07 | BF max rank   2 store    36,864 err 2.7e-09 | BF/LR 4.51  (3.3s)
+[a] collinear_segments N= 2048 k= 1286.8  LR rank    4 store    16,368 err 7.8e-08 | BF max rank   2 store    81,920 err 4.9e-10 | BF/LR 5.00  (12.1s)
+[a] collinear_segments N= 4096 k= 2573.6  LR rank    4 store    32,752 err 1.1e-07 | BF max rank   2 store   180,224 err 1.6e-10 | BF/LR 5.50  (56.1s)
+[b] N=1024 t=0.0 sigma=0.0 cond(K)= 1.0e+00 iters none=4(x err 5e-11) adjoint=1(x err 4e-11) jacobian=1(x err 4e-11) parametrix=1(x err 4e-11)
+[b] N=1024 t=0.5 sigma=0.0 cond(K)= 1.2e+00 iters none=200!(x err 9e-01) adjoint=9(x err 1e-09) jacobian=3(x err 2e-13) parametrix=3(x err 2e-13)
+[b] N=1024 t=1.0 sigma=0.0 cond(K)= 1.5e+00 iters none=200!(x err 9e-01) adjoint=12(x err 9e-09) jacobian=3(x err 1e-09) parametrix=3(x err 1e-09)
+[b] N=1024 t=1.5 sigma=0.0 cond(K)= 2.0e+00 iters none=200!(x err 9e-01) adjoint=18(x err 4e-09) jacobian=4(x err 1e-11) parametrix=4(x err 1e-11)
+[b] N=1024 t=2.0 sigma=0.0 cond(K)= 3.1e+00 iters none=200!(x err 9e-01) adjoint=27(x err 1e-08) jacobian=4(x err 3e-09) parametrix=4(x err 3e-09)
+[b] N=1024 t=2.5 sigma=0.0 cond(K)= 1.0e+01 iters none=200!(x err 9e-01) adjoint=41(x err 1e-08) jacobian=10(x err 3e-09) parametrix=10(x err 3e-09)
+[b] N=1024 t=3.0 sigma=0.0 cond(K)= 4.5e+14 iters none=200!(x err 9e-01) adjoint=179(x err 9e-02) jacobian=86(x err 9e-02) parametrix=86(x err 9e-02)
+[b] N=1024 t=0.0 sigma=1.0 cond(K)= 2.7e+00 iters none=12(x err 2e-11) adjoint=24(x err 1e-08) jacobian=24(x err 1e-08) parametrix=1(x err 4e-11)
+[b] N=1024 t=0.5 sigma=1.0 cond(K)= 3.3e+00 iters none=200!(x err 9e-01) adjoint=29(x err 1e-08) jacobian=24(x err 1e-08) parametrix=3(x err 2e-13)
+[b] N=1024 t=1.0 sigma=1.0 cond(K)= 4.1e+00 iters none=200!(x err 9e-01) adjoint=36(x err 1e-08) jacobian=25(x err 7e-09) parametrix=3(x err 1e-09)
+[b] N=1024 t=1.5 sigma=1.0 cond(K)= 5.3e+00 iters none=200!(x err 9e-01) adjoint=45(x err 1e-08) jacobian=25(x err 9e-09) parametrix=4(x err 1e-11)
+[b] N=1024 t=2.0 sigma=1.0 cond(K)= 7.8e+00 iters none=200!(x err 9e-01) adjoint=57(x err 1e-08) jacobian=25(x err 1e-08) parametrix=4(x err 4e-09)
+[b] N=1024 t=2.5 sigma=1.0 cond(K)= 2.0e+01 iters none=200!(x err 9e-01) adjoint=63(x err 1e-08) jacobian=28(x err 8e-09) parametrix=10(x err 4e-09)
+[b] N=1024 t=3.0 sigma=1.0 cond(K)= 6.6e+14 iters none=200!(x err 9e-01) adjoint=200!(x err 1e-01) jacobian=200!(x err 1e-01) parametrix=86(x err 1e-01)
+[b] N=1024 t=0.0 sigma=3.0 cond(K)= 2.0e+01 iters none=16(x err 2e-10) adjoint=159(x err 5e-08) jacobian=159(x err 5e-08) parametrix=1(x err 2e-10)
+[b] N=1024 t=0.5 sigma=3.0 cond(K)= 2.4e+01 iters none=200!(x err 1e+00) adjoint=172(x err 6e-08) jacobian=161(x err 6e-08) parametrix=3(x err 5e-13)
+[b] N=1024 t=1.0 sigma=3.0 cond(K)= 2.9e+01 iters none=200!(x err 9e-01) adjoint=187(x err 7e-08) jacobian=162(x err 5e-08) parametrix=3(x err 1e-08)
+[b] N=1024 t=1.5 sigma=3.0 cond(K)= 3.8e+01 iters none=200!(x err 1e+00) adjoint=200(x err 7e-08) jacobian=163(x err 6e-08) parametrix=4(x err 7e-11)
+[b] N=1024 t=2.0 sigma=3.0 cond(K)= 5.4e+01 iters none=200!(x err 1e+00) adjoint=200!(x err 1e-07) jacobian=165(x err 6e-08) parametrix=4(x err 3e-08)
+[b] N=1024 t=2.5 sigma=3.0 cond(K)= 1.1e+02 iters none=200!(x err 1e+00) adjoint=200!(x err 3e-07) jacobian=172(x err 5e-08) parametrix=10(x err 2e-08)
+[b] N=1024 t=3.0 sigma=3.0 cond(K)= 3.5e+15 iters none=200!(x err 1e+00) adjoint=200!(x err 1e-01) jacobian=200!(x err 1e-01) parametrix=200!(x err 8e-01)
+[b] N=1024 t=0.0 sigma=6.0 cond(K)= 4.0e+02 iters none=20(x err 2e-08) adjoint=200!(x err 2e-01) jacobian=200!(x err 2e-01) parametrix=1(x err 1e-09)
+[b] N=1024 t=0.5 sigma=6.0 cond(K)= 4.7e+02 iters none=200!(x err 4e+00) adjoint=200!(x err 2e-01) jacobian=200!(x err 2e-01) parametrix=3(x err 2e-11)
+[b] N=1024 t=1.0 sigma=6.0 cond(K)= 5.8e+02 iters none=200!(x err 3e+00) adjoint=200!(x err 2e-01) jacobian=200!(x err 2e-01) parametrix=3(x err 2e-08)
+[b] N=1024 t=1.5 sigma=6.0 cond(K)= 7.3e+02 iters none=200!(x err 3e+00) adjoint=200!(x err 2e-01) jacobian=200!(x err 2e-01) parametrix=4(x err 3e-10)
+[b] N=1024 t=2.0 sigma=6.0 cond(K)= 1.0e+03 iters none=200!(x err 3e+00) adjoint=200!(x err 2e-01) jacobian=200!(x err 2e-01) parametrix=4(x err 5e-08)
+[b] N=1024 t=2.5 sigma=6.0 cond(K)= 1.8e+03 iters none=200!(x err 4e+00) adjoint=200!(x err 2e-01) jacobian=200!(x err 2e-01) parametrix=10(x err 3e-07)
+[b] N=1024 t=3.0 sigma=6.0 cond(K)= 5.5e+16 iters none=200!(x err 4e+00) adjoint=200!(x err 3e-01) jacobian=200!(x err 2e-01) parametrix=200!(x err 1e+01)
+[b] scaling N=  256 t=0.5 none      iters=256 conv=True x err 3.0e-15
+[b] scaling N=  256 t=0.5 adjoint   iters=  9 conv=True x err 1.3e-09
+[b] scaling N=  256 t=0.5 jacobian  iters=  3 conv=True x err 3.4e-13
+[b] scaling N=  256 t=1.0 none      iters=256 conv=True x err 3.1e-15
+[b] scaling N=  256 t=1.0 adjoint   iters= 12 conv=True x err 9.0e-09
+[b] scaling N=  256 t=1.0 jacobian  iters=  3 conv=True x err 1.1e-09
+[b] scaling N=  256 t=3.0 none      iters=256 conv=True x err 1.8e-13
+[b] scaling N=  256 t=3.0 adjoint   iters= 72 conv=True x err 9.2e-08
+[b] scaling N=  256 t=3.0 jacobian  iters= 40 conv=True x err 9.1e-09
+[b] scaling N= 1024 t=0.5 none      iters=300 conv=False x err 8.2e-01
+[b] scaling N= 1024 t=0.5 adjoint   iters=  9 conv=True x err 1.3e-09
+[b] scaling N= 1024 t=0.5 jacobian  iters=  3 conv=True x err 1.7e-13
+[b] scaling N= 1024 t=1.0 none      iters=300 conv=False x err 8.6e-01
+[b] scaling N= 1024 t=1.0 adjoint   iters= 12 conv=True x err 8.5e-09
+[b] scaling N= 1024 t=1.0 jacobian  iters=  3 conv=True x err 1.4e-09
+[b] scaling N= 1024 t=3.0 none      iters=300 conv=False x err 8.7e-01
+[b] scaling N= 1024 t=3.0 adjoint   iters=179 conv=True x err 9.1e-02
+[b] scaling N= 1024 t=3.0 jacobian  iters= 86 conv=True x err 9.1e-02
+[b] scaling N= 4096 t=0.5 none      iters=300 conv=False x err 9.4e-01
+[b] scaling N= 4096 t=0.5 adjoint   iters=  9 conv=True x err 1.3e-09
+[b] scaling N= 4096 t=0.5 jacobian  iters=  3 conv=True x err 5.1e-14
+[b] scaling N= 4096 t=1.0 none      iters=300 conv=False x err 9.5e-01
+[b] scaling N= 4096 t=1.0 adjoint   iters= 12 conv=True x err 8.1e-09
+[b] scaling N= 4096 t=1.0 jacobian  iters=  3 conv=True x err 2.1e-10
+[b] scaling N= 4096 t=3.0 none      iters=300 conv=False x err 1.0e+00
+[b] scaling N= 4096 t=3.0 adjoint   iters=300 conv=False x err 1.3e-01
+[b] scaling N= 4096 t=3.0 jacobian  iters=106 conv=True x err 1.3e-01
+[b] spectrum N=512 t=1.0 adjoint   cond(K)=1.5e+00 cond(KM)=2.3e+00 #|lam-1|>1e-3: 511
+[b] spectrum N=512 t=1.0 jacobian  cond(K)=1.5e+00 cond(KM)=1.5e+00 #|lam-1|>1e-3: 8
+[b] spectrum N=512 t=2.0 adjoint   cond(K)=3.1e+00 cond(KM)=9.6e+00 #|lam-1|>1e-3: 511
+[b] spectrum N=512 t=2.0 jacobian  cond(K)=3.1e+00 cond(KM)=2.3e+00 #|lam-1|>1e-3: 16
+[b] spectrum N=512 t=2.5 adjoint   cond(K)=8.7e+00 cond(KM)=7.5e+01 #|lam-1|>1e-3: 511
+[b] spectrum N=512 t=2.5 jacobian  cond(K)=8.7e+00 cond(KM)=3.5e+00 #|lam-1|>1e-3: 30
+[b] spectrum N=512 t=2.6 adjoint   cond(K)=1.4e+01 cond(KM)=2.0e+02 #|lam-1|>1e-3: 512
+[b] spectrum N=512 t=2.6 jacobian  cond(K)=1.4e+01 cond(KM)=7.5e+00 #|lam-1|>1e-3: 32
+[b] spectrum N=512 t=3.0 adjoint   cond(K)=2.3e+07 cond(KM)=5.5e+14 #|lam-1|>1e-3: 512
+[b] spectrum N=512 t=3.0 jacobian  cond(K)=2.3e+07 cond(KM)=3.0e+13 #|lam-1|>1e-3: 67
+crossover k (opposite_arcs): 192.61639588323646, low-rank rank ~ k^0.8406004612576436
+crossover k (parallel_segments): 250.7834933337859, low-rank rank ~ k^0.8446838996282309
+crossover k (collinear_segments): None, low-rank rank ~ k^-1.6700436555343942e-16

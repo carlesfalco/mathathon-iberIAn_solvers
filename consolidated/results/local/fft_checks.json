@@ -1,0 +1,19 @@
+{
+  "sizes": [
+    8,
+    16,
+    32,
+    64
+  ],
+  "max_unitary_error": 8.968341026516878e-15,
+  "max_sparse_stage_error": 8.104041325288774e-15,
+  "max_recursive_fft_error": 6.997591966871663e-15,
+  "discretisation_error_ratios": [
+    4.051132908862927,
+    4.012545693136509,
+    4.003121910623146
+  ],
+  "python": "3.12.14",
+  "numpy": "2.5.3",
+  "platform": "Linux-7.0.0-31-generic-x86_64-with-glibc2.43"
+}

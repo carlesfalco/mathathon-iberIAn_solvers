@@ -209,7 +209,7 @@ def make_summary(accuracy_rows, scaling_rows, non_dft_rows):
     lines = [
         "# Measured results",
         "",
-        "All errors compare the butterfly output with the positive-sign FFT.",
+        "DFT errors use the positive-sign FFT; non-DFT errors use a dense kernel evaluation.",
         "Absolute timing values depend on the machine; rerun `python compare.py` to reproduce them.",
         "Timings use one BLAS thread and an explicit warm-up for the dense path.",
         "",
@@ -247,7 +247,7 @@ def make_summary(accuracy_rows, scaling_rows, non_dft_rows):
         "",
         "## Non-DFT oscillatory kernel",
         "",
-        "The phase is $Psi(x,p)=xp+0.1x^2p^2$ at $N=128$. The reference is the",
+        r"The phase is $\Psi(x,p)=xp+0.1x^2p^2$ at $N=128$. The reference is the",
         "explicit dense evaluation of the same kernel, not an FFT.",
         "",
         "| q | relative L2 error |",

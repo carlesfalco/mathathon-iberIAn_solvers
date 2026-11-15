@@ -1,0 +1,5 @@
+{
+  "n": 4096,
+  "orthonormality_max_abs": 6.847939626468559e-13,
+  "derivative": "dP_n/dtheta = n*(x P_n - P_{n-1})/sin(theta)"
+}

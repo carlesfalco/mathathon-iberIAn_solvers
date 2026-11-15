@@ -1,30 +1,50 @@
 % Build from the project root:
-% latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=.scratch/presentation-build .trash/tex-removal-backup/presentation.tex
-% cp .scratch/presentation-build/presentation.pdf presentation.pdf
+% latexmk -xelatex -interaction=nonstopmode -halt-on-error -outdir=.scratch/presentation-sair .trash/tex-removal-backup/presentation.tex
+% cp .scratch/presentation-sair/presentation.pdf presentation.pdf
 \documentclass[aspectratio=169,10pt]{beamer}
 
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Heros}
+\setsansfont{TeX Gyre Heros}
+\newfontfamily\sairtitlefont[Path=presentation-assets/]{SAIR-Heading.otf}
 \usepackage{microtype}
 \usepackage{amsmath,amssymb,bm}
 \usepackage{tikz}
-\usetikzlibrary{arrows.meta,positioning,calc}
+\usetikzlibrary{arrows.meta,positioning,calc,decorations.pathreplacing}
 \usepackage{booktabs}
 \usepackage{graphicx}
 
-% A light, restrained theme built directly on Beamer's defaults.
-\definecolor{navy}{HTML}{17324D}
-\definecolor{ink}{HTML}{243447}
-\definecolor{muted}{HTML}{627386}
-\definecolor{teal}{HTML}{137F82}
-\definecolor{sea}{HTML}{2A9D8F}
-\definecolor{blue}{HTML}{4677A8}
-\definecolor{coral}{HTML}{E47755}
-\definecolor{gold}{HTML}{D6A33D}
-\definecolor{lilac}{HTML}{7A6FA8}
-\definecolor{paper}{HTML}{F5F8FB}
-\definecolor{mist}{HTML}{E8F2F3}
-\definecolor{line}{HTML}{D9E3EC}
+% SAIR light theme: burgundy, copper and warm neutral surfaces.
+% Palette and typography verified from https://sair.foundation/ assets.
+\definecolor{navy}{HTML}{3B0E27}
+\definecolor{ink}{HTML}{3B0E27}
+\definecolor{muted}{HTML}{89717C}
+\definecolor{teal}{HTML}{87513D}
+\definecolor{sea}{HTML}{22C55E}
+\definecolor{blue}{HTML}{593748}
+\definecolor{coral}{HTML}{B42335}
+\definecolor{gold}{HTML}{AB704B}
+\definecolor{lilac}{HTML}{806070}
+\definecolor{paper}{HTML}{F5F3F4}
+\definecolor{mist}{HTML}{F0E7E6}
+\definecolor{line}{HTML}{DED4D7}
+
+
+\colorlet{sourceblue}{blue}
+\colorlet{targetred}{teal}
+\colorlet{softblue}{blue!8}
+\colorlet{softred}{teal!10}
+\colorlet{softgreen}{gold!18}
+\colorlet{gridgray}{line}
+\tikzset{
+  stage/.style={draw,rounded corners=2pt,align=center,text width=2.18cm,
+    minimum height=1.52cm,font=\scriptsize,inner sep=4pt},
+  source/.style={stage,fill=softblue,draw=sourceblue},
+  target/.style={stage,fill=softred,draw=targetred},
+  flow/.style={-{Latex[length=2mm]},thick},
+  construction/.style={draw,rounded corners=2pt,align=center,text width=3.35cm,
+    minimum height=1.25cm,font=\scriptsize,inner sep=5pt,fill=paper}
+}
 
 \setbeamercolor{normal text}{fg=ink,bg=white}
 \setbeamercolor{structure}{fg=teal}
@@ -47,7 +67,7 @@
 \setbeamertemplate{itemize subitem}{\textcolor{teal}{--}}
 \setbeamertemplate{enumerate item}{\textcolor{teal}{\bfseries\insertenumlabel.}}
 \setbeamersize{text margin left=9mm,text margin right=9mm}
-\setbeamerfont{frametitle}{size=\Large,series=\bfseries}
+\setbeamerfont{frametitle}{family=\sairtitlefont,size=\Large,series=\mdseries}
 \setbeamerfont{framesubtitle}{size=\small,series=\mdseries}
 \setbeamerfont{footline}{size=\scriptsize}
 \setlength{\leftmargini}{1.25em}
@@ -57,8 +77,10 @@
   {\scriptsize\bfseries\color{teal}\insertsection\par}%
   \vspace{1.0mm}%
   {\usebeamerfont{frametitle}\color{navy}\insertframetitle\par}%
-  \vspace{0.8mm}%
-  {\usebeamerfont{framesubtitle}\color{muted}\insertframesubtitle\par}%
+  \ifx\insertframesubtitle\@empty\else
+    \vspace{0.8mm}%
+    {\usebeamerfont{framesubtitle}\color{muted}\insertframesubtitle\par}%
+  \fi
   \vspace{1.2mm}{\color{teal}\rule{13mm}{0.8pt}}\par\vspace{1.2mm}%
 }
 
@@ -68,8 +90,9 @@
     \begin{beamercolorbox}[wd=.79\paperwidth,ht=2.6ex,dp=1.15ex,leftskip=9mm]{footline}%
       \usebeamerfont{footline}Efficient factorisations for PDE problems
     \end{beamercolorbox}%
-    \begin{beamercolorbox}[wd=.21\paperwidth,ht=2.6ex,dp=1.15ex,rightskip=9mm plus1fil]{footline}%
-      \hfill\usebeamerfont{footline}\insertframenumber\,/\,\inserttotalframenumber
+    \begin{beamercolorbox}[wd=.21\paperwidth,ht=2.6ex,dp=1.15ex,rightskip=3mm plus1fil]{footline}%
+      \hfill\usebeamerfont{footline}\insertframenumber\,/\,\inserttotalframenumber\hspace{1.2mm}%
+      \raisebox{-0.15ex}{\includegraphics[height=3mm]{presentation-assets/sair-mark.png}}%
     \end{beamercolorbox}%
   }%
 }
@@ -106,17 +129,17 @@
   \node[anchor=north west,text=teal,font=\scriptsize\bfseries]
     at ([xshift=15mm,yshift=-21mm]current page.north west)
     {NUMERICAL METHODS FOR PDEs};
-  \node[anchor=north west,text=navy,text width=100mm,font=\fontsize{26}{31}\selectfont\bfseries]
+  \node[anchor=north west,text=navy,text width=100mm,font=\sairtitlefont\fontsize{28}{32}\selectfont]
     at ([xshift=15mm,yshift=-30mm]current page.north west)
     {Efficient factorisations\\for PDE problems};
   \node[anchor=north west,text=muted,text width=88mm,font=\large]
     at ([xshift=15mm,yshift=-59mm]current page.north west)
     {Green-function integrals, structured matrices\\and butterfly factorisations};
-  \node[anchor=south west,text=muted,font=\small]
-    at ([xshift=15mm,yshift=11mm]current page.south west)
-    {20-minute presentation};
   \draw[line,line width=.4pt]
     ([xshift=15mm,yshift=8mm]current page.south west) -- ++(40mm,0);
+  \node[anchor=north east,inner sep=0pt]
+    at ([xshift=-6mm,yshift=-4mm]current page.north east)
+    {\includegraphics[width=66mm]{presentation-assets/caltech-sair-banner.png}};
   \coordinate (bforigin) at ([xshift=-42mm,yshift=1mm]current page.east);
   \begin{scope}[shift=(bforigin),x=1mm,y=1mm]
     \foreach \x in {0,12,24,36}{
@@ -128,62 +151,49 @@
       \draw[blue!40,line width=.55pt] (12,\a)--(24,\b);
     \foreach \a/\b in {-18/-18,-18/-6,-6/-18,-6/6,6/-6,6/18,18/6,18/18}
       \draw[coral!55,line width=.55pt] (24,\a)--(36,\b);
-    \node[text=muted,font=\scriptsize,align=center] at (18,-29)
-      {local coefficients\\global interactions};
+    % Clean title graphic: no explanatory caption.
   \end{scope}
+  \node[anchor=south east,inner sep=0pt]
+    at ([xshift=-3mm,yshift=2mm]current page.south east)
+    {\includegraphics[height=3mm]{presentation-assets/sair-mark.png}};
 \end{tikzpicture}
 \vspace*{0pt}
 \end{frame}
 
 \section{Introduction}
 % 2 ----------------------------------------------------------------------
-\begin{frame}{Six ideas, one common theme}
-\framesubtitle{From PDE structure to rigorous algorithms and evidence.}
+\begin{frame}{One question, three moves}
 \small
 \begin{columns}[T,onlytextwidth]
-\column{.32\textwidth}
-\begin{beamercolorbox}[rounded=true,sep=1.25ex]{softcard}
-\pill{teal}{01 \quad GREEN }\\[1mm]
-{\bfseries From PDEs to matrix tasks}\\
-Superposition, discretisation, and application versus solution.
+\column{.31\textwidth}
+\begin{beamercolorbox}[rounded=true,sep=1.1ex]{softcard}
+\pill{teal}{01 \quad STRUCTURE}\\[1.5mm]
+{\bfseries Green functions and exact algebra}\\[.7mm]
+PDEs produce structured matrix tasks. The FFT shows how exact factorisation reorganises computation into $O(N\log N)$ work.
 \end{beamercolorbox}
-\vspace{2mm}
-\begin{beamercolorbox}[rounded=true,sep=1.25ex]{card}
-\pill{blue}{02 \quad FFT }\\[1mm]
-{\bfseries Exact structure}\\
-Circulant diagonalisation and sparse basis changes.
+\column{.31\textwidth}
+\begin{beamercolorbox}[rounded=true,sep=1.1ex]{card}
+\pill{gold}{02 \quad DESIGN}\\[1.5mm]
+{\bfseries A shared hierarchical vocabulary}\\[.7mm]
+Partition, interactions, representation, sampling and algebra organise the design. An oscillatory example shows why phase and blocks matter.
 \end{beamercolorbox}
-\column{.32\textwidth}
-\begin{beamercolorbox}[rounded=true,sep=1.25ex]{card}
-\pill{lilac}{03 \quad CHOICES }\\[1mm]
-{\bfseries Five design choices}\\
-Partition, interactions, representation, sampling and algebra.
-\end{beamercolorbox}
-\vspace{2mm}
-\begin{beamercolorbox}[rounded=true,sep=1.25ex]{softcard}
-\pill{teal}{04 \quad LOW RANK }\\[1mm]
-{\bfseries Local low rank}\\
-Centred residuals, explicit error bounds and assumptions.
-\end{beamercolorbox}
-\column{.32\textwidth}
-\begin{beamercolorbox}[rounded=true,sep=1.25ex]{card}
-\pill{blue}{05 \quad RECURSION }\\[1mm]
-{\bfseries Nesting gives speed}\\
-Complementary boxes, nested transfers and access costs.
-\end{beamercolorbox}
-\vspace{2mm}
-\begin{beamercolorbox}[rounded=true,sep=1.25ex]{card}
-\pill{muted}{06 \quad LIMITS }\\[1mm]
-{\bfseries Three certificates}\\
-Approximation, stability and total cost are checked separately.
+\column{.31\textwidth}
+\begin{beamercolorbox}[rounded=true,sep=1.1ex]{softcard}
+\pill{teal}{03 \quad CONSTRUCT}\\[1.5mm]
+{\bfseries From residual to butterfly}\\[.7mm]
+Centred phases and nested transfers build the algorithm; invariants clarify its meaning. Alternative factorisations can simplify application. Evidence separates accuracy, stability and cost.
 \end{beamercolorbox}
 \end{columns}
+\vspace{2mm}
+\begin{center}
+\small\color{muted}
+PDE structure $\;\longrightarrow\;$ exact FFT $\;\longrightarrow\;$ shared choices $\;\longrightarrow\;$ butterfly $\;\longrightarrow\;$ evidence
+\end{center}
 \end{frame}
 
 \section{1 \textbar\quad Green-function matrix problems}
 % 3 ----------------------------------------------------------------------
 \begin{frame}{Green functions create two different matrix tasks}
-\framesubtitle{The PDE, geometry, discretisation and integral formulation all determine the matrix structure.}
 \begin{columns}[T,onlytextwidth]
 \column{.56\textwidth}
 {\color{teal}\small\bfseries CONTINUOUS SUPERPOSITION}
@@ -213,7 +223,6 @@ Given $b$, find $\sigma$ from $A\sigma=b$.\\[.5ex]
 
 % 4 ----------------------------------------------------------------------
 \begin{frame}{Reaction--diffusion as an integral equation}
-\framesubtitle{Variable $q$ couples Fourier modes; the Green formulation puts the unknown on both sides.}
 \footnotesize
 \begin{columns}[T,onlytextwidth]
 \column{.47\textwidth}
@@ -237,10 +246,10 @@ Quadrature produces
  (I+KQ)u=F,\qquad K_{ij}=w_jG_0(x_i,x_j),
 \]
 where $Q=\operatorname{diag}(q(x_j))$. Also $G_0(x,x)=x(1-x)$ is finite, so this example needs no singular-diagonal correction.
-\begin{beamercolorbox}[rounded=true,sep=1.0ex]{softcard}
+\begin{beamercolorbox}[rounded=true,sep=0.8ex]{softcard}
 \textbf{Dense but structured:} entries sample one continuous Green kernel, although every source contributes to every observation.
 \end{beamercolorbox}
-\begin{beamercolorbox}[rounded=true,sep=1.0ex]{card}
+\begin{beamercolorbox}[rounded=true,sep=0.8ex]{card}
 \textbf{Formulation matters:} finite differences give a sparse 1D system; the integral form is not automatically preferable. Different formulations need different algorithms.
 \end{beamercolorbox}
 \end{columns}
@@ -248,71 +257,88 @@ where $Q=\operatorname{diag}(q(x_j))$. Also $G_0(x,x)=x(1-x)$ is finite, so this
 
 \section{2 \textbar\quad Exact FFT structure}
 % 5 ----------------------------------------------------------------------
-\begin{frame}{Two ingredients of the FFT}
-\framesubtitle{Exact diagonalisation is useful only when the basis changes are also inexpensive.}
+\begin{frame}{FFT: exact matrix factorisation in $O(N\log N)$}
 \footnotesize
+Put $\omega_N=e^{-2\pi i/N}$, $D_N=\operatorname{diag}(\omega_N^k)_{k=0}^{N/2-1}$, and let $P_N$ be the even-before-odd permutation. Separating even and odd inputs gives
+\begin{beamercolorbox}[rounded=true,sep=0pt]{softcard}
+\vspace{-2mm}
+\[
+\begin{gathered}
+ \mathcal F_N=B_N\,\operatorname{diag}(\mathcal F_{N/2},\mathcal F_{N/2})\,P_N,\\[.5mm]
+ B_N=\dfrac1{\sqrt2}\begin{bmatrix}I&D_N\\I&-D_N\end{bmatrix}
+ \qquad\text{(sparse two-output recombination).}
+\end{gathered}
+\]
+\vspace{-2mm}
+\end{beamercolorbox}
+\vspace{.2mm}
 \begin{columns}[T,onlytextwidth]
-\column{.48\textwidth}
-\begin{block}{1. Circulant symmetry}
-For $(Kf)_i=\sum_j g_{(i-j)\bmod N}f_j$ and the unitary DFT $\mathcal F_N$,
-\[
- K=\mathcal F_N^*\operatorname{diag}(\mu)\mathcal F_N,
- \qquad \mu=\sqrt N\,\mathcal F_Ng .
-\]
-The identity is exact for every $N$, given compatible kernel, weights, grid and periodic boundaries.
-\end{block}
 \column{.46\textwidth}
-\begin{exampleblock}{2. Radix-2 sparse stages}
-For $X=\sqrt N\,\mathcal F_Nx$ and $\omega_N=e^{-2\pi i/N}$,
+{\color{teal}\bfseries Exact reuse of partial transforms}
 \[
- X_k=E_k+\omega_N^kO_k,\qquad
- X_{k+N/2}=E_k-\omega_N^kO_k .
+\begin{gathered}
+ X_k=E_k+\omega_N^kO_k,\\
+ X_{k+N/2}=E_k-\omega_N^kO_k,
+\end{gathered}
 \]
-Two partial transforms produce two outputs; no information is discarded. Iterating gives
+where $X=\sqrt N\,\mathcal F_Nx$. The same $E_k,O_k$ produce two outputs. \textbf{No terms are discarded or approximated.}
+\column{.48\textwidth}
+{\color{teal}\bfseries Iteration gives the complexity}
 \[
- \mathcal F_N=S_L\cdots S_1\Pi_N,\qquad L=\log_2N .
+ \mathcal F_N=S_L\cdots S_1\Pi_N,\qquad L=\log_2N,\qquad N=2^L .
 \]
-Each $S_\ell$ has $2N$ nonzeros, hence $T(N)=O(N\log N)$.
-\end{exampleblock}
+Each stage has $2N$ nonzeros. Hence
+\[
+\boxed{\;T(N)=2T(N/2)+O(N)=O(N\log N).\;}
+\]
+Exact; dense entrywise application: $O(N^2)$ (Cooley--Tukey, 1965).
 \end{columns}
-\vspace{1mm}
-\source{Cooley--Tukey (1965). An in-place implementation applies the stages without forming $\mathcal F_N$ or $S_\ell$.}
 \end{frame}
 
 % 6 ----------------------------------------------------------------------
-\begin{frame}{Periodic solve: fast algebra is not PDE accuracy or low rank}
-\framesubtitle{The discrete symbol, conditioning and approximation error are separate issues.}
+\begin{frame}{From factorisation to a general design goal}
 \footnotesize
-\begin{columns}[T,onlytextwidth]
-\column{.47\textwidth}
-For $S=I-\Delta_h$, $h=1/N$, on a periodic grid,
+\begin{beamercolorbox}[rounded=true,sep=.3ex]{softcard}
 \[
- S=\mathcal F_N^*\Lambda\mathcal F_N,\qquad
- \lambda_k=1+\frac4{h^2}\sin^2\!\left(\frac{\pi k}{N}\right).
+ \mathcal F_N=S_LS_{L-1}\cdots S_1\Pi_N
+ \quad\text{with }O(N\log N)\text{ application}
+ \qquad\Longrightarrow\qquad
+ A\approx\widetilde A=T_MT_{M-1}\cdots T_1P .
 \]
-Since $\lambda_k\ge1$, the discrete Green operator is
-\[
- G_h=S^{-1}=\mathcal F_N^*\Lambda^{-1}\mathcal F_N .
-\]
-\begin{beamercolorbox}[rounded=true,sep=1.2ex]{softcard}
-\textbf{Solve:} two FFTs plus $N$ divisions cost $O(N\log N)$ with $O(N)$ working storage; neither $S^{-1}$ nor $\mathcal F_N$ is formed.
 \end{beamercolorbox}
-\column{.47\textwidth}
-\begin{alertblock}{Three qualifications}
-\begin{itemize}
- \item \textbf{Conditioning:} for even $N$, $\kappa_2(S)=1+4N^2$; invertibility is not uniform stability.
- \item \textbf{PDE error:} fixed-mode $O(h^2)$ stencil error remains; the FFT does not remove it.
- \item \textbf{Rank and ordering:} $\sigma_i(\mathcal F_N)=1$ globally, but complementary residue-class tiles are exactly rank one in both bit-reversed orderings. For $N=2^L$, factor storage is $2N\log_2N+2N$; one-sided ordering is insufficient.
-\end{itemize}
-\vspace{-2mm}
-\end{alertblock}
+If $M=O(\log N)$ and each $T_\ell$ costs $O(N)$ to apply, then $\widetilde A$ also costs $O(N\log N)$. FFT has zero structural error; a general approximate factorisation needs its own error and construction analysis.
+\vspace{1mm}
+\begin{columns}[T,onlytextwidth]
+\column{.31\textwidth}
+\begin{beamercolorbox}[rounded=true,sep=.8ex]{card}
+\pill{teal}{REPRESENTATION}\\[.7mm]
+{\bfseries What is a stage?}\\
+Sparse recombinations, compressed interaction blocks or nested transfers.
+\end{beamercolorbox}
+\column{.31\textwidth}
+\begin{beamercolorbox}[rounded=true,sep=.8ex]{card}
+\pill{teal}{ACCURACY}\\[.7mm]
+{\bfseries How accurate?}\\
+Block norms and tolerances, followed by global error propagation.
+\end{beamercolorbox}
+\column{.31\textwidth}
+\begin{beamercolorbox}[rounded=true,sep=.8ex]{card}
+\pill{teal}{TOTAL COST}\\[.7mm]
+{\bfseries What does building cost?}\\
+Sampling, access, storage and construction, counted separately from apply.
+\end{beamercolorbox}
 \end{columns}
+\vspace{1mm}
+\begin{beamercolorbox}[rounded=true,sep=.8ex]{softcard}
+\centering
+\textbf{How do we choose and assemble those stages for a PDE operator?}\\[.4mm]
+Next: partition $\rightarrow$ interactions $\rightarrow$ representation $\rightarrow$ sampling $\rightarrow$ algebra.
+\end{beamercolorbox}
 \end{frame}
 
 \section{3 \textbar\quad Common block strategy}
 % 7 ----------------------------------------------------------------------
 \begin{frame}{Five choices organise a hierarchical method}
-\framesubtitle{A common block strategy, not a universal solver: each algorithm supplies additional mathematics.}
 \footnotesize
 \begin{beamercolorbox}[rounded=true,sep=1.15ex]{softcard}
 \centering\scriptsize
@@ -346,128 +372,71 @@ Since $\lambda_k\ge1$, the discrete Green operator is
 \end{beamercolorbox}
 \end{frame}
 
-\section{4 \textbar\quad Phase compression and local low rank}
 
 % 8 ----------------------------------------------------------------------
-\begin{frame}{Oscillatory integrals: the example behind butterfly}
-\framesubtitle{From an exact special case to the assumptions needed beyond it.}
+\begin{frame}{What each algorithm contributes—and what the code checks}
 \footnotesize
-\begin{columns}[T,onlytextwidth]
-\column{.56\textwidth}
-For a real phase $\Psi$, consider $I_n[f](x)=\int e^{2\pi in\Psi(x,p)}f(p)\,\mathrm dp$ with frequency scale $n$. Quadrature gives $u\approx Af$, where $A_{ij}=w_je^{2\pi in\Psi(x_i,p_j)}$. Direct apply costs $O(N^2)$; oscillation itself is not low rank.
 \begin{beamercolorbox}[rounded=true,sep=.9ex]{softcard}
-\textbf{Bilinear example: $\Psi(x,p)=xp$}\\[.5mm]
-With $x_i=i/N$, $p_j=j/N$ and $n=N$,
-\[
- K_N(x_i,p_j)=e^{2\pi iN(i/N)(j/N)}=e^{2\pi iij/N},
-\]
-the positive-sign DFT. Around a box centre $(a,b)$,
-\[
- xp=\underbrace{xb+ap-ab}_{\text{row/column phase}}
-      +\underbrace{(x-a)(p-b)}_{\text{mixed residual}}.
-\]
+{\scriptsize
+\textbf{FMM:} analytic expansions and translations $\cdot$
+\textbf{Wideband FMM:} stable scale-specific representations and diagonal translations\\[.6mm]
+\textbf{HBS / RS / FMM-LU:} sparsification and Schur elimination, with pivots, fill and modified-block bookkeeping\\[.6mm]
+\textbf{Butterfly:} complementary two-tree geometry, phase control and nested bases $\cdot$
+\textbf{FFT:} ordered residue classes and exact Cooley--Tukey recombination}
 \end{beamercolorbox}
-\column{.38\textwidth}
-\begin{exampleblock}{Conditions used by butterfly}
-\begin{itemize}
- \item \textbf{Phase regularity:} real smoothness for peeling; joint real analyticity for the quoted general rank theorem.
- \item \textbf{Local phase control:} a bound on $\partial_x\partial_p\Psi$ and on the width product $n h_Ah_B$.
- \item \textbf{Suitable block geometry:} complementary tilings and nested transfers. Local low rank alone is not enough.
-\end{itemize}
-\vspace{-2mm}
-\end{exampleblock}
 \vspace{1mm}
-{\scriptsize\color{muted}The DFT supplies an independent exact reference. Later, $\Psi=xp+0.1x^2p^2$ tests the same residual construction without relying on an FFT reference.}
-\end{columns}
+\textbf{Framework value:} diagnose which geometry, representation, access model and algebra a problem needs. It does not supply those proofs automatically or create a universal solver.
+\vspace{1mm}
+\begin{beamercolorbox}[rounded=true,sep=1.0ex]{card}
+{\small\textbf{PYTHON + RUST: small reference implementations.} Each problem's extra experiments are expressed in relatively few lines of code, making assumptions, comparisons and failure cases easier to inspect.}
+\end{beamercolorbox}
 \end{frame}
 
+\section{4 \textbar\quad Phase compression and local low rank}
 
-% 9 ----------------------------------------------------------------------
-\begin{frame}{Centring leaves only a mixed residual to compress}
-\framesubtitle{Remove the large phase exactly; approximate only the coupled remainder on $A\times B$.}
+% oscillatory-a --- centred residual and phase bound
+\begin{frame}{Butterfly factorisation for oscillatory integrals}
 \footnotesize
 \begin{columns}[T,onlytextwidth]
-\column{.69\textwidth}
-\vspace{-2mm}
+\column{.57\textwidth}
+For $K_n(x,p)=e^{2\pi in\Psi(x,p)}$, define
 \[
-\begin{aligned}
- K_n(x,p)&=e^{2\pi i n\Psi(x,p)},\\
- R_{AB}&=\Psi(x,p)-\Psi(a,p)-\Psi(x,b)+\Psi(a,b).
-\end{aligned}
+ R_{AB}=\Psi(x,p)-\Psi(a,p)-\Psi(x,b)+\Psi(a,b)
 \]
-\begin{beamercolorbox}[rounded=true,sep=1.0ex]{softcard}
-\centering
-\resizebox{\linewidth}{!}{$\displaystyle K_n=\underbrace{e^{2\pi in\Psi(x,b)}}_{x\ \mathrm{only}}\,
- \underbrace{e^{2\pi in\Psi(a,p)}}_{p\ \mathrm{only}}\,
- \underbrace{e^{-2\pi in\Psi(a,b)}}_{\mathrm{constant}}\,
- \underbrace{e^{2\pi inR_{AB}}}_{\mathrm{coupled\ residual}}$}
+on a box $A\times B$ centred at $(a,b)$. Then exactly
+\begin{beamercolorbox}[rounded=true,sep=.6ex]{softcard}
+\centering\resizebox{\linewidth}{!}{$\displaystyle
+K_n=\underbrace{e^{2\pi in\Psi(x,b)}}_{x\text{ only}}
+ \underbrace{e^{2\pi in\Psi(a,p)}}_{p\text{ only}}
+ \underbrace{e^{-2\pi in\Psi(a,b)}}_{\text{constant}}
+ \underbrace{e^{2\pi inR_{AB}}}_{\text{coupled residual}}$}
 \end{beamercolorbox}
-Sampling gives $K_{AB}=c_{AB}D_AH_{AB}D_B$ with unit-modulus diagonals. They preserve singular values, so only $H_{AB}$ needs compression. Moreover,
+The fundamental theorem of calculus gives
 \[
 \begin{aligned}
  R_{AB}(x,p)&=\int_a^x\!\int_b^p\partial_s\partial_t\Psi(s,t)\,\mathrm dt\,\mathrm ds,\\
- 2\pi n|R_{AB}|&\leq\rho_{AB}:=\frac{\pi}{2}M_{AB}nh_Ah_B,
- \quad M_{AB}=\sup_{A\times B}|\partial_x\partial_p\Psi|.
+ 2\pi n|R_{AB}|&\le\rho_{AB}:=\frac{\pi}{2}M_{AB}nh_Ah_B,
 \end{aligned}
 \]
-\column{.26\textwidth}
-\begin{center}
-\begin{tikzpicture}[x=.56mm,y=.58mm]
- \draw[fill=paper,draw=line,rounded corners] (0,-3) rectangle (63,52);
- \draw[fill=teal!10,draw=teal,line width=1pt] (10,8) rectangle (53,40);
- \draw[teal!50,dashed] (31.5,8)--(31.5,40);
- \draw[teal!50,dashed] (10,24)--(53,24);
- \fill[coral] (31.5,24) circle (1.7);
- \node[font=\small,text=coral] at (37,21){$(a,b)$};
- \fill[blue] (45,34) circle (1.7);
- \node[font=\small,text=blue] at (43,37){$(x,p)$};
- \draw[{Latex[length=1.5mm]}-{Latex[length=1.5mm]},muted] (10,4)--(53,4);
- \node[font=\small,text=muted] at (31.5,0){$h_A$};
- \draw[{Latex[length=1.5mm]}-{Latex[length=1.5mm]},muted] (57,8)--(57,40);
- \node[font=\small,text=muted,rotate=90] at (60.5,24){$h_B$};
- \node[font=\small\bfseries,text=navy] at (31.5,46){centred rectangle};
-\end{tikzpicture}
-\end{center}
-{\scriptsize The residual is governed by $nh_Ah_B$, not by the total phase size.}
-\end{columns}
-\vspace{.5mm}
-\source{Cand\`es--Demanet--Ying, arXiv:0809.0719, \S\S3--4.}
-\end{frame}
-
-% 10 ----------------------------------------------------------------------
-\begin{frame}{Local low rank: approximation and error norm}
-\framesubtitle{Separated terms give rank at most $q$ after discretisation; the error metric matters.}
-\footnotesize
-\begin{columns}[T,onlytextwidth]
-\column{.51\textwidth}
-\begin{block}{Bilinear model: $\Psi(x,p)=xp$}
-Here $R_{AB}=(x-a)(p-b)$, and
-\vspace{-1mm}
+where $M_{AB}=\sup_{A\times B}|\partial_x\partial_p\Psi|$.
+\column{.37\textwidth}
+After discretisation, the three prefactors are diagonal and preserve singular values, so only $e^{2\pi inR_{AB}}$ needs compression. The bound depends on $nh_Ah_B$, not on the total size of $\Psi$.
+\begin{beamercolorbox}[rounded=true,sep=.9ex]{card}
+For $\Psi(x,p)=xp$, the identity is simply
 \[
-\begin{aligned}
- e^{2\pi inR}&=\sum_{r=0}^{q-1}
- \frac{(2\pi in)^r}{r!}(x-a)^r(p-b)^r+\mathcal E_q,\\
- |\mathcal E_q|&\leq\frac{\rho_{AB}^q}{q!}.
-\end{aligned}
+ xp=xb+ap-ab+(x-a)(p-b),
 \]
-Each term separates. The bound is \textbf{uniform entrywise} and specific to this bilinear calculation.
-\end{block}
-\column{.43\textwidth}
-\begin{exampleblock}{Real-analytic phase}
-Interpolate the residual exponential in the smaller box's variable. Higher mixed derivatives matter: the rectangle bound alone is not a low-rank proof.
-
-For square boxes with $h_Ah_B=1/n$, the two-dimensional Cand\`es--Demanet--Ying theorem gives $r_\varepsilon=O(\log^4(1/\varepsilon))$, with constant independent of $n$ in its stated range. It concerns complementary blocks, not the rank of the full matrix.
-\end{exampleblock}
-\end{columns}
-\begin{beamercolorbox}[rounded=true,sep=.8ex]{softcard}
-\textbf{Norm conversion:} if $|E_{ij}|\le\eta$ on an $m_A\times m_B$ block, then $\|E\|_2\le\|E\|_F\le\eta\sqrt{m_Am_B}$. Thus entrywise tolerance $\eta$ is not automatically absolute spectral tolerance $\eta$.
+so $R_{AB}=(x-a)(p-b)$. On $x_i=i/N,p_j=j/N$ with $n=N$, its kernel is the positive-sign DFT $e^{2\pi iij/N}$.
 \end{beamercolorbox}
+\end{columns}
 \end{frame}
 
-\section{5 \textbar\quad Complementary-box recursion}
-% 11 ----------------------------------------------------------------------
+% oscillatory-b --- exponential separated expansion
+
+
+\section{5 \textbar\quad Butterfly construction and invariants}
+% 9 ----------------------------------------------------------------------
 \begin{frame}{Complementary boxes keep the local residual bound uniform}
-\framesubtitle{Observation boxes split while source boxes merge, preserving the width product at every level.}
 \footnotesize
 \begin{columns}[T,onlytextwidth]
 \column{.55\textwidth}
@@ -506,9 +475,8 @@ If $M$ uniformly bounds $|\partial_x\partial_p\Psi|$, then
 \end{columns}
 \end{frame}
 
-% 12 ----------------------------------------------------------------------
+% 10 ----------------------------------------------------------------------
 \begin{frame}{Tiles give low rank; nesting gives speed}
-\framesubtitle{Independent compression is not yet a fast algorithm, and construction is a separate budget.}
 \footnotesize
 \begin{columns}[T,onlytextwidth]
 \column{.48\textwidth}
@@ -535,33 +503,199 @@ Sparse-factor apply: $O(N\log N)$; construction is paid separately.
 
 \end{frame}
 
-\section{6 \textbar\quad Evidence: three certificates}
-% 13 ----------------------------------------------------------------------
-\begin{frame}{Three certificates: accuracy, stability and total cost}
-\framesubtitle{A convincing method needs all three; evidence for one does not prove the others.}
+
+% martin-a --- invariant definition and local state
+\begin{frame}{An invariant is a meaning preserved by every update}
 \footnotesize
 \begin{columns}[T,onlytextwidth]
 \column{.43\textwidth}
-\begin{beamercolorbox}[rounded=true,sep=1.1ex]{softcard}
-\pill{teal}{APPROXIMATION \quad DFT CHECK}\\[1mm]
-For $\Psi=xp$, the reference is $u=N\operatorname{IFFT}(f)$. At $q=8$, relative output error is approximately constant over the tested sizes; increasing $q$ reduces it. This is finite approximation evidence, not a global theorem.
-\end{beamercolorbox}
+\textbf{An algorithm invariant} is a property of its state that holds at a specified point and remains true as the algorithm advances. It tells us:
+\begin{itemize}
+ \item what intermediate data mean;
+ \item why the next update is valid;
+ \item why the final state is the answer.
+\end{itemize}
+\column{.48\textwidth}
+For $a=(2,-1,5,4)$ and $s\gets0$, repeated updates $s\gets s+a_t$ preserve
+\[
+ s_t=\sum_{q=0}^{t-1}a_q
+\]
+at the start of iteration $t$. It holds initially, is preserved by addition, and gives the total on termination.
+\end{columns}
 \vspace{1mm}
-\begin{beamercolorbox}[rounded=true,sep=1.1ex]{card}
-\pill{teal}{APPROXIMATION \quad NON-DFT CHECK}\\[1mm]
-For $\Psi=xp+0.1x^2p^2$, residual interpolation is compared with explicit dense evaluation at $N=128$. Output error again decreases rapidly with $q$, without implying stability or cheap construction.
+\begin{beamercolorbox}[rounded=true,sep=.8ex]{card}
+\textbf{Butterfly version:} one short vector per complementary slot. With $N=2^L$,
+\[
+ K_{ij}^{\ell}=K[A_i^\ell,B_j^{L-\ell}]
+ \in\mathbb C^{(N/2^\ell)\times2^\ell},
+ \qquad K_{ij}^\ell\simeq P_{ij}^\ell C_{ij}^\ell(Q_{ij}^\ell)^* .
+\]
+Complementary low rank bounds local ranks at a stated tolerance, not global rank.
 \end{beamercolorbox}
-\column{.52\textwidth}
-\begin{center}
-\includegraphics[width=.80\linewidth]{consolidated/examples/butterfly/results/non_dft_comparison.png}
-{\scriptsize\color{muted}Non-DFT example: dense reference; relative output error.}
-\end{center}
-\begin{beamercolorbox}[rounded=true,sep=1.0ex]{card}
-\textbf{Stability:} $T=i,\ \Pi=[I;-T]\Rightarrow\Pi^{\mathsf T}\Pi=0$, but $\Pi^*\Pi=2$. Accurate blocks cannot protect plain-transpose pivots; use adjoint/real interpolation and check stability.
+\end{frame}
 
-\textbf{Total cost:} Oseen ($N=4096$, $\lambda=320$, depth 4): root $485\to163$, storage $+28.6\%$, elimination flops $+67.3\%$.
+% martin-b --- original two invariants and pipeline
+\begin{frame}{The original butterfly has two online invariants}
+\footnotesize
+\begin{columns}[T,onlytextwidth]
+\column{.47\textwidth}
+\begin{beamercolorbox}[rounded=true,sep=.7ex]{softcard}
+\textbf{Input coordinates, for $t\le h$:}
+\[
+ z_{ij}^t\approx(Q_{ij}^t)^*g_j^t .
+\]
+Each slot stores compressed coordinates of its input band, not yet an output contribution.
+\end{beamercolorbox}
+\column{.47\textwidth}
+\begin{beamercolorbox}[rounded=true,sep=.7ex]{softcard}
+\textbf{Output partial products:}
+\[
+ P_{ij}^tw_{ij}^t\approx K_{ij}^tg_j^t .
+\]
+Each short vector represents one block applied to one input band. At $t=h$, $w_{ij}^h=C_{ij}^hz_{ij}^h$ joins the two meanings.
 \end{beamercolorbox}
 \end{columns}
+\vspace{1mm}
+\begin{center}
+\scalebox{.86}{%
+\begin{tikzpicture}[x=1cm,y=1cm]
+\node[source] (z0) at (0,0) {\textbf{level $0$}\\$16\times1$ blocks\\[2pt]$z^0\approx(Q^0)^*g^0$};
+\node[source] (z1) at (2.75,0) {\textbf{level $1$}\\$8\times2$ blocks\\[2pt]$z^1\approx(Q^1)^*g^1$};
+\node[source] (z2) at (5.50,0) {\textbf{level $2$}\\$4\times4$ blocks\\[2pt]$z^2\approx(Q^2)^*g^2$};
+\node[target] (w2) at (8.25,0) {\textbf{level $2$}\\same $4\times4$ blocks\\[2pt]$w^2=C^2z^2$};
+\node[target] (w3) at (11.0,0) {\textbf{level $3$}\\$2\times8$ blocks\\[2pt]target partial products};
+\node[target] (w4) at (13.75,0) {\textbf{level $4$}\\$1\times16$ blocks\\[2pt]output entries};
+\draw[flow] (z0)--(z1); \node[font=\scriptsize] at ($(z0)!0.5!(z1)+(0,-1.04)$) {$(H^3)^*$};
+\draw[flow] (z1)--(z2); \node[font=\scriptsize] at ($(z1)!0.5!(z2)+(0,-1.04)$) {$(H^2)^*$};
+\draw[flow] (z2)--(w2); \node[font=\scriptsize] at ($(z2)!0.5!(w2)+(0,-1.04)$) {$M^2$:\ $C^2$};
+\draw[flow] (w2)--(w3); \node[font=\scriptsize] at ($(w2)!0.5!(w3)+(0,-1.04)$) {$G^2$};
+\draw[flow] (w3)--(w4); \node[font=\scriptsize] at ($(w3)!0.5!(w4)+(0,-1.04)$) {$G^3$};
+\draw[decorate,decoration={brace,amplitude=4pt}] (-1.1,1.10)--(6.60,1.10);
+\node[font=\small,text=sourceblue] at (2.75,1.55) {source invariant: input coordinates};
+\draw[decorate,decoration={brace,amplitude=4pt}] (7.15,1.10)--(14.85,1.10);
+\node[font=\small,text=targetred] at (11.0,1.55) {target invariant: partial products};
+\end{tikzpicture}}
+\end{center}
+\end{frame}
+
+% martin-c --- middle SVD offline cost
+\begin{frame}{Why build the seed at the middle level?}
+\footnotesize
+\begin{columns}[T,onlytextwidth]
+\column{.56\textwidth}
+\textbf{Offline construction happens once}, before any input $g$ is supplied:
+\[
+ K_{ij}^h\simeq P_{ij}^h C_{ij}^h(Q_{ij}^h)^*,\qquad h=L/2 .
+\]
+The $N$ blocks at level $\ell$ have size $(N/2^\ell)\times2^\ell$. Sampling $O(\rho_\ell)$ rows and columns per block costs
+\[
+ O\!\left(N\rho_\ell\left(\frac{N}{2^\ell}+2^\ell\right)\right)
+\]
+entry accesses. Since $N/2^\ell+2^\ell\ge2\sqrt N$, equality at $2^\ell=\sqrt N$ minimises this generic cost.
+\column{.38\textwidth}
+\begin{beamercolorbox}[rounded=true,sep=.9ex]{softcard}
+\textbf{Result under randomized-sampling and incoherence assumptions:} the entry-sampled middle-seeded construction is $O(N^{3/2})$ for fixed rank.
+\end{beamercolorbox}
+\vspace{1mm}
+\begin{beamercolorbox}[rounded=true,sep=.9ex]{card}
+\textbf{Why not normalise full columns at $\ell=0$?} It requires full-column data and norms, costing $\Theta(N^2)$ accesses in the worst case. The balanced seed avoids this construction obstruction; it does not change diagonal application once built.
+\end{beamercolorbox}
+\end{columns}
+\vspace{1mm}
+\begin{beamercolorbox}[rounded=true,sep=.8ex]{softcard}
+\centering\textbf{The two-way split is an offline cost choice, not an additional online approximation principle.}
+\end{beamercolorbox}
+\end{frame}
+
+% martin-d --- target-only construction
+\begin{frame}{From the same seed to a target-only factorisation}
+\footnotesize
+Write each represented middle block as $\widetilde K_{ij}^h=P_{ij}^hW_{ij}^h$ with $W_{ij}^h=C_{ij}^h(Q_{ij}^h)^*$. Instead of carrying input coordinates to the middle, construct a new factorisation
+\[
+\boxed{\;K\approx U^LG^{L-1}\cdots G^0D.\;}
+\]
+\begin{columns}[T,onlytextwidth]
+\column{.48\textwidth}
+\textbf{Downward coarse construction.} For each coarse slot, stack two small coefficient descendants and factor
+\[
+ \mathcal U_{ij}^\ell\approx\mathcal Q_{ij}^\ell W_{ij}^\ell,\qquad
+ \mathcal U_{ij}^\ell\in\mathbb C^{2\rho_{\ell+1}\times2^\ell}.
+\]
+Reduced pivoted QR is used; an SVD could replace it. Halves of $\mathcal Q$ supply online transfers. No tall basis product is formed, and no entries of the original $K$ are read in this descent.
+\column{.46\textwidth}
+\begin{beamercolorbox}[rounded=true,sep=.8ex]{softcard}
+\textbf{Same offline order:}
+\[
+ \sum_{\ell=0}^{h-1}O(Nr^22^\ell)
+ =O(N^{3/2}r^2)=O(N^{3/2})\ \text{for fixed }r.
+\]
+The original $O(N^{1/2}C_K(N))$ seed term remains in black-box models. This is a different factorisation, not a permutation of the original factors.
+\end{beamercolorbox}
+\end{columns}
+\end{frame}
+
+% martin-e --- target-only online invariant, complexity and evidence
+\begin{frame}{One output invariant throughout application}
+\footnotesize
+Every online state satisfies $\boxed{P_{ij}^tw_{ij}^t\approx K_{ij}^tg_j^t}$ for $t=0,\ldots,L$.
+\begin{center}
+\scalebox{.78}{%
+\begin{tikzpicture}[x=1cm,y=1cm]
+\node[target] (w0) at (0,0) {\textbf{level $0$}\\$16\times1$ blocks\\[2pt]$w^0=Dg$};
+\node[target] (w1) at (3.1,0) {\textbf{level $1$}\\$8\times2$ blocks\\[2pt]partial products};
+\node[target] (w2) at (6.2,0) {\textbf{level $2$}\\$4\times4$ blocks\\[2pt]partial products};
+\node[target] (w3) at (9.3,0) {\textbf{level $3$}\\$2\times8$ blocks\\[2pt]partial products};
+\node[target] (w4) at (12.4,0) {\textbf{level $4$}\\$1\times16$ blocks\\[2pt]output entries};
+\draw[flow] (w0)--(w1); \node[font=\scriptsize] at ($(w0)!0.5!(w1)+(0,-1.04)$) {$G^0$};
+\draw[flow] (w1)--(w2); \node[font=\scriptsize] at ($(w1)!0.5!(w2)+(0,-1.04)$) {$G^1$};
+\draw[flow] (w2)--(w3); \node[font=\scriptsize] at ($(w2)!0.5!(w3)+(0,-1.04)$) {$G^2$};
+\draw[flow] (w3)--(w4); \node[font=\scriptsize] at ($(w3)!0.5!(w4)+(0,-1.04)$) {$G^3$};
+\draw[decorate,decoration={brace,amplitude=4pt}] (-1.1,1.10)--(13.5,1.10);
+\node[font=\small,text=targetred] at (6.2,1.55) {one invariant at every state:\quad $P_{ij}^tw_{ij}^t\approx K_{ij}^tg_j^t$};
+\end{tikzpicture}}
+\end{center}
+\begin{columns}[T,onlytextwidth]
+\column{.47\textwidth}
+\textbf{Same asymptotics:}
+\[
+ O\!\left(N\sum_{\ell=0}^{L-1}\rho_{\ell+1}\rho_\ell\right)
+ =O(Nr^2L)=O(Nr^2\log N)
+\]
+for storage and application. The gain is organisational, not asymptotic.
+\column{.47\textwidth}
+{\scriptsize\textbf{Controlled tests:} target-only residuals were roundoff-level. The SVD variant was $2$--$4\%$ faster online; the analogous shared-seed IDBF variant was $7$--$12\%$ faster and used less storage. These are finite implementation results, not general stability guarantees or benchmarks of optimised sampled-entry construction.}
+\end{columns}
+\end{frame}
+
+% 17 ----------------------------------------------------------------------
+\begin{frame}[plain]
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[white] (current page.south west) rectangle (current page.north east);
+  \draw[teal,line width=.6mm]
+    ([xshift=15mm,yshift=-7mm]current page.north west) -- ++(28mm,0);
+  \node[anchor=north west,text=navy,font=\sairtitlefont\fontsize{32}{37}\selectfont]
+    at ([xshift=15mm,yshift=-12mm]current page.north west)
+    {Thanks!};
+  \node[anchor=north east,inner sep=0pt]
+    at ([xshift=-6mm,yshift=-4mm]current page.north east)
+    {\includegraphics[width=66mm]{presentation-assets/caltech-sair-banner.png}};
+  \node[anchor=north,inner sep=0pt]
+    at ([xshift=-45mm,yshift=-30mm]current page.north)
+    {\includegraphics[width=35mm]{presentation-assets/national-compute.png}};
+  \node[anchor=north,inner sep=0pt]
+    at ([xshift=44mm,yshift=-30mm]current page.north)
+    {\includegraphics[width=35mm]{presentation-assets/xtx-markets.png}};
+  \node[anchor=north west,inner sep=0pt]
+    at ([xshift=5mm,yshift=-53mm]current page.north west)
+    {\includegraphics[width=65mm]{presentation-assets/sponsors-group-1.png}};
+  \node[anchor=north east,inner sep=0pt]
+    at ([xshift=-5mm,yshift=-53mm]current page.north east)
+    {\includegraphics[width=65mm]{presentation-assets/sponsors-group-2.png}};
+  \node[anchor=south east,inner sep=0pt]
+    at ([xshift=-3mm,yshift=2mm]current page.south east)
+    {\includegraphics[height=3mm]{presentation-assets/sair-mark.png}};
+\end{tikzpicture}
+\vspace*{0pt}
 \end{frame}
 
 \end{document}

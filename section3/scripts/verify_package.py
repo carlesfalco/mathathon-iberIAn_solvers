@@ -8,12 +8,12 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 required = [
-    "README.md", "main.pdf", "slides.pdf",
+    "README.md", "main.pdf", "slides.pdf", "latex/report.tex", "latex/slides.tex",
     "latex/speaker-notes.md", "python/README.md", "python/pyproject.toml",
     "python/unified/reference/butterfly.py", "rust/README.md", "rust/Cargo.toml",
     "rust/results/summary.json", "rust/results/core-prototype-summary.json",
     "results/MANIFEST.json", "results/update-review.md", "results/framework-explained.md",
-    "scripts/check_python.sh", "scripts/check_rust.sh", "scripts/make_figures.py",
+    "scripts/build_documents.sh", "scripts/check_python.sh", "scripts/check_rust.sh",
 ]
 missing = [name for name in required if not (ROOT / name).exists()]
 assert not missing, f"Missing required files: {missing}"

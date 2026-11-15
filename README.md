@@ -2,7 +2,7 @@
 
 Supplementary code, numerical experiments, figures, data, and verification results for Team iberIAn_solvers' work on **Problem 29: Simplifying PDE Algorithms**.
 
-LaTeX sources are intentionally **not tracked** in this repository. The official report is maintained separately in the **Final Report** chat. Compiled PDFs already in the repository are retained as reference documents.
+Report and slide LaTeX sources are included in this repository. The **Final Report** chat remains the authoritative report-editing workflow. Compiled PDFs already in the repository are retained as reference documents.
 
 ## Main demonstrations
 

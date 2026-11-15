@@ -1,0 +1,567 @@
+% Build from the project root:
+% latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=.scratch/presentation-build .trash/tex-removal-backup/presentation.tex
+% cp .scratch/presentation-build/presentation.pdf presentation.pdf
+\documentclass[aspectratio=169,10pt]{beamer}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\usepackage{booktabs}
+\usepackage{graphicx}
+
+% A light, restrained theme built directly on Beamer's defaults.
+\definecolor{navy}{HTML}{17324D}
+\definecolor{ink}{HTML}{243447}
+\definecolor{muted}{HTML}{627386}
+\definecolor{teal}{HTML}{137F82}
+\definecolor{sea}{HTML}{2A9D8F}
+\definecolor{blue}{HTML}{4677A8}
+\definecolor{coral}{HTML}{E47755}
+\definecolor{gold}{HTML}{D6A33D}
+\definecolor{lilac}{HTML}{7A6FA8}
+\definecolor{paper}{HTML}{F5F8FB}
+\definecolor{mist}{HTML}{E8F2F3}
+\definecolor{line}{HTML}{D9E3EC}
+
+\setbeamercolor{normal text}{fg=ink,bg=white}
+\setbeamercolor{structure}{fg=teal}
+\setbeamercolor{frametitle}{fg=navy,bg=white}
+\setbeamercolor{framesubtitle}{fg=muted}
+\setbeamercolor{block title}{fg=white,bg=navy}
+\setbeamercolor{block body}{fg=ink,bg=paper}
+\setbeamercolor{block title alerted}{fg=white,bg=coral}
+\setbeamercolor{block body alerted}{fg=ink,bg=coral!7}
+\setbeamercolor{block title example}{fg=white,bg=teal}
+\setbeamercolor{block body example}{fg=ink,bg=mist}
+\setbeamercolor{card}{fg=ink,bg=paper}
+\setbeamercolor{softcard}{fg=ink,bg=mist}
+\setbeamercolor{takeaway}{fg=navy,bg=mist}
+\setbeamercolor{placeholder}{fg=muted,bg=paper}
+\setbeamercolor{footline}{fg=muted,bg=white}
+
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{itemize item}{\textcolor{teal}{\small$\blacksquare$}}
+\setbeamertemplate{itemize subitem}{\textcolor{teal}{--}}
+\setbeamertemplate{enumerate item}{\textcolor{teal}{\bfseries\insertenumlabel.}}
+\setbeamersize{text margin left=9mm,text margin right=9mm}
+\setbeamerfont{frametitle}{size=\Large,series=\bfseries}
+\setbeamerfont{framesubtitle}{size=\small,series=\mdseries}
+\setbeamerfont{footline}{size=\scriptsize}
+\setlength{\leftmargini}{1.25em}
+
+\setbeamertemplate{frametitle}{%
+  \vspace*{3.0mm}%
+  {\scriptsize\bfseries\color{teal}\insertsection\par}%
+  \vspace{1.0mm}%
+  {\usebeamerfont{frametitle}\color{navy}\insertframetitle\par}%
+  \vspace{0.8mm}%
+  {\usebeamerfont{framesubtitle}\color{muted}\insertframesubtitle\par}%
+  \vspace{1.2mm}{\color{teal}\rule{13mm}{0.8pt}}\par\vspace{1.2mm}%
+}
+
+\setbeamertemplate{footline}{%
+  \leavevmode%
+  \hbox{%
+    \begin{beamercolorbox}[wd=.79\paperwidth,ht=2.6ex,dp=1.15ex,leftskip=9mm]{footline}%
+      \usebeamerfont{footline}Efficient factorisations for PDE problems
+    \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.21\paperwidth,ht=2.6ex,dp=1.15ex,rightskip=9mm plus1fil]{footline}%
+      \hfill\usebeamerfont{footline}\insertframenumber\,/\,\inserttotalframenumber
+    \end{beamercolorbox}%
+  }%
+}
+
+\newcommand{\pill}[2]{%
+  \tikz[baseline=-0.65ex]\node[fill=#1!11,text=#1,rounded corners=2pt,
+    inner xsep=5pt,inner ysep=2.6pt,font=\scriptsize\bfseries]{#2};%
+}
+\newcommand{\takeaway}[1]{%
+  \begin{beamercolorbox}[rounded=true,sep=1.3ex]{takeaway}%
+    \textcolor{teal}{\bfseries Takeaway}\quad #1
+  \end{beamercolorbox}%
+}
+\newcommand{\draftnote}[1]{%
+  \begin{beamercolorbox}[rounded=true,sep=1.3ex]{placeholder}%
+    \textcolor{muted}{\bfseries Planned for this slide}\quad #1
+  \end{beamercolorbox}%
+}
+\newcommand{\source}[1]{{\scriptsize\color{muted}#1\par}}
+
+\title{Efficient factorisations for PDE problems}
+\author{}
+\date{}
+
+
+\begin{document}
+
+% 1 ----------------------------------------------------------------------
+\begin{frame}[plain]
+\begin{tikzpicture}[remember picture,overlay]
+  \fill[white] (current page.south west) rectangle (current page.north east);
+  \draw[teal,line width=.6mm]
+    ([xshift=15mm,yshift=-15mm]current page.north west) -- ++(28mm,0);
+  \node[anchor=north west,text=teal,font=\scriptsize\bfseries]
+    at ([xshift=15mm,yshift=-21mm]current page.north west)
+    {NUMERICAL METHODS FOR PDEs};
+  \node[anchor=north west,text=navy,text width=100mm,font=\fontsize{26}{31}\selectfont\bfseries]
+    at ([xshift=15mm,yshift=-30mm]current page.north west)
+    {Efficient factorisations\\for PDE problems};
+  \node[anchor=north west,text=muted,text width=88mm,font=\large]
+    at ([xshift=15mm,yshift=-59mm]current page.north west)
+    {Green-function integrals, structured matrices\\and butterfly factorisations};
+  \node[anchor=south west,text=muted,font=\small]
+    at ([xshift=15mm,yshift=11mm]current page.south west)
+    {20-minute presentation};
+  \draw[line,line width=.4pt]
+    ([xshift=15mm,yshift=8mm]current page.south west) -- ++(40mm,0);
+  \coordinate (bforigin) at ([xshift=-42mm,yshift=1mm]current page.east);
+  \begin{scope}[shift=(bforigin),x=1mm,y=1mm]
+    \foreach \x in {0,12,24,36}{
+      \foreach \y in {-18,-6,6,18}{\fill[navy!75] (\x,\y) circle (1.1);}
+    }
+    \foreach \a/\b in {-18/-18,-18/-6,-6/-18,-6/6,6/-6,6/18,18/6,18/18}
+      \draw[teal!55,line width=.55pt] (0,\a)--(12,\b);
+    \foreach \a/\b in {-18/-18,-18/6,-6/-6,-6/18,6/-6,6/6,18/-6,18/18}
+      \draw[blue!40,line width=.55pt] (12,\a)--(24,\b);
+    \foreach \a/\b in {-18/-18,-18/-6,-6/-18,-6/6,6/-6,6/18,18/6,18/18}
+      \draw[coral!55,line width=.55pt] (24,\a)--(36,\b);
+    \node[text=muted,font=\scriptsize,align=center] at (18,-29)
+      {local coefficients\\global interactions};
+  \end{scope}
+\end{tikzpicture}
+\vspace*{0pt}
+\end{frame}
+
+\section{Introduction}
+% 2 ----------------------------------------------------------------------
+\begin{frame}{Six ideas, one common theme}
+\framesubtitle{From PDE structure to rigorous algorithms and evidence.}
+\small
+\begin{columns}[T,onlytextwidth]
+\column{.32\textwidth}
+\begin{beamercolorbox}[rounded=true,sep=1.25ex]{softcard}
+\pill{teal}{01 \quad GREEN }\\[1mm]
+{\bfseries From PDEs to matrix tasks}\\
+Superposition, discretisation, and application versus solution.
+\end{beamercolorbox}
+\vspace{2mm}
+\begin{beamercolorbox}[rounded=true,sep=1.25ex]{card}
+\pill{blue}{02 \quad FFT }\\[1mm]
+{\bfseries Exact structure}\\
+Circulant diagonalisation and sparse basis changes.
+\end{beamercolorbox}
+\column{.32\textwidth}
+\begin{beamercolorbox}[rounded=true,sep=1.25ex]{card}
+\pill{lilac}{03 \quad CHOICES }\\[1mm]
+{\bfseries Five design choices}\\
+Partition, interactions, representation, sampling and algebra.
+\end{beamercolorbox}
+\vspace{2mm}
+\begin{beamercolorbox}[rounded=true,sep=1.25ex]{softcard}
+\pill{teal}{04 \quad LOW RANK }\\[1mm]
+{\bfseries Local low rank}\\
+Centred residuals, explicit error bounds and assumptions.
+\end{beamercolorbox}
+\column{.32\textwidth}
+\begin{beamercolorbox}[rounded=true,sep=1.25ex]{card}
+\pill{blue}{05 \quad RECURSION }\\[1mm]
+{\bfseries Nesting gives speed}\\
+Complementary boxes, nested transfers and access costs.
+\end{beamercolorbox}
+\vspace{2mm}
+\begin{beamercolorbox}[rounded=true,sep=1.25ex]{card}
+\pill{muted}{06 \quad LIMITS }\\[1mm]
+{\bfseries Three certificates}\\
+Approximation, stability and total cost are checked separately.
+\end{beamercolorbox}
+\end{columns}
+\end{frame}
+
+\section{1 \textbar\quad Green-function matrix problems}
+% 3 ----------------------------------------------------------------------
+\begin{frame}{Green functions create two different matrix tasks}
+\framesubtitle{The PDE, geometry, discretisation and integral formulation all determine the matrix structure.}
+\begin{columns}[T,onlytextwidth]
+\column{.56\textwidth}
+{\color{teal}\small\bfseries CONTINUOUS SUPERPOSITION}
+\[
+\begin{gathered}
+ \mathcal Lu=f,\qquad \mathcal L_xG(x,y)=\delta(x-y),\\[.5mm]
+ u(x)=\displaystyle\int_\Omega G(x,y)f(y)\,\mathrm dy .
+\end{gathered}
+\]
+{\color{teal}\small\bfseries AFTER QUADRATURE}
+\[
+ u(x_i)\approx\sum_{j=1}^{N}\underbrace{w_jG(x_i,y_j)}_{A_{ij}}f(y_j)
+ \quad\Longrightarrow\quad \bm u=A\bm f .
+\]
+{\scriptsize\color{muted}\textbf{Dense baselines:} apply/store $O(N^2)$; dense LU $O(N^3)$.}
+\column{.39\textwidth}
+\begin{block}{Apply a known operator}
+Given $\sigma$, compute $A\sigma$. A structured representation can accelerate this task.
+\end{block}
+\vspace{2mm}
+\begin{alertblock}{Solve for an unknown density}
+Given $b$, find $\sigma$ from $A\sigma=b$.\\[.5ex]
+\textbf{Fast application is not automatically a fast direct solve.}
+\end{alertblock}
+\end{columns}
+\end{frame}
+
+% 4 ----------------------------------------------------------------------
+\begin{frame}{Reaction--diffusion as an integral equation}
+\framesubtitle{Variable $q$ couples Fourier modes; the Green formulation puts the unknown on both sides.}
+\footnotesize
+\begin{columns}[T,onlytextwidth]
+\column{.47\textwidth}
+\[
+ -u''+q(x)u=f,\qquad u(0)=u(1)=0,\qquad q\ge0 .
+\]
+For $-\mathrm d^2/\mathrm dx^2$ with these Dirichlet conditions,
+\[
+\begin{aligned}
+ G_0(x,y)&=\min(x,y)-xy,\\
+ F(x)&=\displaystyle\int_0^1G_0(x,y)f(y)\,\mathrm dy .
+\end{aligned}
+\]
+Since $-u''=f-qu$, applying $G_0$ gives
+\[
+ \boxed{\quad u(x)+\int_0^1G_0(x,y)q(y)u(y)\,\mathrm dy=F(x).\quad}
+\]
+\column{.47\textwidth}
+Quadrature produces
+\[
+ (I+KQ)u=F,\qquad K_{ij}=w_jG_0(x_i,x_j),
+\]
+where $Q=\operatorname{diag}(q(x_j))$. Also $G_0(x,x)=x(1-x)$ is finite, so this example needs no singular-diagonal correction.
+\begin{beamercolorbox}[rounded=true,sep=1.0ex]{softcard}
+\textbf{Dense but structured:} entries sample one continuous Green kernel, although every source contributes to every observation.
+\end{beamercolorbox}
+\begin{beamercolorbox}[rounded=true,sep=1.0ex]{card}
+\textbf{Formulation matters:} finite differences give a sparse 1D system; the integral form is not automatically preferable. Different formulations need different algorithms.
+\end{beamercolorbox}
+\end{columns}
+\end{frame}
+
+\section{2 \textbar\quad Exact FFT structure}
+% 5 ----------------------------------------------------------------------
+\begin{frame}{Two ingredients of the FFT}
+\framesubtitle{Exact diagonalisation is useful only when the basis changes are also inexpensive.}
+\footnotesize
+\begin{columns}[T,onlytextwidth]
+\column{.48\textwidth}
+\begin{block}{1. Circulant symmetry}
+For $(Kf)_i=\sum_j g_{(i-j)\bmod N}f_j$ and the unitary DFT $\mathcal F_N$,
+\[
+ K=\mathcal F_N^*\operatorname{diag}(\mu)\mathcal F_N,
+ \qquad \mu=\sqrt N\,\mathcal F_Ng .
+\]
+The identity is exact for every $N$, given compatible kernel, weights, grid and periodic boundaries.
+\end{block}
+\column{.46\textwidth}
+\begin{exampleblock}{2. Radix-2 sparse stages}
+For $X=\sqrt N\,\mathcal F_Nx$ and $\omega_N=e^{-2\pi i/N}$,
+\[
+ X_k=E_k+\omega_N^kO_k,\qquad
+ X_{k+N/2}=E_k-\omega_N^kO_k .
+\]
+Two partial transforms produce two outputs; no information is discarded. Iterating gives
+\[
+ \mathcal F_N=S_L\cdots S_1\Pi_N,\qquad L=\log_2N .
+\]
+Each $S_\ell$ has $2N$ nonzeros, hence $T(N)=O(N\log N)$.
+\end{exampleblock}
+\end{columns}
+\vspace{1mm}
+\source{Cooley--Tukey (1965). An in-place implementation applies the stages without forming $\mathcal F_N$ or $S_\ell$.}
+\end{frame}
+
+% 6 ----------------------------------------------------------------------
+\begin{frame}{Periodic solve: fast algebra is not PDE accuracy or low rank}
+\framesubtitle{The discrete symbol, conditioning and approximation error are separate issues.}
+\footnotesize
+\begin{columns}[T,onlytextwidth]
+\column{.47\textwidth}
+For $S=I-\Delta_h$, $h=1/N$, on a periodic grid,
+\[
+ S=\mathcal F_N^*\Lambda\mathcal F_N,\qquad
+ \lambda_k=1+\frac4{h^2}\sin^2\!\left(\frac{\pi k}{N}\right).
+\]
+Since $\lambda_k\ge1$, the discrete Green operator is
+\[
+ G_h=S^{-1}=\mathcal F_N^*\Lambda^{-1}\mathcal F_N .
+\]
+\begin{beamercolorbox}[rounded=true,sep=1.2ex]{softcard}
+\textbf{Solve:} two FFTs plus $N$ divisions cost $O(N\log N)$ with $O(N)$ working storage; neither $S^{-1}$ nor $\mathcal F_N$ is formed.
+\end{beamercolorbox}
+\column{.47\textwidth}
+\begin{alertblock}{Three qualifications}
+\begin{itemize}
+ \item \textbf{Conditioning:} for even $N$, $\kappa_2(S)=1+4N^2$; invertibility is not uniform stability.
+ \item \textbf{PDE error:} fixed-mode $O(h^2)$ stencil error remains; the FFT does not remove it.
+ \item \textbf{Rank and ordering:} $\sigma_i(\mathcal F_N)=1$ globally, but complementary residue-class tiles are exactly rank one in both bit-reversed orderings. For $N=2^L$, factor storage is $2N\log_2N+2N$; one-sided ordering is insufficient.
+\end{itemize}
+\vspace{-2mm}
+\end{alertblock}
+\end{columns}
+\end{frame}
+
+\section{3 \textbar\quad Common block strategy}
+% 7 ----------------------------------------------------------------------
+\begin{frame}{Five choices organise a hierarchical method}
+\framesubtitle{A common block strategy, not a universal solver: each algorithm supplies additional mathematics.}
+\footnotesize
+\begin{beamercolorbox}[rounded=true,sep=1.15ex]{softcard}
+\centering\scriptsize
+\textbf{1 Partition:} groups and ordering $\;\rightarrow\;$
+\textbf{2 Interactions:} exact or compressed blocks $\;\rightarrow\;$
+\textbf{3 Representation:} expansion, ID or nested basis\\[.8mm]
+\textbf{4 Sampling:} entries, proxies or operator probes $\;\rightarrow\;$
+\textbf{5 Algebra:} translations, sparse factors or elimination
+\end{beamercolorbox}
+\vspace{.5mm}
+\begin{columns}[T,onlytextwidth]
+\column{.31\textwidth}
+\begin{beamercolorbox}[rounded=true,sep=.35ex]{card}
+\pill{blue}{G1 \quad SUM OVER LEVELS}\\[1mm]
+\textbf{FMM / $H^2$:} translate summaries; requires analytic expansions and translation theory.
+\end{beamercolorbox}
+\column{.31\textwidth}
+\begin{beamercolorbox}[rounded=true,sep=.35ex]{card}
+\pill{blue}{G2 \quad SPARSE FACTORS}\\[1mm]
+\textbf{FFT / butterfly:} apply $T_M\cdots T_1P$; speed also needs radix recursion or nested bases.
+\end{beamercolorbox}
+\column{.31\textwidth}
+\begin{beamercolorbox}[rounded=true,sep=.35ex]{card}
+\pill{blue}{G3 \quad ELIMINATE}\\[1mm]
+\textbf{HBS / RS / FMM-LU:} use $(S-RP^{-1}Q)b=g-RP^{-1}f$ for invertible $P$. Also certify pivots and track fill and modified blocks.
+\end{beamercolorbox}
+\end{columns}
+\vspace{.5mm}
+\begin{beamercolorbox}[rounded=true,sep=.6ex]{softcard}
+\textbf{Three independent certificates:} approximation error in a stated norm; numerical stability, conditioning and pivots; and total cost, including near data, construction, transfers, root work and memory. Low rank alone certifies only part of this list.
+\end{beamercolorbox}
+\end{frame}
+
+\section{4 \textbar\quad Phase compression and local low rank}
+
+% 8 ----------------------------------------------------------------------
+\begin{frame}{Oscillatory integrals: the example behind butterfly}
+\framesubtitle{From an exact special case to the assumptions needed beyond it.}
+\footnotesize
+\begin{columns}[T,onlytextwidth]
+\column{.56\textwidth}
+For a real phase $\Psi$, consider $I_n[f](x)=\int e^{2\pi in\Psi(x,p)}f(p)\,\mathrm dp$ with frequency scale $n$. Quadrature gives $u\approx Af$, where $A_{ij}=w_je^{2\pi in\Psi(x_i,p_j)}$. Direct apply costs $O(N^2)$; oscillation itself is not low rank.
+\begin{beamercolorbox}[rounded=true,sep=.9ex]{softcard}
+\textbf{Bilinear example: $\Psi(x,p)=xp$}\\[.5mm]
+With $x_i=i/N$, $p_j=j/N$ and $n=N$,
+\[
+ K_N(x_i,p_j)=e^{2\pi iN(i/N)(j/N)}=e^{2\pi iij/N},
+\]
+the positive-sign DFT. Around a box centre $(a,b)$,
+\[
+ xp=\underbrace{xb+ap-ab}_{\text{row/column phase}}
+      +\underbrace{(x-a)(p-b)}_{\text{mixed residual}}.
+\]
+\end{beamercolorbox}
+\column{.38\textwidth}
+\begin{exampleblock}{Conditions used by butterfly}
+\begin{itemize}
+ \item \textbf{Phase regularity:} real smoothness for peeling; joint real analyticity for the quoted general rank theorem.
+ \item \textbf{Local phase control:} a bound on $\partial_x\partial_p\Psi$ and on the width product $n h_Ah_B$.
+ \item \textbf{Suitable block geometry:} complementary tilings and nested transfers. Local low rank alone is not enough.
+\end{itemize}
+\vspace{-2mm}
+\end{exampleblock}
+\vspace{1mm}
+{\scriptsize\color{muted}The DFT supplies an independent exact reference. Later, $\Psi=xp+0.1x^2p^2$ tests the same residual construction without relying on an FFT reference.}
+\end{columns}
+\end{frame}
+
+
+% 9 ----------------------------------------------------------------------
+\begin{frame}{Centring leaves only a mixed residual to compress}
+\framesubtitle{Remove the large phase exactly; approximate only the coupled remainder on $A\times B$.}
+\footnotesize
+\begin{columns}[T,onlytextwidth]
+\column{.69\textwidth}
+\vspace{-2mm}
+\[
+\begin{aligned}
+ K_n(x,p)&=e^{2\pi i n\Psi(x,p)},\\
+ R_{AB}&=\Psi(x,p)-\Psi(a,p)-\Psi(x,b)+\Psi(a,b).
+\end{aligned}
+\]
+\begin{beamercolorbox}[rounded=true,sep=1.0ex]{softcard}
+\centering
+\resizebox{\linewidth}{!}{$\displaystyle K_n=\underbrace{e^{2\pi in\Psi(x,b)}}_{x\ \mathrm{only}}\,
+ \underbrace{e^{2\pi in\Psi(a,p)}}_{p\ \mathrm{only}}\,
+ \underbrace{e^{-2\pi in\Psi(a,b)}}_{\mathrm{constant}}\,
+ \underbrace{e^{2\pi inR_{AB}}}_{\mathrm{coupled\ residual}}$}
+\end{beamercolorbox}
+Sampling gives $K_{AB}=c_{AB}D_AH_{AB}D_B$ with unit-modulus diagonals. They preserve singular values, so only $H_{AB}$ needs compression. Moreover,
+\[
+\begin{aligned}
+ R_{AB}(x,p)&=\int_a^x\!\int_b^p\partial_s\partial_t\Psi(s,t)\,\mathrm dt\,\mathrm ds,\\
+ 2\pi n|R_{AB}|&\leq\rho_{AB}:=\frac{\pi}{2}M_{AB}nh_Ah_B,
+ \quad M_{AB}=\sup_{A\times B}|\partial_x\partial_p\Psi|.
+\end{aligned}
+\]
+\column{.26\textwidth}
+\begin{center}
+\begin{tikzpicture}[x=.56mm,y=.58mm]
+ \draw[fill=paper,draw=line,rounded corners] (0,-3) rectangle (63,52);
+ \draw[fill=teal!10,draw=teal,line width=1pt] (10,8) rectangle (53,40);
+ \draw[teal!50,dashed] (31.5,8)--(31.5,40);
+ \draw[teal!50,dashed] (10,24)--(53,24);
+ \fill[coral] (31.5,24) circle (1.7);
+ \node[font=\small,text=coral] at (37,21){$(a,b)$};
+ \fill[blue] (45,34) circle (1.7);
+ \node[font=\small,text=blue] at (43,37){$(x,p)$};
+ \draw[{Latex[length=1.5mm]}-{Latex[length=1.5mm]},muted] (10,4)--(53,4);
+ \node[font=\small,text=muted] at (31.5,0){$h_A$};
+ \draw[{Latex[length=1.5mm]}-{Latex[length=1.5mm]},muted] (57,8)--(57,40);
+ \node[font=\small,text=muted,rotate=90] at (60.5,24){$h_B$};
+ \node[font=\small\bfseries,text=navy] at (31.5,46){centred rectangle};
+\end{tikzpicture}
+\end{center}
+{\scriptsize The residual is governed by $nh_Ah_B$, not by the total phase size.}
+\end{columns}
+\vspace{.5mm}
+\source{Cand\`es--Demanet--Ying, arXiv:0809.0719, \S\S3--4.}
+\end{frame}
+
+% 10 ----------------------------------------------------------------------
+\begin{frame}{Local low rank: approximation and error norm}
+\framesubtitle{Separated terms give rank at most $q$ after discretisation; the error metric matters.}
+\footnotesize
+\begin{columns}[T,onlytextwidth]
+\column{.51\textwidth}
+\begin{block}{Bilinear model: $\Psi(x,p)=xp$}
+Here $R_{AB}=(x-a)(p-b)$, and
+\vspace{-1mm}
+\[
+\begin{aligned}
+ e^{2\pi inR}&=\sum_{r=0}^{q-1}
+ \frac{(2\pi in)^r}{r!}(x-a)^r(p-b)^r+\mathcal E_q,\\
+ |\mathcal E_q|&\leq\frac{\rho_{AB}^q}{q!}.
+\end{aligned}
+\]
+Each term separates. The bound is \textbf{uniform entrywise} and specific to this bilinear calculation.
+\end{block}
+\column{.43\textwidth}
+\begin{exampleblock}{Real-analytic phase}
+Interpolate the residual exponential in the smaller box's variable. Higher mixed derivatives matter: the rectangle bound alone is not a low-rank proof.
+
+For square boxes with $h_Ah_B=1/n$, the two-dimensional Cand\`es--Demanet--Ying theorem gives $r_\varepsilon=O(\log^4(1/\varepsilon))$, with constant independent of $n$ in its stated range. It concerns complementary blocks, not the rank of the full matrix.
+\end{exampleblock}
+\end{columns}
+\begin{beamercolorbox}[rounded=true,sep=.8ex]{softcard}
+\textbf{Norm conversion:} if $|E_{ij}|\le\eta$ on an $m_A\times m_B$ block, then $\|E\|_2\le\|E\|_F\le\eta\sqrt{m_Am_B}$. Thus entrywise tolerance $\eta$ is not automatically absolute spectral tolerance $\eta$.
+\end{beamercolorbox}
+\end{frame}
+
+\section{5 \textbar\quad Complementary-box recursion}
+% 11 ----------------------------------------------------------------------
+\begin{frame}{Complementary boxes keep the local residual bound uniform}
+\framesubtitle{Observation boxes split while source boxes merge, preserving the width product at every level.}
+\footnotesize
+\begin{columns}[T,onlytextwidth]
+\column{.55\textwidth}
+For dyadic trees of depth $L=\log_2n$,
+\[
+ A_\ell:\ h_\ell=2^{-\ell},\qquad
+ B_{L-\ell}:\ H_\ell=2^\ell/n,
+ \qquad\boxed{h_\ell H_\ell=1/n.}
+\]
+If $M$ uniformly bounds $|\partial_x\partial_p\Psi|$, then
+\[
+ \rho_\ell\leq\frac{\pi}{2}Mnh_\ell H_\ell
+ =\frac{\pi}{2}M
+ \qquad\text{at every level}.
+\]
+\takeaway{Uniform residual bounds give uniform local rank targets in the analytic construction. They do not, by themselves, bound propagated error through the complete recursion.}
+\column{.40\textwidth}
+\begin{center}
+\begin{tikzpicture}[x=.55mm,y=.60mm]
+ \draw[fill=paper,rounded corners] (-4,-9) rectangle (76,48);
+ \node[font=\scriptsize\bfseries,text=teal] at (17,44){OBSERVATION $A$};
+ \node[font=\scriptsize\bfseries,text=blue] at (54,44){SOURCE $B$};
+ \foreach \y/\a/\b/\lab in {35/64/6/{$\ell=0$},22/40/24/{$\ell=1$},9/24/40/{$\ell=2$},-4/8/56/{$\ell=L$}}{
+   \node[font=\scriptsize,text=muted,anchor=east] at (-7,\y+2){\lab};
+   \fill[teal!80] (0,\y) rectangle ++(\a,4);
+   \fill[blue!75] (72-\b,\y) rectangle ++(\b,4);
+ }
+ \node[font=\scriptsize,text=muted] at (16,29.5){split $\downarrow$};
+ \node[font=\scriptsize,text=muted] at (55,29.5){merge $\downarrow$};
+ \draw[{Latex[length=1.5mm]}-{Latex[length=1.5mm]},coral] (2,-9)--(70,-9);
+ \node[font=\scriptsize\bfseries,text=coral,fill=paper,inner sep=1pt] at (36,-9){$h_\ell H_\ell=1/n$ at every rung};
+\end{tikzpicture}
+\end{center}
+\vspace{1mm}
+{\scriptsize There are $2^\ell2^{L-\ell}=n$ complementary pairs per level, hence $O(n\log n)$ pairs across $L+1$ levels.}
+\end{columns}
+\end{frame}
+
+% 12 ----------------------------------------------------------------------
+\begin{frame}{Tiles give low rank; nesting gives speed}
+\framesubtitle{Independent compression is not yet a fast algorithm, and construction is a separate budget.}
+\footnotesize
+\begin{columns}[T,onlytextwidth]
+\column{.48\textwidth}
+\begin{block}{Why nested transfers are necessary}
+Middle level: $N$ independent $\sqrt N\times\sqrt N$ tiles cost $O(rN^{3/2})$ storage and apply work---not yet $O(N\log N)$.
+
+Instead reuse old summaries through
+\[
+ U_1c_1+U_2c_2\approx U_{\rm new}(T_1c_1+T_2c_2).
+\]
+One merge stores at most $r_2(r_0+r_1)$ entries. Bounded ranks give $O(N)$ entries per stage and $O(N\log N)$ over $O(\log N)$ stages.
+\end{block}
+{\scriptsize\textbf{Reference traversal, fixed rank:} 1D $O(n\log n)$; 2D quadtree $O(N^2\log N)$.}
+\column{.46\textwidth}
+{\scriptsize\textbf{Complementary low rank:} spectral rank bounds for every $\ell(A)+\ell(B)=L$ block; sampling is separate.}
+\begin{beamercolorbox}[rounded=true,sep=.9ex]{card}
+\textbf{Access models (Li et al., 2015):}\\[.5mm]
+\textbf{Teaching entries:} read all rows of every tile (not optimal).\\[.2mm]
+\textbf{Black-box products:} $O(C_K(N)\sqrt N+N^{3/2})$, where $C_K(N)$ is one application of $K$ or $K^*$.\\[.2mm]
+\textbf{Sampled entries:} $O(N^{3/2})$ under coherence hypotheses.\\[.7mm]
+Sparse-factor apply: $O(N\log N)$; construction is paid separately.
+\end{beamercolorbox}
+\end{columns}
+
+\end{frame}
+
+\section{6 \textbar\quad Evidence: three certificates}
+% 13 ----------------------------------------------------------------------
+\begin{frame}{Three certificates: accuracy, stability and total cost}
+\framesubtitle{A convincing method needs all three; evidence for one does not prove the others.}
+\footnotesize
+\begin{columns}[T,onlytextwidth]
+\column{.43\textwidth}
+\begin{beamercolorbox}[rounded=true,sep=1.1ex]{softcard}
+\pill{teal}{APPROXIMATION \quad DFT CHECK}\\[1mm]
+For $\Psi=xp$, the reference is $u=N\operatorname{IFFT}(f)$. At $q=8$, relative output error is approximately constant over the tested sizes; increasing $q$ reduces it. This is finite approximation evidence, not a global theorem.
+\end{beamercolorbox}
+\vspace{1mm}
+\begin{beamercolorbox}[rounded=true,sep=1.1ex]{card}
+\pill{teal}{APPROXIMATION \quad NON-DFT CHECK}\\[1mm]
+For $\Psi=xp+0.1x^2p^2$, residual interpolation is compared with explicit dense evaluation at $N=128$. Output error again decreases rapidly with $q$, without implying stability or cheap construction.
+\end{beamercolorbox}
+\column{.52\textwidth}
+\begin{center}
+\includegraphics[width=.80\linewidth]{butterfly-demo/results/non_dft_comparison.png}
+{\scriptsize\color{muted}Non-DFT example: dense reference; relative output error.}
+\end{center}
+\begin{beamercolorbox}[rounded=true,sep=1.0ex]{card}
+\textbf{Stability:} $T=i,\ \Pi=[I;-T]\Rightarrow\Pi^{\mathsf T}\Pi=0$, but $\Pi^*\Pi=2$. Accurate blocks cannot protect plain-transpose pivots; use adjoint/real interpolation and check stability.
+
+\textbf{Total cost:} Oseen ($N=4096$, $\lambda=320$, depth 4): root $485\to163$, storage $+28.6\%$, elimination flops $+67.3\%$.
+\end{beamercolorbox}
+\end{columns}
+\end{frame}
+
+\end{document}

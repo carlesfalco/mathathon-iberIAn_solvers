@@ -3,7 +3,7 @@
 This GitHub repository is the **supplementary code, figures, data, and results package** for Problem 29.
 
 - The official report is maintained separately in the **Final Report** chat.
-- LaTeX sources are intentionally not tracked here.
+- Report and slide LaTeX sources are included as repository snapshots; the **Final Report** chat remains authoritative.
 - Compiled PDFs already present are reference artifacts, not editable source packages.
 - Numerical claims supplied for the report should identify their code, parameters, and verification receipts in these directories.
 

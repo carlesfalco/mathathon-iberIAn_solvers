@@ -1,0 +1,108 @@
+\section{Motivation: PDEs and Green-function integrals}
+\label{sec:motivation}
+
+Many numerical methods for partial differential equations (PDEs) lead, either directly or after an intermediate reformulation, to integrals of the form
+\begin{equation}
+    u(x) = \int_\Omega G(x,y) f(y)\,\mathrm{d}y.
+    \label{eq:green-representation}
+\end{equation}
+Here, $f$ represents a source or given data, $u$ is the quantity to be computed, and $G$ is a \emph{Green function}. The value $G(x,y)$ describes the effect at an observation point $x$ of a unit point source located at $y$. Equation~\eqref{eq:green-representation} therefore expresses a superposition principle: the solution at $x$ receives contributions from sources throughout the domain.
+
+After discretization, such integral operators become matrices. Their properties depend on the PDE, the geometry, and the chosen formulation: a matrix may be diagonal in a suitable basis, sparse, translation invariant, or dense and oscillatory. Understanding and exploiting this structure is the common theme of the methods studied in this report.
+
+\subsection{Green functions and linear systems}
+
+Consider a linear PDE written abstractly as $\mathcal{L}u=f$ in $\Omega$, together with suitable homogeneous boundary or initial conditions. Its Green function formally satisfies
+\begin{equation}
+    \mathcal{L}_xG(x,y)=\delta(x-y),
+\end{equation}
+with the same homogeneous conditions in $x$, where $\delta$ is the Dirac distribution. Applying $\mathcal{L}$ to~\eqref{eq:green-representation} then recovers $\mathcal{L}u=f$. Other boundary or initial data introduce additional terms without changing this basic representation.
+
+When pointwise quadrature is applicable, choosing source points $y_j$, observation points $x_i$, and quadrature weights $w_j$ gives
+\begin{equation}
+    u(x_i)\approx\sum_{j=1}^{N}w_jG(x_i,y_j)f(y_j)
+    =\sum_{j=1}^{N}A_{ij}f_j,
+    \qquad A_{ij}=w_jG(x_i,y_j).
+    \label{eq:discrete-green}
+\end{equation}
+Thus, a continuous integral operator becomes the matrix operation $u=Af$. More generally, an integral equation constrains the unknown itself, and discretization produces a linear system
+\begin{equation}
+    A\sigma=b
+    \label{eq:generic-system}
+\end{equation}
+whose solution is needed before physical quantities can be recovered.
+
+These are two distinct numerical tasks. \emph{Applying} an operator means computing $A\sigma$ for a given $\sigma$, whereas \emph{solving} a system means finding $\sigma$ from $A\sigma=b$. A fast method for the first task does not automatically provide a fast method for the second. Fast direct solvers address the second task by constructing a reusable representation of the solution operator.
+
+For an unstructured $N\times N$ matrix, the usual baselines are
+\begin{center}
+\begin{tabular}{@{}ll@{}}
+Operation & Standard dense cost \\
+\hline
+Storing $A$ & $O(N^2)$ memory \\
+Applying $Af$ & $O(N^2)$ operations \\
+Computing an LU factorization & $O(N^3)$ operations \\
+Solving using stored LU factors & $O(N^2)$ operations per right-hand side
+\end{tabular}
+\end{center}
+Evaluating a kernel sum directly does not require storing the full matrix, because its entries can be generated when needed, but a direct evaluation still involves $N^2$ kernel interactions. These generic costs motivate the search for specialized representations and factorizations.
+
+\subsection{An explicit example: a one-dimensional reaction--diffusion problem}
+\label{subsec:reaction-diffusion}
+
+To see how an actual equation leads to a system of the form~\eqref{eq:generic-system}, consider the steady reaction--diffusion problem
+\begin{equation}
+    -u''(x)+q(x)u(x)=f(x),\qquad 0<x<1,
+    \qquad u(0)=u(1)=0.
+    \label{eq:reaction-diffusion}
+\end{equation}
+Here, $q$ is a given nonnegative coefficient and $f$ is a known source. If $q$ varies with $x$, the reaction term couples different Fourier modes, so the equation generally does not reduce to independent scalar equations in a simple global Fourier basis.
+
+First consider the background operator $-d^2/dx^2$ with the same Dirichlet conditions. Its Green function is
+\begin{equation}
+    G_0(x,y)=
+    \begin{cases}
+        x(1-y), & 0\leq x\leq y\leq1,\\
+        y(1-x), & 0\leq y<x\leq1.
+    \end{cases}
+    \label{eq:dirichlet-green}
+\end{equation}
+Indeed, $G_0$ is continuous, satisfies the boundary conditions in $x$, and has the derivative jump required to produce $\delta(x-y)$ under $-\partial_{xx}$. Define the known function
+\begin{equation}
+    F(x)=\int_0^1G_0(x,y)f(y)\,\mathrm{d}y.
+    \label{eq:reaction-source}
+\end{equation}
+Since $-u''=f-qu$, applying the background Green operator gives
+\begin{equation}
+    u(x)+\int_0^1G_0(x,y)q(y)u(y)\,\mathrm{d}y=F(x).
+    \label{eq:reaction-integral}
+\end{equation}
+The unknown $u$ now appears on both sides of the equation. It is no longer sufficient to evaluate one Green-function integral with known data; we must solve an integral equation.
+
+After quadrature, equation~\eqref{eq:reaction-integral} becomes
+\begin{equation}
+    u_i+\sum_{j=1}^{N}w_jG_0(x_i,x_j)q(x_j)u_j=F_i,
+    \qquad i=1,\ldots,N,
+    \label{eq:reaction-discrete-sum}
+\end{equation}
+or, in matrix notation,
+\begin{equation}
+    (I+KQ)u=F,
+    \qquad K_{ij}=w_jG_0(x_i,x_j),
+    \qquad Q=\operatorname{diag}(q(x_1),\ldots,q(x_N)).
+    \label{eq:reaction-system}
+\end{equation}
+The matrix $K$, and hence generally $I+KQ$, is dense because every source point contributes to every observation point. At the same time, its entries are samples of a simple Green kernel rather than unrelated numbers.
+
+Importantly, this example needs no singular-diagonal correction: $G_0$ is continuous everywhere and
+\begin{equation}
+    G_0(x,x)=x(1-x)
+    \label{eq:green-diagonal}
+\end{equation}
+is finite. Thus, the formula $K_{ij}=w_jG_0(x_i,x_j)$ remains meaningful when $i=j$.
+
+The example also shows that the matrix structure depends on the formulation. A local finite-difference discretization of~\eqref{eq:reaction-diffusion} leads to a sparse system, whereas the Green formulation leads to a dense one. The integral formulation is not automatically preferable for this one-dimensional problem; it serves here to demonstrate how PDEs produce dense integral-operator systems and why different algebraic structures require different algorithms.
+
+\subsection{From examples to structured matrix problems}
+
+This reaction--diffusion problem illustrates the central computational question: how can we represent and solve a large matrix system efficiently by using the structure inherited from the PDE? Periodic evolution problems provide cases that become diagonal in Fourier space; local differential discretizations provide sparse systems; and oscillatory Green or Fourier integral operators provide dense matrices with more subtle interaction patterns. The following sections examine these structures separately, beginning with the most regular ones and progressing toward oscillatory operators and their factorizations.

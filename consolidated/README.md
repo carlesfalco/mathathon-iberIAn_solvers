@@ -2,7 +2,7 @@
 
 Python and Rust implementations, teaching examples, figures, data, and verification results assembled for the numerical-PDE project.
 
-LaTeX sources are intentionally not tracked. The compiled [`report.pdf`](report.pdf) is retained only as a reference document; report editing happens separately in the **Final Report** chat.
+The report LaTeX source is included alongside the compiled [`report.pdf`](report.pdf). The **Final Report** chat remains the authoritative report-editing workflow.
 
 ## Code and evidence
 
